@@ -4,7 +4,7 @@
 
 # Awesome Seedance [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-**Seedance 2.5 / 2.0 提示词验证库。** 497 条案例逐条核对过原帖，264 次跨模型复测，25 个可复用模板，60 个可安装的 AI 视频 Skill，背后是 goodcase.ai 横跨视频、图像、UI、文案的 1237 条已验证 AI 案例。每天同步，每天都有新案例进来。
+**已验证的 AI 视频提示词模板库，外加一个替你挑模板的路由器。** 497 条案例逐条核对过原帖，25 个可复用模板按**怎么拍**而不是**拍什么**组织，264 次跨模型复测，60 个可安装的 AI 视频 Skill，背后是 goodcase.ai 横跨视频、图像、UI、文案的 1237 条已验证 AI 案例。内容提炼自 Seedance 实践，但不绑定 Seedance——模型差异全部收在 `adapters/` 里，模板本身不写死任何模型的限制。每天同步，每天都有新案例进来。
 
 [![案例](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FLearnPrompt%2Fawesome-seedance%2Fmain%2Fdata%2Fstats.json&query=%24.cases&label=%E6%A1%88%E4%BE%8B&color=e8541e&style=flat-square)](#-全部案例) [![跨模型复测](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FLearnPrompt%2Fawesome-seedance%2Fmain%2Fdata%2Fstats.json&query=%24.retestRuns&label=%E8%B7%A8%E6%A8%A1%E5%9E%8B%E5%A4%8D%E6%B5%8B&color=111111&style=flat-square)](#-跨模型复测) [![模板](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FLearnPrompt%2Fawesome-seedance%2Fmain%2Fdata%2Fstats.json&query=%24.templates&label=%E6%A8%A1%E6%9D%BF&color=111111&style=flat-square)](#-分类提示语模板) [![AI 视频 Skill](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FLearnPrompt%2Fawesome-seedance%2Fmain%2Fdata%2Fstats.json&query=%24.skills&label=AI%20%E8%A7%86%E9%A2%91%20Skill&color=111111&style=flat-square)](#-skill) [![更新](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FLearnPrompt%2Fawesome-seedance%2Fmain%2Fdata%2Fstats.json&query=%24.lastUpdated&label=%E6%9B%B4%E6%96%B0&color=555555&style=flat-square)](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance) [![npm](https://img.shields.io/npm/v/seedance-prompt-library?label=Agent%20Skill&color=111111&style=flat-square)](https://www.npmjs.com/package/seedance-prompt-library) [![License: MIT (code)](https://img.shields.io/badge/code-MIT-lightgrey.svg?style=flat-square)](./LICENSE) [![Content: CC BY 4.0 (curation)](https://img.shields.io/badge/curation-CC%20BY%204.0-lightgrey.svg?style=flat-square)](https://creativecommons.org/licenses/by/4.0/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-lightgrey.svg?style=flat-square)](./contributing.md)
 
@@ -15,6 +15,7 @@
 - [🚀 从这里开始](#-从这里开始)
 - [🧩 分类提示语模板](#-分类提示语模板)
 - [🧰 Skill](#-skill)
+- [🧭 拍法路由](#-拍法路由)
 - [🔥 热度 Top 30](#-热度-top-30)
 - [🔁 跨模型复测](#-跨模型复测)
 - [🎬 全部案例](#-全部案例)
@@ -30,11 +31,11 @@
 
 | 步骤 | 做什么 |
 | --- | --- |
-| 1 | 在[分类提示语模板](#-分类提示语模板)里看图挑一个你想要的画面类型。 |
-| 2 | 点开那个模板（比如 [UGC 口播测评带货](./docs/templates/zh/ugc-creator-review.md)），复制「直接复制」下面那一整段。 |
-| 3 | 把【】里的内容换成你自己的产品、人物或场景。 |
-| 4 | 连同参考图一起发给任意 AI 对话（ChatGPT、Claude、豆包都行），拿到一条写好的提示语。 |
-| 5 | 把提示语粘到 Seedance（即梦 / Dreamina）生成。效果不对，先看模板里的常见坑，改完再跑。 |
+| 1 | 先说清想怎么拍，不只是拍什么：时长、一镜到底还是切分镜、有没有对白、要不要参考图、写实还是动画。 |
+| 2 | 再到[分类提示语模板](#-分类提示语模板)里对着图确认，挑中你要的那种画面。 |
+| 3 | 点开那条模板（比如 [UGC 口播测评带货](./docs/templates/zh/ugc-creator-review.md)），复制「直接复制」下面那一整段。 |
+| 4 | 把【】换成你自己的产品、人物或场景，连同参考图一起发给任意 AI 对话。 |
+| 5 | 把写好的提示语粘到你实际要用的那个视频模型里生成。效果不对，先看那条模板的常见坑，改完再跑。 |
 
 **用模板还是用 Skill？** 两者都来自同一批 497 条已验证案例，区别在于谁来干活。
 
@@ -196,6 +197,29 @@ Skill 是装进 Claude Code、Codex 这类 agent 里的指令包。装好以后�
 
 上面每条安装命令都走 [skills CLI](https://github.com/vercel-labs/skills)。名字以 `seedance-` 开头的 Skill 就放在本仓的 [agents/skills](./agents/skills) 下：模板库 Skill 带全部模板，单片型 Skill 各带一个模板和它自己的案例证据，每天随数据一起重新生成。模板库 Skill 也可以用 `npx seedance-prompt-library install` 一步装进 Claude Code 和 Codex。图像、编程、文案方向的更多 Skill 在 [goodcase.ai](https://goodcase.ai/skills?category=video&utm_source=awesome-seedance)。
 
+## 🧭 拍法路由
+
+25 个模板是按**怎么拍**组织的，不是按**拍什么**。同样一只猫，可以是手持 vlog、可以是皮克斯动画、也可以是一镜到底 POV——用的是三条不同模板。所以路由先读拍法意图，内容词只做末位决胜。
+
+这个次序不是审美选择，是被实测逼的：两种独立的词面方法在 25 路上都卡在 top-1 约 41%，退到 6 路分类也只有 52%。"用户说了什么"和"用户想怎么拍"之间的缺口才是真正的瓶颈，所以工具选择先问，而不是硬猜。
+
+在 25 个标签共 256 条保留考题上实测（2026-09-25）：
+
+| 指标 | 实测 | 门槛 |
+| --- | --- | --- |
+| 拍法信息齐全时的正确答案保留率（神谕 facet） | 84% | ≥ 80% |
+| 只靠用户第一句话时的保留率 | 53% | 仅观测，不设门槛 |
+| 平均交给模型的候选数 | 4.2 / 25 | ≤ 8 |
+| 至少缺一个关键拍法的输入占比 | 100% | — |
+
+这 31 个百分点的差距就是全部论点：缺的信息得问用户，而不是指望更聪明的匹配器。候选名单内的终选交给读得懂每条模板「何时用」的模型——因为有些模板在拍法维度上本就同构（比如打斗编排与极限运动）。
+
+模型差异不进模板，全留在 `adapters/`，一个模型一个小文件，模板因此不会写死任何模型的限制。每条要求分三级：硬门禁（模型做不到就换模板）、可降级（改写那一段，**并且必须告诉用户降了什么**）、方言（同一个意思的不同写法）。
+
+已提供适配器：**即梦 / Seedance 2.5**、**可灵**、**Veo**。没核对过的能力位保持 `null` 而不是猜一个，默认情况下未核对的硬门禁不会放行。
+
+试一下：`node router/route.mjs "30 秒动画短片，一只橘猫在厨房做咖啡，皮克斯风格，分三个镜头" --model jimeng-seedance` —— 它会输出抽到的拍法、带理由的候选名单、被否决的模板及原因，以及还需要问你什么。设计与完整实测过程见 [DESIGN-video-prompt-router.md](./DESIGN-video-prompt-router.md)。
+
 ## 🔥 热度 Top 30
 
 全部版本里热度最高的 30 条。*完整 prompt* 跳到画廊里的完整条目，*原帖* 跳到创作者原帖。
@@ -277,7 +301,9 @@ Skill 是装进 Claude Code、Codex 这类 agent 里的指令包。装好以后�
 
 **每条都带完整溯源。** 作者、原帖链接、发布时间、热度分，热度是同平台已发布案例里的相对分位，上不了榜就不收。
 
-**自带可安装的 Agent Skill。** `npx seedance-prompt-library install` 一行装进 Claude Code / Codex，agent 用真实验证过的模板结构写 Seedance prompt，不是瞎编。
+**按拍法路由，没说的会问你。** 模板之间的差别在拍法（时长、镜数、有无对白、要不要参考图、写实还是风格化），不在拍什么。确定性的路由器先抽意图，冲突的模板直接否决并给理由，剩下的交给模型在候选里终选——不硬猜。见[拍法路由](#-拍法路由)。
+
+**自带可安装的 Agent Skill。** `npx seedance-prompt-library install` 一行装进 Claude Code / Codex，agent 用真实验证过的模板结构写视频提示词，不是瞎编。
 
 ## 统计
 

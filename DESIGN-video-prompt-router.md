@@ -345,6 +345,8 @@ git status --short           # 只允许 ?? 新增，不得出现 M（modified�
 
 最后一条是硬要求：出现 `M` 即说明动了上游，方案作废重议。
 
+> **后续修订（2026-09-25）**：该硬约束的适用范围是 **P0–P2 的路由层工作**，已被完整遵守（`862cb2d`、`91d4b21` 两个提交对上游文件零改动）。第 12 节的 README 重写经用户明确授权，是一次**有意例外**，被隔离在独立提交里，且 `README_ja.md` 保持与上游逐字节一致。本节其余"零修改"表述均指路由层工作，不覆盖第 12 节。
+
 ### 7.8 工作量
 
 | 步骤 | 内容 | 估时 |
@@ -549,6 +551,80 @@ node eval/oracle.mjs                 # 上界与最弱标签
 node eval/diagnose.mjs               # 正确答案被滤掉的原因归因
 npm test                             # 84 pass，上游未受影响
 ```
+
+---
+
+## 12. README 重写（2026-09-25，经授权打破零修改约束）
+
+### 12.1 为什么必须走生成器
+
+`README.md` / `README_zh.md` / `README_ja.md` 都是 `scripts/generate-readme.mjs` 的产物，文件里就写着"Do not hand-edit"。动手改之前先做了一次幂等预检：`npm run generate` 跑完 `git status` 无差异——**说明当前生成链与已提交产物逐字节一致，之后出现的任何 diff 都只可能来自我的改动**。这一步让"改生成器"和"改产物"的差异变成可验证的，而不是靠约定。
+
+直接手改 README 会在下一次 `npm run generate`（或上游同步）时被无声冲掉，所以改的是 `COPY` 与 render 函数。
+
+### 12.2 定位怎么换的
+
+原 tagline 自称 "Verified Seedance 2.5 / 2.0 prompt library"。改后的口径是"**已验证的 AI 视频提示词模板库 + 替你挑模板的路由器**"，并明确一句：**内容提炼自 Seedance 实践，但不绑定 Seedance——模型差异收在 `adapters/` 里**。
+
+这里刻意没有写成"支持即梦/可灵/Veo 三家"。事实是三件事不同层次：
+
+| 主张 | 是否成立 | 依据 |
+| --- | --- | --- |
+| 模板不绑定模型 | 成立 | 25 个模板里 0 个提 Kling/Veo/Runway，无 `model` 字段 |
+| 案例来自 Seedance | 成立 | 497 条全部 Seedance 系 |
+| 可灵/Veo 已适配 | **不成立** | 两份适配器 19 个能力位仍为 `null` |
+
+把第三行写成已完成，就是我在分析这个仓库时批评过的"虚标"。所以 README 只说前两行。
+
+### 12.3 新增「拍法路由」一节
+
+`routerHeading` + `renderRouterSection` 加在 `scripts/lib/templates.mjs`，插在 Start Here / 模板网格 / Skill 网格之后。内容包括：拍法与内容不同轴的论证、两种词面方法都卡 41% 的实测、指标表、"缺的信息得问用户"的结论、三级能力分类与不静默降质的承诺、跑法示例、指向本文档。
+
+**数字不写死在文案里。** 新增 `eval/score.mjs --write` 产出 `data/router-stats.json`，生成器读它（与上游 `stats.json` / `site.json` 同一套路），语料增长后重跑即刷新，README 不会说谎。stats 缺失时该节降级为无表格版本，由测试锁住。
+
+### 12.4 语言范围与一个被挡下的坑
+
+按决策只做 zh + en。`render.mjs` 的 `t()` 本身带英文回退，所以新章节若不做处理，日文 README 会得到**"日文标题 + 英文正文"的半截翻译**——实测确实发生了（`README_ja.md` 出现 24 行新增）。
+
+处理方式：新增 `ROUTER_DOC_LANGS = ["en", "zh"]`（仿仓库已有的 `TEMPLATE_DOC_LANGS = ["zh","en"]` 惯例），ja **整节不渲染**。之后 `README_ja.md` 与上游**逐字节一致，`git status` 里不再出现**。
+
+代价是 ja 读者看不到新架构说明。这是"只做 zh+en"的直接后果，不是遗漏。
+
+### 12.5 未跟着改的日文文案（待办）
+
+`COPY.ja` 的 tagline 与 pillars 是**独立字面量**，不走 `t()` 回退，因此仍是旧的"Seedance 专用"口径，且 pillar 4 仍写 "Seedance prompt"。也就是说：
+
+```
+README.md / README_zh.md   已换定位 + 有路由节
+README_ja.md               仍是旧定位，无路由节（与上游一致）
+```
+
+这是有意保持的可分叉状态，不是 bug。若日后要补，需要日语母语者审校，不该由我硬写公开文案。
+
+### 12.6 验证
+
+```
+npm run generate        幂等预检先行，事后 diff 仅来自本次改动
+npm test                89 pass / 0 fail（原 84 + 新增 5 项路由节测试）
+npm run check:links     79 文件 969 条内部链接，0 失效
+node --test router/router.test.mjs   14 pass（未受影响）
+git status              README_ja.md 不在改动列表内
+```
+
+新增的 5 项测试分别锁住：ja 不参与渲染、标题锚点无 U+FE0F、四个指标必须来自 stats 而非文案、stats 缺失时的降级不泄漏占位符、"降级必须告知"这条承诺在强调标记内。
+
+### 12.7 改动面
+
+| 文件 | 性质 |
+| --- | --- |
+| `scripts/generate-readme.mjs` | 加 import、加载 router-stats、门控渲染、COPY tagline/pillars（en+zh） |
+| `scripts/lib/templates.mjs` | 加 `ROUTER_DOC_LANGS`、`routerHeading`、`renderRouterSection`；Start Here 五步改 en+zh |
+| `scripts/lib/templates.test.mjs` | 加 5 项测试 |
+| `eval/score.mjs` | 加 `--write` |
+| `data/router-stats.json` | 新增生成物 |
+| `README.md` / `README_zh.md` | 生成产物 |
+
+`README_ja.md`、`agents/skills/`、`data/cases.json` 等上游文件均未改动。
 
 ---
 

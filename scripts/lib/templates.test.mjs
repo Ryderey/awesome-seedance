@@ -17,6 +17,9 @@ import {
   renderTemplateDoc,
   renderTemplateGrid,
   renderTemplateIndex,
+  renderRouterSection,
+  routerHeading,
+  ROUTER_DOC_LANGS,
   skillsHeading,
   startHereHeading,
   templateDocLang,
@@ -227,4 +230,67 @@ test("section headings carry no U+FE0F, so computed anchors match what GitHub ge
     }
   }
   assert.equal(anchorOf(templatesHeading("zh")), "#-分类提示语模板");
+});
+
+// ── 拍法路由一节（本 fork 新增，仅中英两版）──────────────────────────────
+
+const routerStatsFixture = {
+  measuredAt: "2026-09-25",
+  questions: 256,
+  labels: 25,
+  oracleRetention: 0.84,
+  textRetention: 0.526,
+  avgCandidates: 4.2,
+  needsClarification: 1,
+  thresholds: { oracleRetention: 0.8, avgCandidatesMax: 8 },
+  pass: true,
+};
+
+test("router section exists in en and zh only, so the ja README stays byte-identical to upstream", () => {
+  assert.deepEqual(ROUTER_DOC_LANGS, ["en", "zh"]);
+  assert.ok(!ROUTER_DOC_LANGS.includes("ja"));
+});
+
+test("router heading anchors cleanly (no variation selector)", () => {
+  for (const lang of ROUTER_DOC_LANGS) {
+    const h = routerHeading(lang);
+    assert.ok(!h.includes("️"), `${h} contains a variation selector`);
+    assert.equal(anchorOf(h), `#${githubSlug(h.replace(/^#+\s+/, ""))}`);
+  }
+  assert.equal(anchorOf(routerHeading("zh")), "#-拍法路由");
+  assert.equal(anchorOf(routerHeading("en")), "#-facet-routing");
+});
+
+test("renderRouterSection prints the measured numbers as a table, never as prose guesses", () => {
+  for (const lang of ROUTER_DOC_LANGS) {
+    const md = renderRouterSection(lang, routerStatsFixture);
+    assert.ok(md.startsWith(routerHeading(lang)));
+    // 四个指标都要出现，且百分比来自 stats 而不是文案里写死的数字
+    assert.match(md, /\| 84% \| ≥ 80% \|/);
+    assert.match(md, /\| 53% \|/);
+    assert.match(md, lang === "zh" ? /4\.2 \/ 25/ : /4\.2 of 25/, "avg candidates rendered per language");
+    assert.match(md, /\| 100% \|/);
+    assert.ok(md.includes("2026-09-25"));
+    assert.ok(md.includes("adapters/"), "must point capability out to adapters/");
+    assert.ok(md.includes("DESIGN-video-prompt-router.md"));
+  }
+});
+
+test("renderRouterSection degrades to a number-free version when stats are missing", () => {
+  for (const lang of ROUTER_DOC_LANGS) {
+    const md = renderRouterSection(lang, null);
+    assert.ok(md.startsWith(routerHeading(lang)));
+    assert.doesNotMatch(md, /^\|/m, "no metrics table without stats");
+    assert.doesNotMatch(md, /—%|undefined|NaN/, "no placeholder leakage");
+    assert.ok(md.length > 400, "section still explains the approach without numbers");
+  }
+});
+
+test("router section states the no-silent-degradation rule", () => {
+  for (const lang of ROUTER_DOC_LANGS) {
+    const md = renderRouterSection(lang, routerStatsFixture);
+    assert.match(md, /\*\*[^*]+\*\*/, "degradation duty is emphasised");
+    const emphasised = (md.match(/\*\*[^*]+\*\*/g) || []).join(" ");
+    assert.ok(/降|downgrad/i.test(emphasised), "the emphasised clause must be about degradation");
+  }
 });

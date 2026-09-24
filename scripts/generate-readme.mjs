@@ -42,6 +42,7 @@ import {
 import { loadLibrary, buildTemplateIndex } from "./lib/library.mjs";
 import {
   TEMPLATE_DOC_LANGS,
+  ROUTER_DOC_LANGS,
   anchorOf,
   countSkills,
   orderedTemplates,
@@ -50,6 +51,7 @@ import {
   renderTemplateDoc,
   renderTemplateGrid,
   renderTemplateIndex,
+  renderRouterSection,
   templateDocLang,
   templatesHeading,
   skillsHeading,
@@ -80,6 +82,13 @@ try {
   skillsData = loadJson("data/skills.json");
 } catch {
   skillsData = null;
+}
+// 拍法路由的实测数字（node eval/score.mjs --write 产出）；缺失时该节不显示数字表格。
+let routerStats = null;
+try {
+  routerStats = loadJson("data/router-stats.json");
+} catch {
+  routerStats = null;
 }
 // 复测样例的产物封面（scripts/fetch-retest-posters.mjs 抽帧），没有就退回纯链接。
 const retestPosterFor = (caseObj) => {
@@ -130,9 +139,9 @@ const COPY = {
     heroAlt: "Awesome Seedance: verified Seedance prompts, cross-model retests, templates and an agent skill",
     // 一句话卖点 + 数量，数量随数据走；徽章行里的数字另走 shields 动态 JSON，每天自动变。
     tagline: (s) =>
-      `**Verified Seedance 2.5 / 2.0 prompt library.** ${s.cases} cases checked against their original posts, ${s.retestRuns} cross-model retests, ${s.templates} reusable templates and ${s.skills} installable AI-video Skills${
+      `**Verified AI video prompt templates — plus a router that picks the right one.** ${s.cases} cases checked against their original posts, ${s.templates} reusable templates organised by *how you shoot it* rather than *what you shoot*, ${s.retestRuns} cross-model retests and ${s.skills} installable AI-video Skills${
         s.siteTotalCases ? `, drawn from goodcase.ai's ${s.siteTotalCases} verified AI cases across video, image, UI and copy` : ""
-      }. Synced daily, new cases land every day.`,
+      }. Distilled from Seedance work but not bound to Seedance: model differences live in \`adapters/\`, not in the templates. Synced daily, new cases land every day.`,
     backlink:
       "More verified AI cases with full prompts → [GoodCase.ai](https://goodcase.ai/cases?filter=video&utm_source=awesome-seedance)",
     contentsHeading: "## Contents",
@@ -141,7 +150,8 @@ const COPY = {
       `**Human-verified against the source.** Every prompt here was checked against the creator's original post. Prompts reverse-engineered from the output video only, with no source and no submission, are rejected outright, per [goodcase.ai's collection standards](https://goodcase.ai/standards) (in force since 2026-08-05).`,
       `**Re-run on a second model.** Most cases have been re-generated on another video model, with the verdict, score and output published. See [Cross-model retests](#-cross-model-retests).`,
       `**Full provenance on every entry.** Author, original post link, publish date, and a heat score, a relative percentile among published cases on the same platform. If it didn't rank, it isn't here.`,
-      `**Ships as an installable Agent Skill.** \`npx seedance-prompt-library install\` drops a template library straight into Claude Code / Codex so your agent writes Seedance prompts from proven structures, not guesses.`,
+      `**Routes by shooting approach, and asks what you didn't say.** The templates differ on facets (duration, shot plan, dialogue, reference image, style), not on subject. A deterministic router extracts the intent, vetoes conflicting templates with a stated reason and hands a shortlist onward instead of guessing. See [Facet Routing](#-facet-routing).`,
+      `**Ships as an installable Agent Skill.** \`npx seedance-prompt-library install\` drops a template library straight into Claude Code / Codex so your agent writes video prompts from proven structures, not guesses.`,
     ],
     topHeading: `## 🔥 Top ${TOP_INLINE_COUNT} by heat`,
     topIntro: (shown) =>
@@ -208,9 +218,9 @@ const COPY = {
     title: `# Awesome Seedance ${AWESOME_BADGE}`,
     heroAlt: "Awesome Seedance：已验证的 Seedance 提示词、跨模型复测、模板与 Agent Skill",
     tagline: (s) =>
-      `**Seedance 2.5 / 2.0 提示词验证库。** ${s.cases} 条案例逐条核对过原帖，${s.retestRuns} 次跨模型复测，${s.templates} 个可复用模板，${s.skills} 个可安装的 AI 视频 Skill${
+      `**已验证的 AI 视频提示词模板库，外加一个替你挑模板的路由器。** ${s.cases} 条案例逐条核对过原帖，${s.templates} 个可复用模板按**怎么拍**而不是**拍什么**组织，${s.retestRuns} 次跨模型复测，${s.skills} 个可安装的 AI 视频 Skill${
         s.siteTotalCases ? `，背后是 goodcase.ai 横跨视频、图像、UI、文案的 ${s.siteTotalCases} 条已验证 AI 案例` : ""
-      }。每天同步，每天都有新案例进来。`,
+      }。内容提炼自 Seedance 实践，但不绑定 Seedance——模型差异全部收在 \`adapters/\` 里，模板本身不写死任何模型的限制。每天同步，每天都有新案例进来。`,
     backlink:
       "更多经过验证、带完整 Prompt 的 AI 案例 → [GoodCase.ai](https://goodcase.ai/cases?filter=video&utm_source=awesome-seedance)",
     contentsHeading: "## 目录",
@@ -219,7 +229,8 @@ const COPY = {
       "**每条 prompt 都人工核对过与原帖一致。** 只靠成片视频反推出来的 prompt 一律不收，没有原帖来源不收，这是 [goodcase.ai 的收录标准](https://goodcase.ai/standards)（2026-08-05 起生效的红线）。",
       "**在第二个模型上重跑过。** 大部分案例都拿到另一个视频模型上重新生成，结论、评分和产物都公开，见[跨模型复测](#-跨模型复测)。",
       "**每条都带完整溯源。** 作者、原帖链接、发布时间、热度分，热度是同平台已发布案例里的相对分位，上不了榜就不收。",
-      "**自带可安装的 Agent Skill。** `npx seedance-prompt-library install` 一行装进 Claude Code / Codex，agent 用真实验证过的模板结构写 Seedance prompt，不是瞎编。",
+      "**按拍法路由，没说的会问你。** 模板之间的差别在拍法（时长、镜数、有无对白、要不要参考图、写实还是风格化），不在拍什么。确定性的路由器先抽意图，冲突的模板直接否决并给理由，剩下的交给模型在候选里终选——不硬猜。见[拍法路由](#-拍法路由)。",
+      "**自带可安装的 Agent Skill。** `npx seedance-prompt-library install` 一行装进 Claude Code / Codex，agent 用真实验证过的模板结构写视频提示词，不是瞎编。",
     ],
     topHeading: `## 🔥 热度 Top ${TOP_INLINE_COUNT}`,
     topIntro: (shown) =>
@@ -421,6 +432,7 @@ function buildReadme(lang) {
   );
   pushRendered(renderTemplateGrid(library, lang, templateIndex));
   if (skillsData) pushRendered(renderSkillGrid(skillsData, lang, casesBySlug, { coverCasesFor: skillCoverCases }));
+  if (ROUTER_DOC_LANGS.includes(lang)) pushRendered(renderRouterSection(lang, routerStats));
 
   // Top 榜是唯一可裁剪的部分：超预算时从表尾裁行，标题/说明按实际行数回填。
   const top = renderTopTable(topPartition.top, lang, {

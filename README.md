@@ -4,7 +4,7 @@
 
 # Awesome Seedance [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-**Verified Seedance 2.5 / 2.0 prompt library.** 497 cases checked against their original posts, 264 cross-model retests, 25 reusable templates and 60 installable AI-video Skills, drawn from goodcase.ai's 1237 verified AI cases across video, image, UI and copy. Synced daily, new cases land every day.
+**Verified AI video prompt templates — plus a router that picks the right one.** 497 cases checked against their original posts, 25 reusable templates organised by *how you shoot it* rather than *what you shoot*, 264 cross-model retests and 60 installable AI-video Skills, drawn from goodcase.ai's 1237 verified AI cases across video, image, UI and copy. Distilled from Seedance work but not bound to Seedance: model differences live in `adapters/`, not in the templates. Synced daily, new cases land every day.
 
 [![cases](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FLearnPrompt%2Fawesome-seedance%2Fmain%2Fdata%2Fstats.json&query=%24.cases&label=cases&color=e8541e&style=flat-square)](#-all-prompts) [![cross-model retests](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FLearnPrompt%2Fawesome-seedance%2Fmain%2Fdata%2Fstats.json&query=%24.retestRuns&label=cross-model%20retests&color=111111&style=flat-square)](#-cross-model-retests) [![templates](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FLearnPrompt%2Fawesome-seedance%2Fmain%2Fdata%2Fstats.json&query=%24.templates&label=templates&color=111111&style=flat-square)](#-prompt-templates-by-category) [![AI video skills](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FLearnPrompt%2Fawesome-seedance%2Fmain%2Fdata%2Fstats.json&query=%24.skills&label=AI%20video%20skills&color=111111&style=flat-square)](#-skills) [![updated](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FLearnPrompt%2Fawesome-seedance%2Fmain%2Fdata%2Fstats.json&query=%24.lastUpdated&label=updated&color=555555&style=flat-square)](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance) [![npm](https://img.shields.io/npm/v/seedance-prompt-library?label=agent%20skill&color=111111&style=flat-square)](https://www.npmjs.com/package/seedance-prompt-library) [![License: MIT (code)](https://img.shields.io/badge/code-MIT-lightgrey.svg?style=flat-square)](./LICENSE) [![Content: CC BY 4.0 (curation)](https://img.shields.io/badge/curation-CC%20BY%204.0-lightgrey.svg?style=flat-square)](https://creativecommons.org/licenses/by/4.0/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-lightgrey.svg?style=flat-square)](./contributing.md)
 
@@ -15,6 +15,7 @@ More verified AI cases with full prompts → [GoodCase.ai](https://goodcase.ai/c
 - [🚀 Start Here](#-start-here)
 - [🧩 Prompt Templates by Category](#-prompt-templates-by-category)
 - [🧰 Skills](#-skills)
+- [🧭 Facet Routing](#-facet-routing)
 - [🔥 Top 30 by heat](#-top-30-by-heat)
 - [🔁 Cross-model retests](#-cross-model-retests)
 - [🎬 All Prompts](#-all-prompts)
@@ -30,11 +31,11 @@ New to AI video? Follow these five steps and you will have your own clip. Nothin
 
 | Step | What to do |
 | --- | --- |
-| 1 | Pick a look in [Prompt Templates by Category](#-prompt-templates-by-category). Choose by the pictures. |
-| 2 | Open that template (for example [UGC creator review](./docs/templates/en/ugc-creator-review.md)) and copy the block under *Copy this*. |
-| 3 | Replace the [bracketed] parts with your own product, person or scene. |
-| 4 | Send it to any AI chat (ChatGPT, Claude, Gemini) along with your reference images. You get back a finished prompt. |
-| 5 | Paste that prompt into Seedance (Dreamina / Jimeng) and generate. If it looks off, read the template's pitfalls and re-run. |
+| 1 | Say how you want to shoot it, not just what: duration, one take or a shot list, dialogue or none, reference image or none, live-action or animated. |
+| 2 | Cross-check it against the pictures in [Prompt Templates by Category](#-prompt-templates-by-category) and pick the look you meant. |
+| 3 | Open that template (for example [UGC creator review](./docs/templates/en/ugc-creator-review.md)) and copy the block under *Copy this*. |
+| 4 | Replace the [bracketed] parts with your own product, person or scene, then send it to any AI chat along with your reference images. |
+| 5 | Paste the finished prompt into whichever video model you are actually targeting. If it looks off, read that template's pitfalls and re-run. |
 
 **Templates or Skills?** Both are built from the same 497 verified cases. They differ in who does the work.
 
@@ -196,6 +197,29 @@ A Skill is an installable instruction pack for coding agents (Claude Code, Codex
 
 Every install line works with the [skills CLI](https://github.com/vercel-labs/skills). Skills named `seedance-…` live in this repo under [agents/skills](./agents/skills): the library Skill carries every template, the single-kind Skills carry one template each with their own case evidence, all regenerated daily from the same data. `npx seedance-prompt-library install` also drops the library Skill straight into Claude Code and Codex. More Skills across image, coding and writing live on [goodcase.ai](https://goodcase.ai/skills?category=video&utm_source=awesome-seedance).
 
+## 🧭 Facet Routing
+
+The 25 templates are organised by **how you shoot it**, not by **what you shoot**. A cat clip can be a handheld vlog, a Pixar-style cartoon or a one-take POV — three different templates. So the router reads the shooting intent first, and subject words only break ties.
+
+That ordering is not a style choice, it is what the measurements forced: two independent lexical methods both plateau at ~41% top-1 over the 25 templates, and dropping to 6 categories still gives 52%. The gap between "what the user typed" and "how they mean to shoot it" is the real bottleneck, so the tool asks instead of guessing.
+
+Measured on 256 held-out prompts across 25 labels (2026-09-25):
+
+| Metric | Value | Threshold |
+| --- | --- | --- |
+| Retention with full shooting intent (oracle facets) | 84% | ≥ 80% |
+| Retention from the user's first sentence alone | 53% | observed only |
+| Average candidates handed to the model | 4.2 of 25 | ≤ 8 |
+| Inputs missing at least one decisive facet | 100% | — |
+
+That spread is the whole argument: the missing information has to come from the user, not from a cleverer matcher. Final selection inside the shortlist is left to a model reading each template's *use when*, because some templates are genuinely identical on the facet axes (combat choreography and extreme sports, for example).
+
+Model capability is kept out of the templates and in `adapters/`, one small file per model, so a template never hard-codes a model's limits. Every requirement is graded: a hard gate (swap the template if the model cannot do it), a soft degradation (rewrite that block **and tell the user what was downgraded**), or a dialect (same meaning, different syntax).
+
+Adapters shipped: **Jimeng / Seedance 2.5**, **Kling**, **Veo**. Unverified capability slots stay `null` instead of guessing, and an unverified hard gate does not let a template through by default.
+
+Try it: `node router/route.mjs "30 秒动画短片，一只橘猫在厨房做咖啡，皮克斯风格，分三个镜头" --model jimeng-seedance` — it prints the extracted facets, the shortlist with reasons, what got vetoed and why, and what it still needs to ask you. Design and full measurement trail: [DESIGN-video-prompt-router.md](./DESIGN-video-prompt-router.md).
+
 ## 🔥 Top 30 by heat
 
 The 30 hottest cases across all versions. *prompt* opens the full entry in the gallery, *source* opens the creator's original post.
@@ -277,7 +301,9 @@ This README is an index. The full experience lives at [goodcase.ai](https://good
 
 **Full provenance on every entry.** Author, original post link, publish date, and a heat score, a relative percentile among published cases on the same platform. If it didn't rank, it isn't here.
 
-**Ships as an installable Agent Skill.** `npx seedance-prompt-library install` drops a template library straight into Claude Code / Codex so your agent writes Seedance prompts from proven structures, not guesses.
+**Routes by shooting approach, and asks what you didn't say.** The templates differ on facets (duration, shot plan, dialogue, reference image, style), not on subject. A deterministic router extracts the intent, vetoes conflicting templates with a stated reason and hands a shortlist onward instead of guessing. See [Facet Routing](#-facet-routing).
+
+**Ships as an installable Agent Skill.** `npx seedance-prompt-library install` drops a template library straight into Claude Code / Codex so your agent writes video prompts from proven structures, not guesses.
 
 ## Statistics
 

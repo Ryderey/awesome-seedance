@@ -6,7 +6,7 @@
 // 因此主指标是 shortlist retention（正确模板是否留在候选里），
 // 同时必须报平均候选数——若候选数接近 25，说明筛选没起作用，retention 高是无意义的高。
 // Run: node eval/score.mjs [--model jimeng-seedance] [--top 5] [--json]
-import { readFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { route, loadIndex } from "../router/route.mjs";
@@ -44,12 +44,40 @@ const retentionMicro = retained / golden.rows.length;
 const top1Micro = first / golden.rows.length;
 const avgSize = sizeSum / golden.rows.length;
 
+const round4 = (x) => Math.round(x * 10000) / 10000;
 const { thresholds } = golden.metricSpec;
 // 两个数分别把两道关：
 //   oracle  = 打分逻辑本身对不对（拍法信息齐全时能否保住正确答案）—— 这是架构门槛
 //   textOnly = 只靠用户第一句话能保住多少 —— 受限于"用户没说"，不是算法缺陷，只作观测
 const oracle = runOracle(golden.rows);
 const pass = oracle.macro >= 0.8 && avgSize <= 8;
+
+// README 由 scripts/generate-readme.mjs 生成，不能引用会过期的手写数字。
+// --write 把实测结果落到 data/router-stats.json，生成器读它（与上游 stats.json 同一套路）。
+if (argv.includes("--write")) {
+  writeFileSync(
+    path.join(ROOT, "data/router-stats.json"),
+    JSON.stringify(
+      {
+        $comment: "生成物，勿手改。跑 node eval/score.mjs --write 更新。README 的路由一节引用这里的数字，避免文案写死后过期。",
+        // 用本地日期：toISOString 是 UTC，晚上跑会记成前一天。
+        measuredAt: new Date().toLocaleDateString("sv"),
+        questions: golden.rows.length,
+        labels: per.size,
+        oracleRetention: round4(oracle.macro),
+        textRetention: round4(retentionMacro),
+        avgCandidates: Math.round(avgSize * 10) / 10,
+        needsClarification: Math.round((asked / golden.rows.length) * 100) / 100,
+        thresholds: { oracleRetention: 0.8, avgCandidatesMax: 8 },
+        pass,
+      },
+      null,
+      2
+    ) + "\n",
+    "utf8"
+  );
+  console.log("已写入 data/router-stats.json");
+}
 
 const worst = [...per.entries()].map(([id, [h, n]]) => ({ id, ret: h / n, n })).sort((a, b) => a.ret - b.ret);
 

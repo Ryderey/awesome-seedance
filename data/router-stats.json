@@ -1,0 +1,15 @@
+{
+  "$comment": "生成物，勿手改。跑 node eval/score.mjs --write 更新。README 的路由一节引用这里的数字，避免文案写死后过期。",
+  "measuredAt": "2026-09-25",
+  "questions": 256,
+  "labels": 25,
+  "oracleRetention": 0.84,
+  "textRetention": 0.526,
+  "avgCandidates": 4.2,
+  "needsClarification": 1,
+  "thresholds": {
+    "oracleRetention": 0.8,
+    "avgCandidatesMax": 8
+  },
+  "pass": true
+}
