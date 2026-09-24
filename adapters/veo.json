@@ -1,0 +1,45 @@
+{
+  "model": "Veo",
+  "displayName": { "en": "Veo", "zh": "Veo" },
+  "aliases": ["veo", "veo3", "veo 3", "flow"],
+
+  "capabilities": {
+    "lipSync": null,
+    "audioDriven": null,
+    "refImage": null,
+    "refVideo": null,
+    "typography": null,
+    "physicsCoherence": null,
+    "firstLastFrame": null,
+    "newerTierFeatures": null
+  },
+
+  "limits": {
+    "maxDuration": null,
+    "aspectRatios": []
+  },
+
+  "syntax": {
+    "negativePrompt": null,
+    "timestamp": null,
+    "cameraMove": null
+  },
+
+  "degradations": [],
+
+  "verifiedAt": null,
+  "verifiedFrom": [],
+  "verificationNote": "P0 阶段全部为 null：未核对，不代表不支持。填任何布尔前必须先补 verifiedFrom 的官方文档链接。Veo 各版本能力差异大且接口随宿主平台（Gemini API / Flow）不同，核对时要写清版本与调用入口，否则能力位没有可比性。",
+
+  "toVerify": [
+    "model 精确版本号与调用入口（API 还是宿主产品）",
+    "lipSync / audioDriven：音频生成与口型对齐是原生能力还是需外部驱动",
+    "refImage：图像提示 / 参考图能力（决定 reference-lock 一族是否可用）",
+    "refVideo：视频参考能力",
+    "typography：画面内文字渲染",
+    "firstLastFrame：首尾帧控制",
+    "limits.maxDuration：单次时长上限（Veo 历史上单次时长偏短，很可能触发 timeline 一族的重排降级）",
+    "syntax.negativePrompt：是否存在独立负向字段——若无，negative-prompt 方言块需整段改写为正向约束",
+    "syntax.cameraMove：是否接受预设运镜词"
+  ]
+}

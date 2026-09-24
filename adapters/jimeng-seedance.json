@@ -1,0 +1,45 @@
+{
+  "model": "Seedance 2.5",
+  "displayName": { "en": "Seedance 2.5 (Jimeng / Dreamina)", "zh": "即梦 / Seedance 2.5" },
+  "aliases": ["即梦", "seedance", "seedance 2.5", "seedance2.5", "dreamina"],
+
+  "capabilities": {
+    "lipSync": true,
+    "audioDriven": true,
+    "refImage": true,
+    "refVideo": true,
+    "typography": null,
+    "physicsCoherence": null,
+    "firstLastFrame": null,
+    "newerTierFeatures": true
+  },
+
+  "limits": {
+    "maxDuration": null,
+    "aspectRatios": []
+  },
+
+  "syntax": {
+    "negativePrompt": "inline",
+    "timestamp": "[00:00-00:04]",
+    "cameraMove": "prose"
+  },
+
+  "degradations": [],
+
+  "verifiedAt": "2026-09-24",
+  "verifiedFrom": [
+    "agents/skills/seedance-prompt-library/SKILL.md — 「Seedance 2.5 supports four input modalities (text, image, video, audio reference) plus native lip-sync and voice-driven dialogue」",
+    "data/style-library.json — dialogue-performance-beats.useWhen：「Seedance 2.5 还支持用上传的音轨驱动口型」",
+    "data/style-library.json — character-reference-lock.useWhen：「2.5 还能用同一套 token 语法引用音频和视频」"
+  ],
+  "verificationNote": "以上来源是本仓库自身的上游文档，非厂商规格书。lipSync / audioDriven / refImage / refVideo 有仓库内多处一致陈述支撑，故填 true；typography / physicsCoherence / firstLastFrame / maxDuration 仓库未明确断言，保持 null 待官方文档核对。",
+
+  "toVerify": [
+    "typography：画面内文字渲染的实际可用度",
+    "physicsCoherence：多环节动作链的保持能力",
+    "firstLastFrame：是否支持首尾帧控制",
+    "limits.maxDuration：单次生成时长上限与分段拼接上限",
+    "limits.aspectRatios：可用画幅集合"
+  ]
+}

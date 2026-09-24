@@ -1,0 +1,31 @@
+{
+  "$comment": "手工补充的触发词，与 build-lexicon.mjs 的语料抽取结果合并。用于补语料过薄的模板（案例标题里没出现过的说法，TF-IDF 抽不出来）。词源：各模板自己的 title.zh 与 useWhen.zh 原文，见 DESIGN-video-prompt-router.md 附录 A。追加而非替换，语料增长后重跑不会丢这里的词。",
+
+  "templates": {
+    "timeline-shot-script": ["时间轴", "分镜脚本", "逐秒", "秒级", "时长"],
+    "character-reference-lock": ["参考图", "身份锁定", "同一张脸", "跨镜头", "一致性", "定妆", "换装"],
+    "handheld-ugc-vlog": ["随手拍", "日常", "出门前准备", "私人感"],
+    "pov-continuous-take": ["第一人称", "一镜到底", "主观镜头", "无人机", "厨师视角"],
+    "ugc-creator-review": ["口播", "测评", "带货", "开箱", "种草"],
+    "product-commercial-shotlist": ["广告片", "品牌", "投放"],
+    "dialogue-performance-beats": ["台词", "对白", "口型", "争吵"],
+    "cinematic-narrative-short": ["预告片", "迷你剧", "剧情", "爱情"],
+    "anime-style-lock": ["赛璐珞", "日漫", "番剧", "手绘"],
+    "stop-motion-cadence": ["定格动画", "黏土", "剪纸", "拼贴", "步进"],
+    "process-transformation-montage": ["菜谱", "建造", "组装", "前后对比", "制作过程"],
+    "combat-choreography": ["武术", "剑戟", "格斗", "招式", "打戏"],
+    "music-beat-sync-mv": ["卡点", "MV", "音乐视频", "翻跳", "副歌", "舞蹈"],
+    "time-freeze-rewind": ["时间冻结", "倒放", "暂停", "奇观"],
+    "storyboard-grid-to-video": ["分镜格", "九宫格", "故事板", "分镜图", "镜头顺序"],
+    "retro-found-footage": ["家庭录像", "录像带", "MiniDV", "VHS", "伪纪录片"],
+    "travel-city-walk": ["旅拍", "城市漫游", "目的地", "徒步", "露营"],
+    "pet-animal": ["宠物", "猫", "狗", "动物", "萌宠", "抢镜"],
+    "car-vehicle": ["汽车", "摩托", "赛车", "载具", "跑车", "追逐", "特技"],
+    "fashion-lookbook": ["穿搭", "街拍", "换装", "写真", "人像", "lookbook"],
+    "meme-comedy": ["玩梗", "整蛊", "反转", "搞笑", "沙雕", "复仇"],
+    "horror-suspense": ["恐怖", "悬疑", "惊悚", "感染", "附身", "驱邪"],
+    "3d-cartoon": ["三维卡通", "皮克斯", "动画角色", "幼龙"],
+    "epic-fantasy-scifi": ["奇幻", "科幻", "巨龙", "怪兽", "史诗", "变身", "世界观"],
+    "sports-extreme": ["单板", "滑雪", "山地骑行", "跑酷", "篮球", "水上", "极限运动"]
+  }
+}

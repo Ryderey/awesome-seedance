@@ -1,0 +1,115 @@
+{
+  "$comment": "把模板的 34 个 tag 分成四类。此文件是人工判定的唯一来源，router/build-index.mjs 依它把 tag 翻译成 gates / softGates / dialect / signals。新增 tag 未在此登记会让 build 失败，避免静默漏判。",
+
+  "classes": {
+    "gate": "硬门禁。模型不具备该能力时，此模板不可用，路由必须换模板，不能靠改写提示词绕过。",
+    "soft": "可降级。模型不具备时模板仍可用，但必须删改对应段落，并在输出里显式声明降级了什么。不做静默降质。",
+    "dialect": "方言。不涉及能力有无，只影响写法，由 adapters/*.json 的 syntax 字段承载。",
+    "signal": "描述性。只参与路由打分，不产生任何门禁或降级。"
+  },
+
+  "tags": {
+    "lip-sync": {
+      "class": "gate",
+      "capability": "lipSync",
+      "templates": ["dialogue-performance-beats", "music-beat-sync-mv", "travel-city-walk"],
+      "reason": "模板要求台词与口型对齐。模型无口型能力时，写进提示词也只会被忽略，属于结构性不可用而非效果打折。",
+      "evidence": "dialogue-performance-beats.useWhen: 「16 条显式管理口型」"
+    },
+
+    "audio-input": {
+      "class": "gate",
+      "capability": "audioDriven",
+      "templates": ["music-beat-sync-mv"],
+      "reason": "该模板要求把外部音轨作为输入模态，再从中导出 BPM 锚点。没有音轨入口，整条时间轴节拍机制不成立。",
+      "evidence": "hub SKILL.md: 「Seedance 2.5 supports four input modalities (text, image, video, audio reference)」"
+    },
+
+    "reference-lock": {
+      "class": "gate",
+      "capability": "refImage",
+      "templates": ["character-reference-lock", "ugc-creator-review", "storyboard-grid-to-video", "horror-suspense", "epic-fantasy-scifi"],
+      "reason": "模板的承重结构就是「用参考图锁身份/锁分镜」。模型无图生视频入口时，模板的核心块直接消失，退化成普通文生视频。",
+      "evidence": "storyboard-grid-to-video 为两段式流水线：图像模型出分镜格 → 该图作为 Seedance 参考输入"
+    },
+
+    "seedance-2-5": {
+      "class": "soft",
+      "capability": "newerTierFeatures",
+      "templates": ["dialogue-performance-beats", "music-beat-sync-mv", "time-freeze-rewind"],
+      "reason": "这是版本标记而非能力本身，且上游把它写进了 tag，属于待拆的耦合点。保留做历史追溯，但路由时降为软性提示：命中较新档位时提示效果更佳，不满足时不阻断。",
+      "evidence": "music-beat-sync-mv 存在一条 guidance 标题字面为「Seedance 2.5 专属」",
+      "note": "此 tag 不参与打分，仅用于输出提示语。"
+    },
+
+    "physics": {
+      "class": "soft",
+      "capability": "physicsCoherence",
+      "templates": ["combat-choreography", "time-freeze-rewind", "car-vehicle", "sports-extreme"],
+      "reason": "动作连贯性是程度问题，没有模型完全做不到。判为硬门禁会让 combat/sports 在多数模型上直接不可用，过苛。降级动作是加强负向清单与逐环节拆解。",
+      "evidence": "sports-extreme: 「负面清单花在飞行、悬停、瞬移上」——本身就是为物理失败准备的缓解手段"
+    },
+
+    "music-sync": {
+      "class": "soft",
+      "capability": "audioDriven",
+      "templates": ["music-beat-sync-mv"],
+      "reason": "与 audio-input 分开看：无音轨入口时仍可人工按 BPM 手算时间锚点、把剪辑点写死在时间轴上，属于降级而非不可用。",
+      "degradation": "由「音轨驱动」降级为「手算节拍锚点」，并在输出里注明锚点非音频对齐。"
+    },
+
+    "typography": {
+      "class": "soft",
+      "capability": "typography",
+      "templates": ["product-commercial-shotlist", "music-beat-sync-mv"],
+      "reason": "按 2026-09-24 决策：不算硬门禁。文字渲染各家差异大，但失败表现是字糊/字错而非整条不可用，且存在通用替代方案。",
+      "degradation": "保留文字诉求时附风险提示；建议改由后期合成字幕，把画面内文字块替换为留白构图。",
+      "decisionRef": "DESIGN-video-prompt-router.md 第 10 节开放点 1 已裁定"
+    },
+
+    "negative-prompt": {
+      "class": "dialect",
+      "syntax": "negativePrompt",
+      "templates": ["timeline-shot-script", "character-reference-lock", "anime-style-lock", "stop-motion-cadence", "process-transformation-montage", "car-vehicle", "3d-cartoon", "sports-extreme"],
+      "reason": "三家目标模型都支持负向提示，差别只在写法（独立字段 vs 正文内联）。属方言，不属能力。"
+    },
+
+    "timeline":            { "class": "signal" },
+    "shot-list":           { "class": "signal" },
+    "character-consistency": { "class": "signal" },
+    "handheld":            { "class": "signal" },
+    "camera-imperfection": { "class": "signal" },
+    "ugc":                 { "class": "signal" },
+    "one-take":            { "class": "signal" },
+    "product":             { "class": "signal" },
+    "dialogue":            { "class": "signal" },
+    "narrative":           { "class": "signal" },
+    "multi-act":           { "class": "signal" },
+    "style-lock":          { "class": "signal" },
+    "vlog":                { "class": "signal" },
+    "pov":                 { "class": "signal" },
+    "commercial":          { "class": "signal" },
+    "locked-camera":       { "class": "signal" },
+    "combat":              { "class": "signal" },
+    "choreography":        { "class": "signal" },
+    "vfx":                 { "class": "signal" },
+    "spoken-review":       { "class": "signal" },
+    "performance":         { "class": "signal" },
+    "anime":               { "class": "signal" },
+    "stop-motion":         { "class": "signal" },
+    "material":            { "class": "signal" },
+    "transformation":      { "class": "signal" },
+    "timelapse":           { "class": "signal" }
+  },
+
+  "capabilityKeys": [
+    "lipSync",
+    "audioDriven",
+    "refImage",
+    "refVideo",
+    "typography",
+    "physicsCoherence",
+    "firstLastFrame",
+    "newerTierFeatures"
+  ]
+}

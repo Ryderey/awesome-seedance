@@ -1,0 +1,2475 @@
+{
+  "$comment": "生成物，勿手改。重跑 node router/build-index.mjs。此文件把 data/ 的模板转成路由可用的元数据：gates 是硬门禁（模型不具备则换模板），softGates 可降级但必须告知，dialect 走适配器 syntax，signals 参与打分。",
+  "generatedFrom": [
+    "data/style-library.json",
+    "data/templates-local.json",
+    "data/case-taxonomy.json",
+    "data/cases.json",
+    "router/capability-map.json",
+    "router/signals.lexicon.json"
+  ],
+  "classes": {
+    "gate": "硬门禁。模型不具备该能力时，此模板不可用，路由必须换模板，不能靠改写提示词绕过。",
+    "soft": "可降级。模型不具备时模板仍可用，但必须删改对应段落，并在输出里显式声明降级了什么。不做静默降质。",
+    "dialect": "方言。不涉及能力有无，只影响写法，由 adapters/*.json 的 syntax 字段承载。",
+    "signal": "描述性。只参与路由打分，不产生任何门禁或降级。"
+  },
+  "capabilityKeys": [
+    "lipSync",
+    "audioDriven",
+    "refImage",
+    "refVideo",
+    "typography",
+    "physicsCoherence",
+    "firstLastFrame",
+    "newerTierFeatures"
+  ],
+  "adapters": [
+    {
+      "model": "Seedance 2.5",
+      "file": "adapters/jimeng-seedance.json",
+      "unverifiedCapabilities": [
+        "typography",
+        "physicsCoherence",
+        "firstLastFrame"
+      ]
+    },
+    {
+      "model": "Kling",
+      "file": "adapters/kling.json",
+      "unverifiedCapabilities": [
+        "lipSync",
+        "audioDriven",
+        "refImage",
+        "refVideo",
+        "typography",
+        "physicsCoherence",
+        "firstLastFrame",
+        "newerTierFeatures"
+      ]
+    },
+    {
+      "model": "Veo",
+      "file": "adapters/veo.json",
+      "unverifiedCapabilities": [
+        "lipSync",
+        "audioDriven",
+        "refImage",
+        "refVideo",
+        "typography",
+        "physicsCoherence",
+        "firstLastFrame",
+        "newerTierFeatures"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "foundation",
+      "title": {
+        "en": "Structural foundations",
+        "zh": "结构基础"
+      },
+      "description": {
+        "en": "Cross-cutting skeletons that almost every other template builds on: how to slice a clip into timed beats, and how to pin an identity across those beats.",
+        "zh": "其他模板都建在这两套骨架上：怎么把一条片子切成有时间的段落，以及怎么让同一个人贯穿这些段落。"
+      }
+    },
+    {
+      "id": "realism",
+      "title": {
+        "en": "Realism and UGC",
+        "zh": "真实感与 UGC"
+      },
+      "description": {
+        "en": "Templates that buy believability by describing camera flaws, body wear and consumer-grade optics instead of asking for quality.",
+        "zh": "靠写相机缺陷、身体损耗和消费级镜头换真实感的模板，不靠堆画质词。"
+      }
+    },
+    {
+      "id": "commercial",
+      "title": {
+        "en": "Commercial and product",
+        "zh": "商业与产品"
+      },
+      "description": {
+        "en": "Ad-shaped structures where a product has to survive macro shots, hand contact and a hero frame without deforming.",
+        "zh": "广告型结构：产品要在微距、手部接触和英雄镜头里保持不变形。"
+      }
+    },
+    {
+      "id": "narrative",
+      "title": {
+        "en": "Narrative and performance",
+        "zh": "叙事与表演"
+      },
+      "description": {
+        "en": "Templates where the payload is a story beat or a line of dialogue rather than a look.",
+        "zh": "有效载荷是剧情节拍或一句台词，不是画面质感。"
+      }
+    },
+    {
+      "id": "stylized",
+      "title": {
+        "en": "Stylized animation",
+        "zh": "风格化动画"
+      },
+      "description": {
+        "en": "Non-photoreal looks that collapse into generic CG unless the style is specified as measurable parameters plus an exclusion list.",
+        "zh": "非写实风格。画风必须写成可测量参数外加一份排除清单，否则会塌回通用 CG。"
+      }
+    },
+    {
+      "id": "motion",
+      "title": {
+        "en": "Action, dance and effects",
+        "zh": "动作·舞蹈·特效"
+      },
+      "description": {
+        "en": "Templates driven by body mechanics, beat placement or a physics set-piece rather than by scene description.",
+        "zh": "由身体力学、节拍落点或一个物理奇观驱动的模板，场景描述只是背景。"
+      }
+    }
+  ],
+  "templates": {
+    "timeline-shot-script": {
+      "id": "timeline-shot-script",
+      "category": "foundation",
+      "title": {
+        "en": "Second-by-second timeline script",
+        "zh": "逐秒时间轴分镜脚本",
+        "ja": "タイムラインとショット脚本"
+      },
+      "description": {
+        "en": "Split the clip into contiguous timed segments, each carrying one shot type, one main action and its own sound line. The single most load-bearing structure in the corpus.",
+        "zh": "把片子切成首尾相接的时间段，每段带一个机位、一个主要动作和一行音效。整个案例库里承重最强的结构。"
+      },
+      "useWhen": {
+        "en": "Any clip longer than about 8 seconds, or any clip where a specific thing must happen at a specific moment. 63 of 207 cases (30%) use timed segments, and the share rises to 45% among Seedance 2.5 cases.",
+        "zh": "长度超过 8 秒，或者某件事必须发生在某个时刻。207 条里 63 条（30%）用了时间分段，在 Seedance 2.5 案例里这个比例升到 45%。"
+      },
+      "tags": [
+        "timeline",
+        "shot-list",
+        "negative-prompt"
+      ],
+      "signals": {
+        "en": [
+          "cycling"
+        ],
+        "zh": [
+          "骑行",
+          "生成",
+          "时间轴",
+          "分镜脚本",
+          "逐秒",
+          "秒级",
+          "时长"
+        ],
+        "corpusDocs": 4,
+        "manualAdded": 5
+      },
+      "gates": [],
+      "softGates": [],
+      "dialect": [
+        "negativePrompt"
+      ],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": 8,
+        "needsVertical": null
+      },
+      "stacks": [],
+      "corpusCount": 4,
+      "examples": [
+        {
+          "slug": "boa-hancock-water-obstacle-race-prompt",
+          "title": "Boa Hancock Water Obstacle Race Prompt",
+          "creator": "@Chengzilhy",
+          "sourceUrl": "https://x.com/Chengzilhy/status/2087458506123465088",
+          "heat": 89,
+          "stability": 66
+        },
+        {
+          "slug": "seedance-2-5-3f70c2f28d22",
+          "title": "Seedance 2.5 生成暴雨港口灾难电影序列",
+          "creator": "@Noor_ul_ain43",
+          "sourceUrl": "https://x.com/Noor_ul_ain43/status/2087774014957850843",
+          "heat": 35,
+          "stability": 79
+        },
+        {
+          "slug": "seedance-2-5-vlog-30-3b85f315bb08",
+          "title": "Seedance 2.5 真实骑行 Vlog:运动相机+前摄+跟拍混剪 30 秒",
+          "creator": "@johnAGI168",
+          "sourceUrl": "https://x.com/johnAGI168/status/2086014766846275817",
+          "heat": 34,
+          "stability": 74
+        },
+        {
+          "slug": "seedance-2-5-f3651857750b",
+          "title": "Seedance 2.5 生成马尔代夫骑行纪录片长镜头",
+          "creator": "@techhalla",
+          "sourceUrl": "https://x.com/techhalla/status/2088099038839316601",
+          "heat": 33,
+          "stability": 80
+        }
+      ]
+    },
+    "character-reference-lock": {
+      "id": "character-reference-lock",
+      "category": "foundation",
+      "title": {
+        "en": "Reference image identity lock",
+        "zh": "参考图身份锁定",
+        "ja": "参照画像とアイデンティティ固定"
+      },
+      "description": {
+        "en": "Name every reference with a stable token, enumerate what to inherit from it, and separately enumerate what must not be inherited. The inherit-nothing-else clause is what separates working locks from broken ones.",
+        "zh": "给每张参考图一个稳定 token，逐条列出要继承什么，再单独列出不许继承什么。能不能生效，差别就在后面那条不继承声明。"
+      },
+      "useWhen": {
+        "en": "Any clip where a face, an outfit, a product or a UI layout must survive across shots. Applies to Seedance 2.0 and 2.5 alike; 2.5 additionally accepts audio and video references under the same token scheme.",
+        "zh": "任何需要一张脸、一套衣服、一个产品或一套 UI 布局跨镜头存活的片子。2.0 和 2.5 都适用，2.5 还能用同一套 token 语法引用音频和视频。"
+      },
+      "tags": [
+        "reference-lock",
+        "character-consistency",
+        "negative-prompt"
+      ],
+      "signals": {
+        "en": [
+          "character",
+          "reference",
+          "short"
+        ],
+        "zh": [
+          "参考图",
+          "身份锁定",
+          "同一张脸",
+          "跨镜头",
+          "一致性",
+          "定妆",
+          "换装"
+        ],
+        "corpusDocs": 5,
+        "manualAdded": 7
+      },
+      "gates": [
+        "refImage"
+      ],
+      "softGates": [],
+      "dialect": [
+        "negativePrompt"
+      ],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [],
+      "corpusCount": 5,
+      "examples": [
+        {
+          "slug": "elsasofia-ai-seedance-ai-e087ab2aed4b",
+          "title": "Seedance 2.5 多参考图锁定人物形象短片",
+          "creator": "@ElsaSofia__AI",
+          "sourceUrl": "https://x.com/ElsaSofia__AI/status/2089306746804375878",
+          "heat": 69,
+          "stability": 0
+        },
+        {
+          "slug": "liyue-ai-seedance-ai-dd263958ed42",
+          "title": "Seedance 2.5 男友视角手机实拍感情侣短片",
+          "creator": "@liyue_ai",
+          "sourceUrl": "https://x.com/liyue_ai/status/2088956829590266002",
+          "heat": 41,
+          "stability": 0
+        },
+        {
+          "slug": "seedance-2-5-ui-228cf63ce8ff",
+          "title": "Seedance 2.5 蜘蛛反英雄游戏角色选择UI动画",
+          "creator": "@pratishhhhh",
+          "sourceUrl": "https://x.com/pratishhhhh/status/2085679073632882880",
+          "heat": 12,
+          "stability": 0
+        },
+        {
+          "slug": "case-79acf1a3e8a6",
+          "title": "高质量动漫泳装视频",
+          "creator": "@haruuraeadss",
+          "sourceUrl": "https://x.com/haruuraeadss/status/2080867332889399547",
+          "heat": 8,
+          "stability": 0
+        }
+      ]
+    },
+    "handheld-ugc-vlog": {
+      "id": "handheld-ugc-vlog",
+      "category": "realism",
+      "title": {
+        "en": "Handheld UGC vlog",
+        "zh": "手持 UGC vlog",
+        "ja": "手持ち UGC vlog"
+      },
+      "description": {
+        "en": "Buy believability with camera defects. Name a specific consumer camera era, list its flaws as requirements, and switch cinematic polish off by hand.",
+        "zh": "用相机缺陷换真实感。指名一个具体的消费级器材年代，把它的毛病写成要求，再手动关掉电影感。"
+      },
+      "useWhen": {
+        "en": "Personal-feeling footage: daily life, travel, gym, cooking, get-ready-with-me. Use it whenever the goal is looks like someone actually filmed this rather than looks expensive.",
+        "zh": "要私人感的素材：日常、旅拍、健身、做饭、出门前准备。目标是像真有人拍的，而不是像很贵的时候用这套。"
+      },
+      "tags": [
+        "ugc",
+        "vlog",
+        "handheld",
+        "camera-imperfection"
+      ],
+      "signals": {
+        "en": [
+          "korean",
+          "summer",
+          "morning",
+          "woman",
+          "day",
+          "short",
+          "japanese",
+          "girl"
+        ],
+        "zh": [
+          "韩国",
+          "夏日",
+          "女孩",
+          "韩国女",
+          "健身",
+          "清晨",
+          "日常",
+          "韩国女孩",
+          "随手拍",
+          "出门前准备",
+          "私人感"
+        ],
+        "corpusDocs": 92,
+        "manualAdded": 3
+      },
+      "gates": [],
+      "softGates": [],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [],
+      "corpusCount": 92,
+      "examples": [
+        {
+          "slug": "seedance-25-minidv-coffee-asmr-vlog",
+          "title": "mini DV 咖啡 ASMR vlog",
+          "creator": "@Strength04_X",
+          "sourceUrl": "https://x.com/Strength04_X/status/2083094742682787939",
+          "heat": 99,
+          "stability": 77
+        },
+        {
+          "slug": "mightyking-seedance-ai-7bbc1d4f9ad9",
+          "title": "Seedance 原生 UGC 竖屏手机跟拍短片",
+          "creator": "@mightyking",
+          "sourceUrl": "https://x.com/mightyking/status/2089299068514148655",
+          "heat": 95,
+          "stability": 71
+        },
+        {
+          "slug": "rishuavr-seedance-ai-ad4e6de3949d",
+          "title": "Seedance 2.5 印尼女生日常写实短片",
+          "creator": "@RishuaVR",
+          "sourceUrl": "https://x.com/RishuaVR/status/2089204108175741157",
+          "heat": 95,
+          "stability": 78
+        },
+        {
+          "slug": "smartphone-beach-day-memories",
+          "title": "智能手机拍摄的海滩一日游回忆",
+          "creator": "@Goodmanprotocol",
+          "sourceUrl": "https://x.com/Goodmanprotocol/status/2079189509586260101",
+          "heat": 93,
+          "stability": 0
+        }
+      ]
+    },
+    "pov-continuous-take": {
+      "id": "pov-continuous-take",
+      "category": "realism",
+      "title": {
+        "en": "First-person continuous take",
+        "zh": "第一人称一镜到底",
+        "ja": "一人称 POV ワンテイク"
+      },
+      "description": {
+        "en": "Bodycam, GoPro, FPV and handlebar POV. The camera is mounted on a body, so its motion has to be derived from that body, and every cut has to be declared by hand.",
+        "zh": "执法记录仪、GoPro、FPV 和车把视角。相机挂在身体上，运动必须从身体推导，每一次剪辑都得手动声明。"
+      },
+      "useWhen": {
+        "en": "Immersive footage where the viewer is the operator: tactical entry, action sports, cooking from the cook's eyes, drone flight. 32 of 207 cases sit here.",
+        "zh": "要观众就是操作者的沉浸素材：破门突入、极限运动、厨师视角做饭、无人机飞行。207 条里 32 条属于这类。"
+      },
+      "tags": [
+        "pov",
+        "one-take",
+        "handheld",
+        "camera-imperfection"
+      ],
+      "signals": {
+        "en": [
+          "magic",
+          "train",
+          "over",
+          "take",
+          "fpv",
+          "pen"
+        ],
+        "zh": [
+          "列车",
+          "魔法",
+          "生成",
+          "太空",
+          "第一人称",
+          "一镜到底",
+          "主观镜头",
+          "无人机",
+          "厨师视角"
+        ],
+        "corpusDocs": 11,
+        "manualAdded": 5
+      },
+      "gates": [],
+      "softGates": [],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [],
+      "corpusCount": 11,
+      "examples": [
+        {
+          "slug": "seedance-2-5-gopro-94a73eef1dbf",
+          "title": "Seedance 2.5 生成 GoPro 钓鱼到烤鱼全流程",
+          "creator": "@abxxai",
+          "sourceUrl": "https://x.com/abxxai/status/2087189194720657649",
+          "heat": 84,
+          "stability": 79
+        },
+        {
+          "slug": "seedance-magic-pen-street-transport-vlog-28d80bd05eda",
+          "title": "魔法画笔将城市交通变成动漫",
+          "creator": "@Strength04_X",
+          "sourceUrl": "https://x.com/Strength04_X/status/2095748874942263601",
+          "heat": 81,
+          "stability": 0
+        },
+        {
+          "slug": "first-person-pov-dragon-rider-cinematic",
+          "title": "First-Person POV Dragon Rider Cinematic",
+          "creator": "@frametheory058",
+          "sourceUrl": "https://x.com/frametheory058/status/2087007818721423855",
+          "heat": 75,
+          "stability": 77
+        },
+        {
+          "slug": "oggii-0-seedance-ai-a473e1b2b456",
+          "title": "穿越历史的磁悬浮列车",
+          "creator": "@oggii_0",
+          "sourceUrl": "https://x.com/oggii_0/status/2092938748073849067",
+          "heat": 68,
+          "stability": 55
+        }
+      ]
+    },
+    "ugc-creator-review": {
+      "id": "ugc-creator-review",
+      "category": "commercial",
+      "title": {
+        "en": "UGC creator review with spoken lines",
+        "zh": "UGC 口播测评带货",
+        "ja": "UGC クリエイターレビュー"
+      },
+      "description": {
+        "en": "A creator unboxes, handles and endorses a product on camera. Two independent locks are needed — one on the person, one on the product — and the spoken lines are welded into the actions.",
+        "zh": "创作者对着镜头开箱、上手、种草。要两把独立的锁——一把锁人，一把锁产品——台词焊进动作里。"
+      },
+      "useWhen": {
+        "en": "Affiliate-style product videos, unboxings and creator reviews where the product must stay recognisable while being picked up, rotated and worn.",
+        "zh": "带货型产品视频、开箱和创作者测评：产品要在被拿起、旋转、佩戴的过程中始终认得出来。"
+      },
+      "tags": [
+        "ugc",
+        "spoken-review",
+        "product",
+        "reference-lock",
+        "dialogue"
+      ],
+      "signals": {
+        "en": [
+          "ugc",
+          "premium",
+          "sunglasses",
+          "review",
+          "short"
+        ],
+        "zh": [
+          "广告",
+          "高端",
+          "耳机",
+          "口播",
+          "测评",
+          "带货",
+          "开箱",
+          "种草"
+        ],
+        "corpusDocs": 11,
+        "manualAdded": 5
+      },
+      "gates": [],
+      "softGates": [
+        "refImage"
+      ],
+      "dialect": [],
+      "gateDowngraded": [
+        {
+          "capability": "refImage",
+          "fromTag": "reference-lock",
+          "because": "tag \"reference-lock\" 标为硬门禁，但模板正文无该能力的文字依据"
+        }
+      ],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "character-reference-lock"
+      ],
+      "corpusCount": 11,
+      "examples": [
+        {
+          "slug": "sophiaparkerr-seedance-ai-51ad3cc85989",
+          "title": "Seedance 网红风十五秒生活方式短片",
+          "creator": "@sophiaparkerr_",
+          "sourceUrl": "https://x.com/sophiaparkerr_/status/2088966649659764899",
+          "heat": 73,
+          "stability": 77
+        },
+        {
+          "slug": "ugc-f0cd0dd33284",
+          "title": "带有动画效果的 UGC 肉类广告",
+          "creator": "@RuzainaMeer",
+          "sourceUrl": "https://x.com/RuzainaMeer/status/2079141591449739775",
+          "heat": 61,
+          "stability": 80
+        },
+        {
+          "slug": "aiwithkhan-seedance-ai-2ee8c62c7d26",
+          "title": "Seedance 参考图角色的墨镜耳机 UGC 短片",
+          "creator": "@AIwithkhan",
+          "sourceUrl": "https://x.com/AIwithkhan/status/2089686478100341051",
+          "heat": 57,
+          "stability": 0
+        },
+        {
+          "slug": "seedance-create-a-30-second-1080p-ultra-realistic-ugc-video-of-a-young-korean-woman-in-48f0e863374c",
+          "title": "韩国女孩的周一晨间相机分享",
+          "creator": "@AIwithkhan",
+          "sourceUrl": "https://x.com/AIwithkhan/status/2096930655615758734",
+          "heat": 50,
+          "stability": 0
+        }
+      ]
+    },
+    "product-commercial-shotlist": {
+      "id": "product-commercial-shotlist",
+      "category": "commercial",
+      "title": {
+        "en": "Cinematic product commercial shot list",
+        "zh": "电影级产品广告分镜",
+        "ja": "プロダクト CM のショットリスト"
+      },
+      "description": {
+        "en": "A polished 8 to 20 second ad: a stated commercial aesthetic up front, a numbered or timed shot breakdown in the middle, a hero frame at the end, and a keyword tail.",
+        "zh": "8 到 20 秒的精修广告：开头写死广告美学，中间是编号或计时的分镜拆解，结尾一个英雄镜头，最后甩一段关键词。"
+      },
+      "useWhen": {
+        "en": "Beauty, beverage, jewellery, automotive and fragrance spots where the look has to read as paid production rather than as a creator video.",
+        "zh": "美妆、饮品、珠宝、汽车、香水这类要读成投放级制作、不能读成创作者视频的广告。"
+      },
+      "tags": [
+        "commercial",
+        "product",
+        "shot-list",
+        "typography"
+      ],
+      "signals": {
+        "en": [
+          "commercial",
+          "high",
+          "luxury",
+          "end",
+          "skincare",
+          "product",
+          "lifestyle",
+          "lipstick"
+        ],
+        "zh": [
+          "广告",
+          "商业",
+          "商业广告",
+          "护肤",
+          "广告视频",
+          "护肤广告",
+          "生活方式",
+          "写实风格",
+          "广告片",
+          "品牌",
+          "投放"
+        ],
+        "corpusDocs": 27,
+        "manualAdded": 3
+      },
+      "gates": [],
+      "softGates": [
+        "typography"
+      ],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [],
+      "corpusCount": 27,
+      "examples": [
+        {
+          "slug": "juliaevee-seedance-ai-ae713e2e2dbc",
+          "title": "宝石蝎幻化为高跟鞋",
+          "creator": "@juliaevee",
+          "sourceUrl": "https://x.com/juliaevee/status/2092783528887083290",
+          "heat": 95,
+          "stability": 0
+        },
+        {
+          "slug": "classic-mustang-golden-hour-drive",
+          "title": "Classic Mustang Golden Hour Drive",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2085277106960007654",
+          "heat": 81,
+          "stability": 81
+        },
+        {
+          "slug": "shamiweb3-seedance-ai-5620b354e47d",
+          "title": "加州落日海滨香水广告",
+          "creator": "@ShamiWeb3",
+          "sourceUrl": "https://x.com/ShamiWeb3/status/2093133619883913232",
+          "heat": 80,
+          "stability": 80
+        },
+        {
+          "slug": "case-e53b614b0f42",
+          "title": "阿马尔菲海岸奢华珠宝广告",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2080973878705434901",
+          "heat": 79,
+          "stability": 83
+        }
+      ]
+    },
+    "dialogue-performance-beats": {
+      "id": "dialogue-performance-beats",
+      "category": "narrative",
+      "title": {
+        "en": "Dialogue and performance beats",
+        "zh": "对白与表演节拍",
+        "ja": "対話と演技のビート"
+      },
+      "description": {
+        "en": "Declare the spoken language, tag the speaker, write the reaction as a causal chain rather than a list of expressions, and close each beat with an explicit end state.",
+        "zh": "声明对白语种、标出说话人、把反应写成因果链而不是表情清单，每一拍以一个明确的结束状态收尾。"
+      },
+      "useWhen": {
+        "en": "Whenever a line has to be heard rather than implied. 78 of 207 cases carry quoted dialogue inline (38%), and 16 explicitly manage lip sync. Seedance 2.5 additionally supports driving lip sync from an uploaded audio track.",
+        "zh": "台词要被听见而不是被暗示的时候。207 条里 78 条把台词直接写进正文（38%），16 条显式管理口型。Seedance 2.5 还支持用上传的音轨驱动口型。"
+      },
+      "tags": [
+        "dialogue",
+        "lip-sync",
+        "performance",
+        "seedance-2-5"
+      ],
+      "signals": {
+        "en": [
+          "dialogue",
+          "continuous",
+          "breakup"
+        ],
+        "zh": [
+          "对话",
+          "分手",
+          "连续",
+          "示词",
+          "提示",
+          "台词",
+          "对白",
+          "口型",
+          "争吵"
+        ],
+        "corpusDocs": 8,
+        "manualAdded": 4
+      },
+      "gates": [
+        "lipSync"
+      ],
+      "softGates": [
+        "newerTierFeatures"
+      ],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [],
+      "corpusCount": 8,
+      "examples": [
+        {
+          "slug": "noorlewisx-seedance-ai-b2d98861daf9",
+          "title": "Seedance 十五秒连续对白健身房 vlog",
+          "creator": "@noorlewisx",
+          "sourceUrl": "https://x.com/noorlewisx/status/2089573549044568375",
+          "heat": 71,
+          "stability": 81
+        },
+        {
+          "slug": "youmind-surprise-visit-romance-trailer",
+          "title": "《惊喜探访》浪漫短片",
+          "creator": "@Caden_Flux",
+          "sourceUrl": "https://x.com/Caden_Flux/status/2079874069869289682",
+          "heat": 71,
+          "stability": 70
+        },
+        {
+          "slug": "case-1f8136a9893a",
+          "title": "富有情感的日语对话动画",
+          "creator": "@sakisuta_",
+          "sourceUrl": "https://x.com/sakisuta_/status/2088559545174175836",
+          "heat": 68,
+          "stability": 71
+        },
+        {
+          "slug": "seedance-3b9beb9a46d4",
+          "title": "Seedance 电影级分手表演提示词",
+          "creator": "@liyue_ai",
+          "sourceUrl": "https://x.com/liyue_ai/status/2090378405288300626",
+          "heat": 32,
+          "stability": 0
+        }
+      ]
+    },
+    "cinematic-narrative-short": {
+      "id": "cinematic-narrative-short",
+      "category": "narrative",
+      "title": {
+        "en": "Cinematic narrative short",
+        "zh": "电影级叙事短片",
+        "ja": "シネマティック短編"
+      },
+      "description": {
+        "en": "Multi-act storytelling in 15 to 60 seconds. Titled acts, a character card ahead of the acts, and a reveal written as a concrete image rather than as a promise of surprise.",
+        "zh": "15 到 60 秒的多幕叙事。每幕带标题，角色卡写在幕之前，反转写成具体画面而不是一句会让人震惊。"
+      },
+      "useWhen": {
+        "en": "Trailers, mini-dramas, disaster set pieces, sci-fi mysteries and romance shorts — anything where the viewer should follow a plot rather than admire a look.",
+        "zh": "预告片、迷你剧、灾难段落、科幻悬念、爱情短片——观众要跟剧情而不是看质感的场合。"
+      },
+      "tags": [
+        "narrative",
+        "multi-act",
+        "shot-list",
+        "character-consistency"
+      ],
+      "signals": {
+        "en": [
+          "korean",
+          "romance",
+          "through",
+          "thirty",
+          "woman",
+          "city",
+          "infected",
+          "banana"
+        ],
+        "zh": [
+          "雨夜",
+          "校园",
+          "夜咖啡馆",
+          "雨夜咖啡",
+          "电影感",
+          "背叛",
+          "韩国",
+          "机器",
+          "预告片",
+          "迷你剧",
+          "剧情",
+          "爱情"
+        ],
+        "corpusDocs": 30,
+        "manualAdded": 4
+      },
+      "gates": [],
+      "softGates": [],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "character-reference-lock"
+      ],
+      "corpusCount": 30,
+      "examples": [
+        {
+          "slug": "seedance-create-a-30-second-1080p-ultra-realistic-emotional-live-action-scene-about-a-y-8c4cbeb0026b",
+          "title": "雨夜咖啡馆撞见恋人背叛",
+          "creator": "@AIwithSynthia",
+          "sourceUrl": "https://x.com/AIwithSynthia/status/2096439253970395531",
+          "heat": 95,
+          "stability": 0
+        },
+        {
+          "slug": "just-sharon7-seedance-ai-9c64e481a51d",
+          "title": "Seedance 灾难现场拍还是跑：第一视角短片",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2089578815219785888",
+          "heat": 88,
+          "stability": 79
+        },
+        {
+          "slug": "korean-fantasy-romance-drama",
+          "title": "Korean Fantasy Romance Drama",
+          "creator": "@JuliaClarky",
+          "sourceUrl": "https://x.com/JuliaClarky/status/2079586851862835248",
+          "heat": 87,
+          "stability": 74
+        },
+        {
+          "slug": "caden-flux-seedance-ai-8ffb5f062951",
+          "title": "Nano Banana + Seedance 2.5 六十秒高中初恋微电影",
+          "creator": "@Caden_Flux",
+          "sourceUrl": "https://x.com/Caden_Flux/status/2089154775829074074",
+          "heat": 86,
+          "stability": 75
+        }
+      ]
+    },
+    "anime-style-lock": {
+      "id": "anime-style-lock",
+      "category": "stylized",
+      "title": {
+        "en": "Anime and stylized style lock",
+        "zh": "动漫与风格化画风固定",
+        "ja": "アニメと様式化の画風固定"
+      },
+      "description": {
+        "en": "Specify the drawing style as measurable parameters, then attach an exclusion list of the neighbouring styles it must not fall into. Without the exclusion list, anime collapses into a generic 3D face.",
+        "zh": "把画风写成可测量参数，再附一份相邻画风的排除清单。没有排除清单，动漫会塌成通用 3D 脸。"
+      },
+      "useWhen": {
+        "en": "Cel-look action, Ghibli-flavoured slice of life, 3D toon RPG battles, 2D hand-drawn cooking. Roughly a quarter of the corpus is stylized animation of some kind.",
+        "zh": "赛璐珞动作戏、吉卜力味日常、3D 卡通 RPG 战斗、2D 手绘烹饪。案例库里大约四分之一是各类风格化动画。"
+      },
+      "tags": [
+        "anime",
+        "style-lock",
+        "negative-prompt",
+        "character-consistency"
+      ],
+      "signals": {
+        "en": [
+          "anime",
+          "animation",
+          "cooking",
+          "ghibli",
+          "animated",
+          "japanese",
+          "forest",
+          "dimensional"
+        ],
+        "zh": [
+          "动画",
+          "动漫",
+          "吉卜力",
+          "烹饪",
+          "吉卜力风",
+          "森林",
+          "卜力风格",
+          "风格森林",
+          "赛璐珞",
+          "日漫",
+          "番剧",
+          "手绘"
+        ],
+        "corpusDocs": 25,
+        "manualAdded": 4
+      },
+      "gates": [],
+      "softGates": [],
+      "dialect": [
+        "negativePrompt"
+      ],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "character-reference-lock"
+      ],
+      "corpusCount": 25,
+      "examples": [
+        {
+          "slug": "2d-38a41133eab1",
+          "title": "手绘 2D 日本料理动画",
+          "creator": "@riotboy2024",
+          "sourceUrl": "https://x.com/riotboy2024/status/2092217560788000816",
+          "heat": 91,
+          "stability": 56
+        },
+        {
+          "slug": "lianaalane-seedance-ai-d70d42733c55",
+          "title": "Seedance 双角色 2D 动漫：小风筝的十四秒冒险",
+          "creator": "@Lianaalane",
+          "sourceUrl": "https://x.com/Lianaalane/status/2089563357074559014",
+          "heat": 89,
+          "stability": 90
+        },
+        {
+          "slug": "sairah-0-seedance-ai-19e5d269c3e0",
+          "title": "GPT Image 2 + Seedance 真人实拍混二维手绘动画",
+          "creator": "@Sairah_0",
+          "sourceUrl": "https://x.com/Sairah_0/status/2089556355384512991",
+          "heat": 79,
+          "stability": 85
+        },
+        {
+          "slug": "aiwithlariab-seedance-ai-801301860e89",
+          "title": "Seedance 吉卜力风治愈料理动画",
+          "creator": "@AiwithLariab",
+          "sourceUrl": "https://x.com/AiwithLariab/status/2088848553863233935",
+          "heat": 72,
+          "stability": 88
+        }
+      ]
+    },
+    "stop-motion-cadence": {
+      "id": "stop-motion-cadence",
+      "category": "stylized",
+      "title": {
+        "en": "Stop motion and stepped cadence",
+        "zh": "定格动画与步进节奏",
+        "ja": "ストップモーションとコマ撮りのリズム"
+      },
+      "description": {
+        "en": "Stop motion is a timing spec before it is a look. Pin the frame rate and the hold count, name the craft material, and ban the three things that silently smooth it away.",
+        "zh": "定格首先是时间规格，其次才是质感。写死帧率和保持帧数，指名工艺材质，再禁掉那三样会悄悄把它抹平的东西。"
+      },
+      "useWhen": {
+        "en": "Claymation, paper-cut, moving-oil-painting, collage and tabletop object animation. 24 cases in the corpus sit in this family.",
+        "zh": "黏土、剪纸、会动的油画、拼贴、台面物件动画。案例库里 24 条属于这一族。"
+      },
+      "tags": [
+        "stop-motion",
+        "material",
+        "style-lock",
+        "locked-camera",
+        "negative-prompt"
+      ],
+      "signals": {
+        "en": [
+          "motion",
+          "stop",
+          "animation"
+        ],
+        "zh": [
+          "动画",
+          "定格",
+          "定格动画",
+          "黏土",
+          "剪纸",
+          "拼贴",
+          "步进"
+        ],
+        "corpusDocs": 9,
+        "manualAdded": 3
+      },
+      "gates": [],
+      "softGates": [],
+      "dialect": [
+        "negativePrompt"
+      ],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [],
+      "corpusCount": 9,
+      "examples": [
+        {
+          "slug": "erling-haaland-525acabe78da",
+          "title": "Erling Haaland 黏土动画园艺",
+          "creator": "@noorwithwifi",
+          "sourceUrl": "https://x.com/noorwithwifi/status/2079818537137475762",
+          "heat": 88,
+          "stability": 83
+        },
+        {
+          "slug": "seedance-create-a-21-second-vertical-9-16-cinematic-stop-motion-animation-557fa2797476",
+          "title": "潮池石头人的笨拙舞蹈",
+          "creator": "@arsalannazir07",
+          "sourceUrl": "https://x.com/arsalannazir07/status/2096791786807275583",
+          "heat": 87,
+          "stability": 0
+        },
+        {
+          "slug": "mayaaicreator-seedance-ai-99e38c199ba8",
+          "title": "黏土定格迷你能多益咖啡馆",
+          "creator": "@MayaAiCreator",
+          "sourceUrl": "https://x.com/MayaAiCreator/status/2091397686104588650",
+          "heat": 31,
+          "stability": 0
+        },
+        {
+          "slug": "case-69e5879cc5a7",
+          "title": "定格动画：狼群袭击序列",
+          "creator": "@eyishazyer",
+          "sourceUrl": "https://x.com/eyishazyer/status/2078437832604123625",
+          "heat": 21,
+          "stability": 0
+        }
+      ]
+    },
+    "process-transformation-montage": {
+      "id": "process-transformation-montage",
+      "category": "commercial",
+      "title": {
+        "en": "Process and transformation montage",
+        "zh": "流程与变换蒙太奇",
+        "ja": "プロセスと変化のモンタージュ"
+      },
+      "description": {
+        "en": "Cooking steps, renovation timelapse, blueprint-to-house, miniature city assembly. The craft here is declaring what must not change, then ordering the change spatially.",
+        "zh": "烹饪步骤、改造延时、蓝图变房子、微缩城市组装。这类的手艺在于先声明什么不许变，再把变化按空间顺序排开。"
+      },
+      "useWhen": {
+        "en": "Any clip whose subject is a process rather than a person: recipes, builds, assemblies, before-and-after reveals. 35 cases in the corpus.",
+        "zh": "主角是过程而不是人的片子：菜谱、建造、组装、前后对比。案例库里 35 条。"
+      },
+      "tags": [
+        "transformation",
+        "timelapse",
+        "locked-camera",
+        "negative-prompt"
+      ],
+      "signals": {
+        "en": [
+          "transformation",
+          "timelapse",
+          "chicken",
+          "cooking",
+          "morning",
+          "luxury",
+          "retro",
+          "salon"
+        ],
+        "zh": [
+          "延时摄影",
+          "复古",
+          "烤肉",
+          "烹饪",
+          "沙龙",
+          "菜谱",
+          "建造",
+          "组装",
+          "前后对比",
+          "制作过程"
+        ],
+        "corpusDocs": 16,
+        "manualAdded": 5
+      },
+      "gates": [],
+      "softGates": [],
+      "dialect": [
+        "negativePrompt"
+      ],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [],
+      "corpusCount": 16,
+      "examples": [
+        {
+          "slug": "yesandyou-seedance-ai-2a9dc20c947d",
+          "title": "泥土中诞生的罐中小鸟",
+          "creator": "@Yesandyou_",
+          "sourceUrl": "https://x.com/Yesandyou_/status/2090075447195480403",
+          "heat": 88,
+          "stability": 0
+        },
+        {
+          "slug": "bladesmith-competition-reality-tv-video",
+          "title": "Bladesmith Competition Reality TV Video",
+          "creator": "@techhalla",
+          "sourceUrl": "https://x.com/techhalla/status/2084112771533189499",
+          "heat": 81,
+          "stability": 74
+        },
+        {
+          "slug": "aiwithjessica-seedance-ai-8abd02dc4e6a",
+          "title": "霓虹复古沙龙的彩虹染发蜕变",
+          "creator": "@AIwithJessica",
+          "sourceUrl": "https://x.com/AIwithJessica/status/2093127123687108856",
+          "heat": 77,
+          "stability": 68
+        },
+        {
+          "slug": "lianaalane-seedance-ai-c3e78794ed16",
+          "title": "空气炸锅同烹薯条与脆皮鸡腿",
+          "creator": "@Lianaalane",
+          "sourceUrl": "https://x.com/Lianaalane/status/2091392675912221176",
+          "heat": 72,
+          "stability": 0
+        }
+      ]
+    },
+    "combat-choreography": {
+      "id": "combat-choreography",
+      "category": "motion",
+      "title": {
+        "en": "Combat choreography",
+        "zh": "打斗编排",
+        "ja": "格闘のコレオグラフィ"
+      },
+      "description": {
+        "en": "Fights read as real when the prompt specifies biomechanics, contact points and an attack chain. Adjectives like epic produce two people swinging at air.",
+        "zh": "打斗要成立，靠的是生物力学、接触点和连招链。写 epic fight 只会得到两个人互相挥空。"
+      },
+      "useWhen": {
+        "en": "Martial arts, swordplay, street fights, superhero traversal and stunt sequences. 40 cases in the corpus, split fairly evenly between live-action and anime treatments.",
+        "zh": "武术、剑戟、街头格斗、超能力位移和特技段落。案例库里 40 条，真人和动漫处理大致对半。"
+      },
+      "tags": [
+        "combat",
+        "physics",
+        "choreography",
+        "timeline"
+      ],
+      "signals": {
+        "en": [
+          "action",
+          "girl",
+          "battles",
+          "haired",
+          "night",
+          "warrior",
+          "combat",
+          "fight"
+        ],
+        "zh": [
+          "少女",
+          "激战",
+          "动作",
+          "超能",
+          "觉醒",
+          "能力",
+          "超能力",
+          "发少女",
+          "武术",
+          "剑戟",
+          "格斗",
+          "招式",
+          "打戏"
+        ],
+        "corpusDocs": 40,
+        "manualAdded": 5
+      },
+      "gates": [],
+      "softGates": [
+        "physicsCoherence"
+      ],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "timeline-shot-script"
+      ],
+      "corpusCount": 40,
+      "examples": [
+        {
+          "slug": "aiwithelisia-seedance-ai-b204cdfb3dac",
+          "title": "金发少女在高中走廊释放超能力",
+          "creator": "@AiwithElisia",
+          "sourceUrl": "https://x.com/AiwithElisia/status/2092119695201837059",
+          "heat": 94,
+          "stability": 82
+        },
+        {
+          "slug": "doctorwasif-seedance-ai-8a78efcb37f9",
+          "title": "静电觉醒少女的体育馆反击",
+          "creator": "@doctorwasif",
+          "sourceUrl": "https://x.com/doctorwasif/status/2091388398153994395",
+          "heat": 83,
+          "stability": 80
+        },
+        {
+          "slug": "just-sharon7-seedance-ai-8085c03efbb0",
+          "title": "Seedance 2.5 同人对打：Sharon 大战 Sharon",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2088878042034868640",
+          "heat": 82,
+          "stability": 0
+        },
+        {
+          "slug": "yourplugai-seedance-ai-17a1f9de8843",
+          "title": "雪中神社的浪人与纸鹤决斗",
+          "creator": "@yourPlugAI",
+          "sourceUrl": "https://x.com/yourPlugAI/status/2092269036167934445",
+          "heat": 78,
+          "stability": 82
+        }
+      ]
+    },
+    "music-beat-sync-mv": {
+      "id": "music-beat-sync-mv",
+      "category": "motion",
+      "title": {
+        "en": "Beat-synced music video",
+        "zh": "音乐卡点 MV",
+        "ja": "ビート同期ミュージックビデオ"
+      },
+      "description": {
+        "en": "Derive beat anchors from BPM, pin every cut, hair flip and formation change to a real downbeat, and constrain the backup dancers so they never steal the visual centre.",
+        "zh": "从 BPM 推出节拍锚点，把每一次剪辑、甩发和队形变化钉在真实重拍上，再把伴舞约束住，别让他们抢走视觉中心。"
+      },
+      "useWhen": {
+        "en": "K-pop MVs, dance covers, beat-cut fitness edits and club performance clips. Use the audio-anchored variant only on Seedance 2.5, which accepts an audio track as an input modality.",
+        "zh": "K-pop MV、翻跳、卡点健身剪辑、俱乐部演出片段。带音频锚点的写法只在 Seedance 2.5 上用，它接受音轨作为输入模态。"
+      },
+      "tags": [
+        "music-sync",
+        "choreography",
+        "audio-input",
+        "lip-sync",
+        "typography",
+        "seedance-2-5"
+      ],
+      "signals": {
+        "en": [
+          "pop",
+          "performance",
+          "dance",
+          "music",
+          "stage",
+          "girl"
+        ],
+        "zh": [
+          "音乐视频",
+          "分镜",
+          "卡点",
+          "MV",
+          "翻跳",
+          "副歌",
+          "舞蹈"
+        ],
+        "corpusDocs": 12,
+        "manualAdded": 5
+      },
+      "gates": [
+        "audioDriven",
+        "lipSync"
+      ],
+      "softGates": [
+        "typography",
+        "newerTierFeatures"
+      ],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [],
+      "corpusCount": 12,
+      "examples": [
+        {
+          "slug": "seedance-25-kpop-mv-dual-idol",
+          "title": "双人 K-pop MV 逐镜分镜",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2083422886686031982",
+          "heat": 99,
+          "stability": 74
+        },
+        {
+          "slug": "seedance-25-kpop-mv-zero-to-pop",
+          "title": "单人 K-POP MV · Y2K 糖果世界逐秒分镜",
+          "creator": "@aiwarts",
+          "sourceUrl": "https://x.com/aiwarts/status/2085736621685764503",
+          "heat": 86,
+          "stability": 48
+        },
+        {
+          "slug": "cyberpunk-holographic-dance-performance",
+          "title": "Cyberpunk Holographic Dance Performance",
+          "creator": "@Aqsahere_",
+          "sourceUrl": "https://x.com/Aqsahere_/status/2087386090315616601",
+          "heat": 85,
+          "stability": 80
+        },
+        {
+          "slug": "vibrant-k-pop-stage-performance",
+          "title": "Vibrant K-pop Stage Performance",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2087744765341159503",
+          "heat": 83,
+          "stability": 89
+        }
+      ]
+    },
+    "time-freeze-rewind": {
+      "id": "time-freeze-rewind",
+      "category": "motion",
+      "title": {
+        "en": "Time freeze and rewind set piece",
+        "zh": "时间冻结与倒放奇观",
+        "ja": "時間停止と巻き戻しの見せ場"
+      },
+      "description": {
+        "en": "A five-beat skeleton — normal, collision, freeze at the peak, orbit, precise rewind — with exactly one character exempt from the freeze. The corpus contains the same author reusing this skeleton with a different physical material, which is direct evidence that it transfers.",
+        "zh": "五拍骨架——日常、碰撞、峰值锁死、环绕、精确倒放——只留一个人不受冻结影响。案例库里同一作者换了物理材质把这套骨架重跑一遍，这就是它可迁移的直接证据。"
+      },
+      "useWhen": {
+        "en": "Short high-engagement set pieces built on a physics spectacle rather than a plot. The diner version is the single highest-engagement case in the whole corpus.",
+        "zh": "靠物理奇观而不是剧情撑起来的高互动短片。餐厅那版是整个案例库里互动最高的一条。"
+      },
+      "tags": [
+        "vfx",
+        "physics",
+        "timeline",
+        "seedance-2-5"
+      ],
+      "signals": {
+        "en": [
+          "time",
+          "freeze",
+          "frozen",
+          "diner"
+        ],
+        "zh": [
+          "倒放",
+          "冻结",
+          "时间",
+          "时间冻结",
+          "暂停",
+          "奇观"
+        ],
+        "corpusDocs": 5,
+        "manualAdded": 3
+      },
+      "gates": [],
+      "softGates": [
+        "physicsCoherence",
+        "newerTierFeatures"
+      ],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "timeline-shot-script"
+      ],
+      "corpusCount": 5,
+      "examples": [
+        {
+          "slug": "seedance-25-diner-frozen-time-rewind",
+          "title": "复古餐厅时间冻结与倒放",
+          "creator": "@techhalla",
+          "sourceUrl": "https://x.com/techhalla/status/2083389002552664385",
+          "heat": 100,
+          "stability": 64
+        },
+        {
+          "slug": "youmind-rollercoaster-wig-time-freeze",
+          "title": "过山车假发闹剧：冻结与倒放的第二次演练",
+          "creator": "@techhalla",
+          "sourceUrl": "https://x.com/techhalla/status/2083585132917579834",
+          "heat": 84,
+          "stability": 74
+        },
+        {
+          "slug": "90s-diner-time-freeze-effect",
+          "title": "90s Diner Time Freeze Effect",
+          "creator": "@techhalla",
+          "sourceUrl": "https://x.com/techhalla/status/2085200942060691807",
+          "heat": 64,
+          "stability": 0
+        },
+        {
+          "slug": "avelyrahnai-seedance-ai-a392e2711b0d",
+          "title": "纽约街头咖啡跌落慢镜头",
+          "creator": "@AvelyrahnAI",
+          "sourceUrl": "https://x.com/AvelyrahnAI/status/2094420859960045616",
+          "heat": 51,
+          "stability": 0
+        }
+      ]
+    },
+    "storyboard-grid-to-video": {
+      "id": "storyboard-grid-to-video",
+      "category": "foundation",
+      "title": {
+        "en": "Storyboard grid to video",
+        "zh": "分镜网格转视频",
+        "ja": "絵コンテグリッドから動画へ"
+      },
+      "description": {
+        "en": "Two stages: first a single-page sheet of numbered panels from an image model, then that sheet fed to Seedance as the reference. The sheet owns order, framing and timing, and the video prompt only has to connect the panels.",
+        "zh": "分两步走：先用图像模型出一张带编号格子的单页分镜图，再把这张图当参考喂给 Seedance。顺序、构图和时长由分镜图定死，视频提示语只负责把格子连起来。"
+      },
+      "useWhen": {
+        "en": "Multi-shot pieces where you want to see and fix the shot order before spending a generation: recipe sequences, action previs, product commercials, day-in-the-life montages.",
+        "zh": "想在出片之前先看见并改定镜头顺序的多镜头片子：制作流程、动作预览、产品广告、一天生活的串场蒙太奇。"
+      },
+      "tags": [
+        "shot-list",
+        "reference-lock",
+        "timeline",
+        "character-consistency"
+      ],
+      "signals": {
+        "en": [
+          "animation",
+          "storyboard"
+        ],
+        "zh": [
+          "动画",
+          "分镜格",
+          "九宫格",
+          "故事板",
+          "分镜图",
+          "镜头顺序"
+        ],
+        "corpusDocs": 9,
+        "manualAdded": 5
+      },
+      "gates": [
+        "refImage"
+      ],
+      "softGates": [],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "character-reference-lock",
+        "timeline-shot-script"
+      ],
+      "corpusCount": 9,
+      "examples": [
+        {
+          "slug": "real-case-06-aimikoda",
+          "title": "梅林元素功夫表演",
+          "creator": "@aimikoda",
+          "sourceUrl": "https://x.com/aimikoda/status/2054460932068200517",
+          "heat": 89,
+          "stability": 86
+        },
+        {
+          "slug": "real-case-07-techiebysa",
+          "title": "法式牛角包制作过程",
+          "creator": "@TechieBySA",
+          "sourceUrl": "https://x.com/TechieBySA/status/2053523775702925768",
+          "heat": 86,
+          "stability": 85
+        },
+        {
+          "slug": "seedance-create-a-single-page-premium-hollywood-disaster-action-storyboard-in-16-9-wide-7cc2f22eaa0c",
+          "title": "吉隆坡崩塌都市极限逃生",
+          "creator": "@Xaroon_x",
+          "sourceUrl": "https://x.com/Xaroon_x/status/2097267405399396457",
+          "heat": 79,
+          "stability": 0
+        },
+        {
+          "slug": "apartment-arrival-storyboard-animation",
+          "title": "Apartment Arrival Storyboard Animation",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2083912532692001128",
+          "heat": 68,
+          "stability": 0
+        }
+      ]
+    },
+    "retro-found-footage": {
+      "id": "retro-found-footage",
+      "category": "realism",
+      "title": {
+        "en": "Early-2000s DV home video",
+        "zh": "早年 DV 家庭录像",
+        "ja": "2000年代初頭のDVホームビデオ"
+      },
+      "description": {
+        "en": "The period feel comes from camera defects and one tiny everyday incident. Write the camcorder's autofocus hunting, exposure shifts and handheld shake as an explicit list, keep the story small, and the clip reads as a real old tape.",
+        "zh": "年代感靠机器缺陷和一件生活小事撑起来。把 DV 的对焦拉风箱、曝光跳动、手抖写成明确清单，剧情放小，整条就像一盘真的旧带子。"
+      },
+      "useWhen": {
+        "en": "Home videos, travel diaries, MiniDV couple clips, neighbourhood walks — any everyday footage that should look recorded years ago on consumer gear.",
+        "zh": "家庭录像、旅拍日志、MiniDV 情侣片、街区漫步，任何想看起来像多年前用家用机器拍下来的生活片段。"
+      },
+      "tags": [
+        "camera-imperfection",
+        "handheld",
+        "ugc",
+        "timeline"
+      ],
+      "signals": {
+        "en": [
+          "summer",
+          "walk",
+          "evening",
+          "through",
+          "korean",
+          "early",
+          "seoul",
+          "home"
+        ],
+        "zh": [
+          "首尔",
+          "首尔夏",
+          "首尔夏夜",
+          "夏日",
+          "韩国",
+          "街头",
+          "漫步",
+          "情侣",
+          "家庭录像",
+          "录像带",
+          "MiniDV",
+          "VHS",
+          "伪纪录片"
+        ],
+        "corpusDocs": 17,
+        "manualAdded": 5
+      },
+      "gates": [],
+      "softGates": [],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "timeline-shot-script"
+      ],
+      "corpusCount": 17,
+      "examples": [
+        {
+          "slug": "seedance-prompt-create-a-30-second-1080p-ultra-realistic-personal-home-video-showing-a-f4036ce777fe",
+          "title": "首尔夏日街巷里的悠闲午后",
+          "creator": "@AIwithkhan",
+          "sourceUrl": "https://x.com/AIwithkhan/status/2096095608268280198",
+          "heat": 99,
+          "stability": 0
+        },
+        {
+          "slug": "vlog-c8171f712492",
+          "title": "首尔夏夜 Vlog",
+          "creator": "@AIwithkhan",
+          "sourceUrl": "https://x.com/AIwithkhan/status/2092971211169100048",
+          "heat": 99,
+          "stability": 76
+        },
+        {
+          "slug": "seedance-use-the-uploaded-reference-image-as-the-exact-character-reference-214303ebc4cf",
+          "title": "韩系情侣的街头约会日记",
+          "creator": "@AIwithkhan",
+          "sourceUrl": "https://x.com/AIwithkhan/status/2094997895187673489",
+          "heat": 92,
+          "stability": 0
+        },
+        {
+          "slug": "seedance-it-s-the-little-moments-that-make-ai-feel-this-real-57c748edf467",
+          "title": "首尔夏夜的树叶小插曲",
+          "creator": "@SimplyAnnisa",
+          "sourceUrl": "https://x.com/SimplyAnnisa/status/2096931238460178592",
+          "heat": 87,
+          "stability": 0
+        }
+      ]
+    },
+    "travel-city-walk": {
+      "id": "travel-city-walk",
+      "category": "narrative",
+      "title": {
+        "en": "Cinematic travel vlog montage",
+        "zh": "电影感旅行漫游",
+        "ja": "シネマティック旅行モンタージュ"
+      },
+      "description": {
+        "en": "One traveller moves through a place scene by scene, each scene carrying its own timecode, its own location and one short line. The polish is bought with film grain and golden-hour light.",
+        "zh": "一个人按场次走过一个地方，每场有自己的时间码、自己的地点和一句短台词。质感靠胶片颗粒和黄金时刻的光撑起来，手机瑕疵那套在这里用不上。"
+      },
+      "useWhen": {
+        "en": "Destination diaries, city walks, hikes, camping trips and departure sequences where one traveller has to stay the same person across six or eight locations.",
+        "zh": "目的地日记、城市漫游、徒步、露营、出发启程这类片子：一个旅行者要在六到八个地点里保持是同一个人。"
+      },
+      "tags": [
+        "timeline",
+        "character-consistency",
+        "vlog",
+        "lip-sync"
+      ],
+      "signals": {
+        "en": [
+          "woman",
+          "young",
+          "mountain",
+          "journey",
+          "japan",
+          "rainy",
+          "tour"
+        ],
+        "zh": [
+          "少女",
+          "漫游",
+          "日本",
+          "夏日",
+          "之旅",
+          "旅拍",
+          "城市漫游",
+          "目的地",
+          "徒步",
+          "露营"
+        ],
+        "corpusDocs": 12,
+        "manualAdded": 5
+      },
+      "gates": [
+        "lipSync"
+      ],
+      "softGates": [],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "timeline-shot-script",
+        "character-reference-lock"
+      ],
+      "corpusCount": 12,
+      "examples": [
+        {
+          "slug": "seedance-a-cinematic-30-second-tropical-travel-vlog-montage-featuring-a-beautiful-20-yea-6af38a792806",
+          "title": "巴厘岛梦幻夏日旅行日记",
+          "creator": "@eshal__ai",
+          "sourceUrl": "https://x.com/eshal__ai/status/2096840505355370629",
+          "heat": 88,
+          "stability": 0
+        },
+        {
+          "slug": "noorlewisx-seedance-ai-3a8b37309451",
+          "title": "地中海山景别墅内外巡游",
+          "creator": "@noorlewisx",
+          "sourceUrl": "https://x.com/noorlewisx/status/2092109145055150431",
+          "heat": 76,
+          "stability": 86
+        },
+        {
+          "slug": "noorlewisx-seedance-ai-f8e8235cd94a",
+          "title": "东京夜空直升机之旅",
+          "creator": "@noorlewisx",
+          "sourceUrl": "https://x.com/noorlewisx/status/2093567063357088065",
+          "heat": 72,
+          "stability": 86
+        },
+        {
+          "slug": "nawalsehar-seedance-ai-97aa872cb79d",
+          "title": "Seedance 2.5 山林徒步电影感跟拍短片",
+          "creator": "@nawalsehar",
+          "sourceUrl": "https://x.com/nawalsehar/status/2089219802598658291",
+          "heat": 71,
+          "stability": 84
+        }
+      ]
+    },
+    "pet-animal": {
+      "id": "pet-animal",
+      "category": "realism",
+      "title": {
+        "en": "Pets and animals as the lead",
+        "zh": "宠物动物当主角",
+        "ja": "ペット・動物が主役"
+      },
+      "description": {
+        "en": "The animal is the lead and a phone is the only camera. Lock the count to exactly one, keep the animal behaving like an animal, and let the payoff come from it closing in on the lens.",
+        "zh": "动物是真正的主角，镜头就交给一台手机。数量锁死成一只，动物只做动物做的事，包袱留给它一步步逼近镜头。"
+      },
+      "useWhen": {
+        "en": "Selfie and vlog clips where a cat, dog or wild animal hijacks the frame, plus photoreal wildlife comedy built on one real animal behaviour.",
+        "zh": "猫狗或野生动物抢镜的自拍、vlog 片段，以及靠一个真实动物行为撑起来的写实喜剧。"
+      },
+      "tags": [
+        "pov",
+        "handheld",
+        "one-take",
+        "camera-imperfection"
+      ],
+      "signals": {
+        "en": [
+          "kitten",
+          "filmed",
+          "selfie",
+          "steals",
+          "asmr",
+          "day",
+          "dog"
+        ],
+        "zh": [
+          "自拍",
+          "小猫",
+          "宠物",
+          "猫",
+          "狗",
+          "动物",
+          "萌宠",
+          "抢镜"
+        ],
+        "corpusDocs": 13,
+        "manualAdded": 6
+      },
+      "gates": [],
+      "softGates": [],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [],
+      "corpusCount": 13,
+      "examples": [
+        {
+          "slug": "mrdasonx-seedance-ai-ccaa50150259",
+          "title": "狐狸在森林溪流边自拍漫游",
+          "creator": "@MrDasOnX",
+          "sourceUrl": "https://x.com/MrDasOnX/status/2089969922617266257",
+          "heat": 92,
+          "stability": 75
+        },
+        {
+          "slug": "zarairahh-seedance-ai-f89372941867",
+          "title": "猫咪自拍记录温馨的一天",
+          "creator": "@ZaraIrahh",
+          "sourceUrl": "https://x.com/ZaraIrahh/status/2091385137133219971",
+          "heat": 89,
+          "stability": 70
+        },
+        {
+          "slug": "cats-chasing-via-red-mini-motorcycle",
+          "title": "Cats Chasing via Red Mini Motorcycle",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2084901309988425731",
+          "heat": 84,
+          "stability": 89
+        },
+        {
+          "slug": "underwater-animal-orchestra",
+          "title": "Underwater Animal Orchestra",
+          "creator": "@thisismariaa25",
+          "sourceUrl": "https://x.com/thisismariaa25/status/2087112692809060493",
+          "heat": 80,
+          "stability": 80
+        }
+      ]
+    },
+    "car-vehicle": {
+      "id": "car-vehicle",
+      "category": "motion",
+      "title": {
+        "en": "Cars and vehicles at speed",
+        "zh": "汽车与载具速度片",
+        "ja": "クルマと乗り物のスピード映像"
+      },
+      "description": {
+        "en": "The machine has to stay one machine while the camera does all the work. Lock the vehicle part by part, then fill the runtime with a numbered cut list that moves the camera every second.",
+        "zh": "机器从头到尾得是同一台机器，出力的是镜头。先把车按部件锁住，再用编号分镜表把时长排满，每一秒换一个机位。"
+      },
+      "useWhen": {
+        "en": "Motorcycle and car commercials, mountain-road speed runs, chase and stunt sequences, and vehicle transformation clips.",
+        "zh": "摩托和汽车广告、山路疾驰、追逐与特技段落，还有车辆变形类的片子。"
+      },
+      "tags": [
+        "shot-list",
+        "physics",
+        "negative-prompt",
+        "commercial"
+      ],
+      "signals": {
+        "en": [
+          "motorcycle",
+          "through",
+          "racing"
+        ],
+        "zh": [
+          "公路",
+          "汽车",
+          "摩托",
+          "赛车",
+          "载具",
+          "跑车",
+          "追逐",
+          "特技"
+        ],
+        "corpusDocs": 10,
+        "manualAdded": 7
+      },
+      "gates": [],
+      "softGates": [
+        "physicsCoherence"
+      ],
+      "dialect": [
+        "negativePrompt"
+      ],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [],
+      "corpusCount": 10,
+      "examples": [
+        {
+          "slug": "ruzainameer-seedance-ai-e6073ec318f1",
+          "title": "Seedance 2.5 1080P 三十秒超写实奇幻大片",
+          "creator": "@RuzainaMeer",
+          "sourceUrl": "https://x.com/RuzainaMeer/status/2089595902818398461",
+          "heat": 83,
+          "stability": 76
+        },
+        {
+          "slug": "just-sharon7-seedance-ai-f5af358d1f88",
+          "title": "摩托车疾驰山间公路",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2091546827212636576",
+          "heat": 79,
+          "stability": 0
+        },
+        {
+          "slug": "zyrellix-seedance-ai-b7efa04a2c13",
+          "title": "末日沙漠战车空中激战",
+          "creator": "@Zyrellix",
+          "sourceUrl": "https://x.com/Zyrellix/status/2092438692820295703",
+          "heat": 73,
+          "stability": 81
+        },
+        {
+          "slug": "missdelulu9-seedance-ai-02009f1f7daf",
+          "title": "第一视角凌空组装黑色兰博基尼",
+          "creator": "@MissDelulu9",
+          "sourceUrl": "https://x.com/MissDelulu9/status/2091423578197737772",
+          "heat": 51,
+          "stability": 0
+        }
+      ]
+    },
+    "fashion-lookbook": {
+      "id": "fashion-lookbook",
+      "category": "commercial",
+      "title": {
+        "en": "Fashion lookbook and portrait film",
+        "zh": "时尚 lookbook 与人像写真片",
+        "ja": "ファッション・ポートレート映像"
+      },
+      "description": {
+        "en": "One person, one look, a handful of places. A head-to-toe appearance lock carries the whole clip, and each scene gets one location, one gesture and one kind of light.",
+        "zh": "一个人、一身造型、几个地点。一段从头写到脚的外观锁撑起整条片子，每个场景只给一个地点、一个动作、一种光。"
+      },
+      "useWhen": {
+        "en": "Fashion campaigns, street-style lookbooks, outfit-change reels, and portrait or beauty pieces where the payload is how someone looks moving through a few settings.",
+        "zh": "时尚广告大片、街拍 lookbook、换装短片，以及人像和美妆类写真片，有效载荷就是一个人在几个场景里的样子。"
+      },
+      "tags": [
+        "character-consistency",
+        "shot-list",
+        "product"
+      ],
+      "signals": {
+        "en": [
+          "fashion",
+          "girl"
+        ],
+        "zh": [
+          "女孩",
+          "电影感",
+          "发女孩",
+          "大片",
+          "换装",
+          "时尚",
+          "穿搭",
+          "街拍",
+          "写真",
+          "人像",
+          "lookbook"
+        ],
+        "corpusDocs": 13,
+        "manualAdded": 5
+      },
+      "gates": [],
+      "softGates": [],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "character-reference-lock"
+      ],
+      "corpusCount": 13,
+      "examples": [
+        {
+          "slug": "youmind-paris-fashion-campaign-streetwear",
+          "title": "电影感巴黎时尚广告大片：五镜头街拍",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2083793251132186998",
+          "heat": 90,
+          "stability": 82
+        },
+        {
+          "slug": "seedance-cinematic-fashion-film-still-low-angle-shot-of-a-beautiful-young-woman-with-wa-fac7693b54a0",
+          "title": "金色雪山上的白衣滑雪女郎",
+          "creator": "@noorlewisx",
+          "sourceUrl": "https://x.com/noorlewisx/status/2096826123330138410",
+          "heat": 82,
+          "stability": 0
+        },
+        {
+          "slug": "aiwithnatalia-seedance-ai-12c56e79550f",
+          "title": "东京街头粉色手袋时尚大片",
+          "creator": "@AIwithNatalia",
+          "sourceUrl": "https://x.com/AIwithNatalia/status/2094277759547875413",
+          "heat": 80,
+          "stability": 0
+        },
+        {
+          "slug": "noorlewisx-seedance-ai-4b6f8c8c977a",
+          "title": "Seedance 细条纹西装的职场女性气场短片",
+          "creator": "@noorlewisx",
+          "sourceUrl": "https://x.com/noorlewisx/status/2089217062040453196",
+          "heat": 77,
+          "stability": 86
+        }
+      ]
+    },
+    "meme-comedy": {
+      "id": "meme-comedy",
+      "category": "narrative",
+      "title": {
+        "en": "Twist-ending comedy skit",
+        "zh": "反转结尾搞笑短片",
+        "ja": "どんでん返しコメディ"
+      },
+      "description": {
+        "en": "A short skit where every beat is laid down to serve one punchline. The joke has to land on something visible, and the absurdity only works when the camera and the physics stay dead serious.",
+        "zh": "所有节拍都为一个笑点服务的短剧。笑点得落在一个看得见的东西上，荒诞设定要配一本正经的相机和物理才立得住。"
+      },
+      "useWhen": {
+        "en": "Meme clips, prank and revenge skits, absurd scale gags, family comedy — anything whose payload is one laugh at the end.",
+        "zh": "玩梗片、整蛊和复仇小剧场、荒诞比例梗、家庭喜剧，任何有效载荷就是结尾那一下笑的片子。"
+      },
+      "tags": [
+        "timeline",
+        "narrative",
+        "multi-act",
+        "dialogue"
+      ],
+      "signals": {
+        "en": [
+          "street",
+          "morning",
+          "thirty",
+          "chase",
+          "woman",
+          "plan"
+        ],
+        "zh": [
+          "街头",
+          "浴袍奶奶",
+          "女孩",
+          "十秒",
+          "逃亡",
+          "早晨",
+          "玩梗",
+          "整蛊",
+          "反转",
+          "搞笑",
+          "沙雕",
+          "复仇"
+        ],
+        "corpusDocs": 22,
+        "manualAdded": 6
+      },
+      "gates": [],
+      "softGates": [],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "timeline-shot-script"
+      ],
+      "corpusCount": 22,
+      "examples": [
+        {
+          "slug": "seedance-create-a-30-second-1080p-ultra-realistic-korean-subway-action-comedy-scene-usi-93b40e9db5b1",
+          "title": "女子破窗反将嘲笑者拉出地铁",
+          "creator": "@AIwithkhan",
+          "sourceUrl": "https://x.com/AIwithkhan/status/2097168171367338428",
+          "heat": 93,
+          "stability": 0
+        },
+        {
+          "slug": "aiwithnatalia-seedance-ai-7597faa7285f",
+          "title": "十秒自救的女巫把自己变成了鸭子",
+          "creator": "@AIwithNatalia",
+          "sourceUrl": "https://x.com/AIwithNatalia/status/2089170554725265625",
+          "heat": 89,
+          "stability": 0
+        },
+        {
+          "slug": "just-sharon7-seedance-ai-20d2026d6f58",
+          "title": "母亲抢走男孩的可丽饼座位",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2091529113425297759",
+          "heat": 86,
+          "stability": 0
+        },
+        {
+          "slug": "case-142119be6421",
+          "title": "超现实酒店泳池比例失调场景",
+          "creator": "@YourAlphaMom",
+          "sourceUrl": "https://x.com/YourAlphaMom/status/2088749172543410403",
+          "heat": 85,
+          "stability": 83
+        }
+      ]
+    },
+    "horror-suspense": {
+      "id": "horror-suspense",
+      "category": "narrative",
+      "title": {
+        "en": "Horror and suspense",
+        "zh": "恐怖悬疑短片",
+        "ja": "ホラー・サスペンス短編"
+      },
+      "description": {
+        "en": "Every shot carries its own timecode and shows one visible change on a body. The dread comes from the chain — a look, veins, a bite, the next person — and the ending seals a door without settling anything.",
+        "zh": "每一镜都带自己的时间码，身上只发生一个看得见的变化。吓人的地方在于这些变化一环扣一环：一个眼神、浮起的血管、一口咬下去、下一个人。结尾把门关上，事情不了结。"
+      },
+      "useWhen": {
+        "en": "Outbreak and possession clips, corridor chases, ritual scenes — anything where the fear comes from a body changing on a clock.",
+        "zh": "感染爆发、附身、走廊追逐、驱邪仪式，任何靠一具身体按秒变化来吓人的片子。"
+      },
+      "tags": [
+        "timeline",
+        "shot-list",
+        "reference-lock",
+        "narrative"
+      ],
+      "signals": {
+        "en": [
+          "train",
+          "outbreak",
+          "zombie",
+          "horror",
+          "korean"
+        ],
+        "zh": [
+          "列车",
+          "爆发",
+          "感染",
+          "感染爆发",
+          "车感染爆",
+          "列车感染",
+          "恐怖",
+          "丧尸",
+          "悬疑",
+          "惊悚",
+          "附身",
+          "驱邪"
+        ],
+        "corpusDocs": 11,
+        "manualAdded": 4
+      },
+      "gates": [
+        "refImage"
+      ],
+      "softGates": [],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "timeline-shot-script",
+        "character-reference-lock"
+      ],
+      "corpusCount": 11,
+      "examples": [
+        {
+          "slug": "seedance-shot-1-0-0-1-2s-image-1-face-and-outfit-matching-reference-lying-in-b6d9ef0e370e",
+          "title": "夜行卧铺列车感染爆发",
+          "creator": "@doctorwasif",
+          "sourceUrl": "https://x.com/doctorwasif/status/2095373753983369666",
+          "heat": 85,
+          "stability": 0
+        },
+        {
+          "slug": "case-3b1796c66ab4",
+          "title": "丧尸列车爆发",
+          "creator": "@doctorwasif",
+          "sourceUrl": "https://x.com/doctorwasif/status/2094285140247896553",
+          "heat": 78,
+          "stability": 64
+        },
+        {
+          "slug": "case-b529ffbdfd9a",
+          "title": "末日韩式天台恐怖片",
+          "creator": "@doctorwasif",
+          "sourceUrl": "https://x.com/doctorwasif/status/2090305873373810874",
+          "heat": 76,
+          "stability": 76
+        },
+        {
+          "slug": "doctorwasif-seedance-ai-117496b404a6",
+          "title": "列车车厢丧尸感染爆发",
+          "creator": "@doctorwasif",
+          "sourceUrl": "https://x.com/doctorwasif/status/2093550743945105687",
+          "heat": 71,
+          "stability": 68
+        }
+      ]
+    },
+    "3d-cartoon": {
+      "id": "3d-cartoon",
+      "category": "stylized",
+      "title": {
+        "en": "3D cartoon character short",
+        "zh": "3D 卡通角色短片",
+        "ja": "3Dカートゥーン短編"
+      },
+      "description": {
+        "en": "One small anthropomorphic character carries the whole film. Spell out its looks part by part, write the style as render settings you can measure, and cut the timeline so each block holds a single action goal.",
+        "zh": "一个拟人小角色撑起整条片子。外形逐项写死并全程复述，画风写成能测量的渲染项，时间轴切成一段一个动作目标。"
+      },
+      "useWhen": {
+        "en": "Pixar-flavoured animated shorts with a cute lead: animal chefs, baby dragons, clay-textured characters that still move smoothly.",
+        "zh": "皮克斯味的动画短片，主角是个可爱角色：动物厨师、幼龙、黏土质感但运动平滑的小家伙。"
+      },
+      "tags": [
+        "character-consistency",
+        "style-lock",
+        "multi-act",
+        "negative-prompt"
+      ],
+      "signals": {
+        "en": [
+          "baby",
+          "adventure",
+          "animation",
+          "animated",
+          "otter",
+          "short",
+          "blue",
+          "tiny"
+        ],
+        "zh": [
+          "动画",
+          "水獭",
+          "小水獭",
+          "巨人",
+          "黏土",
+          "三维卡通",
+          "皮克斯",
+          "动画角色",
+          "幼龙"
+        ],
+        "corpusDocs": 15,
+        "manualAdded": 4
+      },
+      "gates": [],
+      "softGates": [],
+      "dialect": [
+        "negativePrompt"
+      ],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "character-reference-lock"
+      ],
+      "corpusCount": 15,
+      "examples": [
+        {
+          "slug": "ayzalnooor24521-seedance-ai-4a336f514777",
+          "title": "Seedance 双角色 3D 卡通：小蝴蝶的十四秒",
+          "creator": "@ayzalnooor24521",
+          "sourceUrl": "https://x.com/ayzalnooor24521/status/2089559741718548578",
+          "heat": 86,
+          "stability": 86
+        },
+        {
+          "slug": "caden-flux-seedance-ai-473fedbbc75f",
+          "title": "月光池塘里的迷你青蛙大厨",
+          "creator": "@Caden_Flux",
+          "sourceUrl": "https://x.com/Caden_Flux/status/2091396961329131999",
+          "heat": 83,
+          "stability": 83
+        },
+        {
+          "slug": "seedance-made-with-seedance-2-5-71bc731fe900",
+          "title": "沙发上相拥亲吻的萌兔",
+          "creator": "@Zarnab_with_Ai",
+          "sourceUrl": "https://x.com/Zarnab_with_Ai/status/2098728793703899603",
+          "heat": 80,
+          "stability": 0
+        },
+        {
+          "slug": "im-shahid7-seedance-ai-b4d2ba40a750",
+          "title": "丈夫误把洗衣求助当浪漫邀约",
+          "creator": "@im_shahid7",
+          "sourceUrl": "https://x.com/im_shahid7/status/2091754978348339299",
+          "heat": 65,
+          "stability": 84
+        }
+      ]
+    },
+    "epic-fantasy-scifi": {
+      "id": "epic-fantasy-scifi",
+      "category": "motion",
+      "title": {
+        "en": "Epic fantasy and sci-fi spectacle",
+        "zh": "奇幻科幻大场面",
+        "ja": "壮大なファンタジー・SF大作"
+      },
+      "description": {
+        "en": "Monsters, dragons, world reveals. Each entity gets its own definition block, the shots are cut by timecode, and scale is bought with reference objects and low angles rather than words like massive.",
+        "zh": "怪兽、巨龙、世界观展示。每个实体单独给一个定义块，镜头按时间码切开，尺度感靠参照物和低机位换，靠 massive 这种词换不来。"
+      },
+      "useWhen": {
+        "en": "Kaiju attacks, dragon battles, transformation sequences, world reveals — anything whose payload is one physical spectacle at blockbuster scale.",
+        "zh": "怪兽攻城、巨龙对战、变身序列、世界观展示，任何有效载荷是一个大片级物理奇观的片子。"
+      },
+      "tags": [
+        "vfx",
+        "shot-list",
+        "reference-lock",
+        "combat"
+      ],
+      "signals": {
+        "en": [
+          "warrior",
+          "battle",
+          "giant",
+          "dragon",
+          "red",
+          "fortress",
+          "fantasy",
+          "clouds"
+        ],
+        "zh": [
+          "风暴",
+          "女武",
+          "奇幻",
+          "骑士",
+          "史诗",
+          "战士",
+          "之战",
+          "科幻",
+          "巨龙",
+          "怪兽",
+          "变身",
+          "世界观"
+        ],
+        "corpusDocs": 21,
+        "manualAdded": 5
+      },
+      "gates": [
+        "refImage"
+      ],
+      "softGates": [],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "character-reference-lock"
+      ],
+      "corpusCount": 21,
+      "examples": [
+        {
+          "slug": "seedance-create-a-30-second-ultra-cinematic-supernatural-fantasy-sequence-photorealisti-6d87ff7834d3",
+          "title": "废墟卧室中的白发女子与巨型黑猫",
+          "creator": "@Zyrellix",
+          "sourceUrl": "https://x.com/Zyrellix/status/2097594855946113177",
+          "heat": 87,
+          "stability": 0
+        },
+        {
+          "slug": "zyrellix-seedance-ai-5fa856d9472a",
+          "title": "女武士与白龙击碎熔岩天体",
+          "creator": "@Zyrellix",
+          "sourceUrl": "https://x.com/Zyrellix/status/2092121112746287527",
+          "heat": 85,
+          "stability": 81
+        },
+        {
+          "slug": "weeleey6-seedance-ai-b03a5481e168",
+          "title": "GPT Image 2 + Seedance 深海惊魂战机飞行员短片",
+          "creator": "@Weeleey6",
+          "sourceUrl": "https://x.com/Weeleey6/status/2089244905960821226",
+          "heat": 84,
+          "stability": 84
+        },
+        {
+          "slug": "zyrellix-seedance-ai-987c5819beca",
+          "title": "末日龙背跃斩巨甲战士",
+          "creator": "@Zyrellix",
+          "sourceUrl": "https://x.com/Zyrellix/status/2092828997662978051",
+          "heat": 80,
+          "stability": 80
+        }
+      ]
+    },
+    "sports-extreme": {
+      "id": "sports-extreme",
+      "category": "motion",
+      "title": {
+        "en": "Sports and extreme stunts",
+        "zh": "体育与极限运动",
+        "ja": "スポーツ・エクストリーム映像"
+      },
+      "description": {
+        "en": "The clip lives or dies on the action loop. Write every link from run-up to landing in order, name the physics you want by part, and spend the negative list on flying, hovering and teleporting.",
+        "zh": "这类片子全押在动作闭环上。从助跑到落地，每个环节按顺序写出来，要哪几项物理就点名哪几项，负面清单专门用来打掉飞行、悬浮和瞬移。"
+      },
+      "useWhen": {
+        "en": "Snowboarding, mountain biking, parkour, street basketball, water game shows and phone-shot stunt clips where a body has to obey gravity and contact.",
+        "zh": "单板滑雪、山地骑行、跑酷、街头篮球、水上闯关，以及手机实拍风格的特技片段，身体必须服从重力和接触。"
+      },
+      "tags": [
+        "physics",
+        "timeline",
+        "one-take",
+        "negative-prompt"
+      ],
+      "signals": {
+        "en": [
+          "mountain",
+          "female",
+          "water"
+        ],
+        "zh": [
+          "单板",
+          "女子",
+          "球场",
+          "水上",
+          "滑雪",
+          "山地骑行",
+          "跑酷",
+          "篮球",
+          "极限运动"
+        ],
+        "corpusDocs": 10,
+        "manualAdded": 5
+      },
+      "gates": [],
+      "softGates": [
+        "physicsCoherence"
+      ],
+      "dialect": [
+        "negativePrompt"
+      ],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "timeline-shot-script"
+      ],
+      "corpusCount": 10,
+      "examples": [
+        {
+          "slug": "seedance-269d1fc95820",
+          "title": "Seedance：不会有人认为这是真的吧？😄",
+          "creator": "@johnAGI168",
+          "sourceUrl": "https://x.com/johnAGI168/status/2095025524586193105",
+          "heat": 92,
+          "stability": 51
+        },
+        {
+          "slug": "ayzalnooor24521-seedance-ai-db77eb406bfb",
+          "title": "高山雪场女子单板腾跃",
+          "creator": "@ayzalnooor24521",
+          "sourceUrl": "https://x.com/ayzalnooor24521/status/2094243156225315270",
+          "heat": 83,
+          "stability": 79
+        },
+        {
+          "slug": "nawalsehar-seedance-ai-9cff7acb6229",
+          "title": "女子车手险胜山地自行车决赛",
+          "creator": "@nawalsehar",
+          "sourceUrl": "https://x.com/nawalsehar/status/2094294374381441152",
+          "heat": 65,
+          "stability": 76
+        },
+        {
+          "slug": "nawalsehar-seedance-ai-e50de3d2896e",
+          "title": "Seedance 单板滑雪地形公园流畅滑行短片",
+          "creator": "@nawalsehar",
+          "sourceUrl": "https://x.com/nawalsehar/status/2088854230626865490",
+          "heat": 63,
+          "stability": 73
+        }
+      ]
+    }
+  }
+}

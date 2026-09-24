@@ -1,0 +1,46 @@
+{
+  "model": "Kling",
+  "displayName": { "en": "Kling", "zh": "可灵" },
+  "aliases": ["可灵", "kling", "klingai", "快手可灵"],
+
+  "capabilities": {
+    "lipSync": null,
+    "audioDriven": null,
+    "refImage": null,
+    "refVideo": null,
+    "typography": null,
+    "physicsCoherence": null,
+    "firstLastFrame": null,
+    "newerTierFeatures": null
+  },
+
+  "limits": {
+    "maxDuration": null,
+    "aspectRatios": []
+  },
+
+  "syntax": {
+    "negativePrompt": null,
+    "timestamp": null,
+    "cameraMove": null
+  },
+
+  "degradations": [],
+
+  "verifiedAt": null,
+  "verifiedFrom": [],
+  "verificationNote": "P0 阶段全部为 null：未核对，不代表不支持。填任何布尔前必须先补 verifiedFrom 的官方文档链接。可灵版本线复杂（1.x / 2.x / 各档位能力差异大），核对时务必把 model 精确到具体版本，不要写成一个笼统的 Kling。",
+
+  "toVerify": [
+    "model 精确版本号：先确定核对的是哪一版",
+    "lipSync：对口型 / 口播能力的入口与限制",
+    "audioDriven：是否接受音轨作为输入模态",
+    "refImage：图生视频与参考图能力（决定 reference-lock 一族 5 个模板是否可用）",
+    "refVideo：视频参考 / 运动迁移",
+    "typography：画面内文字渲染",
+    "firstLastFrame：首尾帧控制",
+    "limits.maxDuration：单次时长上限（直接决定 timeline 一族要不要重排段数）",
+    "syntax.negativePrompt：独立字段还是正文内联",
+    "syntax.cameraMove：是否有预设运镜词表，还是纯描述"
+  ]
+}
