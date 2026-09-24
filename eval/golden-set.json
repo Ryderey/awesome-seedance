@@ -99,7 +99,7 @@
       "input": "A comprehensive video prompt for Seedance 2.5 designed to generate a 30-second water obstacle competition in the style of a Japanese variety show, emphasizing character consistency and complex camera work.",
       "label": "timeline-shot-script",
       "slug": "boa-hancock-water-obstacle-race-prompt",
-      "heat": 89,
+      "heat": 88,
       "models": [
         "Seedance 2.5"
       ],
@@ -109,7 +109,7 @@
       "input": "作者用 Seedance 2.5 生成 30 秒好莱坞式灾难序列，以六个分镜串联暴雨港口逃生、爆炸洪水、室内避难与巨型海怪结尾，并完整规定角色一致性、镜头运动、水体物理和声音设计。",
       "label": "timeline-shot-script",
       "slug": "seedance-2-5-3f70c2f28d22",
-      "heat": 35,
+      "heat": 34,
       "models": [
         "Seedance 2.5"
       ],
@@ -119,7 +119,7 @@
       "input": "30 秒竖屏真实骑行 vlog:运动相机、手机前摄、伴随车跟拍三种机位混剪,4K photorealistic、阴天柔光、皮肤汗光与毛孔、无美颜。prompt 用【风格】【时长】等中文结构化区块把机位切换和时间轴写死,是'把剪辑思维写进 prompt'的范本。",
       "label": "timeline-shot-script",
       "slug": "seedance-2-5-vlog-30-3b85f315bb08",
-      "heat": 34,
+      "heat": 32,
       "models": [
         "Seedance 2.5"
       ],
@@ -129,7 +129,7 @@
       "input": "作者用 Seedance 2.5 生成马尔代夫度假村骑行的 18 秒纪实跟拍，以两秒一段的时间线安排人物、游客、员工、陆龟、鹦鹉、蝠鲼与鲸鱼动作，并统一约束手持镜头、胶片颗粒和连续运动。",
       "label": "timeline-shot-script",
       "slug": "seedance-2-5-f3651857750b",
-      "heat": 33,
+      "heat": 31,
       "models": [
         "Seedance 2.5"
       ],
@@ -139,7 +139,7 @@
       "input": "Create with Seedance 2.5 Prompt: CHARACTER REFERENCE — MANDATORY: Face — Reference Image 3. Outfit — short dark bob, bla",
       "label": "character-reference-lock",
       "slug": "elsasofia-ai-seedance-ai-e087ab2aed4b",
-      "heat": 69,
+      "heat": 68,
       "models": [
         "Seedance"
       ],
@@ -149,7 +149,7 @@
       "input": "用我做的Seedance 2.5导演Skill， 将提示词优化了一下。 目前效果更加自然真实一点了， 特别是之前的脸红和表情太做作了。 提示词： 时长：20秒 画幅：9:16竖屏 风格：情侣POV手持手机实拍感（Boyfriend POV）",
       "label": "character-reference-lock",
       "slug": "liyue-ai-seedance-ai-dd263958ed42",
-      "heat": 41,
+      "heat": 39,
       "models": [
         "Seedance"
       ],
@@ -169,7 +169,7 @@
       "input": "一份详细的电影级提示词，用于创作高质量的动漫视频序列，展示在豪华度假村中身着泳装的角色。该提示词强调角色一致性、流畅的运镜以及精致的时尚 PV 美学。",
       "label": "character-reference-lock",
       "slug": "case-79acf1a3e8a6",
-      "heat": 8,
+      "heat": 7,
       "models": [
         "Seedance 2.0"
       ],
@@ -196,12 +196,12 @@
       "corpusCountForLabel": 92
     },
     {
-      "input": "把 30 秒切成五个连续的生活场景，用同一张参考图锁定女主角的脸和身材，从公寓出门写到日落坐在海边，靠摄像机做旧和真实感描述而不是明星卡司，撑出一条像朋友随手拍的旅行 vlog。",
+      "input": "Something from our local street Seedance 2.5 at service again Prompt : Main subject: Young Korean woman, early 20s, wear",
       "label": "handheld-ugc-vlog",
-      "slug": "youmind-travel-vlog-city-to-beach",
-      "heat": 87,
+      "slug": "aiwithkhan-seedance-ai-9a5c5cbd518b",
+      "heat": 86,
       "models": [
-        "Seedance 2.5"
+        "Seedance"
       ],
       "corpusCountForLabel": 92
     },
@@ -209,17 +209,17 @@
       "input": "AC’s been dead since morning Two girls. One scorching gym session. Made with seedance 2.5 Prompt: Two young attractive E",
       "label": "handheld-ugc-vlog",
       "slug": "noorlewisx-seedance-ai-90bc76157819",
-      "heat": 76,
+      "heat": 75,
       "models": [
         "Seedance"
       ],
       "corpusCountForLabel": 92
     },
     {
-      "input": "A creative vlog-style prompt using a MiniDV aesthetic to depict a tour of a celestial cloud palace, featuring a young woman as the host.",
+      "input": "一份详尽的视频提示词，用于制作超写实生活 Vlog，记录主角从晨间洗漱到夜晚的全天生活，并确保多场景下的人物一致性。",
       "label": "handheld-ugc-vlog",
-      "slug": "celestial-palace-minidv-tour",
-      "heat": 68,
+      "slug": "vlog-543a49303376",
+      "heat": 67,
       "models": [
         "Seedance 2.0"
       ],
@@ -229,28 +229,27 @@
       "input": "A quiet escape into the Korean mountains. Good food, kind people, and a little village I already want to return to. Created on seedance 2.5 Prompt: Photorealist…",
       "label": "handheld-ugc-vlog",
       "slug": "seedance-photorealistic-30-second-modern-korean-countryside-vlog-featuring-a-young-korea-7311510bcc86",
-      "heat": 62,
+      "heat": 61,
       "models": [
         "Seedance"
       ],
       "corpusCountForLabel": 92
     },
     {
-      "input": "Made this video with GPT IMAGE 2 + seedance 2.5 via Prompt ⤵ DURATION: 30 seconds ASPECT RATIO: 16:9 DURATI",
+      "input": "15 秒五镜头旅拍：自拍行走、街景平移、进店 POV 到咖啡收尾，主打全片人物一致性与真实手持质感。",
       "label": "handheld-ugc-vlog",
-      "slug": "elsasofia-ai-seedance-ai-48cf6dd47273",
-      "heat": 57,
+      "slug": "seedance-2-5-vlog-eae9734adb51",
+      "heat": 56,
       "models": [
-        "Seedance",
-        "GPT Image"
+        "Seedance 2.5"
       ],
       "corpusCountForLabel": 92
     },
     {
-      "input": "Three girls, one unforgettable adventure through the vibrant streets of Japan. From street food to souvenirs, every mome",
+      "input": "Made with Seedance 2.5 Duration: 30 seconds Aspect Ratio: 16:9 Prompt: ⤵ Same young Japanese woman throughout—early 20s, fair-warm skin, natural minimal makeup…",
       "label": "handheld-ugc-vlog",
-      "slug": "lianaalane-seedance-ai-57edf326d97f",
-      "heat": 52,
+      "slug": "seedance-same-young-japanese-woman-throughout-early-20s-fair-warm-skin-natural-minimal-0c9ee9aedee9",
+      "heat": 50,
       "models": [
         "Seedance"
       ],
@@ -260,19 +259,19 @@
       "input": "一个专业的 30 秒视频生成提示词，用于制作一段自然、手机拍摄风格的日本网红日常准备 Vlog。",
       "label": "handheld-ugc-vlog",
       "slug": "vlog-83f1f069fe6a",
-      "heat": 49,
+      "heat": 46,
       "models": [
         "Seedance 2.5"
       ],
       "corpusCountForLabel": 92
     },
     {
-      "input": "一个高度详细的视频提示词，用于创作具有真实感、家庭录像风格的 Vlog，主角为一名日本女高中生，重点呈现自然的表情和真实的校园环境。",
+      "input": "Made with seedance 2.5 Prompt: Create a 30-second, 1080p ultra-realistic personal home-video of a young Korean woman try",
       "label": "handheld-ugc-vlog",
-      "slug": "vlog-a4aa7d6b0191",
-      "heat": 45,
+      "slug": "ciri-ai-seedance-ai-6f0712601492",
+      "heat": 42,
       "models": [
-        "Seedance 2.0"
+        "Seedance"
       ],
       "corpusCountForLabel": 92
     },
@@ -280,19 +279,20 @@
       "input": "Made with seedance 2.5 Prompt Extremely realistic smartphone travel vlog featuring one Korean woman in her early 20s vis",
       "label": "handheld-ugc-vlog",
       "slug": "saniaspeaks-seedance-ai-454a426d305e",
-      "heat": 40,
+      "heat": 38,
       "models": [
         "Seedance"
       ],
       "corpusCountForLabel": 92
     },
     {
-      "input": "Seedance 2.5 on Prompt - Create a 30-second, 1080p ultra-realistic documentary-style personal home video s",
+      "input": "Kenalin lia hobinya mancing Seedance 2.5 prompt: Reference mode: Use karakter sheet - location 1 - location 2 (image) #",
       "label": "handheld-ugc-vlog",
-      "slug": "strength04-x-seedance-ai-89d154123b94",
-      "heat": 35,
+      "slug": "cupang1997-seedance-ai-ab735378c9e2",
+      "heat": 33,
       "models": [
-        "Seedance"
+        "Seedance",
+        "Kling"
       ],
       "corpusCountForLabel": 92
     },
@@ -310,7 +310,7 @@
       "input": "作者用 Seedance 2.5 生成 30 秒胸挂 GoPro 第一人称短片，以四段硬切完成抛竿、处理鳟鱼、篝火烧烤和进食；提示词锁定参考物、镜头焦段、动作、物理、光色与现场声音。",
       "label": "pov-continuous-take",
       "slug": "seedance-2-5-gopro-94a73eef1dbf",
-      "heat": 84,
+      "heat": 83,
       "models": [
         "Seedance 2.5"
       ],
@@ -320,7 +320,7 @@
       "input": "Magic Pen Street Transport Vlog Seedance 2.5 on lovart_ai Prompt ↓ Magic Pen Street Transport Vlog · 15 Seconds · Vertical 9:16 [STYLE] Live-action + flat 2D an…",
       "label": "pov-continuous-take",
       "slug": "seedance-magic-pen-street-transport-vlog-28d80bd05eda",
-      "heat": 81,
+      "heat": 80,
       "models": [
         "Seedance"
       ],
@@ -330,7 +330,7 @@
       "input": "An epic, photorealistic 8K sequence of riding a crimson-obsidian dragon over emerald cliffs and diving into the ocean with cinematic sound design.",
       "label": "pov-continuous-take",
       "slug": "first-person-pov-dragon-rider-cinematic",
-      "heat": 75,
+      "heat": 74,
       "models": [
         "Seedance 2.5"
       ],
@@ -350,7 +350,7 @@
       "input": "Made with seedance 2.5 on Higgsfield Prompt: Magic Pen Beach Boardwalk Vlog · 15 Seconds · Vertical 9:16 [STYLE] Live-action + flat pixel-art sprite compositing…",
       "label": "pov-continuous-take",
       "slug": "seedance-magic-pen-beach-boardwalk-vlog-15-seconds-vertical-9-16-ea4714e1706f",
-      "heat": 52,
+      "heat": 50,
       "models": [
         "Seedance"
       ],
@@ -360,7 +360,7 @@
       "input": "Journey through Hell made with seedance 2.5 prompt :One continuous 30-second chaotic amateur first-person smartphone vid",
       "label": "pov-continuous-take",
       "slug": "ciri-ai-seedance-ai-5ce4a010eef9",
-      "heat": 50,
+      "heat": 47,
       "models": [
         "Seedance"
       ],
@@ -370,7 +370,7 @@
       "input": "作者用 Seedance 2.5 生成 30 秒连续执法记录仪视角突袭短片，四阶段串联破门、清场、发现菠萝披萨生产线和拘束人员；提示词同步锁定角色装备、房屋布局、光线、动作与环境音。",
       "label": "pov-continuous-take",
       "slug": "seedance-2-5-d68024212dfc",
-      "heat": 33,
+      "heat": 31,
       "models": [
         "Seedance 2.5"
       ],
@@ -380,7 +380,7 @@
       "input": "一段沉浸式第一人称太空飞船驾驶舱视角视频提示词，展现了在小行星带和行星系统中进行的高速机动。",
       "label": "pov-continuous-take",
       "slug": "fpv-def15f90bf27",
-      "heat": 27,
+      "heat": 25,
       "models": [
         "Seedance 2.0"
       ],
@@ -390,7 +390,7 @@
       "input": "一份详细的电影感视频提示词，用于拍摄一位东亚女性在热带海岸线上空进行滑翔伞运动的旅行 Vlog。",
       "label": "pov-continuous-take",
       "slug": "vlog-065189cb9adb",
-      "heat": 18,
+      "heat": 17,
       "models": [
         "Seedance 2.0"
       ],
@@ -420,7 +420,7 @@
       "input": "A few things making life a little more fun lately Definitely can’t pick a favorite. Created with Seedance 2.0 on",
       "label": "ugc-creator-review",
       "slug": "sophiaparkerr-seedance-ai-51ad3cc85989",
-      "heat": 73,
+      "heat": 72,
       "models": [
         "Seedance"
       ],
@@ -430,7 +430,7 @@
       "input": "一个极具创意的手机风格广告提示词，融合了真人实拍与卡通角色互动，适用于食品营销。",
       "label": "ugc-creator-review",
       "slug": "ugc-f0cd0dd33284",
-      "heat": 61,
+      "heat": 60,
       "models": [
         "Seedance 2.0"
       ],
@@ -440,7 +440,7 @@
       "input": "Sunglasses and Earbuds - UGC Seedance 2.5 on has me genuinely impressed. The animation feels more fluid, the",
       "label": "ugc-creator-review",
       "slug": "aiwithkhan-seedance-ai-2ee8c62c7d26",
-      "heat": 57,
+      "heat": 55,
       "models": [
         "Seedance"
       ],
@@ -450,7 +450,7 @@
       "input": "UGC camera video Seedance 2.5 on Higgsfield Prompt : Create a 30-second, 1080p ultra-realistic UGC video of a young Korean woman in her own bedroom, casually ta…",
       "label": "ugc-creator-review",
       "slug": "seedance-create-a-30-second-1080p-ultra-realistic-ugc-video-of-a-young-korean-woman-in-48f0e863374c",
-      "heat": 50,
+      "heat": 48,
       "models": [
         "Seedance"
       ],
@@ -460,7 +460,7 @@
       "input": "一份全面的提示词，用于制作高端果饮商业广告，涵盖生活方式摄影、微距镜头以及慢动作液体物理效果。",
       "label": "ugc-creator-review",
       "slug": "ugc-80d503f66caa",
-      "heat": 48,
+      "heat": 46,
       "models": [
         "Seedance 2.0"
       ],
@@ -470,7 +470,7 @@
       "input": "一份详细的多场景视频提示词，用于高端热带饮品广告，展示了一位女性在海滩上的场景，包含电影感手持镜头和微距特写。",
       "label": "ugc-creator-review",
       "slug": "ugc-34764467dea1",
-      "heat": 30,
+      "heat": 28,
       "models": [
         "Seedance 2.0"
       ],
@@ -480,7 +480,7 @@
       "input": "一个用户生成内容（UGC）风格的时尚广告提示词，用于展示优雅的裙装，要求呈现自然的动态效果和写实的智能手机拍摄美学。",
       "label": "ugc-creator-review",
       "slug": "ugc-f1f4b662e370",
-      "heat": 29,
+      "heat": 27,
       "models": [
         "Seedance 2.0"
       ],
@@ -490,7 +490,7 @@
       "input": "Seedance 2.5 生成的太阳镜UGC测评口播视频，女主角在卧室开箱、试戴并对镜展示细节，全程配台词描述佩戴体验。人物与产品均锁定参考图外观，手持运镜模拟真实博主测评的拍摄质感。",
       "label": "ugc-creator-review",
       "slug": "seedance-2-5-ugc-69e79f387106",
-      "heat": 24,
+      "heat": 23,
       "models": [
         "Seedance 2.5"
       ],
@@ -500,7 +500,7 @@
       "input": "Seedance 2.5 生成的竖屏咖啡机UGC广告，创作者从开箱、注水磨豆到出品试饮完整走一遍产品使用流程，中间穿插台词。分镜按秒数安排特写与转场，模拟真实博主口播带货的镜头语言。",
       "label": "ugc-creator-review",
       "slug": "seedance-2-5-ugc-7de9338ecfc9",
-      "heat": 23,
+      "heat": 22,
       "models": [
         "Seedance 2.5"
       ],
@@ -510,7 +510,7 @@
       "input": "一个商业风格的视频提示词，适用于年轻创作者评测无线耳机，结合了自然的互动与精致的产品特写镜头。",
       "label": "ugc-creator-review",
       "slug": "case-b157d9c072bc",
-      "heat": 18,
+      "heat": 17,
       "models": [
         "Seedance 2.0"
       ],
@@ -520,7 +520,7 @@
       "input": "一份适用于巧克力棒广告的 UGC 风格宣传视频提示词，场景设定在黄金时刻温馨的家庭办公室。",
       "label": "ugc-creator-review",
       "slug": "ugc-6f13437e4b40",
-      "heat": 17,
+      "heat": 16,
       "models": [
         "Seedance 2.0"
       ],
@@ -540,7 +540,7 @@
       "input": "Turned ONE perfume bottle photo into a full cinematic commercial, sunset, silk, and sparkle included. No film crew. No e",
       "label": "product-commercial-shotlist",
       "slug": "shamiweb3-seedance-ai-5620b354e47d",
-      "heat": 80,
+      "heat": 79,
       "models": [
         "Seedance",
         "Kling",
@@ -552,7 +552,7 @@
       "input": "Created with Seedance 2.5 A late-night deadline, one creative idea, and an unexpected twist. Prompt: Create a 30-second ultra-photorealistic cinematic commercia…",
       "label": "product-commercial-shotlist",
       "slug": "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d",
-      "heat": 79,
+      "heat": 78,
       "models": [
         "Seedance"
       ],
@@ -562,7 +562,7 @@
       "input": "A touch of elegance, a moment of luxury. From the perfect unboxing to the final sparkle, every detail shines beautifully. Created on seedance 2.0 Prompt: Create…",
       "label": "product-commercial-shotlist",
       "slug": "seedance-created-a-30-second-cinematic-luxury-jewelry-advertisement-video-in-a-warm-and-8d47861d9581",
-      "heat": 65,
+      "heat": 64,
       "models": [
         "Seedance",
         "Kling"
@@ -583,7 +583,7 @@
       "input": "Glow naturally with FERMINA Hydration softness and a fresh glow in every touch. Made With Seedance 2.5 on Prompt: Cinematic skincare commercial, ver…",
       "label": "product-commercial-shotlist",
       "slug": "seedance-cinematic-skincare-commercial-vertical-9-16-aspect-ratio-8640fa586f63",
-      "heat": 54,
+      "heat": 52,
       "models": [
         "Seedance"
       ],
@@ -593,7 +593,7 @@
       "input": "Luxury in every detail A cinematic fragrance experience crafted to leave a lasting impression. Made With Seedance 2.5 Prompt: Cinematic 19-second commercial ad …",
       "label": "product-commercial-shotlist",
       "slug": "seedance-cinematic-19-second-commercial-ad-for-a-luxury-perfume-142bf48ed0d2",
-      "heat": 38,
+      "heat": 36,
       "models": [
         "Seedance"
       ],
@@ -603,7 +603,7 @@
       "input": "一份全面的提示词，用于制作 20 秒的高端芒果汁商业广告，呈现热带夏季美学、逼真的产品质感以及角色一致性。",
       "label": "product-commercial-shotlist",
       "slug": "case-cbb9868317f8",
-      "heat": 35,
+      "heat": 33,
       "models": [
         "Seedance 2.0"
       ],
@@ -613,7 +613,7 @@
       "input": "一份高端智能手表生活方式广告提示词，以一位年轻女性在各种日常场景中的表现为特色，具有极高的制作水准。",
       "label": "product-commercial-shotlist",
       "slug": "case-146e12082f4d",
-      "heat": 33,
+      "heat": 31,
       "models": [
         "Seedance 2.0"
       ],
@@ -653,7 +653,7 @@
       "input": "Gym Vlog .Let’s Get This Workout Started A Quick Look Into My Gym Routine Made with seedance 2.0 Prompt: 15-Second Gym V",
       "label": "dialogue-performance-beats",
       "slug": "noorlewisx-seedance-ai-b2d98861daf9",
-      "heat": 71,
+      "heat": 70,
       "models": [
         "Seedance"
       ],
@@ -663,7 +663,7 @@
       "input": "少见的对白驱动生成视频，每个镜头都配着人物台词而不是纯画面描述，靠一条短信、一路奔跑、一次背后捂眼的三段式反转结构撑起一分钟迷你剧情，证明生成视频也能靠台词和反转讲故事，不止是炫技镜头。",
       "label": "dialogue-performance-beats",
       "slug": "youmind-surprise-visit-romance-trailer",
-      "heat": 71,
+      "heat": 70,
       "models": [
         "Seedance 2.0"
       ],
@@ -673,7 +673,7 @@
       "input": "一个针对 Seedance 2.5 的电影级视频提示词，专注于细腻的面部表情和真实的日语对话，旨在捕捉微妙的情感瞬间。",
       "label": "dialogue-performance-beats",
       "slug": "case-1f8136a9893a",
-      "heat": 68,
+      "heat": 67,
       "models": [
         "Seedance 2.5"
       ],
@@ -683,7 +683,7 @@
       "input": "一份为 Seedance 2.5 设计的 15 秒结构化视频提示词，旨在呈现情感细腻的分手场景，重点刻画表情表演、呼吸节奏及心理转变，全程无剪辑。",
       "label": "dialogue-performance-beats",
       "slug": "seedance-3b9beb9a46d4",
-      "heat": 32,
+      "heat": 30,
       "models": [
         "Seedance 2.5"
       ],
@@ -693,7 +693,7 @@
       "input": "一个基于叙事的提示词，旨在重现《汤姆·索亚历险记》中经典的粉刷篱笆场景，强调角色一致性及经典电影摄影规则。",
       "label": "dialogue-performance-beats",
       "slug": "case-e0d3b03f1aef",
-      "heat": 10,
+      "heat": 9,
       "models": [
         "Seedance 2.0"
       ],
@@ -713,7 +713,7 @@
       "input": "Pure emotions Can Hollywood match it ? Seedance 2.5 Prompt : Create a 30-second, 1080p ultra-realistic emotional live-action scene about a young woman discov…",
       "label": "cinematic-narrative-short",
       "slug": "seedance-create-a-30-second-1080p-ultra-realistic-emotional-live-action-scene-about-a-y-8c4cbeb0026b",
-      "heat": 95,
+      "heat": 94,
       "models": [
         "Seedance"
       ],
@@ -723,7 +723,7 @@
       "input": "Maybe it was never about the five minutes. It was about wanting to spend them together. Made with Flova AI using Nano",
       "label": "cinematic-narrative-short",
       "slug": "caden-flux-seedance-ai-8ffb5f062951",
-      "heat": 86,
+      "heat": 85,
       "models": [
         "Seedance",
         "Nano Banana"
@@ -734,7 +734,7 @@
       "input": "A multi-scene cinematic prompt telling the story of a sailor rescued from a shipwreck by a mysterious mermaid.",
       "label": "cinematic-narrative-short",
       "slug": "mermaid-rescue-cinematic-story",
-      "heat": 83,
+      "heat": 82,
       "models": [
         "Seedance 2.0"
       ],
@@ -744,7 +744,7 @@
       "input": "Created with Seedance 2.5 A cinematic thriller about a mysterious warning, a dangerous turn, and a call that may have saved her life. Prompt: Create a 30-second…",
       "label": "cinematic-narrative-short",
       "slug": "seedance-create-a-30-second-ultra-photorealistic-hollywood-level-cinematic-thriller-scen-364b9e454242",
-      "heat": 76,
+      "heat": 75,
       "models": [
         "Seedance"
       ],
@@ -754,7 +754,7 @@
       "input": "Sometimes the best stories begin with a little rain. Created on seedance 2.5 Prompt: Create a 30-second photorealistic live-action American university romance v…",
       "label": "cinematic-narrative-short",
       "slug": "seedance-create-a-30-second-photorealistic-live-action-american-university-romance-vlog-263053d16e49",
-      "heat": 74,
+      "heat": 73,
       "models": [
         "Seedance"
       ],
@@ -764,7 +764,7 @@
       "input": "30 秒里塞进五个固定角色和一场游艇章鱼袭击，用秒级时间轴控制每三秒一次镜头切换，靠 35mm 胶片颗粒、频闪灯光和实拍血浆道具这类技术词把生成视频做出真实 80 年代恐怖片的糙感，而不是干净的数字感。",
       "label": "cinematic-narrative-short",
       "slug": "youmind-1980s-slasher-yacht-octopus",
-      "heat": 71,
+      "heat": 70,
       "models": [
         "Seedance 2.0"
       ],
@@ -784,7 +784,7 @@
       "input": "一个精美的照片级真实感提示词，描绘了韩国校园生活中，两名学生在日落时分追逐被风吹散的作业纸的场景。",
       "label": "cinematic-narrative-short",
       "slug": "case-c290f40d8f85",
-      "heat": 60,
+      "heat": 59,
       "models": [
         "Seedance 2.5"
       ],
@@ -794,7 +794,7 @@
       "input": "She reached for my hand on the platform. We never looked back. Made with seedance 2.5 Prompt: A cinematic first-person P",
       "label": "cinematic-narrative-short",
       "slug": "noorlewisx-seedance-ai-3f03ebd75247",
-      "heat": 49,
+      "heat": 47,
       "models": [
         "Seedance"
       ],
@@ -804,7 +804,7 @@
       "input": "The drama continued and the tension kept rising Seedance 2.5 Prompt Create a 30-second, 1080p ultra-realistic emotional live-action scene about a young woman…",
       "label": "cinematic-narrative-short",
       "slug": "seedance-the-drama-continued-and-the-tension-kept-rising-1952e2660beb",
-      "heat": 45,
+      "heat": 43,
       "models": [
         "Seedance"
       ],
@@ -814,7 +814,7 @@
       "input": "When the world falls apart, she stands unshaken, facing the chaos with fearless eyes and a strength nothing can destroy.",
       "label": "cinematic-narrative-short",
       "slug": "aiwithminal-seedance-ai-3c0cb08ecc8b",
-      "heat": 40,
+      "heat": 38,
       "models": [
         "Seedance"
       ],
@@ -824,7 +824,7 @@
       "input": "Spent a lot of time with Velvet Skies , incorporating every scene, and shots tried to get those emotions without spe",
       "label": "cinematic-narrative-short",
       "slug": "abulu8-seedance-ai-fe02d3785b12",
-      "heat": 30,
+      "heat": 28,
       "models": [
         "Seedance"
       ],
@@ -834,7 +834,7 @@
       "input": "此高精细度提示词旨在创作一段 15 秒的动画风格烹饪短片，专注于制作可可巧克力面包的过程。通过对铅笔轮廓、赛璐珞阴影及精确摄像机运动的具体指令，实现手工绘制的审美效果。",
       "label": "anime-style-lock",
       "slug": "2d-38a41133eab1",
-      "heat": 91,
+      "heat": 90,
       "models": [
         "Seedance 2.0"
       ],
@@ -844,7 +844,7 @@
       "input": "GPT Image 2 and Seedance 2.5 Prompt: Style: Cinematic live-action seamlessly blended with 2D hand-drawn line-art animati",
       "label": "anime-style-lock",
       "slug": "sairah-0-seedance-ai-19e5d269c3e0",
-      "heat": 79,
+      "heat": 78,
       "models": [
         "Seedance",
         "GPT Image"
@@ -855,7 +855,7 @@
       "input": "Made with Seedance 2.0 Prompt: Create an explosive, motion-graphics-driven character reveal trailer in 16:9, exactly 13",
       "label": "anime-style-lock",
       "slug": "seedance-create-an-explosive-motion-graphics-driven-character-reveal-trailer-in-16-9-e-97abc37074ae",
-      "heat": 62,
+      "heat": 61,
       "models": [
         "Seedance"
       ],
@@ -865,7 +865,7 @@
       "input": "A fluffy cat brings sweetness, playfulness, and love to a peaceful morning. From playful pounces to cozy cuddles, every moment feels magical. Created on seedanc…",
       "label": "anime-style-lock",
       "slug": "seedance-created-a-video-in-soft-anime-style-of-a-fluffy-white-cat-with-big-sparkling-te-5d65967aaf57",
-      "heat": 59,
+      "heat": 58,
       "models": [
         "Seedance",
         "Kling"
@@ -876,7 +876,7 @@
       "input": "一个宁静的动画风格河畔森林野餐提示词，包含采集食材、篝火煮鱼汤等内容，营造出斑驳阳光下的平和氛围。",
       "label": "anime-style-lock",
       "slug": "case-e7dccea90d44",
-      "heat": 41,
+      "heat": 39,
       "models": [
         "Seedance 2.0"
       ],
@@ -886,7 +886,7 @@
       "input": "一个温馨愉悦的 2D 动画风格 Starbucks 咖啡广告提示词，融合了吉卜力美学、都市生活场景及生动的动画表现。",
       "label": "anime-style-lock",
       "slug": "starbucks-739b454ab5c1",
-      "heat": 31,
+      "heat": 30,
       "models": [
         "Seedance 2.0"
       ],
@@ -896,17 +896,17 @@
       "input": "一份用于制作 15 秒 2D 手绘动画视频的详细提示词，展示了具有专业动画品质的麻婆豆腐烹饪步骤。",
       "label": "anime-style-lock",
       "slug": "case-ce63bf146d4e",
-      "heat": 14,
+      "heat": 13,
       "models": [
         "Seedance 2.0"
       ],
       "corpusCountForLabel": 25
     },
     {
-      "input": "一个高细节的电影级动画提示词，用于高强度的 3D 卡通/赛璐珞风格动作 RPG 剑术对决，包含浮游剑和精准的角色互动。",
+      "input": "一个详细的暗黑奇幻提示词，用于制作高预算动漫场景，包含一名女性召唤师和两只从魔法阵中现身的神秘野兽。",
       "label": "anime-style-lock",
-      "slug": "case-c32e6c3bb2c5",
-      "heat": 8,
+      "slug": "case-5c6186d655a1",
+      "heat": 7,
       "models": [
         "Seedance 2.0"
       ],
@@ -956,7 +956,7 @@
       "input": "一个关于足球明星 Erling Haaland 种植韭菜的幽默 3D 黏土动画提示词，包含生动的角色动作和奇幻的灯光效果。",
       "label": "stop-motion-cadence",
       "slug": "erling-haaland-525acabe78da",
-      "heat": 88,
+      "heat": 87,
       "models": [
         "Seedance 2.0"
       ],
@@ -966,7 +966,7 @@
       "input": "Generated with seedance 2 on Prompt :- Create a 21-second vertical 9:16 cinematic stop-motion animation. A tiny humanoid figure made entirely from nat…",
       "label": "stop-motion-cadence",
       "slug": "seedance-create-a-21-second-vertical-9-16-cinematic-stop-motion-animation-557fa2797476",
-      "heat": 87,
+      "heat": 86,
       "models": [
         "Seedance"
       ],
@@ -976,7 +976,7 @@
       "input": "A prompt to recreate this stop-motion claymation style AI video: Seedance 2.0. ​Style & Aesthetics 3D stop-motion clayma",
       "label": "stop-motion-cadence",
       "slug": "mayaaicreator-seedance-ai-99e38c199ba8",
-      "heat": 31,
+      "heat": 30,
       "models": [
         "Seedance"
       ],
@@ -986,7 +986,7 @@
       "input": "这是一个为 Seedance 2.0 设计的写实定格动画提示词，描述了暴风雪中残酷的狼群袭击过程，重点强调物理效果和摄像机运动。",
       "label": "stop-motion-cadence",
       "slug": "case-69e5879cc5a7",
-      "heat": 21,
+      "heat": 20,
       "models": [
         "Seedance 2.0"
       ],
@@ -996,7 +996,7 @@
       "input": "这是一个为 Seedance 2.0 设计的精细定格动画提示词，旨在呈现一种手绘 2D 风格，描绘暴风雪中狼群袭击哈萨克族毡房营地的场景。",
       "label": "stop-motion-cadence",
       "slug": "case-0287a838e662",
-      "heat": 20,
+      "heat": 19,
       "models": [
         "Seedance 2.0"
       ],
@@ -1006,7 +1006,7 @@
       "input": "一个为 Seedance 2.0 设计的实验性艺术短片提示词，展示了深红色背景上手绘扑克牌的节奏感定格动画变换。",
       "label": "stop-motion-cadence",
       "slug": "case-50ba683413ff",
-      "heat": 16,
+      "heat": 15,
       "models": [
         "Seedance 2.0"
       ],
@@ -1016,7 +1016,7 @@
       "input": "一个独特的提示词，用于创作具有油画风格的 2D 定格动画效果，描绘了雪崖上的一场戏剧性营救场景。",
       "label": "stop-motion-cadence",
       "slug": "case-b079faa80f0f",
-      "heat": 13,
+      "heat": 12,
       "models": [
         "Seedance 2.0"
       ],
@@ -1026,7 +1026,7 @@
       "input": "一个用于 Seedance 的动画提示词，可将静态拼贴图像转换为具有纸张抖动和贴纸弹跳效果的 5 秒定格动画风格视频。",
       "label": "stop-motion-cadence",
       "slug": "vox-d5c357d5e75d",
-      "heat": 6,
+      "heat": 5,
       "models": [
         "Seedance 2.0"
       ],
@@ -1036,7 +1036,7 @@
       "input": "Made with Seedance 2.5 on MAIN VIDEO PROMPT Use the uploaded image as the exact visual reference. Crea",
       "label": "process-transformation-montage",
       "slug": "yesandyou-seedance-ai-2a9dc20c947d",
-      "heat": 88,
+      "heat": 87,
       "models": [
         "Seedance"
       ],
@@ -1056,7 +1056,7 @@
       "input": "From frozen fries and seasoned chicken to a perfectly golden, crispy meal in just one air fryer. A cinematic cooking jou",
       "label": "process-transformation-montage",
       "slug": "lianaalane-seedance-ai-c3e78794ed16",
-      "heat": 72,
+      "heat": 71,
       "models": [
         "Seedance"
       ],
@@ -1066,7 +1066,7 @@
       "input": "一份详细的 30 秒烹饪 Vlog 分镜脚本提示词，专注于食材准备、烹饪步骤以及角色一致性。",
       "label": "process-transformation-montage",
       "slug": "vlog-5bea56e008fc",
-      "heat": 71,
+      "heat": 70,
       "models": [
         "Seedance 2.0"
       ],
@@ -1076,7 +1076,7 @@
       "input": "She jeweled her iPhone like a crown. Then signed a royal letter in pearls. Made with seedance 2.5 Prompt: A cinematic 20-second luxury fantasy video in an opule…",
       "label": "process-transformation-montage",
       "slug": "seedance-a-cinematic-20-second-luxury-fantasy-video-in-an-opulent-gold-and-crimson-palac-3c3a7212c358",
-      "heat": 70,
+      "heat": 69,
       "models": [
         "Seedance",
         "Kling"
@@ -1087,7 +1087,7 @@
       "input": "Seedance 2.5 Prompt: Create a short anime-style food video showing the step-by-step preparation of grilled meat skewers and a fresh pomegranate drink: a chef sl…",
       "label": "process-transformation-montage",
       "slug": "seedance-create-a-short-anime-style-food-video-showing-the-step-by-step-preparation-of-g-43cc46c1e778",
-      "heat": 41,
+      "heat": 39,
       "models": [
         "Seedance",
         "Kling"
@@ -1098,7 +1098,7 @@
       "input": "THE HUNK SANTA Ever wonder how Santa will look if he became serious in his fitness journey? The new Santa is ready to",
       "label": "process-transformation-montage",
       "slug": "mrdejie-seedance-ai-79dd031828c7",
-      "heat": 37,
+      "heat": 35,
       "models": [
         "Seedance"
       ],
@@ -1108,7 +1108,7 @@
       "input": "This isn’t pizza—it’s a cinematic story. Watch passion rise, bake, and explode. Made by using GPT Image 2 + Seedance 2.0",
       "label": "process-transformation-montage",
       "slug": "heyfatema-seedance-ai-b3b41609bc87",
-      "heat": 35,
+      "heat": 33,
       "models": [
         "Seedance",
         "GPT Image"
@@ -1119,7 +1119,7 @@
       "input": "一个专业的视频生成提示词，用于创建高端、细节丰富的海岛港口城市微缩模型，包含电影级光影和复杂的组装动画。",
       "label": "process-transformation-montage",
       "slug": "case-8bdac964f9d4",
-      "heat": 22,
+      "heat": 20,
       "models": [
         "Seedance 2.0"
       ],
@@ -1129,7 +1129,7 @@
       "input": "一份详细的多镜头视频提示词，用于生成专业的酸种面包烘焙延时摄影，包含揉面、发酵和烘焙的特写镜头，并配有温暖的电影级灯光效果。",
       "label": "process-transformation-montage",
       "slug": "case-179a06586ce5",
-      "heat": 19,
+      "heat": 18,
       "models": [
         "Seedance 2.0"
       ],
@@ -1139,7 +1139,7 @@
       "input": "一个用于美妆变身的高速动态商业提示词，通过匹配剪辑展现从休闲造型到迷人晚礼服的华丽转变。",
       "label": "process-transformation-montage",
       "slug": "case-d087761bf321",
-      "heat": 4,
+      "heat": 3,
       "models": [
         "Seedance 2.0"
       ],
@@ -1159,7 +1159,7 @@
       "input": "Made with seedance 2.5 Prompt: Create a cinematic, photorealistic 30-second live-action video set inside a modern Americ",
       "label": "combat-choreography",
       "slug": "aiwithelisia-seedance-ai-b204cdfb3dac",
-      "heat": 94,
+      "heat": 93,
       "models": [
         "Seedance"
       ],
@@ -1169,7 +1169,7 @@
       "input": "Steel and cursed weight vs. Ten thousand razor paper cranes. Ren rushed with a blade heavy enough to crush stone—on",
       "label": "combat-choreography",
       "slug": "yourplugai-seedance-ai-17a1f9de8843",
-      "heat": 78,
+      "heat": 77,
       "models": [
         "Seedance"
       ],
@@ -1179,7 +1179,7 @@
       "input": "单镜头一镜到底的武侠打斗加能量特效组合，把滑步、旋转踢腿、慢动作落地和凌空能量丝带按先后顺序写进同一段描述，没有分镜时间码却靠动作次序撑住了连贯性，是东方武侠题材在西方视频模型上少见的成功案例。",
       "label": "combat-choreography",
       "slug": "youmind-wuxia-temple-energy-dance",
-      "heat": 75,
+      "heat": 74,
       "models": [
         "Seedance 2.0"
       ],
@@ -1189,7 +1189,7 @@
       "input": "Golden Hour CQC in Shibuya Tokyo streets are not for amateurs. A peaceful walk across the iconic Shibuya crossing t",
       "label": "combat-choreography",
       "slug": "yourplugai-seedance-ai-fb797edfc8e4",
-      "heat": 72,
+      "heat": 71,
       "models": [
         "Seedance",
         "GPT Image"
@@ -1200,7 +1200,7 @@
       "input": "A cinematic warrior rises against impossible odds. Experience powerful action and stunning visuals with Seedance 2.5 by . Dynamic choreography, ci…",
       "label": "combat-choreography",
       "slug": "seedance-image1-image-0442b9e3-3e54-49fa-95ab-1dd25868733f-hypersonic-soni-do-space-802acc820b62",
-      "heat": 69,
+      "heat": 68,
       "models": [
         "Seedance"
       ],
@@ -1210,17 +1210,17 @@
       "input": "AI slop is getting a superhero origin story now One cafeteria incident and suddenly she unlocked emerald powers Seedance 2.5 on Prompt ↓ Create a …",
       "label": "combat-choreography",
       "slug": "seedance-ai-slop-is-getting-a-superhero-origin-story-now-6bf9d6b99f45",
-      "heat": 62,
+      "heat": 61,
       "models": [
         "Seedance"
       ],
       "corpusCountForLabel": 40
     },
     {
-      "input": "She was just the \"damsel in distress\" Night training turned into a full-blown awakening — one wrong move and this girl t",
+      "input": "Animation in Seedance 2.5 is absolutely mind blowing Made with Sd 2.5 on Prompt shading, cinematic light-d",
       "label": "combat-choreography",
-      "slug": "shamiweb3-seedance-ai-a624f0561664",
-      "heat": 60,
+      "slug": "im-shahid7-seedance-ai-055a8fd88784",
+      "heat": 59,
       "models": [
         "Seedance"
       ],
@@ -1230,7 +1230,7 @@
       "input": "Made with seedance 2.5 Prompt: Create a highly cinematic, realistic anime-style action video set inside a large Japanese",
       "label": "combat-choreography",
       "slug": "aiwithelisia-seedance-ai-45d48a1479db",
-      "heat": 49,
+      "heat": 47,
       "models": [
         "Seedance"
       ],
@@ -1240,7 +1240,7 @@
       "input": "Seedance 2.5 Prompt Sharing / 30s Prompt : SEEDANCE 2.5 — PYONA 水系战斗 / 学校体育馆最终版 Use exactly 1 uploaded image asset. imag",
       "label": "combat-choreography",
       "slug": "pyona-ai-seedance-ai-47b0906eef64",
-      "heat": 45,
+      "heat": 43,
       "models": [
         "Seedance"
       ],
@@ -1250,7 +1250,7 @@
       "input": "中文长 prompt，把动漫版动作戏改写成真人实拍风格：少女借四块持续下坠的石板突围怪物围猎，30 秒一镜到底。每只怪物编号防止混淆，固定 20mm 镜头只靠跟随与环绕变化景别。",
       "label": "combat-choreography",
       "slug": "aimikoda-seedance-ai-9b2a6b435fbd",
-      "heat": 34,
+      "heat": 33,
       "models": [
         "Seedance"
       ],
@@ -1280,7 +1280,7 @@
       "input": "把 30 秒切成十几段两到四秒的镜头，每段写死机位、景别、背景和动作，两个女生用粉发和黑发做外观锚点贯穿全片。值钱的是这套时间码排镜法。",
       "label": "music-beat-sync-mv",
       "slug": "seedance-25-kpop-mv-dual-idol",
-      "heat": 99,
+      "heat": 98,
       "models": [
         "Seedance 2.5"
       ],
@@ -1290,7 +1290,7 @@
       "input": "一份 30 秒逐秒 K-POP MV 脚本：用音频时间码把舞蹈、口型、剪辑和场景全钉死在真实节拍上，主角锁脸锁服装贯穿六个 Y2K 场景，伴舞人数和位置逐段精确控制，翻盖手机合盖硬停收尾。",
       "label": "music-beat-sync-mv",
       "slug": "seedance-25-kpop-mv-zero-to-pop",
-      "heat": 86,
+      "heat": 85,
       "models": [
         "Seedance 2.5"
       ],
@@ -1300,7 +1300,7 @@
       "input": "A complex video prompt for a rhythmic hand-and-body dance in a modern room, featuring interactive holographic geometric frames and seamless transitions between reality and a neon cyberpunk world.",
       "label": "music-beat-sync-mv",
       "slug": "cyberpunk-holographic-dance-performance",
-      "heat": 85,
+      "heat": 84,
       "models": [
         "Seedance 2.5"
       ],
@@ -1310,7 +1310,7 @@
       "input": "A rhythmic K-pop choreography prompt featuring three idols performing under LED lights with specific synchronized motions like laughing and peace signs.",
       "label": "music-beat-sync-mv",
       "slug": "vibrant-k-pop-stage-performance",
-      "heat": 83,
+      "heat": 82,
       "models": [
         "Seedance 2.0"
       ],
@@ -1320,7 +1320,7 @@
       "input": "Good vibes, smooth moves, and a beat you can’t resist. When the music hits, you just have to move. Made with Seedance 2.0 on Prompt: A cinematic K-po…",
       "label": "music-beat-sync-mv",
       "slug": "seedance-a-cinematic-k-pop-dance-performance-on-a-futuristic-dark-stage-illuminated-by-v-a713463472c6",
-      "heat": 67,
+      "heat": 66,
       "models": [
         "Seedance"
       ],
@@ -1330,7 +1330,7 @@
       "input": "A comprehensive 15-second prompt for a continuous, handheld-style iPhone video featuring a street dancer walking and performing in a Japanese city.",
       "label": "music-beat-sync-mv",
       "slug": "iphone-shot-street-dance-music-video",
-      "heat": 34,
+      "heat": 32,
       "models": [
         "Seedance 2.0"
       ],
@@ -1340,7 +1340,7 @@
       "input": "一份全面的视频生成提示词，用于制作多场景可口可乐商业广告，包含拼贴风格图形和富有节奏感的服装转场。",
       "label": "music-beat-sync-mv",
       "slug": "case-887d0484c2ce",
-      "heat": 27,
+      "heat": 26,
       "models": [
         "Seedance 2.0"
       ],
@@ -1350,7 +1350,7 @@
       "input": "Seedance 2.5 生成的涩谷街头K-pop快闪翻跳视频，四名舞者依次变换菱形、横排、V字三种队形完成舞蹈段落。画面叠加与舞点精确同步的复古大字字幕，逐句随节拍淡入淡出。",
       "label": "music-beat-sync-mv",
       "slug": "seedance-2-5-k-pop-87e2d00e2fe8",
-      "heat": 23,
+      "heat": 22,
       "models": [
         "Seedance 2.5"
       ],
@@ -1360,7 +1360,7 @@
       "input": "一个复杂的 Seedance 2.0 视频提示词，用于制作多人音乐视频，通过图像参考来确定角色身份，并使用视频来把控节奏。",
       "label": "music-beat-sync-mv",
       "slug": "case-24775a8dc979",
-      "heat": 9,
+      "heat": 8,
       "models": [
         "Seedance 2.0"
       ],
@@ -1420,7 +1420,7 @@
       "input": "A cinematic video prompt for Seedance 2.5 featuring a high-physics diner collision where time freezes, allowing a character to interact with suspended objects before resuming in real-time.",
       "label": "time-freeze-rewind",
       "slug": "90s-diner-time-freeze-effect",
-      "heat": 64,
+      "heat": 63,
       "models": [
         "Seedance 2.5"
       ],
@@ -1430,7 +1430,7 @@
       "input": "Catch calls, sip coffee, and own every street like a boss, Created with Seedance 2.5 Prompt: A stylish young woman walki",
       "label": "time-freeze-rewind",
       "slug": "avelyrahnai-seedance-ai-a392e2711b0d",
-      "heat": 51,
+      "heat": 49,
       "models": [
         "Seedance"
       ],
@@ -1462,7 +1462,7 @@
       "input": "来自 X / 𝕏 的真实 视频 案例，由 发布。适合观察 Prompt 结构、素材组织和可复用的创作模式。",
       "label": "storyboard-grid-to-video",
       "slug": "real-case-07-techiebysa",
-      "heat": 86,
+      "heat": 85,
       "models": [
         "Seedance 2.0",
         "Veo",
@@ -1474,7 +1474,7 @@
       "input": "When every second feels cinematic, the action never stops. Created with the power of Seedance 2.5 on A high-intensity cinematic action sequence fea…",
       "label": "storyboard-grid-to-video",
       "slug": "seedance-create-a-single-page-premium-hollywood-disaster-action-storyboard-in-16-9-wide-7cc2f22eaa0c",
-      "heat": 79,
+      "heat": 78,
       "models": [
         "Seedance"
       ],
@@ -1484,7 +1484,7 @@
       "input": "A cinematic 3D character animation sequence based on a storyboard, depicting a woman returning home and interacting with her apartment.",
       "label": "storyboard-grid-to-video",
       "slug": "apartment-arrival-storyboard-animation",
-      "heat": 68,
+      "heat": 67,
       "models": [
         "Seedance 2.0"
       ],
@@ -1494,7 +1494,7 @@
       "input": "Made with Seedance 2.5 in 1080p Duration: 30 seconds Aspect Ratio: 16:9 Prompt Ultra realistic personal summer home-video featuring Elsa. Use the provided Maste…",
       "label": "storyboard-grid-to-video",
       "slug": "seedance-made-with-seedance-2-5-in-1080p-bb09011ebea2",
-      "heat": 67,
+      "heat": 66,
       "models": [
         "Seedance"
       ],
@@ -1504,7 +1504,7 @@
       "input": "Nano Banana 2 × Seedance 2.5 Prompt b- TITLE: Premium Spicy Potato Chips Product Commercial Storyboard FORMAT: • Single-",
       "label": "storyboard-grid-to-video",
       "slug": "strength04-x-seedance-ai-be4ae9f1e375",
-      "heat": 36,
+      "heat": 35,
       "models": [
         "Seedance",
         "Nano Banana"
@@ -1515,7 +1515,7 @@
       "input": "这是一个为 Seedance 2.0 设计的综合提示词，旨在将视觉故事板转化为一段 10 秒的 3D 动画，展示女孩烘焙纸杯蛋糕的特定时间轴动作。",
       "label": "storyboard-grid-to-video",
       "slug": "3d-f194855e4246",
-      "heat": 31,
+      "heat": 29,
       "models": [
         "Seedance 2.0"
       ],
@@ -1525,7 +1525,7 @@
       "input": "这是一个为 Seedance 2.0 设计的视频生成提示词，旨在将一系列照片快照转化为连贯且富有情感的旅行 Vlog，并呈现自然的掌机拍摄效果。",
       "label": "storyboard-grid-to-video",
       "slug": "vlog-4317b7fdff57",
-      "heat": 5,
+      "heat": 4,
       "models": [
         "Seedance 2.0"
       ],
@@ -1565,7 +1565,7 @@
       "input": "What happened there Seedance 2.5 Prompt : GIRL = MAIN CHARACTER: Young Korean woman in her early 20s, natural makeup, black wavy hair tied into a messy side …",
       "label": "retro-found-footage",
       "slug": "seedance-girl-main-character-young-korean-woman-in-her-early-20s-natural-makeup-bla-99a309189863",
-      "heat": 86,
+      "heat": 85,
       "models": [
         "Seedance"
       ],
@@ -1575,7 +1575,7 @@
       "input": "一段充满 2000 年代怀旧 DV 摄像机风格的 Vlog，记录了一位年轻韩国女生在安静的社区泳池享受阳光午后的时光。",
       "label": "retro-found-footage",
       "slug": "vlog-9decd38e99a4",
-      "heat": 84,
+      "heat": 83,
       "models": [
         "Seedance 2.5"
       ],
@@ -1585,7 +1585,7 @@
       "input": "Real life has never looked this AI. Seedance 2.5 on Prompt Create a 30-second, 1080p, 16:9 ultra-realistic early-2000s DV home video of a young Korean …",
       "label": "retro-found-footage",
       "slug": "seedance-real-life-has-never-looked-this-ai-64d1dedc739f",
-      "heat": 82,
+      "heat": 81,
       "models": [
         "Seedance"
       ],
@@ -1595,7 +1595,7 @@
       "input": "Made with seedance 2.5 Prompt: FORMAT: 30 seconds | 16:9 | Ultra-photorealistic live-action | Continuous handheld vacati",
       "label": "retro-found-footage",
       "slug": "seedance-format-30-seconds-16-9-ultra-photorealistic-live-action-continuous-handh-9260ed6474c5",
-      "heat": 77,
+      "heat": 76,
       "models": [
         "Seedance"
       ],
@@ -1605,7 +1605,7 @@
       "input": "Let's go to shopping and be kind to kids Seedance 2.5 on Prompt Create a 30-second, 1080p ultra-realistic early-2000s DV home video of a 20-year-old …",
       "label": "retro-found-footage",
       "slug": "seedance-let-s-go-to-shopping-and-be-kind-to-kids-7883b68d50b5",
-      "heat": 71,
+      "heat": 70,
       "models": [
         "Seedance"
       ],
@@ -1615,7 +1615,7 @@
       "input": "If AI can create THIS… Hollywood is definitely cooked. Berlin street filmed on an HD camera in 1989. Made with seedance 2.5 Prompt: Create a 30-second, 16:9,…",
       "label": "retro-found-footage",
       "slug": "seedance-create-a-30-second-16-9-1080p-ultra-photorealistic-archival-video-of-everyday-9b6f33c925e9",
-      "heat": 56,
+      "heat": 54,
       "models": [
         "Seedance"
       ],
@@ -1625,7 +1625,7 @@
       "input": "Baddie on a Sunday Seedance 2.5 Prompt : Create a 30-second, 1080p ultra-realistic early-2000s DV home video of a young Korean woman spending a quiet Sunday …",
       "label": "retro-found-footage",
       "slug": "seedance-create-a-30-second-1080p-ultra-realistic-early-2000s-dv-home-video-of-a-young-5dc249e58f02",
-      "heat": 53,
+      "heat": 51,
       "models": [
         "Seedance"
       ],
@@ -1635,7 +1635,7 @@
       "input": "Baddie is kind too Seedance 2.5 nailed it Prompt : Create a 30-second, 1080p ultra-realistic early-2000s DV home video of a young Korean woman spending a relaxe…",
       "label": "retro-found-footage",
       "slug": "seedance-create-a-30-second-1080p-ultra-realistic-early-2000s-dv-home-video-of-a-young-3652e0a55970",
-      "heat": 50,
+      "heat": 47,
       "models": [
         "Seedance"
       ],
@@ -1645,7 +1645,7 @@
       "input": "Seedance 2.5 on Prompt - Main Subject: Young American woman, early 20s, cropped tank top over denim shorts,",
       "label": "retro-found-footage",
       "slug": "strength04-x-seedance-ai-80b7f396e81c",
-      "heat": 38,
+      "heat": 36,
       "models": [
         "Seedance"
       ],
@@ -1655,7 +1655,7 @@
       "input": "这是一个为 Seedance 2.0 设计的详细分镜提示词，旨在生成一段具有手持迷你 DV 摄像机风格、包含 ASMR 细节的写实晚间护肤流程 Vlog。",
       "label": "retro-found-footage",
       "slug": "vlog-8a3e0b49e77b",
-      "heat": 21,
+      "heat": 20,
       "models": [
         "Seedance 2.0"
       ],
@@ -1665,7 +1665,7 @@
       "input": "golden hour in Bali hits different when you stop chasing the shot and just live in it Created with Seedance 2.5 on Prompt: A cinematic 30-second…",
       "label": "travel-city-walk",
       "slug": "seedance-a-cinematic-30-second-tropical-travel-vlog-montage-featuring-a-beautiful-20-yea-6af38a792806",
-      "heat": 88,
+      "heat": 87,
       "models": [
         "Seedance",
         "Kling"
@@ -1676,7 +1676,7 @@
       "input": "A breathtaking Mediterranean villa nestled in the hills private pool, manicured gardens & timeless elegance Made with se",
       "label": "travel-city-walk",
       "slug": "noorlewisx-seedance-ai-3a8b37309451",
-      "heat": 76,
+      "heat": 75,
       "models": [
         "Seedance"
       ],
@@ -1696,7 +1696,7 @@
       "input": "Every trail has a reward. Seedance 2.5 makes every step feel naturally immersive. Created with Seedance 2.5. Prompt: A y",
       "label": "travel-city-walk",
       "slug": "nawalsehar-seedance-ai-97aa872cb79d",
-      "heat": 71,
+      "heat": 70,
       "models": [
         "Seedance"
       ],
@@ -1706,7 +1706,7 @@
       "input": "A summer escape through Korea’s mountains setting up camp, cooking outdoors, and unwinding beneath the evening sky. Crea",
       "label": "travel-city-walk",
       "slug": "nawalsehar-seedance-ai-531c19980c39",
-      "heat": 68,
+      "heat": 67,
       "models": [
         "Seedance"
       ],
@@ -1716,7 +1716,7 @@
       "input": "A little adventure, one frame at a time Collecting moments, not just memories. Created with Seedance 2.5 Prompt: A cinematic AI travel vlog of a stylish young w…",
       "label": "travel-city-walk",
       "slug": "seedance-a-cinematic-ai-travel-vlog-of-a-stylish-young-woman-exploring-a-vibrant-europea-0eaef30bc5e3",
-      "heat": 61,
+      "heat": 60,
       "models": [
         "Seedance"
       ],
@@ -1726,7 +1726,7 @@
       "input": "Snow on her lashes, fire in the window, thirty seconds of alpine calm. Made with Seedance 2.5 on She skied before breakfast, got lost in a pine for…",
       "label": "travel-city-walk",
       "slug": "seedance-a-cinematic-30-second-alpine-winter-vlog-montage-featuring-the-same-young-woman-cf96bc6f9a40",
-      "heat": 60,
+      "heat": 59,
       "models": [
         "Seedance"
       ],
@@ -1736,7 +1736,7 @@
       "input": "A peaceful journey through Japan’s breathtaking mountain views, captured one frame at a time. Created to feel like a rea",
       "label": "travel-city-walk",
       "slug": "ayzalnooor24521-seedance-ai-890aad58385a",
-      "heat": 57,
+      "heat": 56,
       "models": [
         "Seedance"
       ],
@@ -1746,7 +1746,7 @@
       "input": "New destination. New memories. Boarding the flight and letting the adventure begin. Made with seedance 2.5 on Prompt: Create a cinematic photorealistic…",
       "label": "travel-city-walk",
       "slug": "seedance-create-a-cinematic-photorealistic-travel-video-of-a-stylish-young-woman-arrivin-b321bf4210a0",
-      "heat": 53,
+      "heat": 52,
       "models": [
         "Seedance"
       ],
@@ -1756,7 +1756,7 @@
       "input": "Rainy streets, green hills, black-sand beaches, and a little adventure across New Zealand Made with Seedance 2.5 Prompt ↓ [GENERATION GOAL] 30-second cinematic …",
       "label": "travel-city-walk",
       "slug": "seedance-rainy-streets-green-hills-black-sand-beaches-and-a-little-adventure-across-n-0476951b6e15",
-      "heat": 50,
+      "heat": 48,
       "models": [
         "Seedance"
       ],
@@ -1766,7 +1766,7 @@
       "input": "Sunlit hanok alleys, a white tote, and one stray cat Just an ordinary day that already looked like a film Made with seed",
       "label": "travel-city-walk",
       "slug": "aiwithelisia-seedance-ai-4880539d8030",
-      "heat": 49,
+      "heat": 47,
       "models": [
         "Seedance"
       ],
@@ -1776,7 +1776,7 @@
       "input": "POV: You pressed play and Japan happened Seedance 2.5 perfection is here Prompt: Create a photorealistic cinematic trave",
       "label": "travel-city-walk",
       "slug": "aiwithsynthia-seedance-ai-ab4f303de473",
-      "heat": 41,
+      "heat": 39,
       "models": [
         "Seedance"
       ],
@@ -1796,7 +1796,7 @@
       "input": "Just a normal day in the life of a very busy cat Created with Seedance 2.5 on Prompt: Create a 60-seco",
       "label": "pet-animal",
       "slug": "zarairahh-seedance-ai-f89372941867",
-      "heat": 89,
+      "heat": 88,
       "models": [
         "Seedance"
       ],
@@ -1806,7 +1806,7 @@
       "input": "A humorous and absurd cinematic prompt of two cats riding a red motorcycle on a suburban road, chasing their owner for food.",
       "label": "pet-animal",
       "slug": "cats-chasing-via-red-mini-motorcycle",
-      "heat": 84,
+      "heat": 83,
       "models": [
         "Seedance 2.0"
       ],
@@ -1816,7 +1816,7 @@
       "input": "A creative cinematic prompt for Seedance 2.5 depicting an orchestra of sea animals like octopuses and dolphins performing deep underwater.",
       "label": "pet-animal",
       "slug": "underwater-animal-orchestra",
-      "heat": 80,
+      "heat": 79,
       "models": [
         "Seedance 2.5"
       ],
@@ -1826,7 +1826,7 @@
       "input": "She thought it was going to be a peaceful rainy-day selfie But the kitten had other plans Seedance 2.5 Prompt - REFERENCE & SUBJECT Use \"@<image1\" as the exa…",
       "label": "pet-animal",
       "slug": "seedance-she-thought-it-was-going-to-be-a-peaceful-rainy-day-selfie-f0bf765977dd",
-      "heat": 73,
+      "heat": 72,
       "models": [
         "Seedance"
       ],
@@ -1836,7 +1836,7 @@
       "input": "POV: you wanted a cute mirror selfie, but your dog wanted to be the main character Made with Seedance 2.5 Prompt ↓ REFERENCE & SUBJECT CONSISTENCY Use \"@<image1…",
       "label": "pet-animal",
       "slug": "seedance-pov-you-wanted-a-cute-mirror-selfie-but-your-dog-wanted-to-be-the-main-charac-3d3e83219d46",
-      "heat": 70,
+      "heat": 69,
       "models": [
         "Seedance"
       ],
@@ -1856,7 +1856,7 @@
       "input": "Seedance 2.5 on A simple wildlife moment turns into a hilarious head-tilt battle. Loved how natural and photore",
       "label": "pet-animal",
       "slug": "synthesarah-seedance-ai-636eef3e35c4",
-      "heat": 60,
+      "heat": 59,
       "models": [
         "Seedance"
       ],
@@ -1866,7 +1866,7 @@
       "input": "Made with seedance 2.5 Prompt Create a cinematic, ultra-realistic 30-second fantasy adventure scene set in a misty mountain forest with a powerful rushing ri…",
       "label": "pet-animal",
       "slug": "seedance-made-with-seedance-2-5-30882311d898",
-      "heat": 45,
+      "heat": 43,
       "models": [
         "Seedance"
       ],
@@ -1876,7 +1876,7 @@
       "input": "What if the perfect day with your dog was built around love, routine, and the little moments that matter? Created this 1",
       "label": "pet-animal",
       "slug": "aiwithzeeshi-seedance-ai-bf6c6f533942",
-      "heat": 40,
+      "heat": 38,
       "models": [
         "Seedance"
       ],
@@ -1886,7 +1886,7 @@
       "input": "一种模仿 Mini DV 摄像机质感的低保真（lo-fi）视觉提示词，适用于自然光下的放松类 ASMR 冥想 Vlog。",
       "label": "pet-animal",
       "slug": "asmr-vlog-db7f7a2ad923",
-      "heat": 3,
+      "heat": 2,
       "models": [
         "Seedance 2.0"
       ],
@@ -1906,7 +1906,7 @@
       "input": "How cinematic can pure motorcycle speed actually become on-screen? GPT Image 2 + Seedance 2.0 on prompt",
       "label": "car-vehicle",
       "slug": "just-sharon7-seedance-ai-f5af358d1f88",
-      "heat": 79,
+      "heat": 78,
       "models": [
         "Seedance",
         "GPT Image"
@@ -1917,7 +1917,7 @@
       "input": "Post apocalyptic chaos at full speed A rocket powered dune buggy explosive dogfights and insane cinematic action straigh",
       "label": "car-vehicle",
       "slug": "zyrellix-seedance-ai-b7efa04a2c13",
-      "heat": 73,
+      "heat": 72,
       "models": [
         "Seedance"
       ],
@@ -1927,7 +1927,7 @@
       "input": "What if you could assemble a supercar with your mind? Made with Seedance 2.5 using #AtlasCloud Prompt",
       "label": "car-vehicle",
       "slug": "missdelulu9-seedance-ai-02009f1f7daf",
-      "heat": 51,
+      "heat": 49,
       "models": [
         "Seedance",
         "Runway"
@@ -1938,7 +1938,7 @@
       "input": "A high-energy motorcycle commercial prompt set in the snow-covered Karakoram mountains, focusing on photorealistic tracking shots and physical consistency.",
       "label": "car-vehicle",
       "slug": "karakoram-motorcycle-commercial",
-      "heat": 46,
+      "heat": 44,
       "models": [
         "Seedance 2.5"
       ],
@@ -1948,7 +1948,7 @@
       "input": "Speed, neon and chaos collide A futuristic rider takes on a massive zombie horde in a high octane cinematic chase. Made",
       "label": "car-vehicle",
       "slug": "zyrellix-seedance-ai-e2b9d262ff6b",
-      "heat": 36,
+      "heat": 34,
       "models": [
         "Seedance"
       ],
@@ -1958,7 +1958,7 @@
       "input": "What a ride! Made by using GPT Image 2 + Seedance 2.0 on Prompt reference_handling: \"Image generation st",
       "label": "car-vehicle",
       "slug": "aiwithaliya-seedance-ai-cf398f743859",
-      "heat": 34,
+      "heat": 32,
       "models": [
         "Seedance",
         "GPT Image",
@@ -1970,7 +1970,7 @@
       "input": "An incredibly detailed action prompt for a 30-second handheld POV video featuring a girl with a bamboo toy that triggers a car transforming into a giant robot.",
       "label": "car-vehicle",
       "slug": "bamboo-toy-car-transformation-vlog",
-      "heat": 29,
+      "heat": 27,
       "models": [
         "Seedance 2.5"
       ],
@@ -1980,7 +1980,7 @@
       "input": "抖音爆款炫酷机车转场视频 Seedance 2.5 prompt Duration: 10 seconds Aspect ratio: 9:16 vertical Overall style: 超写实都市夜骑短片（Photorea",
       "label": "car-vehicle",
       "slug": "johnagi168-seedance-ai-6289b5b000a0",
-      "heat": 24,
+      "heat": 23,
       "models": [
         "Seedance"
       ],
@@ -1990,7 +1990,7 @@
       "input": "一个充满氛围感的动漫风格视频提示词，描绘了布满鲜艳涂鸦的黑暗地下街道隧道，呈现出湿润的沥青路面和昏暗的灯光反射效果。",
       "label": "car-vehicle",
       "slug": "case-779580528a24",
-      "heat": 8,
+      "heat": 7,
       "models": [
         "Seedance 2.0"
       ],
@@ -2010,7 +2010,7 @@
       "input": "Golden hour. Frozen peaks. She walked like the mountain belonged to her. Made with seedance 2.5 Prompt: Cinematic fashion film still, low-angle shot of a beauti…",
       "label": "fashion-lookbook",
       "slug": "seedance-cinematic-fashion-film-still-low-angle-shot-of-a-beautiful-young-woman-with-wa-fac7693b54a0",
-      "heat": 82,
+      "heat": 81,
       "models": [
         "Seedance",
         "Kling"
@@ -2021,7 +2021,7 @@
       "input": "Tokyo streets. Chrome attitude. Prada energy. A high-fashion story where the bag isn’t just an accessory, it’s the mai",
       "label": "fashion-lookbook",
       "slug": "aiwithnatalia-seedance-ai-12c56e79550f",
-      "heat": 80,
+      "heat": 79,
       "models": [
         "Seedance",
         "Kling",
@@ -2033,7 +2033,7 @@
       "input": "Power moves in pinstripes.She doesn’t climb the city she owns it. Made with seedance 2.0 Prompt: A cinematic, stylish se",
       "label": "fashion-lookbook",
       "slug": "noorlewisx-seedance-ai-4b6f8c8c977a",
-      "heat": 77,
+      "heat": 76,
       "models": [
         "Seedance"
       ],
@@ -2043,7 +2043,7 @@
       "input": "A dreamy summer story filled with warmth and gentle moments. Golden sunlight, flowing water, and peaceful countryside vibes. Created on seedance 2.0 Prompt: A g…",
       "label": "fashion-lookbook",
       "slug": "seedance-a-graceful-young-korean-woman-with-soft-short-wavy-brown-hair-delicate-feature-11d70672ecb9",
-      "heat": 67,
+      "heat": 66,
       "models": [
         "Seedance"
       ],
@@ -2063,7 +2063,7 @@
       "input": "POV: you saw the lip oil you wanted and decided the claw machine wasn’t going to stop you. ‍ Created with Seedan",
       "label": "fashion-lookbook",
       "slug": "aiwithnatalia-seedance-ai-7890280c705d",
-      "heat": 62,
+      "heat": 61,
       "models": [
         "Seedance",
         "Kling"
@@ -2074,7 +2074,7 @@
       "input": "一份详细的脚本式提示词，用于制作护肤美妆 Vlog，包含女性展示产品使用的分镜头序列，并标注了具体的时间戳和运镜方式。",
       "label": "fashion-lookbook",
       "slug": "vlog-49dbf66ad64f",
-      "heat": 58,
+      "heat": 57,
       "models": [
         "Seedance 2.0"
       ],
@@ -2084,7 +2084,7 @@
       "input": "New look unlocked! Made with Seedance 2.5 using Prompt: Style: Retro Y2K pixel dress-up game + photoreal",
       "label": "fashion-lookbook",
       "slug": "missdelulu9-seedance-ai-82f2bf793076",
-      "heat": 48,
+      "heat": 46,
       "models": [
         "Seedance"
       ],
@@ -2094,7 +2094,7 @@
       "input": "穿搭博主在线教学 ‍ 12 秒换了多少套衣服呢 像以前这样一天视频从拍摄换装再到剪辑最起码要大半天以上时间，现在仅需一张人物参考图 提示词几分钟就能够搞定 Seedance 2.5 prompt 【风格】真实穿搭卡点短视频",
       "label": "fashion-lookbook",
       "slug": "johnagi168-seedance-ai-140908f952bd",
-      "heat": 28,
+      "heat": 26,
       "models": [
         "Seedance"
       ],
@@ -2104,7 +2104,7 @@
       "input": "A multi-shot cinematic video prompt for Seedance 2.0 featuring fashion models at a high-end rooftop terrace party with a helicopter background and sophisticated camera movements.",
       "label": "fashion-lookbook",
       "slug": "luxury-rooftop-helicopter-party",
-      "heat": 26,
+      "heat": 25,
       "models": [
         "Seedance 2.0"
       ],
@@ -2114,7 +2114,7 @@
       "input": "一套全面的多场景视频提示词，旨在确保角色在不同地点和服装下的连贯性，并包含快速剪辑和手持摄像机运动效果。",
       "label": "fashion-lookbook",
       "slug": "case-58e736edb65c",
-      "heat": 19,
+      "heat": 18,
       "models": [
         "Seedance 2.0"
       ],
@@ -2134,7 +2134,7 @@
       "input": "That's how I would be as a mother GPT Image 2 + Seedance 2.0 on prompt A realistic, cinematic short video (abou",
       "label": "meme-comedy",
       "slug": "just-sharon7-seedance-ai-20d2026d6f58",
-      "heat": 86,
+      "heat": 85,
       "models": [
         "Seedance",
         "GPT Image"
@@ -2145,7 +2145,7 @@
       "input": "A detailed action-comedy video prompt for Seedance 2.5 featuring a female character's persistent attacks and a male character's playful evasions involving quick cheek kisses.",
       "label": "meme-comedy",
       "slug": "modern-action-comedy-video-prompt",
-      "heat": 85,
+      "heat": 84,
       "models": [
         "Seedance 2.0"
       ],
@@ -2155,7 +2155,7 @@
       "input": "Made with seedance 2.5 Prompt: Create a 30-second, 1080p ultra-realistic personal home-video of a young Korean woman con",
       "label": "meme-comedy",
       "slug": "seedance-create-a-30-second-1080p-ultra-realistic-personal-home-video-of-a-young-korean-906969cda347",
-      "heat": 72,
+      "heat": 71,
       "models": [
         "Seedance"
       ],
@@ -2165,7 +2165,7 @@
       "input": "Created with Seedance 2.5 on “Just five more minutes…” sounds harmless until you wake up late, rush through",
       "label": "meme-comedy",
       "slug": "seharshinwari-seedance-ai-fef37a593d87",
-      "heat": 65,
+      "heat": 64,
       "models": [
         "Seedance"
       ],
@@ -2175,7 +2175,7 @@
       "input": "15 秒动作喜剧：海盗躲进木桶被追兵撵着一路滚下港口小镇，从集市街、石板坡、长楼梯冲进海里追上开走的船。路线全程锁死单向下坡，Midjourney 手绘绘本风参考图定角色与场景。",
       "label": "meme-comedy",
       "slug": "nvtdanh-seedance-ai-52f635503525",
-      "heat": 48,
+      "heat": 46,
       "models": [
         "Seedance",
         "Midjourney"
@@ -2186,7 +2186,7 @@
       "input": "Granny Funny Moment Created with Seedance 2.5 on Prompt below Generate a continuous 30-second sequence in the style of a real dashcam…",
       "label": "meme-comedy",
       "slug": "seedance-granny-funny-moment-2c26bc1ac563",
-      "heat": 48,
+      "heat": 46,
       "models": [
         "Seedance"
       ],
@@ -2196,17 +2196,17 @@
       "input": "She vs The Dog Made with Seedance 2.5 Prompt: Create a 15-second realistic smartphone video in 16:9 aspect ratio. Sty",
       "label": "meme-comedy",
       "slug": "missdelulu9-seedance-ai-cc2834a3dc87",
-      "heat": 44,
+      "heat": 42,
       "models": [
         "Seedance"
       ],
       "corpusCountForLabel": 22
     },
     {
-      "input": "Seedance 2.5 almighty prompt is below A 2000s studio-comedy film shot, 16:9, 35mm, moderate film grain, bright Americ",
+      "input": "Created with Seedance 2.5 on Rezona Lab Prompt Generate a continuous 30-second raw live USA television news helicopter coverage of the ongoing aft…",
       "label": "meme-comedy",
-      "slug": "techhalla-seedance-ai-81e09066a66b",
-      "heat": 42,
+      "slug": "seedance-created-with-seedance-2-5-on-rezona-lab-0a707a78155e",
+      "heat": 39,
       "models": [
         "Seedance"
       ],
@@ -2216,7 +2216,7 @@
       "input": "一个关于一名男子混乱早晨日常的幽默动画短片叙事提示词，最终发现这一切只是一场噩梦。",
       "label": "meme-comedy",
       "slug": "case-398be18644ee",
-      "heat": 26,
+      "heat": 25,
       "models": [
         "Seedance 2.0"
       ],
@@ -2226,7 +2226,7 @@
       "input": "可爱鬼 最近这种特效也是挺火的 Seedance 2.5 prompt ⬇ 【风格】抖音爆款搞怪变脸短视频（Viral Funny Elastic Face FX），真人实景，夸张橡胶级物理形变特效，4K超清画质，夜景人像打光，画",
       "label": "meme-comedy",
       "slug": "johnagi168-seedance-ai-8424f361fbe0",
-      "heat": 20,
+      "heat": 19,
       "models": [
         "Seedance"
       ],
@@ -2236,7 +2236,7 @@
       "input": "A mixed-media video prompt for Seedance 2.0 combining a realistic 1st-person kitchen POV with a 2D animated capybara sticker character performing a salt-pouring prank.",
       "label": "meme-comedy",
       "slug": "2d-sticker-capybara-kitchen-prank",
-      "heat": 8,
+      "heat": 7,
       "models": [
         "Seedance 2.0"
       ],
@@ -2246,7 +2246,7 @@
       "input": "The Zombie Express. Made with Seedance 2.5 on Prompt: Shot 1 (0.0–1.2s): <<<image_1>>>, face and outfit matching reference, lying in upper bunk of a…",
       "label": "horror-suspense",
       "slug": "seedance-shot-1-0-0-1-2s-image-1-face-and-outfit-matching-reference-lying-in-b6d9ef0e370e",
-      "heat": 85,
+      "heat": 83,
       "models": [
         "Seedance"
       ],
@@ -2256,7 +2256,7 @@
       "input": "一个复杂的、逐镜头视频 storyboard 提示词，描绘了列车上的恐怖丧尸爆发场景，重点展示变异细节和混乱的动作。",
       "label": "horror-suspense",
       "slug": "case-3b1796c66ab4",
-      "heat": 78,
+      "heat": 76,
       "models": [
         "Seedance 2.5"
       ],
@@ -2266,7 +2266,7 @@
       "input": "一个多序列恐怖提示词，用于在韩国天台拍摄僵尸变异场景，包含激烈的动作和电影级运镜。",
       "label": "horror-suspense",
       "slug": "case-b529ffbdfd9a",
-      "heat": 76,
+      "heat": 75,
       "models": [
         "Seedance 2.0"
       ],
@@ -2276,7 +2276,7 @@
       "input": "Apocalypse unleash in Train. Made with Seedance 2.5 Prompt: 0–1.2s: @ (Image) matching reference face/outfit, sits on a",
       "label": "horror-suspense",
       "slug": "doctorwasif-seedance-ai-117496b404a6",
-      "heat": 71,
+      "heat": 70,
       "models": [
         "Seedance"
       ],
@@ -2286,7 +2286,7 @@
       "input": "30 seconds of pure Korean folk horror. Made with Seedance 2.5 on Prompt: 30-sec cinematic Korean folk-horror ritual. Keep the Word character’s face …",
       "label": "horror-suspense",
       "slug": "seedance-30-sec-cinematic-korean-folk-horror-ritual-78323fedb479",
-      "heat": 70,
+      "heat": 69,
       "models": [
         "Seedance"
       ],
@@ -2296,7 +2296,7 @@
       "input": "She thought it was just another day… until the hallway changed forever. Created with Seedance 2.5 Prompt: Create a high-end cinematic live-action scene inside…",
       "label": "horror-suspense",
       "slug": "seedance-create-a-high-end-cinematic-live-action-scene-inside-a-modern-american-high-sch-5470a0729ac7",
-      "heat": 59,
+      "heat": 58,
       "models": [
         "Seedance"
       ],
@@ -2306,7 +2306,7 @@
       "input": "Last Signal: Carriage 13 Made with Seedance 2.5 on Prompt: 0–4s: Character A, matching the reference image, livestreams herself on a dark night train…",
       "label": "horror-suspense",
       "slug": "seedance-0-4s-character-a-matching-the-reference-image-livestreams-herself-on-a-dark-672f3482fa3b",
-      "heat": 53,
+      "heat": 51,
       "models": [
         "Seedance"
       ],
@@ -2316,7 +2316,7 @@
       "input": "THE FINAL CARRIAGE From an idea to a cinematic nightmare. Made with Seedance 2.5 on Prompt: Shot 1 (0.0–1.2s): Character A, face and outfit matchi…",
       "label": "horror-suspense",
       "slug": "seedance-shot-1-0-0-1-2s-character-a-face-and-outfit-matching-the-reference-image-s-6d712bba22c5",
-      "heat": 49,
+      "heat": 47,
       "models": [
         "Seedance"
       ],
@@ -2326,7 +2326,7 @@
       "input": "Made with seedance 2.5 Prompt: Create a highly realistic cinematic horror sequence set inside a quiet apartment building",
       "label": "horror-suspense",
       "slug": "saniaspeaks-seedance-ai-575658372136",
-      "heat": 42,
+      "heat": 40,
       "models": [
         "Seedance"
       ],
@@ -2356,7 +2356,7 @@
       "input": "Tiny chef, huge ambitions ‍ Making gourmet magic, one tiny dish at a time. Created with Seedance 2.5 on",
       "label": "3d-cartoon",
       "slug": "caden-flux-seedance-ai-473fedbbc75f",
-      "heat": 83,
+      "heat": 82,
       "models": [
         "Seedance",
         "Kling"
@@ -2367,7 +2367,7 @@
       "input": "When you thought she was getting ready for romance… But she was actually getting you ready for laundry duty. Made w",
       "label": "3d-cartoon",
       "slug": "im-shahid7-seedance-ai-b4d2ba40a750",
-      "heat": 65,
+      "heat": 64,
       "models": [
         "Seedance"
       ],
@@ -2377,7 +2377,7 @@
       "input": "Made with seedance 2.5 Prompt Create a cinematic, high-quality 3D animated fantasy adventure scene in a lush tropical jungle near a beautiful tropical coastl…",
       "label": "3d-cartoon",
       "slug": "seedance-made-with-seedance-2-5-810bf41bfd44",
-      "heat": 63,
+      "heat": 62,
       "models": [
         "Seedance"
       ],
@@ -2387,7 +2387,7 @@
       "input": "When Mom turned off the Wi-Fi… Grandma had other plans. A chaotic modern South Asian family, three phone-addicted kid",
       "label": "3d-cartoon",
       "slug": "juliaclarky-seedance-ai-f648a434d526",
-      "heat": 53,
+      "heat": 51,
       "models": [
         "Seedance"
       ],
@@ -2397,7 +2397,7 @@
       "input": "Made with seedance 2.5 Prompt Create a 40-second cinematic 3D animated fantasy adventure featuring an adorable chubby otter-like baby animal with soft brown …",
       "label": "3d-cartoon",
       "slug": "seedance-made-with-seedance-2-5-e2f2af930d0e",
-      "heat": 51,
+      "heat": 49,
       "models": [
         "Seedance"
       ],
@@ -2407,7 +2407,7 @@
       "input": "Made with seedance 2.5 Prompt Create a 30-second cute, whimsical 3D animated short film set on a beautiful sunny beach. A tiny adorable sea turtle with a sof…",
       "label": "3d-cartoon",
       "slug": "seedance-made-with-seedance-2-5-4baf2c6b5a8c",
-      "heat": 47,
+      "heat": 45,
       "models": [
         "Seedance",
         "Kling"
@@ -2418,7 +2418,7 @@
       "input": "Made with seedance 2.5 Prompt Create a 60-second cinematic 3D animated fantasy short film set in a lush, magical forest beside a powerful waterfall. Opening …",
       "label": "3d-cartoon",
       "slug": "seedance-made-with-seedance-2-5-d2d9acfaedfc",
-      "heat": 45,
+      "heat": 43,
       "models": [
         "Seedance"
       ],
@@ -2428,7 +2428,7 @@
       "input": "Incredible character visuals and dialogue that actually hits! Stop wasting tokens on endless prompt tweaks. Seedanc",
       "label": "3d-cartoon",
       "slug": "seharshinwari-seedance-ai-ce8e8937181f",
-      "heat": 31,
+      "heat": 30,
       "models": [
         "Seedance",
         "Veo"
@@ -2439,7 +2439,7 @@
       "input": "一个充满奇思妙想的动画提示词：一只顽皮的黏土猫咪每走一步，都能将灰色的世界变成充满活力的天堂，呈现出皮克斯级别的光影效果和手工质感。",
       "label": "3d-cartoon",
       "slug": "case-6152b0808b14",
-      "heat": 28,
+      "heat": 26,
       "models": [
         "Seedance 2.0"
       ],
@@ -2449,7 +2449,7 @@
       "input": "这是一个充满趣味且可爱的 Seedance 2 提示词，用于生成皮克斯风格的 3D 黏土动画，主角是一只在浴缸海洋中航行的海盗鸭船长。",
       "label": "3d-cartoon",
       "slug": "case-21aab321f762",
-      "heat": 17,
+      "heat": 16,
       "models": [
         "Seedance 2.0"
       ],
@@ -2459,7 +2459,7 @@
       "input": "一个幽默的 3D 黏土动画风格提示词，描绘了奥德修斯利用一颗巨大的橄榄分散独眼巨人注意力，并驾驶着一艘小船的滑稽场景。",
       "label": "3d-cartoon",
       "slug": "case-95a5c01a9b87",
-      "heat": 11,
+      "heat": 10,
       "models": [
         "Seedance 2.0"
       ],
@@ -2469,7 +2469,7 @@
       "input": "She thought she was in control until the darkness awakened. Made with seedance 2.5 Prompt: Create a 30-second ultra-cinematic supernatural fantasy sequence, pho…",
       "label": "epic-fantasy-scifi",
       "slug": "seedance-create-a-30-second-ultra-cinematic-supernatural-fantasy-sequence-photorealisti-6d87ff7834d3",
-      "heat": 87,
+      "heat": 86,
       "models": [
         "Seedance"
       ],
@@ -2479,7 +2479,7 @@
       "input": "FROM THE DEEP - GPT Image 2 x Seedance 2.0 It rose from the bay to tear the city apart. One jet, one shot, one shot to s",
       "label": "epic-fantasy-scifi",
       "slug": "weeleey6-seedance-ai-b03a5481e168",
-      "heat": 84,
+      "heat": 83,
       "models": [
         "Seedance",
         "GPT Image"
@@ -2490,7 +2490,7 @@
       "input": "When a dragon takes flight and a warrior takes the leap the whole city becomes the battlefield. Made with seedance 2.0 P",
       "label": "epic-fantasy-scifi",
       "slug": "zyrellix-seedance-ai-987c5819beca",
-      "heat": 80,
+      "heat": 79,
       "models": [
         "Seedance"
       ],
@@ -2500,7 +2500,7 @@
       "input": "What if the ocean came alive after midnight? Created with Seedance 2.5, a cinematic journey into the unknown where glowing waters and mysterious lights guide th…",
       "label": "epic-fantasy-scifi",
       "slug": "seedance-a-weathered-old-lighthouse-keeper-stands-on-a-foggy-cliff-at-night-f581948aed80",
-      "heat": 66,
+      "heat": 65,
       "models": [
         "Seedance"
       ],
@@ -2510,7 +2510,7 @@
       "input": "One continuous journey through rain dreams deserts oceans and the northern lights ending where everything began inside t",
       "label": "epic-fantasy-scifi",
       "slug": "zyrellix-seedance-ai-b83a3b47ae61",
-      "heat": 63,
+      "heat": 62,
       "models": [
         "Seedance"
       ],
@@ -2520,7 +2520,7 @@
       "input": "A woman swallows a sword of light, transforming into a winged archangel to battle demons in dark ruins. Created with Seedance 2.0 Prompt: Cinematic dark fantasy…",
       "label": "epic-fantasy-scifi",
       "slug": "seedance-cinematic-dark-fantasy-video-bbf9e9ec916a",
-      "heat": 57,
+      "heat": 56,
       "models": [
         "Seedance",
         "Midjourney"
@@ -2531,7 +2531,7 @@
       "input": "She wasn’t falling… she was answering the call of the darkness. A warrior, a raven, and a sky full of secrets. Made with Seedance 2.5. Prompt : Create an 11-sec…",
       "label": "epic-fantasy-scifi",
       "slug": "seedance-create-an-11-second-cinematic-dark-fantasy-scene-featuring-a-beautiful-blonde-f-b09877c0a2d2",
-      "heat": 56,
+      "heat": 55,
       "models": [
         "Seedance"
       ],
@@ -2541,7 +2541,7 @@
       "input": "A magical world above the clouds Where dreams come to life. Made With Seedance 2.5 on Prompt: Create a cinematic photorealistic fantasy world built ent…",
       "label": "epic-fantasy-scifi",
       "slug": "seedance-create-a-cinematic-photorealistic-fantasy-world-built-entirely-above-the-clouds-170fd4f7927d",
-      "heat": 51,
+      "heat": 49,
       "models": [
         "Seedance"
       ],
@@ -2551,7 +2551,7 @@
       "input": "The Scarlet Priestess Made with Midjourney + GPT Image 2 + Seedance 2 + Capcut Prompt : Create a 15-second multi-shot 16",
       "label": "epic-fantasy-scifi",
       "slug": "minuitia-seedance-ai-9da034716c83",
-      "heat": 49,
+      "heat": 47,
       "models": [
         "Seedance",
         "GPT Image",
@@ -2563,7 +2563,7 @@
       "input": "中国人能飞 想飞吗？只需输入自己的照片，加上下面的提示词，你也能飞 Seedance 2.5 prompt 【风格】科幻史诗真人电影（Sci-fi Epic Live-Action），ARRI Alexa 35 机身 +",
       "label": "epic-fantasy-scifi",
       "slug": "johnagi168-seedance-ai-d704aa5a63ac",
-      "heat": 20,
+      "heat": 19,
       "models": [
         "Seedance"
       ],
@@ -2573,7 +2573,7 @@
       "input": "一个史诗般的 3D 动画提示词，展示了金色的迦楼罗式战士与天界女神的战斗，呈现了先进的电影级摄像机技术和能量特效。",
       "label": "epic-fantasy-scifi",
       "slug": "vfx-47bf458a20a3",
-      "heat": 19,
+      "heat": 18,
       "models": [
         "Seedance 2.0"
       ],
@@ -2583,7 +2583,7 @@
       "input": "一个设定在雨中魔幻都市的史诗级高奇幻动漫战斗提示词。包含涉及多个魔法门和针对巨龙的射线攻击等复杂视觉特效，侧重于影院级质量和 3D 卡通渲染美学。",
       "label": "epic-fantasy-scifi",
       "slug": "case-16429da4be7b",
-      "heat": 9,
+      "heat": 8,
       "models": [
         "Seedance 2.0"
       ],
@@ -2603,7 +2603,7 @@
       "input": "Chasing the rush where snow meets the sky. Big jumps, fresh powder, and endless mountain energy. Created on seedance 2.0",
       "label": "sports-extreme",
       "slug": "ayzalnooor24521-seedance-ai-db77eb406bfb",
-      "heat": 83,
+      "heat": 82,
       "models": [
         "Seedance"
       ],
@@ -2633,7 +2633,7 @@
       "input": "A mountain biker conquers rugged trails, rocks, and sharp turns before reaching a stunning valley view. Created with See",
       "label": "sports-extreme",
       "slug": "aiwithaly-seedance-ai-bb7055074a13",
-      "heat": 60,
+      "heat": 59,
       "models": [
         "Seedance"
       ],
@@ -2643,7 +2643,7 @@
       "input": "最近这个螃蟹蹲也是挺火的 咱也整一个 还是来源日本老哥丰富多彩的玩法 只需上传一张自己图片输入下面提示词即可生成同款视频 Seedance 2.5 prompt SEEDANCE 2.5｜水上人形墙挑战 【风格】真人水上",
       "label": "sports-extreme",
       "slug": "johnagi168-seedance-ai-792fb30bed36",
-      "heat": 60,
+      "heat": 59,
       "models": [
         "Seedance"
       ],
@@ -2653,7 +2653,7 @@
       "input": "She was one step away from victory… then the water had other plans.... I created this with Seedance 2.5 on Prompt : 15-Second Ultra-Realistic Li…",
       "label": "sports-extreme",
       "slug": "seedance-15-second-ultra-realistic-live-water-game-show-scene-ad357b3bb052",
-      "heat": 51,
+      "heat": 49,
       "models": [
         "Seedance"
       ],
@@ -2663,7 +2663,7 @@
       "input": "She doesn’t play tennis. She hunts points. Every cut hits like a winner. Made with Seedance 2.5 on Try i",
       "label": "sports-extreme",
       "slug": "seedance-step-05-seedance-2-5-generation-baa99b03bc74",
-      "heat": 45,
+      "heat": 43,
       "models": [
         "Seedance"
       ],
@@ -2673,7 +2673,7 @@
       "input": "The challenge Made with GPT IMAGE 2 + Seedance 2.5 on PolloAi Prompt: REI: A player wearing a deep red and white jacket",
       "label": "sports-extreme",
       "slug": "im-shahid7-seedance-ai-398c9aa37acf",
-      "heat": 32,
+      "heat": 30,
       "models": [
         "Seedance",
         "GPT Image"
