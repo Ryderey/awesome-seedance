@@ -7,7 +7,7 @@
 
 这个仓库基于 [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance) 扩展。当前 `feat/video-prompt-router` 分支独立维护，不合并到 `main`。新增的路由 CI 工作流已删除，验证、构建和安装在本地执行。本分支使用本地数据快照，构建不拉取远端，也不承诺每天同步。
 
-当前包含 **27 个模板、670 条来源案例**；664 条已有模板归属，6 条明确跳过，归类待办 0 条。该工具负责选择模板和暴露约束；生成最终提示词需要宿主 Agent，生成视频需要另行调用目标平台。
+当前包含 **{{templates}} 个模板、{{cases}} 条来源案例**；{{filed}} 条已有模板归属，{{skipped}} 条明确跳过，归类待办 {{todo}} 条。该工具负责选择模板和暴露约束；生成最终提示词需要宿主 Agent，生成视频需要另行调用目标平台。
 
 ## 快速开始
 
@@ -107,7 +107,7 @@ node router/build.mjs --install .tmp/router-package --target "YOUR_SKILL_DIRECTO
 后续仍需完成：
 
 - 新输入的独立人工盲评，以及本轮案例归类的独立复核。
-- 更充分的多轮补问回归样例；当前补问后保留率仅覆盖 1 条评测。
+- 更充分的多轮补问回归样例；当前补问后保留率仅覆盖 {{after_count}} 条评测。
 - 宿主从需求、终选模板到最终提示词及成片的端到端验证。
 - 未知模型能力、具体客户端入口及真实 API 执行验证。
 - 真实 Windows 文件占用场景验证；当前回滚与锁定检查包含故障注入。
@@ -116,23 +116,23 @@ CI 已从本分支的路由优化任务中取消。详细任务状态见 [优化
 
 ## 评测结果与局限
 
-下表来自 [data/router-stats.json](./data/router-stats.json)，测量日期 2026-10-03。Top-5 保留率指可接受模板是否留在前五候选中，并按标签作宏平均，不是最终选中正确模板或生成视频成功的比例。
+下表来自 [data/router-stats.json](./data/router-stats.json)，测量日期 {{measured_at}}。Top-5 保留率指可接受模板是否留在前五候选中，并按标签作宏平均，不是最终选中正确模板或生成视频成功的比例。
 
 | 评测项 | 结果 |
 | --- | --- |
-| 冻结摘要集 Top-5 保留率（286 条） | 57.56% |
-| 当前摘要集 Top-5 保留率（291 条） | 57.04% |
-| 口语集充分输入 Top-5 保留率（57 / 108 条） | 100.00% |
-| 冻结集平均实际候选数 | 6.28 |
-| 冻结集截断前平均兼容模板数 / 27 | 23.42 |
-| 冻结集补问触发率 | 100.00% |
+| 冻结摘要集 Top-5 保留率（{{fixed_rows}} 条） | {{fixed_top5}} |
+| 当前摘要集 Top-5 保留率（{{current_rows}} 条） | {{current_top5}} |
+| 口语集充分输入 Top-5 保留率（{{sufficient_rows}} / {{user_rows}} 条） | {{user_top5}} |
+| 冻结集平均实际候选数 | {{avg_candidates}} |
+| 冻结集截断前平均兼容模板数 / {{templates}} | {{avg_eligible}} |
+| 冻结集补问触发率 | {{asked_rate}} |
 
 冻结摘要集与标题词表同源，口语集由项目编写，均不能替代新输入的独立盲评。合成画像 oracle 与生产路由共用评分，不是架构的泛化上界。当前冻结集每条输入仍触发补问，补问负担尚未证明降低。阈值见 [eval/thresholds.json](./eval/thresholds.json)，详细报告保存在上述统计文件的 `report` 字段；[评测入口](./eval/score.mjs) 可通过 `node eval/score.mjs --json` 重现结果。
 
-## 🧩 分类提示语模板
+{{templates_heading}}
 
-- [模板索引](./docs/templates/zh/README.md)：27 个模板的用途、结构、复制块与来源案例。
-- [案例画廊](./docs/gallery.zh.md)：670 条案例的原始提示词、作者和来源链接。
+- [模板索引]({{template_index}})：{{templates}} 个模板的用途、结构、复制块与来源案例。
+- [案例画廊]({{gallery}})：{{cases}} 条案例的原始提示词、作者和来源链接。
 - [归类数据](./data/case-taxonomy.json)：案例到主模板的映射；`null` 表示明确跳过。
 - [Skill 打包脚本](./router/build-skill.mjs)：生成宿主调用路由、补问和终选的 `SKILL.md` 及依赖文件。
 

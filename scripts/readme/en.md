@@ -7,7 +7,7 @@ Turn a Chinese or English video request into a shortlist of prompt templates wit
 
 This repository extends [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance). The `feat/video-prompt-router` branch is maintained independently and will not merge into `main`. The added router CI workflow has been removed; validation, builds and installation run locally. Builds use a local data snapshot, do not fetch remote data, and make no daily-sync promise.
 
-The snapshot contains **27 templates and 670 source cases**: 664 assigned, 6 deliberately skipped, and 0 awaiting classification. The router selects templates and exposes constraints. Writing a final prompt requires a host agent; generating video requires a separate platform call.
+The snapshot contains **{{templates}} templates and {{cases}} source cases**: {{filed}} assigned, {{skipped}} deliberately skipped, and {{todo}} awaiting classification. The router selects templates and exposes constraints. Writing a final prompt requires a host agent; generating video requires a separate platform call.
 
 ## Quick start
 
@@ -107,7 +107,7 @@ Implemented: intent extraction, three-state conditions, shared hard and soft sco
 Remaining work:
 
 - Independent human blind evaluation on new inputs, and independent review of the case classifications.
-- More multi-turn regression cases; the post-answer retention check currently covers only 1 case.
+- More multi-turn regression cases; the post-answer retention check currently covers only {{after_count}} case.
 - Host testing from request and final template selection through prompt writing and finished video.
 - Verification of unknown capabilities, specific client entry points and real API execution.
 - Real Windows file-lock scenarios; current rollback and lock checks include injected failures.
@@ -116,23 +116,23 @@ CI is no longer part of the router optimization tasks for this branch. The [opti
 
 ## Evaluation and limitations
 
-Results come from [data/router-stats.json](./data/router-stats.json), measured on 2026-10-03. Top-5 retention measures whether acceptable templates remain among the first five candidates, averaged across labels. It is not final-selection accuracy or video-generation success.
+Results come from [data/router-stats.json](./data/router-stats.json), measured on {{measured_at}}. Top-5 retention measures whether acceptable templates remain among the first five candidates, averaged across labels. It is not final-selection accuracy or video-generation success.
 
 | Measurement | Result |
 | --- | --- |
-| Frozen-summary Top-5 retention (286 rows) | 57.56% |
-| Current-summary Top-5 retention (291 rows) | 57.04% |
-| Sufficient-user-input Top-5 retention (57 / 108 rows) | 100.00% |
-| Average returned candidates on the frozen set | 6.28 |
-| Average eligible templates before truncation / 27 | 23.42 |
-| Question trigger rate on the frozen set | 100.00% |
+| Frozen-summary Top-5 retention ({{fixed_rows}} rows) | {{fixed_top5}} |
+| Current-summary Top-5 retention ({{current_rows}} rows) | {{current_top5}} |
+| Sufficient-user-input Top-5 retention ({{sufficient_rows}} / {{user_rows}} rows) | {{user_top5}} |
+| Average returned candidates on the frozen set | {{avg_candidates}} |
+| Average eligible templates before truncation / {{templates}} | {{avg_eligible}} |
+| Question trigger rate on the frozen set | {{asked_rate}} |
 
 Frozen summaries share a source with title-derived terms, and user cases are project-authored; neither replaces independent blind evaluation. The synthetic-facet oracle shares production scoring and is not a generalization ceiling. Every frozen input still triggers questions, so a reduced questioning burden has not been demonstrated. Thresholds are in [eval/thresholds.json](./eval/thresholds.json); the statistics file above contains the detailed `report`. Reproduce results with `node eval/score.mjs --json` using the [evaluation runner](./eval/score.mjs).
 
-## 🧩 Prompt Templates by Category
+{{templates_heading}}
 
-- [Template index](./docs/templates/en/README.md): uses, structure, copyable blocks and source cases for 27 templates.
-- [Case gallery](./docs/gallery.md): original prompts, authors and source links for 670 cases.
+- [Template index]({{template_index}}): uses, structure, copyable blocks and source cases for {{templates}} templates.
+- [Case gallery]({{gallery}}): original prompts, authors and source links for {{cases}} cases.
 - [Taxonomy](./data/case-taxonomy.json): mappings to a primary template; `null` means deliberately skipped.
 - [Skill packager](./router/build-skill.mjs): generates `SKILL.md` host instructions for routing, questions and selection, with its dependencies.
 
