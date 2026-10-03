@@ -3,7 +3,7 @@
   "name": "desktop-template-agent",
   "title": "Desktop template library with Agent matching",
   "description": "Build a Windows desktop search interface over all templates and cases using configurable OpenAI-compatible Agent matching.",
-  "status": "in_progress",
+  "status": "completed",
   "dev_type": "fullstack",
   "scope": "desktop",
   "package": null,
@@ -11,16 +11,18 @@
   "creator": "awesome-seedance",
   "assignee": "awesome-seedance",
   "createdAt": "2026-10-03",
-  "completedAt": null,
+  "completedAt": "2026-10-04",
   "branch": "feat/video-prompt-router",
-  "base_branch": "main",
+  "base_branch": null,
   "worktree_path": null,
-  "commit": null,
+  "commit": "88de42f7b2eb1632bf44c037eaec0c59090c7e9c",
   "pr_url": null,
   "subtasks": [],
   "children": [],
   "parent": null,
   "relatedFiles": [],
   "notes": "First version fully accepted by user on 2026-10-04. Commit/push/archive and v1.0.0 explicitly authorized. Independently maintained feat/video-prompt-router; do not merge main.",
-  "meta": {}
+  "meta": {
+    "release": "v1.0.0"
+  }
 }

@@ -36,6 +36,6 @@ Stopped restricted-token desktop launches. Tests now have explicit launch/window
 
 The user confirmed that all first-version validation passed, including real-model integration, relevance, posters and video playback, and authorized commit, push, task wrap-up and tag v1.0.0. This is user validation; no credentials or provider transcripts were collected by the agent.
 
-All implementation and acceptance items are complete. Release metadata is 1.0.0. Remaining actions in this session are release checks, code commit, task archive, journal, and branch/tag push. The branch stays independent of main; no CI is added.
+All implementation and acceptance items are complete. Release metadata is 1.0.0. Release syntax and all 21 desktop tests passed again; router build gates passed with the 1.0.0 metadata, and the rebuilt portable app was checked to contain version 1.0.0. Work commit: 88de42f7b2eb1632bf44c037eaec0c59090c7e9c. The task was archived on 2026-10-04; journal and branch/tag publication follow this archive. The branch stays independent of main; no CI is added.
 
 Strict sidebar category filtering was discussed as a possible later improvement; it is outside this accepted first version.

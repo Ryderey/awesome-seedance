@@ -1,6 +1,6 @@
 # Desktop template library with Agent matching
 
-Status: approved for implementation by the user on 2026-10-03, following the reviewed [plan](../../../PLAN-frontend-template-search-2026-10-03.md). This task imports the completed interview; no product decisions are reopened.
+Status: approved for implementation by the user on 2026-10-03, following the reviewed [plan](../../../../../PLAN-frontend-template-search-2026-10-03.md). This task imports the completed interview; no product decisions are reopened.
 
 ## Outcome
 

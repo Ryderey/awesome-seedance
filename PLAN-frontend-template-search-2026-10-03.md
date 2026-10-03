@@ -135,4 +135,4 @@ Agent 用于理解意图和匹配现有资产；首版不增加提示词自动�
 
 ## 决策记录
 
-用户已确认 Electron 与上述实施方式。执行任务：`.trellis/tasks/10-03-desktop-template-agent/`；具体契约与阶段验收见该任务的 design.md 和 implement.md。
+用户已确认 Electron 与上述实施方式。执行任务：`.trellis/tasks/archive/2026-10/10-03-desktop-template-agent/`；具体契约与阶段验收见该任务的 design.md 和 implement.md。
