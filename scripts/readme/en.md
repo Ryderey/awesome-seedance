@@ -9,6 +9,16 @@ This repository extends [LearnPrompt/awesome-seedance](https://github.com/LearnP
 
 The snapshot contains **{{templates}} templates and {{cases}} source cases**: {{filed}} assigned, {{skipped}} deliberately skipped, and {{todo}} awaiting classification. The router selects templates and exposes constraints. Writing a final prompt requires a host agent; generating video requires a separate platform call.
 
+## Desktop theme search
+
+The Windows desktop app searches every template and case using your configured OpenAI-compatible model. Browse videos and original prompts, copy exact text, and inspect Agent relevance judgments after preliminary local results. See [desktop instructions](./DESKTOP-USAGE.md).
+
+```powershell
+npm ci
+npm run desktop:start
+```
+
+
 ## Quick start
 
 The locally validated environment is Node.js 22 and Python 3.10. Routing needs only Node.js; the full build check also needs Python. No npm dependencies or model API keys are required.

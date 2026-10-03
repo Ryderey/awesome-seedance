@@ -1,0 +1,9 @@
+# Quality guidelines
+
+Actual gates: node desktop/check.mjs; npm run desktop:test; npm run desktop:benchmark; npm run desktop:smoke. No TypeScript/linter gate is fabricated for this plain JavaScript repository. Tests use real catalog data and actual SDK requests to a local HTTP fixture. Separately report any real-provider testing; mock success does not verify a user's provider or semantic ranking quality.
+
+Packaging: npm run desktop:package stages only application files, data, shared loaders, production dependencies and license. Cleanup targets must resolve inside this workspace's .tmp. Launch packaged executable from a directory outside the checkout to catch missing relative imports/data. Never include userData, API keys, .git or Trellis workspace. No CI is added.
+
+Electron main must not await whenReady at ESM top level: use a callback so Playwright's readiness loader can complete. ui-smoke waits for the queued dialog close event before asserting video src cleanup.
+
+Native desktop verification must run with approved normal host process permissions; do not launch Electron from the agent restricted Windows process sandbox. That launch hung and coincided with a user-visible native exception in this session. Keep the application renderer sandbox enabled. desktop/test-runtime.mjs enforces a 15-second launch/window timeout, detects native fatal stderr and asserts exit code 0. Each run uses a unique test userData directory. Never report a test as passed solely because DOM assertions passed while its process crashed or remained hung.

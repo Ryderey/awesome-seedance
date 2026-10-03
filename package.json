@@ -1,7 +1,7 @@
 {
   "name": "awesome-seedance",
   "private": true,
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Curated, human-verified Seedance 2.5 / 2.0 prompt library with an installable Agent Skill.",
   "type": "module",
   "scripts": {
@@ -13,11 +13,27 @@
     "validate:submissions": "node scripts/validate-submissions.mjs",
     "refresh:site": "node scripts/fetch-site-stats.mjs && node scripts/fetch-retest-posters.mjs",
     "router:check": "node router/build.mjs --check",
-    "router:build": "node router/build.mjs --write --out .tmp/router-package"
+    "router:build": "node router/build.mjs --write --out .tmp/router-package",
+    "desktop:start": "electron .",
+    "desktop:test": "node --test desktop/catalog.test.mjs desktop/agent.test.mjs desktop/settings.test.mjs",
+    "desktop:benchmark": "node desktop/benchmark.mjs",
+    "desktop:smoke": "node desktop/ui-smoke.mjs",
+    "desktop:package": "node desktop/package.mjs",
+    "desktop:check": "node desktop/check.mjs",
+    "desktop:integration": "node desktop/integration-smoke.mjs"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/LearnPrompt/awesome-seedance"
-  }
+  },
+  "dependencies": {
+    "openai": "^7.27.0"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "electron": "^44.5.1",
+    "playwright": "^1.63.0"
+  },
+  "main": "desktop/main.mjs"
 }

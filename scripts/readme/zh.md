@@ -9,6 +9,16 @@
 
 当前包含 **{{templates}} 个模板、{{cases}} 条来源案例**；{{filed}} 条已有模板归属，{{skipped}} 条明确跳过，归类待办 {{todo}} 条。该工具负责选择模板和暴露约束；生成最终提示词需要宿主 Agent，生成视频需要另行调用目标平台。
 
+## 桌面主题搜索
+
+新增「镜库」Windows 桌面应用，用户配置兼容 OpenAI 的模型后，按主题搜索全部模板和案例，查看视频、全文与原始提示词。本地候选先显示，Agent 再核对相关性。详见 [桌面使用说明](./DESKTOP-USAGE.md)。
+
+```powershell
+npm ci
+npm run desktop:start
+```
+
+
 ## 快速开始
 
 本地验证环境为 Node.js 22 和 Python 3.10。路由 CLI 只需要 Node.js；完整构建检查还需要 Python，无须安装 npm 依赖或配置模型 API 密钥。
