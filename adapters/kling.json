@@ -1,46 +1,123 @@
 {
-  "model": "Kling",
-  "displayName": { "en": "Kling", "zh": "可灵" },
-  "aliases": ["可灵", "kling", "klingai", "快手可灵"],
-
+  "model": "Kling 3.0 (kling-v3)",
+  "displayName": {
+    "zh": "Kling 3.0 (kling-v3)",
+    "en": "Kling 3.0 (kling-v3)"
+  },
+  "aliases": [
+    "可灵",
+    "kling",
+    "klingai",
+    "快手可灵",
+    "kling-v3"
+  ],
   "capabilities": {
     "lipSync": null,
     "audioDriven": null,
-    "refImage": null,
+    "refImage": true,
     "refVideo": null,
     "typography": null,
     "physicsCoherence": null,
-    "firstLastFrame": null,
+    "firstLastFrame": true,
     "newerTierFeatures": null
   },
-
   "limits": {
-    "maxDuration": null,
+    "maxDuration": 15,
     "aspectRatios": []
   },
-
   "syntax": {
     "negativePrompt": null,
     "timestamp": null,
     "cameraMove": null
   },
-
-  "degradations": [],
-
-  "verifiedAt": null,
-  "verifiedFrom": [],
-  "verificationNote": "P0 阶段全部为 null：未核对，不代表不支持。填任何布尔前必须先补 verifiedFrom 的官方文档链接。可灵版本线复杂（1.x / 2.x / 各档位能力差异大），核对时务必把 model 精确到具体版本，不要写成一个笼统的 Kling。",
-
+  "degradations": [
+    {
+      "capability": "typography",
+      "trigger": "unsupported_or_unverified",
+      "blocks": [
+        "文字与 slogan",
+        "字幕排版",
+        "屏幕叠层"
+      ],
+      "action": "保留文字诉求与出现时间，生成干净底片；在后期按位置和时段叠加文字。",
+      "notice": "文字改为后期叠加，需用户允许后期处理。"
+    },
+    {
+      "capability": "physicsCoherence",
+      "trigger": "unsupported_or_unverified",
+      "blocks": [
+        "动作闭环",
+        "连招链",
+        "物理奇观"
+      ],
+      "action": "减少单段动作数量；逐段写清接触点、起始和结束状态，并安排单独验证。",
+      "notice": "物理连贯性尚未核实；简化动作并需逐段检查，无法保证一次通过。"
+    },
+    {
+      "capability": "lipSync",
+      "trigger": "unsupported_or_unverified",
+      "blocks": [
+        "台词",
+        "口型要求"
+      ],
+      "action": "保留台词与表演节拍，提出后期配音/口型流程；用户要求原生严格同步时先核实或换已验证入口。",
+      "notice": "口型同步尚未核实；后期方案需用户同意，台词核心诉求保留。"
+    },
+    {
+      "capability": "newerTierFeatures",
+      "trigger": "unsupported_or_unverified",
+      "blocks": [
+        "模型专属语法"
+      ],
+      "action": "读取目标 API 的资产字段与说明，将源模型 token 改为目标入口实际支持的资产绑定；入口未知时只交付模型无关草案。",
+      "notice": "源模板的 Seedance 版本语法不能直接保证在目标模型执行。"
+    },
+    {
+      "capability": "refImage",
+      "trigger": "unsupported_or_unverified",
+      "blocks": [
+        "可选身份参考"
+      ],
+      "action": "可选参考块改为文字外观约束；用户明确提供参考素材时保留硬输入检查，不能丢弃图片绕过门禁。",
+      "notice": "仅可选参考块能改为文字约束；实际参考图仍需支持图片的入口。"
+    }
+  ],
+  "verifiedAt": "2026-10-03",
+  "verifiedFrom": [
+    "https://kling.ai/document-api/guides/capability-map/video"
+  ],
+  "verificationNote": "仅核实所列版本与入口；原生音频不等于上传音轨或严格口型同步，未确认项保持 null。",
   "toVerify": [
-    "model 精确版本号：先确定核对的是哪一版",
-    "lipSync：对口型 / 口播能力的入口与限制",
-    "audioDriven：是否接受音轨作为输入模态",
-    "refImage：图生视频与参考图能力（决定 reference-lock 一族 5 个模板是否可用）",
-    "refVideo：视频参考 / 运动迁移",
-    "typography：画面内文字渲染",
-    "firstLastFrame：首尾帧控制",
-    "limits.maxDuration：单次时长上限（直接决定 timeline 一族要不要重排段数）",
-    "syntax.negativePrompt：独立字段还是正文内联",
-    "syntax.cameraMove：是否有预设运镜词表，还是纯描述"
-  ]
+    "lipSync 与外部音轨入口",
+    "任意 refVideo：不将延长或运动控制自动等同参考视频",
+    "typography/physicsCoherence",
+    "目标入口负向语法和专属 token"
+  ],
+  "id": "kling-v3",
+  "entry": "Kling Open Platform Video 3.0 text/image generation",
+  "verifications": [
+    {
+      "capability": "refImage",
+      "value": true,
+      "sourceType": "official",
+      "url": "https://kling.ai/document-api/guides/capability-map/video",
+      "verifiedAt": "2026-10-03",
+      "scope": "Kling Open Platform Video 3.0 text/image generation",
+      "evidence": "该版本官方文档的图像/首尾帧输入。"
+    },
+    {
+      "capability": "firstLastFrame",
+      "value": true,
+      "sourceType": "official",
+      "url": "https://kling.ai/document-api/guides/capability-map/video",
+      "verifiedAt": "2026-10-03",
+      "scope": "Kling Open Platform Video 3.0 text/image generation",
+      "evidence": "该版本官方文档的图像/首尾帧输入。"
+    }
+  ],
+  "limitVerification": {
+    "url": "https://kling.ai/document-api/guides/capability-map/video",
+    "verifiedAt": "2026-10-03",
+    "scope": "Kling Open Platform Video 3.0 text/image generation"
+  }
 }

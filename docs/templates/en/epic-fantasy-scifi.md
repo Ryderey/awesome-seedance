@@ -66,7 +66,7 @@ Monsters, dragons, world reveals. Each entity gets its own definition block, the
 | 2 | Send it to any AI chat and get back a Seedance prompt written to this structure. |
 | 3 | Paste that prompt into Seedance (Dreamina / Jimeng) and generate. If the result is off, check the pitfalls first, then adjust and re-run. |
 
-## Cases in this category (29 filed, by heat)
+## Cases in this category (32 filed, by heat)
 
 | Preview | Case | Version | Heat |
 | --- | --- | --- | --- |
@@ -83,7 +83,7 @@ Monsters, dragons, world reveals. Each entity gets its own definition block, the
 | <a href="https://goodcase.ai/cases/seedance-a-weathered-old-lighthouse-keeper-stands-on-a-foggy-cliff-at-night-f581948aed80"><img src="https://media.goodcase.ai/cases/69af52ca8c67.jpg" width="160" alt="Lighthouse Keeper and Sea Orbs in the Foggy Night"></a> | [Lighthouse Keeper and Sea Orbs in the Foggy Night](https://goodcase.ai/cases/seedance-a-weathered-old-lighthouse-keeper-stands-on-a-foggy-cliff-at-night-f581948aed80) | 2.5 | 64 |
 | <a href="https://goodcase.ai/cases/seedance-a-cinematic-dynamic-action-video-prompt-visual-surrealism-a-young-east-asian-wo-c6db1f2d25e4"><img src="https://media.goodcase.ai/cases/542b969cc1f7.jpg" width="160" alt="Young Woman Carrying a Letter Through Mirror Venice"></a> | [Young Woman Carrying a Letter Through Mirror Venice](https://goodcase.ai/cases/seedance-a-cinematic-dynamic-action-video-prompt-visual-surrealism-a-young-east-asian-wo-c6db1f2d25e4) | 2.5 | 62 |
 
-The other 17 are in the [full gallery](../../gallery.md) and on [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance).
+The other 20 are in the [full gallery](../../gallery.md) and on [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance).
 
 ---
 

@@ -66,12 +66,13 @@ One person, one look, a handful of places. A head-to-toe appearance lock carries
 | 2 | Send it to any AI chat and get back a Seedance prompt written to this structure. |
 | 3 | Paste that prompt into Seedance (Dreamina / Jimeng) and generate. If the result is off, check the pitfalls first, then adjust and re-run. |
 
-## Cases in this category (30 filed, by heat)
+## Cases in this category (34 filed, by heat)
 
 | Preview | Case | Version | Heat |
 | --- | --- | --- | --- |
 | <a href="https://goodcase.ai/cases/seedance-i-came-like-a-storm-d30f955b4248"><img src="https://media.goodcase.ai/cases/8ca97a85493c.jpg" width="160" alt="Woman in Black Stands Still Amid a Synchronized Crowd"></a> | [Woman in Black Stands Still Amid a Synchronized Crowd](https://goodcase.ai/cases/seedance-i-came-like-a-storm-d30f955b4248) | 2.5 | 98 |
 | <a href="https://goodcase.ai/cases/youmind-paris-fashion-campaign-streetwear"><img src="https://media.goodcase.ai/media/poster/youmind-paris-fashion-campaign-streetwear.jpg" width="160" alt="Cinematic Paris Fashion Campaign, Five Shots"></a> | [Cinematic Paris Fashion Campaign, Five Shots](https://goodcase.ai/cases/youmind-paris-fashion-campaign-streetwear) | 2.0 | 90 |
+| <a href="https://goodcase.ai/cases/seedance-this-is-how-it-feels-like-to-wake-up-on-monday-to-go-to-work-b0d56af4f909"><img src="https://media.goodcase.ai/cases/d86c8eb13364.jpg" width="160" alt="Monday Morning’s Upside-Down Water Ritual"></a> | [Monday Morning’s Upside-Down Water Ritual](https://goodcase.ai/cases/seedance-this-is-how-it-feels-like-to-wake-up-on-monday-to-go-to-work-b0d56af4f909) | 2.5 | 89 |
 | <a href="https://goodcase.ai/cases/seedance-a-clean-premium-4-second-fashion-lookbook-animation-starting-from-the-first-fr-a7de463708af"><img src="https://media.goodcase.ai/cases/04e386463d97.jpg" width="160" alt="Model and Fashion Items in Synchronized 360° Rotation"></a> | [Model and Fashion Items in Synchronized 360° Rotation](https://goodcase.ai/cases/seedance-a-clean-premium-4-second-fashion-lookbook-animation-starting-from-the-first-fr-a7de463708af) | 2.5 | 82 |
 | <a href="https://goodcase.ai/cases/seedance-created-a-cinematic-fashion-transformation-video-featuring-a-beautiful-young-wo-c7588dbea707"><img src="https://media.goodcase.ai/cases/6fd799c4ee96.jpg" width="160" alt="Red Dress Transformation on the Streets of Paris"></a> | [Red Dress Transformation on the Streets of Paris](https://goodcase.ai/cases/seedance-created-a-cinematic-fashion-transformation-video-featuring-a-beautiful-young-wo-c7588dbea707) | 2.0 | 82 |
 | <a href="https://goodcase.ai/cases/seedance-cinematic-fashion-film-still-low-angle-shot-of-a-beautiful-young-woman-with-wa-fac7693b54a0"><img src="https://media.goodcase.ai/cases/9084b0f25038.jpg" width="160" alt="Golden Hour Mountain Fashion Film, Low Angle"></a> | [Golden Hour Mountain Fashion Film, Low Angle](https://goodcase.ai/cases/seedance-cinematic-fashion-film-still-low-angle-shot-of-a-beautiful-young-woman-with-wa-fac7693b54a0) | 2.5 | 81 |
@@ -81,9 +82,8 @@ One person, one look, a handful of places. A head-to-toe appearance lock carries
 | <a href="https://goodcase.ai/cases/seedance-create-a-15-second-fast-paced-smooth-luxury-fashion-editorial-video-using-the-86b7f97bc9d3"><img src="https://media.goodcase.ai/cases/b0f02d1854e3.jpg" width="160" alt="Fashion Suspect Wanted for Beauty"></a> | [Fashion Suspect Wanted for Beauty](https://goodcase.ai/cases/seedance-create-a-15-second-fast-paced-smooth-luxury-fashion-editorial-video-using-the-86b7f97bc9d3) | 2.0 | 78 |
 | <a href="https://goodcase.ai/cases/noorlewisx-seedance-ai-4b6f8c8c977a"><img src="https://media.goodcase.ai/media/poster/noorlewisx-seedance-ai-4b6f8c8c977a.jpg" width="160" alt="Seedance Pinstripe Suit Power Presence at Work"></a> | [Seedance Pinstripe Suit Power Presence at Work](https://goodcase.ai/cases/noorlewisx-seedance-ai-4b6f8c8c977a) | 2.0 | 76 |
 | <a href="https://goodcase.ai/cases/seedance-create-a-15-second-ultra-realistic-vertical-9-16-fashion-film-shot-entirely-fr-8a5224b777f2"><img src="https://media.goodcase.ai/cases/7787c180221a.jpg" width="160" alt="Autumn Outfit Changes Beneath a Spinning Ceiling Fan"></a> | [Autumn Outfit Changes Beneath a Spinning Ceiling Fan](https://goodcase.ai/cases/seedance-create-a-15-second-ultra-realistic-vertical-9-16-fashion-film-shot-entirely-fr-8a5224b777f2) | 2.5 | 72 |
-| <a href="https://goodcase.ai/cases/seedance-shot-structure-15-shots-30-seconds-16-9-4ea0bd13b4c1"><img src="https://media.goodcase.ai/cases/a3216c569031.jpg" width="160" alt="Aiko’s Glamorous Makeover Ends with Ankle Boots"></a> | [Aiko’s Glamorous Makeover Ends with Ankle Boots](https://goodcase.ai/cases/seedance-shot-structure-15-shots-30-seconds-16-9-4ea0bd13b4c1) | 2.5 | 71 |
 
-The other 18 are in the [full gallery](../../gallery.md) and on [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance).
+The other 22 are in the [full gallery](../../gallery.md) and on [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance).
 
 ---
 

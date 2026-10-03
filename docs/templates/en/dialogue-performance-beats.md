@@ -64,13 +64,14 @@ Declare the spoken language, tag the speaker, write the reaction as a causal cha
 | 2 | Send it to any AI chat and get back a Seedance prompt written to this structure. |
 | 3 | Paste that prompt into Seedance (Dreamina / Jimeng) and generate. If the result is off, check the pitfalls first, then adjust and re-run. |
 
-## Cases in this category (8 filed, by heat)
+## Cases in this category (9 filed, by heat)
 
 | Preview | Case | Version | Heat |
 | --- | --- | --- | --- |
 | <a href="https://goodcase.ai/cases/noorlewisx-seedance-ai-b2d98861daf9"><img src="https://media.goodcase.ai/media/poster/noorlewisx-seedance-ai-b2d98861daf9.jpg" width="160" alt="Seedance Fifteen-Second Gym Vlog With Continuous Dialogue"></a> | [Seedance Fifteen-Second Gym Vlog With Continuous Dialogue](https://goodcase.ai/cases/noorlewisx-seedance-ai-b2d98861daf9) | 2.0 | 70 |
 | <a href="https://goodcase.ai/cases/youmind-surprise-visit-romance-trailer"><img src="https://media.goodcase.ai/media/poster/youmind-surprise-visit-romance-trailer.jpg" width="160" alt="The Surprise Visit: A Dialogue-Driven Romance Trailer"></a> | [The Surprise Visit: A Dialogue-Driven Romance Trailer](https://goodcase.ai/cases/youmind-surprise-visit-romance-trailer) | 2.0 | 69 |
 | <a href="https://goodcase.ai/cases/case-1f8136a9893a"><img src="https://media.goodcase.ai/media/poster/case-1f8136a9893a.jpg" width="160" alt="Emotionally Expressive Japanese-Dialogue Animation"></a> | [Emotionally Expressive Japanese-Dialogue Animation](https://goodcase.ai/cases/case-1f8136a9893a) | 2.5 | 66 |
+| <a href="https://goodcase.ai/cases/seedance-some-goodbyes-are-harder-than-war-itself-084c2515a324"><img src="https://media.goodcase.ai/cases/b1dd62e208c8.jpg" width="160" alt="A Farewell Kiss at a Joseon Gate"></a> | [A Farewell Kiss at a Joseon Gate](https://goodcase.ai/cases/seedance-some-goodbyes-are-harder-than-war-itself-084c2515a324) | 2.5 | 48 |
 | <a href="https://goodcase.ai/cases/seedance-3b9beb9a46d4"><img src="https://media.goodcase.ai/media/poster/seedance-3b9beb9a46d4.jpg" width="160" alt="Seedance Cinematic Breakup Performance Prompt"></a> | [Seedance Cinematic Breakup Performance Prompt](https://goodcase.ai/cases/seedance-3b9beb9a46d4) | 2.5 | 24 |
 | <a href="https://goodcase.ai/cases/case-e0d3b03f1aef"><img src="https://media.goodcase.ai/media/poster/case-e0d3b03f1aef.jpg" width="160" alt="Tom Sawyer Whitewashing the Fence Scene"></a> | [Tom Sawyer Whitewashing the Fence Scene](https://goodcase.ai/cases/case-e0d3b03f1aef) | 2.0 | 8 |
 | <a href="https://goodcase.ai/cases/case-19957ff473b6"><img src="https://media.goodcase.ai/media/poster/case-19957ff473b6.jpg" width="160" alt="Childhood Toys Dialogue Prompt"></a> | [Childhood Toys Dialogue Prompt](https://goodcase.ai/cases/case-19957ff473b6) | 2.0 | - |

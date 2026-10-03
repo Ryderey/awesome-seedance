@@ -1,10 +1,71 @@
 # Case evidence · 3D cartoon character short
 
-29 verified cases are filed under this template in awesome-seedance; the 8 hottest are below, full prompts included. Pick one as the anchor before drafting.
+34 verified cases are filed under this template in awesome-seedance; the 8 hottest are below, full prompts included. Pick one as the anchor before drafting.
 
 Generated from `data/cases.json` + `data/case-taxonomy.json`. Do not hand-edit.
 
-## E1 · Playful Rabbit Couple Kissing and Cuddling on a Sofa
+## E1 · Toddler Opens Doors to Learn Letters and Words
+
+- Seedance 2.5 · creator: @Zarnab_with_Ai · heat: 98
+- Evidence: [GoodCase](https://goodcase.ai/cases/seedance-made-with-seedance-2-5-73b10f69e32a) · [finished media](https://media.goodcase.ai/cases/a5c7b401dc7a.mp4) · [poster](https://media.goodcase.ai/cases/88ca30c0568f.jpg) · [original source](https://x.com/Zarnab_with_Ai/status/2104764823091490851)
+- Summary: Made with seedance 2.5 Prompt 👇 Create a high-quality vertical 9:16 3D animated educational kids video in a bright, colorful, cute nursery-rhyme style. Main ch…
+
+```text
+Made with seedance 2.5
+
+Prompt 👇 
+Create a high-quality vertical 9:16 3D animated educational kids video in a bright, colorful, cute nursery-rhyme style.
+
+Main character:
+A cute adorable toddler boy, around 2 years old, with chubby cheeks, big expressive eyes, short light-brown hair, wearing a bright blue T-shirt with a playful “LOL Kids” style graphic and matching diaper/shorts. Keep the child’s appearance consistent throughout the entire video.
+
+Environment:
+A clean, bright indoor children's learning room with a glossy white floor, colorful geometric shapes scattered around the background, playful decorations, and a series of colorful doors. Use vibrant red, blue, yellow and green doors. Soft studio lighting, cheerful atmosphere, polished 3D cartoon animation, smooth reflections, high-quality Pixar-like children's animation aesthetic.
+
+VIDEO SEQUENCE:
+
+Scene 1 — A for Apple:
+The toddler stands in front of a bright red door with a large bold yellow letter “A” on it. He reaches toward the door handle and opens the door with excitement. Behind the door is a colorful apple-themed environment with red apples. Show the text “A - APPLE” at the top. The child looks surprised and happy.
+
+Scene 2 — B for Banana:
+Cut to a bright blue door with a large yellow “B”. The toddler walks toward it, reaches for the handle and opens the door. Reveal a playful collection of bright yellow bananas behind the door. Display “B - BANANA” at the top.
+
+Scene 3 — C for Cat:
+Show a yellow/orange door with a large red “C”. The toddler opens the door and a cute friendly cat appears behind it. The child reacts with excitement and curiosity. Display “C - CAT”.
+
+Scene 4 — D for Dog:
+Show a red door with a large yellow “D”. The toddler opens it and reveal a cute friendly brown-and-white puppy standing behind the door. The puppy happily looks toward the child. Display “D - DOG”.
+
+Scene 5 — E for Elephant:
+Show a blue door with a large yellow “E”. The toddler opens the door and a cute baby elephant appears. The elephant playfully raises its trunk while the child reacts happily. Display “E - ELEPHANT”.
+
+Scene 6 — F for Fish:
+Transition to a bright underwater-themed aquarium area. Show colorful orange fish swimming inside a large glass aquarium. The toddler stands beside it and looks excitedly at the fish. Display “F - FISH”.
+
+Scene 7 — G for Grapes:
+Show a green door with a large yellow “G”. The toddler opens the door and discovers a huge bunch of shiny purple grapes behind it. He points toward the grapes with excitement. Display “G - GRAPES”.
+
+Scene 8 — I for Ice:
+Show a red door with a large yellow “I”. The toddler stands beside the closed door, reaches for the handle and opens it. Reveal a playful icy environment. Display “I - ICE”.
+
+Scene 9 — J for Jelly:
+Show a blue door with a large yellow “J”. The toddler opens the door and reveal colorful jelly/jelly dessert behind it. The child points toward it happily. Display “J - JELLY”.
+
+Scene 10 — K for Kite:
+Show a red door with a large yellow “K”. The toddler opens the door and reveal a colorful kite-themed scene. Display “K - KITE”.
+
+Scene 11 — L for Lion:
+Show a green door with a large yellow “L”. The toddler opens the door and a cute friendly cartoon lion appears behind it. The lion looks gentle and playful, not scary. The toddler reacts with excitement. Display “L - LION”.
+
+Final scene:
+Show a cute fluffy hamster waving goodbye to the camera in a bright pastel background. Add cheerful text:
+“Bye-Bye 👋”
+and a colorful
+
+[… truncated, full prompt on the goodcase.ai page]
+```
+
+## E2 · Playful Rabbit Couple Kissing and Cuddling on a Sofa
 
 - Seedance 2.5 · creator: @Zarnab_with_Ai · heat: 90
 - Evidence: [GoodCase](https://goodcase.ai/cases/seedance-made-with-seedance-2-5-27ee46690725) · [finished media](https://media.goodcase.ai/cases/23d1405ab2f8.mp4) · [poster](https://media.goodcase.ai/cases/270ba8ecea3b.jpg) · [original source](https://x.com/Zarnab_with_Ai/status/2099683790717325390)
@@ -21,7 +82,7 @@ The pink rabbit applies lipstick while making funny, confident expressions. She 
 Warm golden lighting, cozy home interior, soft cushions, wooden furniture, plants and framed artwork in the background, expressive faces, detailed fluffy fur, cinematic camera movement, shallow depth of field, adorable comedic atmosphere, polished Pixar-style 3D animation, highly detailed, smooth natural motion, 4K quality.
 ```
 
-## E2 · Seedance Two-Character 3D Cartoon: Little Butterfly
+## E3 · Seedance Two-Character 3D Cartoon: Little Butterfly
 
 - Seedance 2.0 · creator: @ayzalnooor24521 · heat: 86 · stability: 86
 - Evidence: [GoodCase](https://goodcase.ai/cases/ayzalnooor24521-seedance-ai-4a336f514777) · [finished media](https://media.goodcase.ai/media/video/ayzalnooor24521-seedance-ai-4a336f514777.mp4) · [poster](https://media.goodcase.ai/media/poster/ayzalnooor24521-seedance-ai-4a336f514777.jpg) · [original source](https://x.com/ayzalnooor24521/status/2089559741718548578)
@@ -31,7 +92,7 @@ Warm golden lighting, cozy home interior, soft cushions, wooden furniture, plant
 Create a cute cinematic 14-second 3D cartoon using the two reference characters, keeping their faces, hairstyles, clothes and appearance consistent. A young woman in a pink outfit walks through a sunny green park with a cute blonde little boy in a dinosaur T-shirt. The boy notices a colorful butterfly, points excitedly, and they happily follow it through the flowers. The boy picks a small flower and gives it to the woman, and she smiles and gently hugs him. Use smooth expressive animation, soft cinematic lighting, vibrant colors, detailed park scenery, natural camera movement and a warm family-friendly atmosphere. No character changes, face distortion, extra characters, outfit changes, flickering, deformed hands, text or watermark. 16:9 vertical, high-quality cinematic 3D animation.
 ```
 
-## E3 · The Tiny Frog Chef at a Moonlit Pond Restaurant
+## E4 · The Tiny Frog Chef at a Moonlit Pond Restaurant
 
 - Seedance 2.5 · creator: @Caden_Flux · heat: 82 · stability: 83
 - Evidence: [GoodCase](https://goodcase.ai/cases/caden-flux-seedance-ai-473fedbbc75f) · [finished media](https://media.goodcase.ai/media/video/caden-flux-seedance-ai-473fedbbc75f.mp4) · [poster](https://media.goodcase.ai/media/poster/caden-flux-seedance-ai-473fedbbc75f.jpg) · [original source](https://x.com/Caden_Flux/status/2091396961329131999)
@@ -185,7 +246,7 @@ The tiny frog che
 [… truncated, full prompt on the goodcase.ai page]
 ```
 
-## E4 · Adorable Bunnies Kiss and Hug on a Cozy Sofa
+## E5 · Adorable Bunnies Kiss and Hug on a Cozy Sofa
 
 - Seedance 2.5 · creator: @Zarnab_with_Ai · heat: 79
 - Evidence: [GoodCase](https://goodcase.ai/cases/seedance-made-with-seedance-2-5-71bc731fe900) · [finished media](https://media.goodcase.ai/cases/5a9d60943e0f.mp4) · [poster](https://media.goodcase.ai/cases/ae82336c097b.jpg) · [original source](https://x.com/Zarnab_with_Ai/status/2098728793703899603)
@@ -230,7 +291,7 @@ HIGH QUALITY:
 Photorealistic fur detail combined with stylized 3D animation, cinematic composition, high detail, soft textures, clean rendering, natural motion, professional animated-film quality.
 ```
 
-## E5 · Playful Cream Bunny Winking Under a Blue Sky
+## E6 · Playful Cream Bunny Winking Under a Blue Sky
 
 - Seedance 2.5 · creator: @Zarnab_with_Ai · heat: 74
 - Evidence: [GoodCase](https://goodcase.ai/cases/seedance-made-with-seedance-2-5-4cfd04335a3a) · [finished media](https://media.goodcase.ai/cases/d81859c9ebc9.mp4) · [poster](https://media.goodcase.ai/cases/90afb6103701.jpg) · [original source](https://x.com/Zarnab_with_Ai/status/2099809558894112907)
@@ -263,7 +324,7 @@ Duration: approximately 10 seconds.
 Avoid text, subtitles, logos, watermarks, distorted facial features, extra limbs, unnatural movements, flickering, or changes in character appearance.
 ```
 
-## E6 · A Girl and Her White Wolf’s Journey Through a Magical Wilderness
+## E7 · A Girl and Her White Wolf’s Journey Through a Magical Wilderness
 
 - Seedance 2.0 · creator: @ayzalnooor24521 · heat: 69
 - Evidence: [GoodCase](https://goodcase.ai/cases/seedance-created-a-30-second-cinematic-3d-animated-video-in-a-premium-fantasy-adventure-e7a3e6134c65) · [finished media](https://media.goodcase.ai/cases/5eac6564eca8.mp4) · [poster](https://media.goodcase.ai/cases/5ad00890362b.jpg) · [original source](https://x.com/ayzalnooor24521/status/2100036712873488488)
@@ -273,7 +334,7 @@ Avoid text, subtitles, logos, watermarks, distorted facial features, extra limbs
 Created a 30-second cinematic 3D animated video in a premium fantasy-adventure style, featuring a young girl and her fluffy white wolf pup exploring a magical wilderness. The area is surrounded by majestic mountains, dense green forests, flowing rivers, rocky cliffs, and peaceful lakes under warm cinematic skies. The girl wears a simple adventurous outfit and stays visually consistent throughout the video, while the wolf pup has soft detailed white fur and expressive eyes. They journey together through the forest, cross a sparkling stream, and discover beautiful natural landscapes filled with warm sunlight and gentle mist. Their friendship is shown through playful moments, gentle interaction, and quiet emotional expressions. The camera uses smooth tracking shots, wide cinematic views, close-ups, and slow movements to capture the scale and emotion of each scene. Golden-hour lighting, realistic fur, detailed environments, soft shadows, atmospheric depth, and high-quality cinematic rendering create a premium animated-film look. The final scene shows them resting together beside a peaceful lake at sunset, surrounded by mountains and glowing reflections, creating a warm emotional ending.
 ```
 
-## E7 · Shy Hamster Offers a Rose
+## E8 · Shy Hamster Offers a Rose
 
 - Seedance 2.5 · creator: @Zarnab_with_Ai · heat: 68
 - Evidence: [GoodCase](https://goodcase.ai/cases/seedance-made-with-seedance-2-5-eec0708da6e5) · [finished media](https://media.goodcase.ai/cases/79470af69d95.mp4) · [poster](https://media.goodcase.ai/cases/683212be0052.jpg) · [original source](https://x.com/Zarnab_with_Ai/status/2101493389115953586)
@@ -306,20 +367,4 @@ Style: ultra-realistic cute 3D character animation, highly detailed fluffy fur, 
 Motion: natural tiny paw movements, subtle head movements, realistic blinking, gentle breathing, soft ear and bow movement, smooth walking animation, believable interaction with the rose.
 
 No text, no subtitles, no watermark, no extra characters, no distorted anatomy, no duplicated objects.
-```
-
-## E8 · Husband Mistakes a Laundry Request for a Romantic Invitation
-
-- Seedance 2.0 · creator: @im_shahid7 · heat: 63 · stability: 84
-- Evidence: [GoodCase](https://goodcase.ai/cases/im-shahid7-seedance-ai-b4d2ba40a750) · [finished media](https://media.goodcase.ai/cases/50120bb6176a.mp4) · [poster](https://media.goodcase.ai/cases/aa596f802fe1.jpg) · [original source](https://x.com/im_shahid7/status/2091754978348339299)
-- Summary: When you thought she was getting ready for romance… 😏❤️ But she was actually getting you ready for laundry duty. Made w
-
-```text
-Create a 15-second hilarious animated sequence in the exact same warm, elegant 3D cartoon/Pixar-like visual style as the provided storyboard. Maintain the same husband and wife character designs, luxurious cream-colored bedroom and laundry room, cinematic warm lighting, expressive exaggerated facial reactions, and smooth comedic timing.
-Scene 1 — 0–3 sec: The husband is relaxing in bed reading a book. Suddenly, he notices his wife's bra and top being thrown out from another room onto the floor. He slowly lowers his book and stares at them with wide, suspicious eyes. In his imagination, this clearly looks like his wife is preparing for a romantic moment with someone inside.
-Scene 2 — 3–6 sec: The husband immediately jumps up excitedly and rushes to the mirror. He sprays mouth freshener, applies perfume, fixes his hair, and gives himself a confident, seductive smile. He is convinced something romantic is happening and that he should quickly join his wife.
-Scene 3 — 6–9 sec: Looking handsome and confident, he slowly and dramatically opens the door, expecting a romantic surprise. His expression suddenly changes from excitement to complete confusion.
-Scene 4 — 9–12 sec: Reveal the truth: his wife is simply doing laundry. She is pulling freshly washed clothes from the washing machine one by one and tossing them onto the floor because she needs help carrying them. She looks at her husband standing there, fully dressed up and smelling of perfume.
-Scene 5 — 12–15 sec: The wife immediately takes advantage of him, smiling innocently as she stacks a huge pile of wet clothes into his arms. The husband becomes completely trapped under the mountain of laundry. His romantic excitement disappears instantly, and he walks away slowly with a sad, moody, defeated expression while the wife happily continues doing laundry.
-Comedy style: exaggerated facial expressions, fast misunderstanding setup, dramatic reveal, visual humor, smooth character animation, cinematic framing, warm luxury interior, same character consistency and visual style throughout.
 ```

@@ -1,6 +1,6 @@
 # Case evidence · Food close-ups and eating ASMR
 
-6 verified cases are filed under this template in awesome-seedance; the 6 hottest are below, full prompts included. Pick one as the anchor before drafting.
+7 verified cases are filed under this template in awesome-seedance; the 7 hottest are below, full prompts included. Pick one as the anchor before drafting.
 
 Generated from `data/cases.json` + `data/case-taxonomy.json`. Do not hand-edit.
 
@@ -260,7 +260,25 @@ She shoots a watery-eyed glare at the camera without being able to respond, stil
 [… truncated, full prompt on the goodcase.ai page]
 ```
 
-## E6 · Juicy Pan-Fried Bao with a Crisp Golden Crust
+## E6 · Making Crispy Korean-Style Glazed Chicken
+
+- Seedance 2.5 · creator: @aynellex · heat: 55
+- Evidence: [GoodCase](https://goodcase.ai/cases/seedance-create-a-cinematic-ultra-realistic-30-second-live-action-food-sequence-showing-f550d5208324) · [finished media](https://media.goodcase.ai/cases/2b4640c69cab.mp4) · [poster](https://media.goodcase.ai/cases/bf247d7db513.jpg) · [original source](https://x.com/aynellex/status/2105532781258571918)
+- Summary: A simple kitchen recipe turns into the crispiest, most satisfying Korean-style chicken. 🍗🔥 Created on Seedance 2.5 Prompt: Create a cinematic, ultra-realistic…
+
+```text
+Create a cinematic, ultra-realistic 30-second live-action food sequence showing the complete preparation of crispy Korean-style glazed chicken in a warm home kitchen. Begin with an overhead close-up of raw chicken pieces being carefully cut into bite-sized chunks on a wooden cutting board. Transition smoothly to a stainless-steel bowl as the chicken is coated with a creamy white seasoned mixture, showing realistic hand movements and detailed food textures.
+
+Move into a dynamic close-up of the coated chicken being lowered into hot oil. Capture the bubbling oil, golden batter, steam, sizzling particles, and gradual transformation as the pieces become deeply golden and crispy. Use macro shots to emphasize the crunchy exterior and realistic frying physics.
+
+Cut to a dark pan as thick glossy red Korean-style sauce is poured in, followed by finely chopped garlic. Show the sauce slowly heating and bubbling, becoming rich, sticky, and glossy. Add the crispy fried chicken into the pan and toss it repeatedly with chopsticks until every piece is evenly coated in the vibrant red glaze.
+
+End with a beautiful close-up of the finished crispy chicken arranged on a white ceramic plate, covered in shiny red sauce and topped with sliced green onions and sesame seeds. Slowly push the camera toward the dish as the glaze catches the warm kitchen light, emphasizing the crunchy texture and appetizing details.
+
+Ultra-photorealistic cinematic live-action food commercial, realistic human hands, authentic Korean-style cooking, detailed food textures, crispy batter, bubbling hot oil, realistic steam and heat, glossy sauce, natural kitchen lighting, warm wooden surfaces, macro food photography, shallow depth of field, smooth camera movement, overhead shots, close-ups, realistic frying physics, rich colors, subtle film grain, appetizing presentation, physically accurate ingredients, 30 seconds, widescreen 16:9, no text, no logos, no watermark, no cartoon look, no plastic CGI appearance, no distorted hands, no artificial food textures.
+```
+
+## E7 · Juicy Pan-Fried Bao with a Crisp Golden Crust
 
 - Seedance 2.5 · creator: @Lianaalane · heat: 44
 - Evidence: [GoodCase](https://goodcase.ai/cases/seedance-create-a-hyper-realistic-cinematic-15-second-food-video-in-the-exact-glossy-ult-6f3f25cbf4e6) · [finished media](https://media.goodcase.ai/cases/0ecfc9686dfd.mp4) · [poster](https://media.goodcase.ai/cases/b7e548a0f7a9.jpg) · [original source](https://x.com/Lianaalane/status/2096903888813330826)

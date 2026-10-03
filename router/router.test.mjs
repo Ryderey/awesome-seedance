@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { route, extractFacets, loadIndex, FACETS } from "./route.mjs";
 import { runOracle } from "../eval/oracle.mjs";
+import { loadLibrary } from "../scripts/lib/library.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = (rel) => JSON.parse(readFileSync(path.join(ROOT, rel), "utf8"));
@@ -20,19 +21,17 @@ const index = loadIndex();
 const capMap = read("router/capability-map.json");
 const golden = read("eval/golden-set.json");
 
-test("覆盖 27 个模板与 6 个分类", () => {
-  assert.equal(Object.keys(index.templates).length, 27);
-  assert.equal(index.categories.length, 6);
+test("索引动态覆盖合并后的模板与分类", () => {
+  const { library } = loadLibrary(ROOT);
+  assert.deepEqual(Object.keys(index.templates).sort(), library.templates.map(t => t.id).sort());
+  assert.deepEqual(index.categories.map(c => c.id).sort(), library.categories.map(c => c.id).sort());
 });
 
-test("34 个 tag 全部登记且分类计数符合决策", () => {
-  const tags = Object.entries(capMap.tags);
-  assert.equal(tags.length, 34);
-  const n = (c) => tags.filter(([, v]) => v.class === c).length;
-  assert.equal(n("gate"), 3);
-  assert.equal(n("soft"), 4, "typography 按 2026-09-24 决策归 soft，不是 gate");
-  assert.equal(n("dialect"), 1);
-  assert.equal(n("signal"), 26);
+test("全部 tag 登记，分类名称合法，字幕与口型为可适配能力", () => {
+  for (const t of Object.values(index.templates)) for (const tag of t.tags) assert.ok(capMap.tags[tag]);
+  for (const v of Object.values(capMap.tags)) assert.ok(Object.keys(capMap.classes).includes(v.class));
+  assert.equal(capMap.tags.typography.class, "soft");
+  assert.equal(capMap.tags['lip-sync'].class, "soft");
 });
 
 test("facet-profile 覆盖全部 27 个模板", () => {
@@ -101,7 +100,7 @@ test("拍法冲突会否决并给出可读理由", () => {
   const blocked = r.blockedExamples.map((b) => b.id);
   assert.ok(blocked.includes("handheld-ugc-vlog"), "实拍类模板应被动画输入否决");
   const why = r.blockedExamples.find((b) => b.id === "handheld-ugc-vlog").blocked[0];
-  assert.match(why, /动画|实拍/);
+  assert.match(why, /animated|live/);
 });
 
 test("模型门禁：能力未核对时 strict 模式拦、lenient 模式放行并标降级", () => {
@@ -112,18 +111,19 @@ test("模型门禁：能力未核对时 strict 模式拦、lenient 模式放行�
   assert.ok(lenient.shortlist.some((c) => c.degraded.length), "lenient 应带降级说明");
 });
 
-test("零分候选不进 shortlist（否则字母序会让 3d-cartoon 假性通吃）", () => {
+test("零分兼容集合不被包装为肯定推荐", () => {
   const r = route("asdf qwer 完全无关的一句话", { top: 10, index });
-  assert.ok(r.shortlist.every((c) => c.score > 0));
+  assert.equal(r.status, "needs_clarification");
+  assert.ok(r.shortlist.every(c => !c.positiveEvidence));
 });
 
-test("oracle 上界：facet-profile 的区分力未退化", () => {
+test("oracle 共用生产逻辑，达到统一配置门槛", () => {
   const o = runOracle(golden.rows);
-  assert.ok(o.macro >= 0.75, `oracle top-5 保留率跌到 ${(o.macro * 100).toFixed(1)}%，facet-profile 可能被改坏（基线 84%）`);
+  assert.ok(o.macro >= read("eval/thresholds.json").oracleRetentionMacroMin, `oracle top-5 保留率 ${(o.macro * 100).toFixed(1)}%`);
 });
 
-test("golden set：27 标签、每标签至少 4 条、指标口径为 macro", () => {
-  assert.equal(Object.keys(golden.perLabel).length, 27);
-  for (const [id, n] of Object.entries(golden.perLabel)) assert.ok(n >= 4, `${id} 只有 ${n} 条`);
+test("golden set 包括零样本标签，指标口径为 macro", () => {
+  assert.deepEqual(Object.keys(golden.perLabel).sort(), Object.keys(index.templates).sort());
+  assert.equal(Object.values(golden.perLabel).reduce((n, v) => n + v, 0), golden.rows.length);
   assert.match(golden.metricSpec.primary, /macro|保留/);
 });

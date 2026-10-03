@@ -1,45 +1,162 @@
 {
-  "model": "Seedance 2.5",
-  "displayName": { "en": "Seedance 2.5 (Jimeng / Dreamina)", "zh": "即梦 / Seedance 2.5" },
-  "aliases": ["即梦", "seedance", "seedance 2.5", "seedance2.5", "dreamina"],
-
+  "model": "Seedance 2.5 (doubao-seedance-2-5-260628)",
+  "displayName": {
+    "zh": "Seedance 2.5 / 火山方舟",
+    "en": "Seedance 2.5 / Volcengine Ark"
+  },
+  "aliases": [
+    "即梦",
+    "seedance",
+    "seedance 2.5",
+    "seedance2.5",
+    "dreamina",
+    "doubao-seedance-2-5-260628"
+  ],
   "capabilities": {
-    "lipSync": true,
+    "lipSync": null,
     "audioDriven": true,
     "refImage": true,
     "refVideo": true,
     "typography": null,
     "physicsCoherence": null,
-    "firstLastFrame": null,
-    "newerTierFeatures": true
+    "firstLastFrame": true,
+    "newerTierFeatures": null
   },
-
   "limits": {
-    "maxDuration": null,
-    "aspectRatios": []
+    "maxDuration": 30,
+    "aspectRatios": [],
+    "note": "以模型官方 30 秒单次上限为准；API 的画幅与模式限制需按请求核对。"
   },
-
   "syntax": {
     "negativePrompt": "inline",
     "timestamp": "[00:00-00:04]",
     "cameraMove": "prose"
   },
-
-  "degradations": [],
-
-  "verifiedAt": "2026-09-24",
-  "verifiedFrom": [
-    "agents/skills/seedance-prompt-library/SKILL.md — 「Seedance 2.5 supports four input modalities (text, image, video, audio reference) plus native lip-sync and voice-driven dialogue」",
-    "data/style-library.json — dialogue-performance-beats.useWhen：「Seedance 2.5 还支持用上传的音轨驱动口型」",
-    "data/style-library.json — character-reference-lock.useWhen：「2.5 还能用同一套 token 语法引用音频和视频」"
+  "degradations": [
+    {
+      "capability": "typography",
+      "trigger": "unsupported_or_unverified",
+      "blocks": [
+        "文字与 slogan",
+        "字幕排版",
+        "屏幕叠层"
+      ],
+      "action": "保留文字诉求与出现时间，生成干净底片；在后期按位置和时段叠加文字。",
+      "notice": "文字改为后期叠加，需用户允许后期处理。"
+    },
+    {
+      "capability": "physicsCoherence",
+      "trigger": "unsupported_or_unverified",
+      "blocks": [
+        "动作闭环",
+        "连招链",
+        "物理奇观"
+      ],
+      "action": "减少单段动作数量；逐段写清接触点、起始和结束状态，并安排单独验证。",
+      "notice": "物理连贯性尚未核实；简化动作并需逐段检查，无法保证一次通过。"
+    },
+    {
+      "capability": "lipSync",
+      "trigger": "unsupported_or_unverified",
+      "blocks": [
+        "台词",
+        "口型要求"
+      ],
+      "action": "保留台词与表演节拍，提出后期配音/口型流程；用户要求原生严格同步时先核实或换已验证入口。",
+      "notice": "口型同步尚未核实；后期方案需用户同意，台词核心诉求保留。"
+    },
+    {
+      "capability": "newerTierFeatures",
+      "trigger": "unsupported_or_unverified",
+      "blocks": [
+        "模型专属语法"
+      ],
+      "action": "读取目标 API 的资产字段与说明，将源模型 token 改为目标入口实际支持的资产绑定；入口未知时只交付模型无关草案。",
+      "notice": "源模板的 Seedance 版本语法不能直接保证在目标模型执行。"
+    },
+    {
+      "capability": "refImage",
+      "trigger": "unsupported_or_unverified",
+      "blocks": [
+        "可选身份参考"
+      ],
+      "action": "可选参考块改为文字外观约束；用户明确提供参考素材时保留硬输入检查，不能丢弃图片绕过门禁。",
+      "notice": "仅可选参考块能改为文字约束；实际参考图仍需支持图片的入口。"
+    }
   ],
-  "verificationNote": "以上来源是本仓库自身的上游文档，非厂商规格书。lipSync / audioDriven / refImage / refVideo 有仓库内多处一致陈述支撑，故填 true；typography / physicsCoherence / firstLastFrame / maxDuration 仓库未明确断言，保持 null 待官方文档核对。",
-
+  "verifiedAt": "2026-10-03",
+  "verifiedFrom": [
+    "https://docs.volcengine.com/docs/ark/seedance-2-5?lang=zh",
+    "https://docs.volcengine.com/docs/ark/create-video-generation-task-api?lang=zh"
+  ],
+  "verificationNote": "继承资料仅保留用于追溯。仅逐项官方核实的能力为布尔；生成音频不自动等于严格口型同步。",
   "toVerify": [
-    "typography：画面内文字渲染的实际可用度",
-    "physicsCoherence：多环节动作链的保持能力",
-    "firstLastFrame：是否支持首尾帧控制",
-    "limits.maxDuration：单次生成时长上限与分段拼接上限",
-    "limits.aspectRatios：可用画幅集合"
-  ]
+    "lipSync：精确台词与口型同步保证",
+    "typography/physicsCoherence：稳定输出边界",
+    "即梦 UI 与方舟 API 的差异",
+    "可用画幅与模式组合"
+  ],
+  "inheritedEvidence": {
+    "capabilities": {
+      "lipSync": true,
+      "audioDriven": true,
+      "refImage": true,
+      "refVideo": true,
+      "typography": null,
+      "physicsCoherence": null,
+      "firstLastFrame": null,
+      "newerTierFeatures": true
+    },
+    "verifiedFrom": [
+      "agents/skills/seedance-prompt-library/SKILL.md — 「Seedance 2.5 supports four input modalities (text, image, video, audio reference) plus native lip-sync and voice-driven dialogue」",
+      "data/style-library.json — dialogue-performance-beats.useWhen：「Seedance 2.5 还支持用上传的音轨驱动口型」",
+      "data/style-library.json — character-reference-lock.useWhen：「2.5 还能用同一套 token 语法引用音频和视频」"
+    ]
+  },
+  "id": "doubao-seedance-2-5-260628",
+  "entry": "Volcengine Ark /api/v3/contents/generations/tasks",
+  "aliasNote": "即梦/jimeng-seedance 是历史兼容别名；当前核实范围为火山方舟 API，宿主即梦 UI 的入口与限制需另行核实。",
+  "verifications": [
+    {
+      "capability": "audioDriven",
+      "value": true,
+      "sourceType": "official",
+      "url": "https://docs.volcengine.com/docs/ark/create-video-generation-task-api?lang=zh",
+      "verifiedAt": "2026-10-03",
+      "scope": "Volcengine Ark /api/v3/contents/generations/tasks",
+      "evidence": "该型号 API 文档列出的参考输入/首尾帧模式。"
+    },
+    {
+      "capability": "refImage",
+      "value": true,
+      "sourceType": "official",
+      "url": "https://docs.volcengine.com/docs/ark/create-video-generation-task-api?lang=zh",
+      "verifiedAt": "2026-10-03",
+      "scope": "Volcengine Ark /api/v3/contents/generations/tasks",
+      "evidence": "该型号 API 文档列出的参考输入/首尾帧模式。"
+    },
+    {
+      "capability": "refVideo",
+      "value": true,
+      "sourceType": "official",
+      "url": "https://docs.volcengine.com/docs/ark/create-video-generation-task-api?lang=zh",
+      "verifiedAt": "2026-10-03",
+      "scope": "Volcengine Ark /api/v3/contents/generations/tasks",
+      "evidence": "该型号 API 文档列出的参考输入/首尾帧模式。"
+    },
+    {
+      "capability": "firstLastFrame",
+      "value": true,
+      "sourceType": "official",
+      "url": "https://docs.volcengine.com/docs/ark/create-video-generation-task-api?lang=zh",
+      "verifiedAt": "2026-10-03",
+      "scope": "Volcengine Ark /api/v3/contents/generations/tasks",
+      "evidence": "该型号 API 文档列出的参考输入/首尾帧模式。"
+    }
+  ],
+  "limitVerification": {
+    "url": "https://seed.bytedance.com/en/seedance2_5",
+    "verifiedAt": "2026-10-03",
+    "scope": "doubao-seedance-2-5-260628"
+  }
 }

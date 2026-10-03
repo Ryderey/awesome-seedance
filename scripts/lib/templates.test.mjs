@@ -265,7 +265,7 @@ const routerStatsFixture = {
   textRetention: 0.526,
   avgCandidates: 4.2,
   needsClarification: 1,
-  thresholds: { oracleRetention: 0.8, avgCandidatesMax: 8 },
+  thresholds: { oracleRetentionMacroMin: 0.8, candidatesMax: 8 },
   pass: true,
 };
 

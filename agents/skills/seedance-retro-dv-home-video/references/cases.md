@@ -1,6 +1,6 @@
 # Case evidence · Early-2000s DV home video
 
-29 verified cases are filed under this template in awesome-seedance; the 8 hottest are below, full prompts included. Pick one as the anchor before drafting.
+36 verified cases are filed under this template in awesome-seedance; the 8 hottest are below, full prompts included. Pick one as the anchor before drafting.
 
 Generated from `data/cases.json` + `data/case-taxonomy.json`. Do not hand-edit.
 
@@ -134,7 +134,46 @@ Use raw early-2000s consumer DV-camera footage: handheld shake, imperfect framin
 Natural neighborhood ambience only — footsteps, shop sounds, bicycle wheels, vendor conversations, distant traffic, birds, water running from the tap, children playing and light wind through the trees. No music, no narration, no subtitles, no polished commercial cinematography, no beauty filter, no CGI look.
 ```
 
-## E5 · POV: Korean Baddie Meets Her Boyfriend in the US
+## E5 · A Korean Girl’s Early-2000s Birthday Celebration
+
+- Seedance 2.5 · creator: @saniaspeaks_ · heat: 94
+- Evidence: [GoodCase](https://goodcase.ai/cases/seedance-a-birthday-worth-remembering-2f852147a691) · [finished media](https://media.goodcase.ai/cases/1ef7dd97de52.mp4) · [poster](https://media.goodcase.ai/cases/4f746779db27.jpg) · [original source](https://x.com/saniaspeaks_/status/2105146792681832481)
+- Summary: A birthday worth remembering 🎂 Generated with seedance 2.5 Prompt Create a 30-second ultra-realistic Korean birthday vlog set in South Korea in the early 2000s…
+
+```text
+A birthday worth remembering 🎂
+
+Generated with seedance 2.5
+
+Prompt
+Create a 30-second ultra-realistic Korean birthday vlog set in South Korea in the early 2000s, filmed casually by a friend on an authentic consumer DV camcorder. It must feel like genuine home-video footage, not a modern video with a retro filter.
+
+EXACT ORDER — 7 SCENES:
+
+0–4s — GETTING READY: The same young Korean birthday girl gets ready in her early-2000s bedroom, fixes her hair, adjusts makeup, picks up her handbag and smiles toward the camera.
+
+4–8s — MEETING FRIENDS: She walks through an authentic Korean neighborhood, meets the same 2–3 friends, they congratulate her and walk together toward a bakery.
+
+8–11s — BAKERY: They enter a small early-2000s Korean bakery, browse cakes and choose one birthday cake.
+
+11–14s — BUYING CAKE: A friend pays with cash. The worker puts the cake into a box and hands it over. The same cake box remains visible as they walk to the café.
+
+14–23s — CAFÉ CELEBRATION: They sit in a cozy early-2000s café. The cake is opened, a candle is lit, everyone sings Happy Birthday, the girl makes a wish and blows it out. They clap and laugh. She then cuts the cake, places pieces on plates, personally gives a piece to each friend, watches them eat, then takes a piece herself. Keep the entire sequence clearly visible and in order.
+
+23–26s — PHOTOS: After eating, they take group photos using a small early-2000s disposable film camera. No smartphones or modern digital cameras. They pose, the shutter clicks and they laugh afterward.
+
+26–30s — EVENING WALK: They leave the café and walk through the same neighborhood as it becomes evening. The girl carries her handbag, a friend carries the empty cake box/bag, and they chat and laugh while the camera follows from behind.
+
+CONTINUITY: Same girl, friends, outfits, hairstyles, handbag and cake throughout. No teleporting, identity drift, outfit changes, disappearing props or reordered actions.
+
+ERA: Everything must look authentically early 2000s Korean—fashion, hair, bakery, café, cars, signs, furniture, cake packaging and technology. No smartphones, AirPods, modern cars, LED screens or contemporary interiors.
+
+CAMERA: Raw consumer DV footage with subtle handheld shake, imperfect framing, autofocus hunting, exposure shifts, soft digital detail, mild CCD/DV noise, motion blur, compression and occasional awkward zooms. Natural candid behavior, realistic skin and movement. No cinematic stabilization, 4K sharpness, beauty filters, VHS effects or professional filmmaking.
+
+FINAL FEEL: A genuine Korean birthday memory from the early 2000s, with every scene and action clearly shown in the exact requested order.
+```
+
+## E6 · POV: Korean Baddie Meets Her Boyfriend in the US
 
 - Seedance 2.5 · creator: @AIwithkhan · heat: 92
 - Evidence: [GoodCase](https://goodcase.ai/cases/seedance-use-the-uploaded-reference-image-as-the-exact-character-reference-214303ebc4cf) · [finished media](https://media.goodcase.ai/media/video/seedance-use-the-uploaded-reference-image-as-the-exact-character-reference-214303ebc4cf.mp4) · [poster](https://media.goodcase.ai/media/poster/seedance-use-the-uploaded-reference-image-as-the-exact-character-reference-214303ebc4cf.jpg) · [original source](https://x.com/AIwithkhan/status/2094997895187673489)
@@ -158,7 +197,53 @@ Audio: Natural street ambience, footsteps, distant traffic, birds, casual conver
 Negative prompt: No subtitles, text, logos, watermarks, identity changes, outfit changes, duplicate people, distorted hands, unnatural movements, or AI artifacts.
 ```
 
-## E6 · An Idol's Wobbly Post–Leg Day Gym Diary
+## E7 · Early-2000s Seoul Couple's Afternoon Drive
+
+- Seedance 2.5 · creator: @AIwithkhan · heat: 91
+- Evidence: [GoodCase](https://goodcase.ai/cases/seedance-create-a-30-second-1080p-ultra-realistic-early-2000s-consumer-dv-camcorder-hom-a3fa022a7b4e) · [finished media](https://media.goodcase.ai/cases/0c1a24cc546f.mp4) · [poster](https://media.goodcase.ai/cases/64e9f9e3ac3b.jpg) · [original source](https://x.com/AIwithkhan/status/2104776214066188611)
+- Summary: A Little Drive, A Little Love ❤️ Seedance 2.5 Prompt: Create a 30-second, 1080p ultra-realistic early-2000s consumer DV camcorder home video of a young Korean c…
+
+```text
+Create a 30-second, 1080p ultra-realistic early-2000s consumer DV camcorder home video of a young Korean couple going for a casual afternoon drive through Seoul. The footage should feel like a genuine memory recorded by a friend, imperfect and spontaneous rather than a polished commercial.
+
+=== CHARACTERS ===
+
+GIRL: Young adult Korean woman in her early 20s, naturally beautiful, realistic skin, minimal makeup, long slightly wavy dark hair tied loosely with a few strands framing her face. Ll
+
+BOYFRIEND: Young adult Korean man in his early 20s, natural hairstyle, realistic skin, relaxed expression, wearing a loose white T-shirt, dark jeans and white sneakers. Keep his appearance consistent.
+
+=== STORY ===
+
+She waits outside her apartment building with a small shoulder bag, checking her phone and looking down the street. Her boyfriend arrives in an older compact car and smiles when he sees her. She opens the passenger door, gets inside and playfully looks toward the camera as if embarrassed about being filmed.
+
+They drive slowly through an older Seoul neighborhood. She sits in the passenger seat with the window slightly open, enjoying the breeze while her hair moves naturally. Her boyfriend occasionally glances at her and smiles while keeping his attention on the road.
+
+They stop at a small neighborhood convenience store. She gets out, buys two cold drinks and returns to the car. She hands one to her boyfriend, keeps the other for herself, and they laugh together before continuing the drive.
+
+Later, they park near a quiet riverside road. They get out and walk beside the parked car, talking casually. She takes a sip of her drink, makes a playful expression at the taste, and he laughs. She lightly pushes his shoulder and they continue walking together.
+
+A gentle breeze moves through her hair. He notices a strand across her face and gently moves it aside. She smiles and looks at him for a moment. They stand close together beside the car, sharing a quiet romantic moment.
+
+Near the end, she looks toward the camera and laughs shyly, then turns back toward her boyfriend. He steps closer, she smiles, and they share a brief, natural kiss. They pull back, laugh softly and remain standing close together as the camera keeps recording.
+
+The boyfriend looks toward the camera and jokingly shakes his head while she hides her face against his shoulder, laughing.
+
+=== CAMERA / DV FEEL ===
+
+Raw early-2000s consumer DV camcorder footage. Handheld camera operated by a friend sitting in the back seat and later walking with them. Imperfect framing, subtle handheld shake, autofocus hunting, occasional exposure shifts, faded summer colors, soft digital detail, mild sensor noise, natural motion blur and occasional accidental zooms. No stabilization and no polished cinematic movement.
+
+=== AUDIO ===
+
+Built-in camcorder microphone only. Car engine, road noise, turn signals, window breeze, distant Seoul traffic, convenience-store door chime, refrigerator hum, footsteps, birds, neighborhood voices, fabric movement and natural laughter. Their dialogue should feel casual and partially imperfect like a real home video. No music, no narration, no subtitles.
+
+=== REALISM / CONTINUITY ===
+
+Keep the same couple, faces, hairstyles, outfits, accessories and car throughout. Natural Korean facial features, realistic hands and fingers, believable walking, sitting, driving and kissing. Hair and clothing react naturally to the breeze and movement. Genuine expressions rather than exa
+
+[… truncated, full prompt on the goodcase.ai page]
+```
+
+## E8 · An Idol's Wobbly Post–Leg Day Gym Diary
 
 - Seedance 2.5 · creator: @QAiStudio · heat: 91
 - Evidence: [GoodCase](https://goodcase.ai/cases/seedance-dv-16mm-tape-camcorder-handheld-feel-dbd56441c7b6) · [finished media](https://media.goodcase.ai/cases/f2d117418aa1.mp4) · [poster](https://media.goodcase.ai/cases/ff2f2bf756c1.jpg) · [original source](https://x.com/QAiStudio/status/2102992059938587000)
@@ -199,60 +284,4 @@ A gym in the evening — squat rack, leg press machine, a water fountain across 
 7. *(~1.5s, close handheld, at the fountain)* She leans down for a sip of water, sighs in relief, wipes her mouth with the back of her hand. CHASE: "Okay... water is life right now."
 
 8. *(~2s, arm's-length selfie finish)* She leans against the wall, still catching her breath, grinning tiredly at the lens. CHASE: "Never doing legs again — see you guys, I'm going to go lie down somewhere."
-```
-
-## E7 · K-Pop Idol’s Playful Core Workout
-
-- Seedance 2.5 · creator: @doctorwasif · heat: 90
-- Evidence: [GoodCase](https://goodcase.ai/cases/seedance-dv-16mm-tape-camcorder-handheld-feel-23c133674a31) · [finished media](https://media.goodcase.ai/cases/64401183c996.mp4) · [poster](https://media.goodcase.ai/cases/89d557bcc2fb.jpg) · [original source](https://x.com/doctorwasif/status/2103476205760774263)
-- Summary: made with Seedance 2.5 prompt: **CAMERA:** DV 16mm tape camcorder handheld feel. POV of CHASE holding the camera herself, occasionally propping it on the floor …
-
-```text
-**CAMERA:**
-DV 16mm tape camcorder handheld feel. POV of CHASE holding the camera herself, occasionally propping it on the floor or a mat for hands-free core shots. Hand shake, misaligned framing, delayed focus pulls, clumsy zooms, occasional face cut-off framing, imperfect shots. Camcorder never appears on screen.
-
-**LOOK:**
-Soft, slightly blurry tape quality, faint tape noise, bloomed highlights under gym lighting, flickering auto-exposure, muted contrast, realistic skin tones.
-
-**STYLE:**
-Playful, self-deprecating gym-vlog tone — genuine strain mixed with humor, complaining about core work while still pushing through it. Quick handheld cuts, energy staying light and funny throughout rather than fully exhausted.
-
-**Character**
-
-CHASE — Korean idol, 20s. Long black hair in a high ponytail, glowing skin with a light sweat sheen, big expressive eyes. Slim athletic build. Modest long-sleeve athletic top, loose joggers or fitted leggings (arms and torso fully covered), sneakers off or socks, no jewelry.
-
-**Setting**
-
-A gym mat area in the evening — mirror wall nearby, water bottle on the floor, soft overhead lighting, other equipment visible in the background.
-
-**Storyboard (15s, 6 cuts)**
-
-1. *(~2.5s, propped camera, medium shot)* She lies down on the mat, propping up on her elbows, already sighing dramatically. CHASE: "Okay, core day — my least favorite day."
-
-2. *(~2.5s, propped camera, plank position)* She holds a plank, arms shaking slightly, talking through gritted teeth. CHASE (strained): "Why does this get harder every single time—"
-
-3. *(~2.5s, medium propped shot, crunches)* She moves into a set of crunches, breathing hard, complaining between reps. CHASE: "Nobody warns you how much this actually burns."
-
-4. *(~2s, macro insert, shallow DOF)* Close-up on her hands gripping the mat edges during a leg raise, abs visibly working. No dialogue — ambient gym sound only.
-
-5. *(~2.5s, handheld, leg raises)* She finishes a slow leg raise set, flopping back onto the mat immediately after, laughing at herself. CHASE (breathless): "Okay— that's it, I'm done—"
-
-6. *(~3s, arm's-length selfie finish)* Still lying on the mat, she lifts the camera above her face, grinning tiredly. CHASE: "Core day never gets easier — see you guys tomorrow, hopefully."
-```
-
-## E8 · A Relaxed Sunday Morning Walk Through Old Seoul
-
-- Seedance 2.5 · creator: @AIwithkhan · heat: 88
-- Evidence: [GoodCase](https://goodcase.ai/cases/seedance-create-a-30-second-ultra-realistic-personal-home-video-of-a-young-korean-woman-8e58268597cd) · [finished media](https://media.goodcase.ai/cases/224f00dd1253.mp4) · [poster](https://media.goodcase.ai/cases/a9fce0c6a87b.jpg) · [original source](https://x.com/AIwithkhan/status/2101515497150025999)
-- Summary: Baddie on a Sunday Seedance 2.5 Prompt : Create a 30-second ultra-realistic personal home-video of a young Korean woman enjoying a relaxed Sunday morning in an …
-
-```text
-Create a 30-second ultra-realistic personal home-video of a young Korean woman enjoying a relaxed Sunday morning in an older Seoul residential neighborhood. Use the attached image as the character reference and keep her face, long black messy side ponytail, pastel-blue fitted top, loose cream pants, black sneakers, silver necklace, and overall appearance perfectly consistent.
-She leaves her home with a cheerful expression, locks the door behind her, adjusts her messy side ponytail, and starts walking casually through the quiet neighborhood. Along the way, she passes a few familiar neighbors and warmly greets them with a smile and a casual “Hello,” creating a natural friendly Sunday atmosphere.
-She reaches a small neighborhood outdoor tap and stops to wash her face. She splashes cool water onto her face, laughs when several water drops land on the front of her pastel-blue top, looks down at the wet spots, smiles and shakes her head playfully before continuing.
-She visits a tiny local convenience store, buys a colorful candy lollipop, unwraps it immediately, puts it in her mouth and walks back through the neighborhood while happily enjoying it. She casually swings the small shopping bag in one hand while holding the lollipop in the other.
-As she passes through a narrow residential lane, she meets a few neighborhood children. She smiles, waves and shakes hands with them one by one while keeping the lollipop in her other hand. She says, “Hello!” and continues walking with a playful smile.
-Near the end, she turns toward the camera while still holding the lollipop, smiles naturally and says, “Happy Sunday!” before walking away down the quiet lane.
-Use raw early-2000s consumer DV-camera footage: handheld shake, imperfect framing, autofocus hunting, exposure shifts, soft detail, mild digital noise, natural motion blur, occasional awkward zooms and authentic home-video imperfections.
-Natural Seoul neighborhood ambience only — footsteps, neighbors talking, children laughing, running water, bicycle bells, distant traffic, birds, summer insects and leaves moving in the breeze. No music, no narration, no subtitles, no dramatic events, no polished commercial cinematography, no beauty-filter skin, no CGI look.
 ```

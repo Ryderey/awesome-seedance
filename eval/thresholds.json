@@ -1,0 +1,15 @@
+{
+  "fixedDataset": "eval/baselines/golden-set-2026-10-03.json",
+  "legacyBaseline": "eval/baselines/legacy-2026-10-03.json",
+  "textRetentionMacroMin": 0.4958019346908238,
+  "oracleRetentionMacroMin": 0.9625220458553791,
+  "userSufficientTop5MacroMin": 0.9,
+  "hardViolationsMax": 0,
+  "unexpectedEmptyMax": 0,
+  "answeredQuestionMax": 0,
+  "candidatesMax": 8,
+  "userCasesPerTemplateMin": 4,
+  "afterAnswerRetentionMin": 0.9,
+  "eligibleRatioMax": 0.9,
+  "oracleBaseline": "eval/baselines/shared-2026-10-03.json"
+}

@@ -482,84 +482,34 @@ export function routerHeading(lang) {
  * 数字一律不写死在文案里，否则语料增长后 README 就开始说谎。
  */
 export function renderRouterSection(lang, stats) {
-  const pct = (v) => (v == null ? "—" : `${Math.round(v * 100)}%`);
-  const lines = [routerHeading(lang), ""];
-  lines.push(
-    t(lang, {
-      en: `The 25 templates are organised by **how you shoot it**, not by **what you shoot**. A cat clip can be a handheld vlog, a Pixar-style cartoon or a one-take POV — three different templates. So the router reads the shooting intent first, and subject words only break ties.`,
-      zh: `25 个模板是按**怎么拍**组织的，不是按**拍什么**。同样一只猫，可以是手持 vlog、可以是皮克斯动画、也可以是一镜到底 POV——用的是三条不同模板。所以路由先读拍法意图，内容词只做末位决胜。`,
-    })
-  );
-  lines.push("");
-  lines.push(
-    t(lang, {
-      en: `That ordering is not a style choice, it is what the measurements forced: two independent lexical methods both plateau at ~41% top-1 over the 25 templates, and dropping to 6 categories still gives 52%. The gap between "what the user typed" and "how they mean to shoot it" is the real bottleneck, so the tool asks instead of guessing.`,
-      zh: `这个次序不是审美选择，是被实测逼的：两种独立的词面方法在 25 路上都卡在 top-1 约 41%，退到 6 路分类也只有 52%。"用户说了什么"和"用户想怎么拍"之间的缺口才是真正的瓶颈，所以工具选择先问，而不是硬猜。`,
-    })
-  );
-  lines.push("");
+  const pct = v => v == null ? '—' : Math.round(v * 100) + '%';
+  const count = stats?.templates ?? stats?.labels;
+  const lines = [routerHeading(lang), '', t(lang, {
+    en: (count ? count + ' templates. ' : '') + 'Shooting approach, subject and purpose guide the shortlist. Explicit hard conflicts exclude a template; soft differences allow adaptation. Structured answers override text inference.',
+    zh: (count ? count + ' 个模板。' : '') + '拍法、主体和用途共同形成候选。明确硬冲突排除模板，软偏好差异允许改编；结构化回答覆盖旧文本推断。'
+  }), '', t(lang, {
+    en: 'Ask up to three questions only when answers affect the compatible set or leading candidates. Merge answers into the complete request, rerun routing, then compare useWhen before selecting and reading the full template.',
+    zh: '只在回答影响兼容集合或前列候选时提问，一次最多三问。合并回答后用完整请求重跑，比较 useWhen 后终选，再读取所选模板全文。'
+  }), ''];
   if (stats) {
-    lines.push(
-      t(lang, {
-        en: `Measured on ${stats.questions} held-out prompts across ${stats.labels} labels (${stats.measuredAt}):`,
-        zh: `在 ${stats.labels} 个标签共 ${stats.questions} 条保留考题上实测（${stats.measuredAt}）：`,
-      })
-    );
-    lines.push("");
-    lines.push(t(lang, { en: "| Metric | Value | Threshold |", zh: "| 指标 | 实测 | 门槛 |" }));
-    lines.push("| --- | --- | --- |");
-    lines.push(
-      t(lang, {
-        en: `| Retention with full shooting intent (oracle facets) | ${pct(stats.oracleRetention)} | ≥ ${pct(stats.thresholds?.oracleRetention)} |`,
-        zh: `| 拍法信息齐全时的正确答案保留率（神谕 facet） | ${pct(stats.oracleRetention)} | ≥ ${pct(stats.thresholds?.oracleRetention)} |`,
-      })
-    );
-    lines.push(
-      t(lang, {
-        en: `| Retention from the user's first sentence alone | ${pct(stats.textRetention)} | observed only |`,
-        zh: `| 只靠用户第一句话时的保留率 | ${pct(stats.textRetention)} | 仅观测，不设门槛 |`,
-      })
-    );
-    lines.push(
-      t(lang, {
-        en: `| Average candidates handed to the model | ${stats.avgCandidates} of 25 | ≤ ${stats.thresholds?.avgCandidatesMax} |`,
-        zh: `| 平均交给模型的候选数 | ${stats.avgCandidates} / 25 | ≤ ${stats.thresholds?.avgCandidatesMax} |`,
-      })
-    );
-    lines.push(
-      t(lang, {
-        en: `| Inputs missing at least one decisive facet | ${pct(stats.needsClarification)} | — |`,
-        zh: `| 至少缺一个关键拍法的输入占比 | ${pct(stats.needsClarification)} | — |`,
-      })
-    );
-    lines.push("");
-    lines.push(
-      t(lang, {
-        en: `That spread is the whole argument: the missing information has to come from the user, not from a cleverer matcher. Final selection inside the shortlist is left to a model reading each template's *use when*, because some templates are genuinely identical on the facet axes (combat choreography and extreme sports, for example).`,
-        zh: `这 31 个百分点的差距就是全部论点：缺的信息得问用户，而不是指望更聪明的匹配器。候选名单内的终选交给读得懂每条模板「何时用」的模型——因为有些模板在拍法维度上本就同构（比如打斗编排与极限运动）。`,
-      })
-    );
-    lines.push("");
+    lines.push(t(lang, {
+      en: 'Measured on ' + stats.questions + ' fixed corpus summaries across ' + stats.labels + ' labels (' + stats.measuredAt + '). Summaries share case sources with training titles; this is not an independent generalization set.',
+      zh: '在 ' + stats.labels + ' 个标签共 ' + stats.questions + ' 条固定案例摘要上实测（' + stats.measuredAt + '）。摘要与训练标题同源，不能视作独立泛化集。'
+    }), '', t(lang, { en: '| Metric | Value | Threshold |', zh: '| 指标 | 实测 | 门槛 |' }), '| --- | --- | --- |');
+    const th = stats.thresholds || {};
+    lines.push(t(lang, { en: '| Shared scoring with synthetic facets | ' + pct(stats.oracleRetention) + ' | ≥ ' + pct(th.oracleRetentionMacroMin) + ' |', zh: '| 共用评分的合成特征保留率 | ' + pct(stats.oracleRetention) + ' | ≥ ' + pct(th.oracleRetentionMacroMin) + ' |' }));
+    lines.push(t(lang, { en: '| Fixed-summary top-5 retention | ' + pct(stats.textRetention) + ' | ≥ ' + pct(th.textRetentionMacroMin) + ' |', zh: '| 固定摘要 top-5 保留率 | ' + pct(stats.textRetention) + ' | ≥ ' + pct(th.textRetentionMacroMin) + ' |' }));
+    lines.push(t(lang, { en: '| Sufficient conversational cases: top-5 | ' + pct(stats.userRetention) + ' | ≥ ' + pct(th.userSufficientTop5MacroMin) + ' |', zh: '| 信息充分口语集 top-5 保留率 | ' + pct(stats.userRetention) + ' | ≥ ' + pct(th.userSufficientTop5MacroMin) + ' |' }));
+    lines.push(t(lang, { en: '| Average candidates handed to the host | ' + stats.avgCandidates + ' of ' + count + ' | ≤ ' + th.candidatesMax + ' |', zh: '| 平均交给宿主的候选数 | ' + stats.avgCandidates + ' / ' + count + ' | ≤ ' + th.candidatesMax + ' |' }));
+    lines.push(t(lang, { en: '| Compatible templates before truncation | ' + stats.avgEligible + ' of ' + count + ' | ratio ≤ ' + th.eligibleRatioMax + ' |', zh: '| 截断前平均兼容模板数 | ' + stats.avgEligible + ' / ' + count + ' | 比例 ≤ ' + th.eligibleRatioMax + ' |' }));
+    lines.push(t(lang, { en: '| Inputs with useful questions | ' + pct(stats.needsClarification) + ' | — |', zh: '| 有有效追问的输入 | ' + pct(stats.needsClarification) + ' | — |' }), '');
   }
-  lines.push(
-    t(lang, {
-      en: `Model capability is kept out of the templates and in \`adapters/\`, one small file per model, so a template never hard-codes a model's limits. Every requirement is graded: a hard gate (swap the template if the model cannot do it), a soft degradation (rewrite that block **and tell the user what was downgraded**), or a dialect (same meaning, different syntax).`,
-      zh: `模型差异不进模板，全留在 \`adapters/\`，一个模型一个小文件，模板因此不会写死任何模型的限制。每条要求分三级：硬门禁（模型做不到就换模板）、可降级（改写那一段，**并且必须告诉用户降了什么**）、方言（同一个意思的不同写法）。`,
-    })
-  );
-  lines.push("");
-  lines.push(
-    t(lang, {
-      en: `Adapters shipped: **Jimeng / Seedance 2.5**, **Kling**, **Veo**. Unverified capability slots stay \`null\` instead of guessing, and an unverified hard gate does not let a template through by default.`,
-      zh: `已提供适配器：**即梦 / Seedance 2.5**、**可灵**、**Veo**。没核对过的能力位保持 \`null\` 而不是猜一个，默认情况下未核对的硬门禁不会放行。`,
-    })
-  );
-  lines.push("");
-  lines.push(
-    t(lang, {
-      en: `Try it: \`node router/route.mjs "30 秒动画短片，一只橘猫在厨房做咖啡，皮克斯风格，分三个镜头" --model jimeng-seedance\` — it prints the extracted facets, the shortlist with reasons, what got vetoed and why, and what it still needs to ask you. Design and full measurement trail: [DESIGN-video-prompt-router.md](./DESIGN-video-prompt-router.md).`,
-      zh: `试一下：\`node router/route.mjs "30 秒动画短片，一只橘猫在厨房做咖啡，皮克斯风格，分三个镜头" --model jimeng-seedance\` —— 它会输出抽到的拍法、带理由的候选名单、被否决的模板及原因，以及还需要问你什么。设计与完整实测过程见 [DESIGN-video-prompt-router.md](./DESIGN-video-prompt-router.md)。`,
-    })
-  );
-  return lines.join("\n");
+  lines.push(t(lang, {
+    en: 'Adapters in adapters/ name exact versions and entry points: Seedance 2.5 on Volcengine Ark, Kling 3.0 API, and Veo 3.1 Gemini API preview. Unverified slots stay null. A downgrade requires a concrete replacement and **telling the user what was downgraded**. Corpus count is evidence volume, not confidence.',
+    zh: 'adapters/ 标明版本和入口：Seedance 2.5 火山方舟、Kling 3.0 API、Veo 3.1 Gemini API preview。未核实项保持 null。降级要有具体替代动作，**并且必须告诉用户降了什么**。案例数表示支撑量，不是置信度。'
+  }), '', t(lang, {
+    en: 'Run `node router/route.mjs "cat video" --json`. Build and installation commands: [Router usage](./ROUTER-USAGE.md). Original experiments: [DESIGN-video-prompt-router.md](./DESIGN-video-prompt-router.md); historical figures there are not current release evidence.',
+    zh: '运行 `node router/route.mjs "猫的视频" --json`。构建与安装见[路由使用说明](./ROUTER-USAGE.md)。原实验见 [DESIGN-video-prompt-router.md](./DESIGN-video-prompt-router.md)，其中历史数字不代表本次验收结果。'
+  }));
+  return lines.join('\n');
 }

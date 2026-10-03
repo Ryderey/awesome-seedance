@@ -66,7 +66,7 @@ One traveller moves through a place scene by scene, each scene carrying its own 
 | 2 | Send it to any AI chat and get back a Seedance prompt written to this structure. |
 | 3 | Paste that prompt into Seedance (Dreamina / Jimeng) and generate. If the result is off, check the pitfalls first, then adjust and re-run. |
 
-## Cases in this category (21 filed, by heat)
+## Cases in this category (25 filed, by heat)
 
 | Preview | Case | Version | Heat |
 | --- | --- | --- | --- |
@@ -77,13 +77,13 @@ One traveller moves through a place scene by scene, each scene carrying its own 
 | <a href="https://goodcase.ai/cases/seedance-seedance-2-5-on-95624dd6486e"><img src="https://media.goodcase.ai/cases/4d344a6d9409.jpg" width="160" alt="A Korean Woman’s 30-Second Taiwan Travel Vlog"></a> | [A Korean Woman’s 30-Second Taiwan Travel Vlog](https://goodcase.ai/cases/seedance-seedance-2-5-on-95624dd6486e) | 2.5 | 78 |
 | <a href="https://goodcase.ai/cases/noorlewisx-seedance-ai-3a8b37309451"><img src="https://media.goodcase.ai/media/poster/noorlewisx-seedance-ai-3a8b37309451.jpg" width="160" alt="Mediterranean Hillside Villa Interior and Aerial Tour"></a> | [Mediterranean Hillside Villa Interior and Aerial Tour](https://goodcase.ai/cases/noorlewisx-seedance-ai-3a8b37309451) | 2.0 | 74 |
 | <a href="https://goodcase.ai/cases/noorlewisx-seedance-ai-f8e8235cd94a"><img src="https://media.goodcase.ai/media/poster/noorlewisx-seedance-ai-f8e8235cd94a.jpg" width="160" alt="Helicopter Night Tour Over Tokyo"></a> | [Helicopter Night Tour Over Tokyo](https://goodcase.ai/cases/noorlewisx-seedance-ai-f8e8235cd94a) | 2.5 | 71 |
+| <a href="https://goodcase.ai/cases/seedance-create-an-ultra-realistic-cinematic-japanese-lifestyle-vlog-featuring-a-young-j-117213b692cf"><img src="https://media.goodcase.ai/cases/67e0404b0dc5.jpg" width="160" alt="Girl Running Through a Rainy Japanese Neighborhood"></a> | [Girl Running Through a Rainy Japanese Neighborhood](https://goodcase.ai/cases/seedance-create-an-ultra-realistic-cinematic-japanese-lifestyle-vlog-featuring-a-young-j-117213b692cf) | 2.5 | 71 |
 | <a href="https://goodcase.ai/cases/nawalsehar-seedance-ai-97aa872cb79d"><img src="https://media.goodcase.ai/media/poster/nawalsehar-seedance-ai-97aa872cb79d.jpg" width="160" alt="Seedance 2.5 Cinematic Follow-Cam Mountain Forest Hike"></a> | [Seedance 2.5 Cinematic Follow-Cam Mountain Forest Hike](https://goodcase.ai/cases/nawalsehar-seedance-ai-97aa872cb79d) | 2.5 | 69 |
 | <a href="https://goodcase.ai/cases/nawalsehar-seedance-ai-531c19980c39"><img src="https://media.goodcase.ai/media/poster/nawalsehar-seedance-ai-531c19980c39.jpg" width="160" alt="Summer Camping in the Korean Mountains"></a> | [Summer Camping in the Korean Mountains](https://goodcase.ai/cases/nawalsehar-seedance-ai-531c19980c39) | 2.0 | 67 |
 | <a href="https://goodcase.ai/cases/seedance-create-a-highly-realistic-cinematic-winter-video-of-a-peaceful-woman-staying-in-d5e93fbf164d"><img src="https://media.goodcase.ai/cases/ffa31eb53735.jpg" width="160" alt="Slow Winter Living in a Snowy Mountain Cabin"></a> | [Slow Winter Living in a Snowy Mountain Cabin](https://goodcase.ai/cases/seedance-create-a-highly-realistic-cinematic-winter-video-of-a-peaceful-woman-staying-in-d5e93fbf164d) | 2.0 | 63 |
-| <a href="https://goodcase.ai/cases/seedance-a-cinematic-ai-travel-vlog-of-a-stylish-young-woman-exploring-a-vibrant-europea-0eaef30bc5e3"><img src="https://media.goodcase.ai/cases/b6616f3bcc10.jpg" width="160" alt="Sunset Old Town Stroll and a Coffee Break"></a> | [Sunset Old Town Stroll and a Coffee Break](https://goodcase.ai/cases/seedance-a-cinematic-ai-travel-vlog-of-a-stylish-young-woman-exploring-a-vibrant-europea-0eaef30bc5e3) | 2.5 | 57 |
-| <a href="https://goodcase.ai/cases/seedance-a-cinematic-30-second-alpine-winter-vlog-montage-featuring-the-same-young-woman-cf96bc6f9a40"><img src="https://media.goodcase.ai/cases/fb98a7289e21.jpg" width="160" alt="A Cozy Winter Getaway in a Snowy Alpine Village"></a> | [A Cozy Winter Getaway in a Snowy Alpine Village](https://goodcase.ai/cases/seedance-a-cinematic-30-second-alpine-winter-vlog-montage-featuring-the-same-young-woman-cf96bc6f9a40) | 2.5 | 56 |
+| <a href="https://goodcase.ai/cases/seedance-character-consistency-same-young-adult-female-traveler-throughout-same-face-ba84d28e2cf0"><img src="https://media.goodcase.ai/cases/5e3c890e3358.jpg" width="160" alt="A Young Woman’s Journey Through London"></a> | [A Young Woman’s Journey Through London](https://goodcase.ai/cases/seedance-character-consistency-same-young-adult-female-traveler-throughout-same-face-ba84d28e2cf0) | 2.5 | 62 |
 
-The other 9 are in the [full gallery](../../gallery.md) and on [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance).
+The other 13 are in the [full gallery](../../gallery.md) and on [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance).
 
 ---
 

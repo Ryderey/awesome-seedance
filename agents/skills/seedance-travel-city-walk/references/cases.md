@@ -1,6 +1,6 @@
 # Case evidence · Cinematic travel vlog montage
 
-21 verified cases are filed under this template in awesome-seedance; the 8 hottest are below, full prompts included. Pick one as the anchor before drafting.
+25 verified cases are filed under this template in awesome-seedance; the 8 hottest are below, full prompts included. Pick one as the anchor before drafting.
 
 Generated from `data/cases.json` + `data/case-taxonomy.json`. Do not hand-edit.
 
@@ -206,12 +206,24 @@ Style: realistic handheld selfie + aerial footage, night city lights, slight win
 #polloai
 ```
 
-## E8 · Seedance 2.5 Cinematic Follow-Cam Mountain Forest Hike
+## E8 · Girl Running Through a Rainy Japanese Neighborhood
 
-- Seedance 2.5 · creator: @nawalsehar · heat: 69 · stability: 84
-- Evidence: [GoodCase](https://goodcase.ai/cases/nawalsehar-seedance-ai-97aa872cb79d) · [finished media](https://media.goodcase.ai/media/video/nawalsehar-seedance-ai-97aa872cb79d.mp4) · [poster](https://media.goodcase.ai/media/poster/nawalsehar-seedance-ai-97aa872cb79d.jpg) · [original source](https://x.com/nawalsehar/status/2089219802598658291)
-- Summary: Every trail has a reward. Seedance 2.5 makes every step feel naturally immersive. Created with Seedance 2.5. Prompt: A y
+- Seedance 2.5 · creator: @ZorviaLux · heat: 71
+- Evidence: [GoodCase](https://goodcase.ai/cases/seedance-create-an-ultra-realistic-cinematic-japanese-lifestyle-vlog-featuring-a-young-j-117213b692cf) · [finished media](https://media.goodcase.ai/cases/975a98ebb2ca.mp4) · [poster](https://media.goodcase.ai/cases/67e0404b0dc5.jpg) · [original source](https://x.com/ZorviaLux/status/2105533415026241635)
+- Summary: A little rain a peaceful walk and endless beautiful moments. Sometimes, happiness is found in the simplest things. Made with Seedance 2.5 Prompt: Create an ultr…
 
 ```text
-A young traveler hikes through a lush mountain forest, crosses a wooden bridge over a flowing stream, and reaches a stunning waterfall hidden among moss-covered rocks. Ultra-realistic travel documentary, authentic hiking movement, realistic environmental physics, natural English lip-sync, bright daytime lighting, immersive forest ambience, and seamless story continuity throughout.
+Create an ultra-realistic cinematic Japanese lifestyle vlog featuring a young Japanese woman enjoying a peaceful rainy day in a quiet Japanese neighborhood.
+
+A young woman with black hair tied in a neat ponytail, wearing a white and navy striped oversized T-shirt, beige shorts, and white sneakers, stands under a traditional covered bus stop during light rain. She looks outside, gently extends her hand to feel the raindrops, then turns around and runs playfully along a quiet residential street.
+
+Show cinematic transitions of her running through the wet neighborhood, passing traditional Japanese houses, green trees, and a peaceful park. She eventually reaches a wooden shelter in the park, adjusts her ponytail, stretches her arms, and smiles naturally toward the camera.
+
+Visual Style: Photorealistic Japanese slice-of-life cinematography, soft overcast daylight, realistic rain reflections, natural human movements, beautiful greenery, peaceful atmosphere, authentic Japanese residential environment.
+
+Camera Direction: Start with a cinematic side-profile close-up, transition into a medium shot of her touching raindrops, followed by a smooth rear tracking shot while running. Finish with emotional close-ups and a warm natural smile.
+
+Technical: 4K, 9:16 vertical, 24fps, realistic facial expressions, consistent character identity, smooth camera movement, natural physics, detailed environment, cinematic color grading.
+
+Important: Maintain the same woman's face, hairstyle, outfit, and body proportions throughout every scene. No facial distortion, no outfit changes, no unnatural movements, no text or watermark.
 ```

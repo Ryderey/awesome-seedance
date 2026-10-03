@@ -66,7 +66,7 @@
 | 2 | 发给任意 AI 对话，拿到一条按这个结构写好的 Seedance 提示语 |
 | 3 | 粘到 Seedance（即梦 / Dreamina）生成；效果不对先回头看常见坑，再改提示语重跑 |
 
-## 这一类的案例（已归类 29 条，按热度）
+## 这一类的案例（已归类 32 条，按热度）
 
 | 预览 | 案例 | 版本 | 热度 |
 | --- | --- | --- | --- |
@@ -83,7 +83,7 @@
 | <a href="https://goodcase.ai/cases/seedance-a-weathered-old-lighthouse-keeper-stands-on-a-foggy-cliff-at-night-f581948aed80"><img src="https://media.goodcase.ai/cases/69af52ca8c67.jpg" width="160" alt="雾夜灯塔守望者与海上光灵"></a> | [雾夜灯塔守望者与海上光灵](https://goodcase.ai/cases/seedance-a-weathered-old-lighthouse-keeper-stands-on-a-foggy-cliff-at-night-f581948aed80) | 2.5 | 64 |
 | <a href="https://goodcase.ai/cases/seedance-a-cinematic-dynamic-action-video-prompt-visual-surrealism-a-young-east-asian-wo-c6db1f2d25e4"><img src="https://media.goodcase.ai/cases/542b969cc1f7.jpg" width="160" alt="少女携信穿越镜像威尼斯"></a> | [少女携信穿越镜像威尼斯](https://goodcase.ai/cases/seedance-a-cinematic-dynamic-action-video-prompt-visual-surrealism-a-young-east-asian-wo-c6db1f2d25e4) | 2.5 | 62 |
 
-其余 17 条在[完整画廊](../../gallery.zh.md)和 [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance) 上。
+其余 20 条在[完整画廊](../../gallery.zh.md)和 [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance) 上。
 
 ---
 

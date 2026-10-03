@@ -6,12 +6,12 @@ import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { loadLibrary, buildTemplateIndex } from "../scripts/lib/library.mjs";
+import { fingerprint, templateHashes } from "./lib/build-data.mjs";
+import { validateProfiles } from "./route.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const readJson = (rel) => JSON.parse(readFileSync(path.join(ROOT, rel), "utf8"));
 
-const EXPECTED_TEMPLATES = 27;
-const EXPECTED_CATEGORIES = 6;
 const FORBIDDEN_ADAPTER_KEYS = ["example", "examples", "prompt", "prompts", "style", "styles", "keywords"];
 const CAP_DOMAIN = [true, false, null];
 
@@ -35,18 +35,24 @@ const { byTemplate } = buildTemplateIndex(library.templates, taxonomy, cases);
 const tagClass = new Map(Object.entries(capMap.tags).map(([t, v]) => [t, v.class]));
 const tagCap = new Map(Object.entries(capMap.tags).map(([t, v]) => [t, v.capability || v.syntax || null]));
 const declaredCaps = new Set(capMap.capabilityKeys);
+for (const [tag, config] of Object.entries(capMap.tags)) {
+  if (!Object.keys(capMap.classes).includes(config.class)) fail(`tag ${tag} 分类非法`);
+  if (["gate", "soft"].includes(config.class) && !declaredCaps.has(config.capability)) fail(`tag ${tag} 能力未声明`);
+}
 
 const adapters = readdirSync(path.join(ROOT, "adapters"))
   .filter((f) => f.endsWith(".json"))
   .map((f) => ({ file: `adapters/${f}`, ...readJson(`adapters/${f}`) }));
 
-// ---------- 校验 A：上游结构漂移 ----------
-if (library.templates.length !== EXPECTED_TEMPLATES) {
-  fail(`模板数 ${library.templates.length} != ${EXPECTED_TEMPLATES}，上游 data/ 结构可能已变`);
+// Coverage and schema, rather than a frozen template count.
+const ids = library.templates.map(t => t.id);
+if (!ids.length || new Set(ids).size !== ids.length) fail("模板 ID 为空或重复");
+for (const tp of library.templates) {
+  if (!/^[a-z0-9][a-z0-9-]*$/.test(tp.id) || !tp.useWhen?.zh || !tp.useWhen?.en || !tp.structure?.zh?.length || !tp.structure?.en?.length || !Array.isArray(tp.tags)) fail(`模板 ${tp.id} schema 不完整`);
 }
-if (library.categories.length !== EXPECTED_CATEGORIES) {
-  fail(`分类数 ${library.categories.length} != ${EXPECTED_CATEGORIES}，上游 data/ 结构可能已变`);
-}
+try { validateProfiles(readJson("router/facet-profile.json"), ids); } catch (err) { fail(err.message); }
+if (Object.keys(lexicon).sort().join("|") !== ids.slice().sort().join("|")) fail("lexicon ID 集不一致");
+const aliases = new Map();
 
 // ---------- 校验 B：每个 tag 都必须已登记 ----------
 for (const tp of library.templates) {
@@ -57,14 +63,17 @@ for (const tp of library.templates) {
 
 // ---------- 校验 C：适配器边界 ----------
 for (const ad of adapters) {
+  if (!ad.id || !ad.entry) fail(`${ad.file} 缺模型版本标识或入口`);
+  for (const rule of ad.degradations || []) if (!declaredCaps.has(rule.capability) || !rule.trigger || !Array.isArray(rule.blocks) || !rule.blocks.length || !rule.action || !rule.notice) fail(`${ad.file} 降级条目不完整`);
+  for (const name of new Set([ad.model, ad.id, path.basename(ad.file, ".json"), ...(ad.aliases || [])].filter(Boolean).map(n => n.toLowerCase()))) {
+    if (aliases.has(name)) fail(`适配器别名冲突 ${name}`); else aliases.set(name, ad.file);
+  }
   const leaked = FORBIDDEN_ADAPTER_KEYS.filter((k) => k in ad);
   if (leaked.length) fail(`${ad.file} 含禁止字段 ${leaked.join("/")}：适配器只声明能力，不放范例与风格`);
   for (const [k, v] of Object.entries(ad.capabilities || {})) {
     if (!CAP_DOMAIN.includes(v)) fail(`${ad.file}.capabilities.${k} = ${JSON.stringify(v)}，只允许 true/false/null`);
     if (!declaredCaps.has(k)) fail(`${ad.file}.capabilities.${k} 不在 capability-map.json 的 capabilityKeys 里`);
-    if (typeof v === "boolean" && !(ad.verifiedFrom || []).length) {
-      fail(`${ad.file}.capabilities.${k} 已填 ${v} 但 verifiedFrom 为空：无来源不许断言能力`);
-    }
+    if (typeof v === "boolean" && !ad.verifications?.some(r => r.capability === k && r.value === v && r.sourceType === "official" && /^https:\/\//.test(r.url) && r.verifiedAt && r.scope)) fail(`${ad.file}.${k} 无逐能力官方依据`);
   }
   const unverified = Object.entries(ad.capabilities || {}).filter(([, v]) => v === null).map(([k]) => k);
   if (unverified.length) warns.push(`${ad.file} 有 ${unverified.length} 个能力位未核对：${unverified.join(", ")}`);
@@ -95,6 +104,9 @@ function evidenceText(tp) {
 const DUR_RE = /(?:超过|长于|不少于|至少)\s*(\d+)\s*秒|longer than about\s*(\d+)\s*seconds?|at least\s*(\d+)\s*seconds?/i;
 
 const index = {
+  schemaVersion: 1,
+  dataVersion: fingerprint(ROOT),
+  templateHashes: templateHashes(library),
   $comment: "生成物，勿手改。重跑 node router/build-index.mjs。此文件把 data/ 的模板转成路由可用的元数据：gates 是硬门禁（模型不具备则换模板），softGates 可降级但必须告知，dialect 走适配器 syntax，signals 参与打分。",
   generatedFrom: ["data/style-library.json", "data/templates-local.json", "data/case-taxonomy.json", "data/cases.json", "router/capability-map.json", "router/signals.lexicon.json"],
   classes: capMap.classes,
@@ -115,7 +127,8 @@ for (const tp of library.templates) {
     const cap = tagCap.get(t);
     if (!cap) continue;
     const re = CAP_EVIDENCE[cap];
-    if (re && !re.test(text)) downgraded.push({ capability: cap, fromTag: t, because: `tag "${t}" 标为硬门禁，但模板正文无该能力的文字依据` });
+    const required = capMap.tags[t].requiredByTemplates || [];
+    if (!required.includes(tp.id) || (re && !re.test(text))) downgraded.push({ capability: cap, fromTag: t, because: `tag "${t}" 无该模板必须使用此能力的审阅依据` });
     else gateSet.add(cap);
   }
   for (const d of downgraded) softSet.add(d.capability);

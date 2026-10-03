@@ -17,7 +17,13 @@
 
 **`null` 表示"未核对"，不是"不支持"，也不是"支持"。** 未核对的能力位上，路由不得放行依赖该能力的模板，只能带警告放行或直接拒绝——由 `route.mjs` 的 `strictness` 决定，默认拒绝。
 
-任何字段从 `null` 改成布尔，`verifiedFrom` 必须非空且给出可点开的来源。没有来源就不许改，这条由 `router/build-index.mjs` 机器校验。
+每个适配器必须有具体模型 `id` 与调用 `entry`。别名保留兼容；`aliasNote` 明确历史 UI 名称与当前核实 API 的区别。
+
+每个布尔能力必须有对应 `verifications[]`：`capability/value/sourceType=official/url/verifiedAt/scope`。只读取继承仓库资料不能宣称官方核实；这条由构建器校验。`verifiedFrom` 汇总来源，`inheritedEvidence` 单独保留历史资料。
+
+`degradations[]` 包含 `capability/trigger/blocks/action/notice`，写清改哪些结构块、替代动作和告知文案。没有具体规则时保留待确认项。后期处理须符合用户允许范围。
+
+`limits.maxDuration` 表示单次生成上限；长成片可提出分段计划并确认结构可切分，连续单镜头或必须单次生成冲突时阻断。`durations/referenceDuration` 描述入口的时长档位，必要时提出裁剪计划而非假定任意时长都可执行。`limitVerification` 记录官方来源、日期与入口范围。
 
 ## 禁止放什么
 
@@ -29,5 +35,5 @@
 
 ## 新增一个模型
 
-复制一份 json，全部能力位填 `null`，`verifiedFrom` 填 `[]`，跑 `node router/build-index.mjs`。
+复制一份 json，填写版本 `id` 与 `entry`，全部未核实能力填 `null`，逐能力核实后添加记录，运行 `node router/build.mjs --write --out .tmp/router-package`。
 校验会警告"存在未核对能力位的模型"，这是预期状态，不是错误。

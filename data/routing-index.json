@@ -1,4 +1,35 @@
 {
+  "schemaVersion": 1,
+  "dataVersion": "f71b60d4dc36019055da33454ff90dd286896951769052fb4d06bdfdee89ebb8",
+  "templateHashes": {
+    "3d-cartoon": "64cb245e146ebe1f292e4f26ae990064d1fea8f48b89810d137d744702993caf",
+    "anime-style-lock": "395f32177cef7cb7f8fcc7018479d1e9bbc6872c4587d205329d94a1cb60a9c5",
+    "car-vehicle": "31b8ccfa124ce33f3646d1052ab2b0b9072234810f8482d719e5fcbc5f58cdbb",
+    "character-reference-lock": "acb71a79d100ebab0defd0ecf14d39666550fd78a6ca94d0ab0fd60ec3610b1c",
+    "cinematic-narrative-short": "fefcd91bffcc9d5811ad0bc59b85074272cefcf18f295fb410e54289e3fbf73b",
+    "combat-choreography": "46800c184df71313ea787a86cf302bb5850f797b5e346b78bfcca79d4a22792b",
+    "dialogue-performance-beats": "8a54c78defff8c323f10cafe3866f99e553f36eb8cc788b361f87567fcafddbb",
+    "epic-fantasy-scifi": "f1a8f63a4d9b06a008502b2762a174a9acc0ee502ff0db23b5467dc586f5a5e1",
+    "fashion-lookbook": "af0867fd612a9596c37d4ec1cd428b49e2c3cb416ed77bdc8f9f12da88d45645",
+    "food-asmr": "c23ee778ee074fd01be15be3c7cb632eeeb70256fcea0994c1ccb4f2627b4db6",
+    "game-ui-livestream": "2cddabb893a6b2fa8ed857bde9c60e7727b7bfbe9613162f8151ce5fc9410e79",
+    "handheld-ugc-vlog": "a460f8af264793b8f6d1b5375869a8da37273c76b43dccc38d2b487354b0d8d4",
+    "horror-suspense": "cf19cda812c42f17ff817349360db08805069805c76714fb546a56b26e3437cb",
+    "meme-comedy": "cc39a0f04ef6dfb51fab17e860ac8a57f49f1d44bcce02f71182c321677a861a",
+    "music-beat-sync-mv": "1c6897a485df3a68743200e81e3b77fec0a6d4c6a2ccc71921ac3129862aeaad",
+    "pet-animal": "d30e0498e49568e6beb4f8dc526b686ca60caa6d8d3f8794a346b59f97d622f5",
+    "pov-continuous-take": "e71890e74246e3b56177b40d3d5870b119f8f3ca82eb65079106d7cdc58c17ff",
+    "process-transformation-montage": "af32e4d95fb946f7feb62ecaa37d63100e8b13c38ea95780595e2c34fe2e7da0",
+    "product-commercial-shotlist": "e0b09bf8026df4856d12e38e38e26399d260491432f1ac9cc2faf5e4c4f9cdfe",
+    "retro-found-footage": "c1476bf550f0f511bebeee550f9e85988c9a5306800cc1fa6bd32efacca9a3bb",
+    "sports-extreme": "08f02fe1555758508ebb33f36c6a2bbecfc6b105391b7a81c49f5b9cc48915dd",
+    "stop-motion-cadence": "352f5c14b671a42f8557431fcec5c62d3da34582ecdc4be13560c7b35d6f612b",
+    "storyboard-grid-to-video": "12a4aba7ab83866074d7f2e87618b4daf5d5f76158d94cea77175fa29cac31a9",
+    "time-freeze-rewind": "e2a014743291e65bd296d29e1b297cb009d87423c1ef7bacd5a64010a1fe2d8e",
+    "timeline-shot-script": "79beb589bede484b8529c8f86a148d6db05d3812c39538359474f99348e5128b",
+    "travel-city-walk": "f1d27053e75ab35210c66eb17f645f7387c6c0c95553cd4c7b1e82d945153c02",
+    "ugc-creator-review": "b7c32125c8aeeac7748506d348935657184f6c37a7e02fd24a094db30b0cdc34"
+  },
   "$comment": "生成物，勿手改。重跑 node router/build-index.mjs。此文件把 data/ 的模板转成路由可用的元数据：gates 是硬门禁（模型不具备则换模板），softGates 可降级但必须告知，dialect 走适配器 syntax，signals 参与打分。",
   "generatedFrom": [
     "data/style-library.json",
@@ -26,39 +57,35 @@
   ],
   "adapters": [
     {
-      "model": "Seedance 2.5",
+      "model": "Seedance 2.5 (doubao-seedance-2-5-260628)",
       "file": "adapters/jimeng-seedance.json",
       "unverifiedCapabilities": [
-        "typography",
-        "physicsCoherence",
-        "firstLastFrame"
-      ]
-    },
-    {
-      "model": "Kling",
-      "file": "adapters/kling.json",
-      "unverifiedCapabilities": [
         "lipSync",
-        "audioDriven",
-        "refImage",
-        "refVideo",
         "typography",
         "physicsCoherence",
-        "firstLastFrame",
         "newerTierFeatures"
       ]
     },
     {
-      "model": "Veo",
-      "file": "adapters/veo.json",
+      "model": "Kling 3.0 (kling-v3)",
+      "file": "adapters/kling.json",
       "unverifiedCapabilities": [
         "lipSync",
         "audioDriven",
-        "refImage",
         "refVideo",
         "typography",
         "physicsCoherence",
-        "firstLastFrame",
+        "newerTierFeatures"
+      ]
+    },
+    {
+      "model": "Veo 3.1 (Gemini API preview)",
+      "file": "adapters/veo.json",
+      "unverifiedCapabilities": [
+        "lipSync",
+        "refVideo",
+        "typography",
+        "physicsCoherence",
         "newerTierFeatures"
       ]
     }
@@ -166,7 +193,7 @@
           "秒级",
           "时长"
         ],
-        "corpusDocs": 5,
+        "corpusDocs": 6,
         "manualAdded": 5
       },
       "gates": [],
@@ -180,7 +207,7 @@
         "needsVertical": null
       },
       "stacks": [],
-      "corpusCount": 5,
+      "corpusCount": 6,
       "examples": [
         {
           "slug": "boa-hancock-water-obstacle-race-prompt",
@@ -199,20 +226,20 @@
           "stability": 0
         },
         {
+          "slug": "seedance-create-a-30-second-cinematic-photorealistic-morning-routine-video-featuring-the-3f656bde95d1",
+          "title": "金色晨光中的都市晨间日常",
+          "creator": "@noorlewisx",
+          "sourceUrl": "https://x.com/noorlewisx/status/2104433592751587494",
+          "heat": 67,
+          "stability": 0
+        },
+        {
           "slug": "seedance-2-5-3f70c2f28d22",
           "title": "Seedance 2.5 生成暴雨港口灾难电影序列",
           "creator": "@Noor_ul_ain43",
           "sourceUrl": "https://x.com/Noor_ul_ain43/status/2087774014957850843",
           "heat": 29,
           "stability": 79
-        },
-        {
-          "slug": "seedance-2-5-vlog-30-3b85f315bb08",
-          "title": "Seedance 2.5 真实骑行 Vlog:运动相机+前摄+跟拍混剪 30 秒",
-          "creator": "@johnAGI168",
-          "sourceUrl": "https://x.com/johnAGI168/status/2086014766846275817",
-          "heat": 26,
-          "stability": 74
         }
       ]
     },
@@ -331,17 +358,17 @@
           "korean",
           "summer",
           "morning",
-          "woman",
           "day",
           "girl",
           "short",
-          "village"
+          "village",
+          "old"
         ],
         "zh": [
           "韩国",
           "女孩",
-          "韩国女",
           "夏日",
+          "韩国女",
           "清晨",
           "韩国女孩",
           "健身",
@@ -350,7 +377,7 @@
           "出门前准备",
           "私人感"
         ],
-        "corpusDocs": 112,
+        "corpusDocs": 116,
         "manualAdded": 3
       },
       "gates": [],
@@ -362,7 +389,7 @@
         "needsVertical": null
       },
       "stacks": [],
-      "corpusCount": 112,
+      "corpusCount": 116,
       "examples": [
         {
           "slug": "seedance-25-minidv-coffee-asmr-vlog",
@@ -543,7 +570,7 @@
         {
           "capability": "refImage",
           "fromTag": "reference-lock",
-          "because": "tag \"reference-lock\" 标为硬门禁，但模板正文无该能力的文字依据"
+          "because": "tag \"reference-lock\" 无该模板必须使用此能力的审阅依据"
         }
       ],
       "hardLimits": {
@@ -724,13 +751,12 @@
           "口型",
           "争吵"
         ],
-        "corpusDocs": 8,
+        "corpusDocs": 9,
         "manualAdded": 4
       },
-      "gates": [
-        "lipSync"
-      ],
+      "gates": [],
       "softGates": [
+        "lipSync",
         "newerTierFeatures"
       ],
       "dialect": [],
@@ -740,7 +766,7 @@
         "needsVertical": null
       },
       "stacks": [],
-      "corpusCount": 8,
+      "corpusCount": 9,
       "examples": [
         {
           "slug": "noorlewisx-seedance-ai-b2d98861daf9",
@@ -767,11 +793,11 @@
           "stability": 71
         },
         {
-          "slug": "seedance-3b9beb9a46d4",
-          "title": "Seedance 电影级分手表演提示词",
-          "creator": "@liyue_ai",
-          "sourceUrl": "https://x.com/liyue_ai/status/2090378405288300626",
-          "heat": 24,
+          "slug": "seedance-some-goodbyes-are-harder-than-war-itself-084c2515a324",
+          "title": "朝鲜王朝城门前的离别之吻",
+          "creator": "@abulu8",
+          "sourceUrl": "https://x.com/abulu8/status/2105362930640605330",
+          "heat": 48,
           "stability": 0
         }
       ]
@@ -800,31 +826,41 @@
       ],
       "signals": {
         "en": [
-          "woman",
           "korean",
           "girl",
           "school",
           "thirty",
           "city",
           "cinematic",
-          "romance"
+          "romance",
+          "escape",
+          "narrative",
+          "trailer",
+          "three acts",
+          "story",
+          "emotional"
         ],
         "zh": [
-          "少女",
           "雨夜",
+          "少女",
           "电影",
           "校园",
           "女孩",
+          "女子",
           "十秒",
           "夜咖啡馆",
-          "雨夜咖啡",
           "预告片",
           "迷你剧",
           "剧情",
-          "爱情"
+          "爱情",
+          "故事",
+          "叙事",
+          "感人",
+          "告别",
+          "重逢"
         ],
-        "corpusDocs": 47,
-        "manualAdded": 4
+        "corpusDocs": 51,
+        "manualAdded": 14
       },
       "gates": [],
       "softGates": [],
@@ -837,7 +873,7 @@
       "stacks": [
         "character-reference-lock"
       ],
-      "corpusCount": 47,
+      "corpusCount": 51,
       "examples": [
         {
           "slug": "seedance-create-a-30-second-1080p-ultra-realistic-emotional-live-action-scene-about-a-y-8c4cbeb0026b",
@@ -864,10 +900,10 @@
           "stability": 74
         },
         {
-          "slug": "seedance-walked-past-him-like-the-backflip-was-the-easy-part-of-lunch-b79fce6dfd39",
-          "title": "粉发女生食堂后空翻稳接餐盘",
+          "slug": "seedance-this-is-not-the-ending-you-think-it-is-4b817978c02e",
+          "title": "枪口下闪回的金色恋歌",
           "creator": "@Just_sharon7",
-          "sourceUrl": "https://x.com/Just_sharon7/status/2100836177821483349",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2103857991917433061",
           "heat": 87,
           "stability": 0
         }
@@ -1181,32 +1217,35 @@
       ],
       "signals": {
         "en": [
-          "action",
           "battles",
+          "action",
+          "fight",
           "girl",
           "haired",
-          "fight",
+          "subway",
           "night",
-          "rooftop",
-          "warrior"
+          "showdown",
+          "combat",
+          "martial arts",
+          "sword",
+          "choreography"
         ],
         "zh": [
-          "少女",
           "激战",
+          "少女",
           "动作",
+          "地铁站",
           "超能",
+          "格斗",
+          "决战",
           "觉醒",
-          "能力",
-          "近身格斗",
-          "超能力",
           "武术",
           "剑戟",
-          "格斗",
           "招式",
           "打戏"
         ],
-        "corpusDocs": 51,
-        "manualAdded": 5
+        "corpusDocs": 57,
+        "manualAdded": 8
       },
       "gates": [],
       "softGates": [
@@ -1221,7 +1260,7 @@
       "stacks": [
         "timeline-shot-script"
       ],
-      "corpusCount": 51,
+      "corpusCount": 57,
       "examples": [
         {
           "slug": "aiwithelisia-seedance-ai-b204cdfb3dac",
@@ -1230,6 +1269,14 @@
           "sourceUrl": "https://x.com/AiwithElisia/status/2092119695201837059",
           "heat": 94,
           "stability": 82
+        },
+        {
+          "slug": "seedance-create-a-60-second-ultra-realistic-cinematic-korean-action-thriller-scene-featu-f31c9f4b3fc8",
+          "title": "红围巾女特工决战暗黑教室",
+          "creator": "@Noor_ul_ain43",
+          "sourceUrl": "https://x.com/Noor_ul_ain43/status/2104793144743108833",
+          "heat": 93,
+          "stability": 0
         },
         {
           "slug": "seedance-cinematic-dark-fantasy-wuxia-action-scene-low-angle-dynamic-tracking-shot-756b1234acd9",
@@ -1246,14 +1293,6 @@
           "sourceUrl": "https://x.com/itxsarmadd/status/2103694941260222603",
           "heat": 86,
           "stability": 0
-        },
-        {
-          "slug": "doctorwasif-seedance-ai-8a78efcb37f9",
-          "title": "静电觉醒少女的体育馆反击",
-          "creator": "@doctorwasif",
-          "sourceUrl": "https://x.com/doctorwasif/status/2091388398153994395",
-          "heat": 82,
-          "stability": 80
         }
       ]
     },
@@ -1288,30 +1327,31 @@
           "dance",
           "music",
           "stage",
+          "cinematic",
           "beat",
           "girl",
-          "idol"
+          "MV"
         ],
         "zh": [
           "霓虹",
+          "舞台",
           "音乐",
           "音乐视频",
+          "女歌手",
           "分镜",
-          "舞台",
           "卡点",
-          "MV",
           "翻跳",
           "副歌",
           "舞蹈"
         ],
-        "corpusDocs": 16,
+        "corpusDocs": 17,
         "manualAdded": 5
       },
       "gates": [
-        "audioDriven",
-        "lipSync"
+        "audioDriven"
       ],
       "softGates": [
+        "lipSync",
         "typography",
         "newerTierFeatures"
       ],
@@ -1322,7 +1362,7 @@
         "needsVertical": null
       },
       "stacks": [],
-      "corpusCount": 16,
+      "corpusCount": 17,
       "examples": [
         {
           "slug": "seedance-25-kpop-mv-dual-idol",
@@ -1562,14 +1602,16 @@
       ],
       "signals": {
         "en": [
-          "summer",
           "seoul",
-          "day",
-          "evening",
+          "summer",
           "walk",
+          "day",
+          "old",
+          "evening",
           "korean",
-          "home",
-          "old"
+          "early",
+          "MiniDV",
+          "VHS"
         ],
         "zh": [
           "首尔",
@@ -1577,16 +1619,14 @@
           "夏日",
           "首尔夏夜",
           "韩国",
-          "周日",
-          "首尔夏日",
           "漫步",
+          "情侣",
+          "午后",
           "家庭录像",
           "录像带",
-          "MiniDV",
-          "VHS",
           "伪纪录片"
         ],
-        "corpusDocs": 29,
+        "corpusDocs": 36,
         "manualAdded": 5
       },
       "gates": [],
@@ -1600,7 +1640,7 @@
       "stacks": [
         "timeline-shot-script"
       ],
-      "corpusCount": 29,
+      "corpusCount": 36,
       "examples": [
         {
           "slug": "seedance-prompt-create-a-30-second-1080p-ultra-realistic-personal-home-video-showing-a-f4036ce777fe",
@@ -1660,37 +1700,37 @@
       ],
       "signals": {
         "en": [
-          "woman",
           "young",
           "mountain",
-          "travel",
-          "mountains",
           "journey",
           "village",
-          "autumn"
+          "korean",
+          "travel",
+          "rainy",
+          "snowy"
         ],
         "zh": [
-          "漫游",
-          "旅行",
-          "女子",
           "少女",
-          "年轻女子",
-          "旅行日",
+          "漫游",
+          "之旅",
+          "年轻女",
           "村庄",
-          "登机",
+          "韩国",
+          "旅行",
+          "女孩",
           "旅拍",
           "城市漫游",
           "目的地",
           "徒步",
           "露营"
         ],
-        "corpusDocs": 21,
+        "corpusDocs": 25,
         "manualAdded": 5
       },
-      "gates": [
+      "gates": [],
+      "softGates": [
         "lipSync"
       ],
-      "softGates": [],
       "dialect": [],
       "gateDowngraded": [],
       "hardLimits": {
@@ -1701,7 +1741,7 @@
         "timeline-shot-script",
         "character-reference-lock"
       ],
-      "corpusCount": 21,
+      "corpusCount": 25,
       "examples": [
         {
           "slug": "seedance-a-cinematic-30-second-tropical-travel-vlog-montage-featuring-a-beautiful-20-yea-6af38a792806",
@@ -1852,10 +1892,16 @@
       "signals": {
         "en": [
           "motorcycle",
+          "highway",
+          "apocalyptic",
+          "supercar",
           "racing"
         ],
         "zh": [
           "公路",
+          "超跑",
+          "机车",
+          "末日",
           "汽车",
           "摩托",
           "赛车",
@@ -1864,7 +1910,7 @@
           "追逐",
           "特技"
         ],
-        "corpusDocs": 11,
+        "corpusDocs": 13,
         "manualAdded": 7
       },
       "gates": [],
@@ -1880,8 +1926,16 @@
         "needsVertical": null
       },
       "stacks": [],
-      "corpusCount": 11,
+      "corpusCount": 13,
       "examples": [
+        {
+          "slug": "seedance-cinematic-photorealistic-sci-fi-action-sequence-moody-desaturated-color-grade-edfd133b78ea",
+          "title": "未来公路上的机车与超跑追逐",
+          "creator": "@itsSaira_1",
+          "sourceUrl": "https://x.com/itsSaira_1/status/2104064261005709551",
+          "heat": 92,
+          "stability": 0
+        },
         {
           "slug": "ruzainameer-seedance-ai-e6073ec318f1",
           "title": "Seedance 2.5 1080P 三十秒超写实奇幻大片",
@@ -1905,14 +1959,6 @@
           "sourceUrl": "https://x.com/Zyrellix/status/2092438692820295703",
           "heat": 71,
           "stability": 81
-        },
-        {
-          "slug": "seedance-a-high-octane-cinematic-action-sequence-on-an-urban-highway-in-tokyo-photoreali-e9963e75b76a",
-          "title": "东京高速粉色喷气拖拉机狂飙",
-          "creator": "@laviniavelle",
-          "sourceUrl": "https://x.com/laviniavelle/status/2100806296949903511",
-          "heat": 45,
-          "stability": 0
         }
       ]
     },
@@ -1944,26 +1990,26 @@
           "synchronized",
           "outfit",
           "streets",
+          "beauty",
           "golden",
-          "countryside",
-          "cinematic"
+          "red",
+          "lookbook"
         ],
         "zh": [
           "时尚",
+          "街头",
           "女孩",
           "同步",
           "大片",
           "换装",
-          "街头",
           "金色",
-          "袋时尚大",
+          "少女",
           "穿搭",
           "街拍",
           "写真",
-          "人像",
-          "lookbook"
+          "人像"
         ],
-        "corpusDocs": 30,
+        "corpusDocs": 34,
         "manualAdded": 5
       },
       "gates": [],
@@ -1977,7 +2023,7 @@
       "stacks": [
         "character-reference-lock"
       ],
-      "corpusCount": 30,
+      "corpusCount": 34,
       "examples": [
         {
           "slug": "seedance-i-came-like-a-storm-d30f955b4248",
@@ -1996,18 +2042,18 @@
           "stability": 82
         },
         {
+          "slug": "seedance-this-is-how-it-feels-like-to-wake-up-on-monday-to-go-to-work-b0d56af4f909",
+          "title": "周一清晨的倒悬入水仪式",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2104544058471502330",
+          "heat": 89,
+          "stability": 0
+        },
+        {
           "slug": "seedance-a-clean-premium-4-second-fashion-lookbook-animation-starting-from-the-first-fr-a7de463708af",
           "title": "模特与单品同步360度旋转",
           "creator": "@AI__TSUBAKI",
           "sourceUrl": "https://x.com/AI__TSUBAKI/status/2102459655700287648",
-          "heat": 82,
-          "stability": 0
-        },
-        {
-          "slug": "seedance-created-a-cinematic-fashion-transformation-video-featuring-a-beautiful-young-wo-c7588dbea707",
-          "title": "巴黎街头红裙幻变",
-          "creator": "@ayzalnooor24521",
-          "sourceUrl": "https://x.com/ayzalnooor24521/status/2100456445900710158",
           "heat": 82,
           "stability": 0
         }
@@ -2039,21 +2085,22 @@
         "en": [
           "street",
           "chase",
+          "adventure",
+          "chaotic",
+          "kitchen",
           "morning",
           "subway",
-          "thirty",
-          "woman",
-          "plan"
+          "thirty"
         ],
         "zh": [
           "街头",
-          "浴袍奶奶",
-          "嘲笑",
-          "地铁",
-          "女孩",
-          "十秒",
-          "逃亡",
           "引发",
+          "浴袍奶奶",
+          "迷你厨",
+          "嘲笑",
+          "大乱",
+          "地铁",
+          "巨型",
           "玩梗",
           "整蛊",
           "反转",
@@ -2061,7 +2108,7 @@
           "沙雕",
           "复仇"
         ],
-        "corpusDocs": 25,
+        "corpusDocs": 29,
         "manualAdded": 6
       },
       "gates": [],
@@ -2075,7 +2122,7 @@
       "stacks": [
         "timeline-shot-script"
       ],
-      "corpusCount": 25,
+      "corpusCount": 29,
       "examples": [
         {
           "slug": "seedance-create-a-30-second-1080p-ultra-realistic-korean-subway-action-comedy-scene-usi-93b40e9db5b1",
@@ -2142,7 +2189,11 @@
           "night",
           "infection",
           "japanese",
-          "attack"
+          "attack",
+          "horror",
+          "suspense",
+          "possessed",
+          "possession"
         ],
         "zh": [
           "感染",
@@ -2160,14 +2211,20 @@
           "驱邪"
         ],
         "corpusDocs": 23,
-        "manualAdded": 5
+        "manualAdded": 9
       },
-      "gates": [
+      "gates": [],
+      "softGates": [
         "refImage"
       ],
-      "softGates": [],
       "dialect": [],
-      "gateDowngraded": [],
+      "gateDowngraded": [
+        {
+          "capability": "refImage",
+          "fromTag": "reference-lock",
+          "because": "tag \"reference-lock\" 无该模板必须使用此能力的审阅依据"
+        }
+      ],
       "hardLimits": {
         "minDuration": null,
         "needsVertical": null
@@ -2242,8 +2299,8 @@
           "otter",
           "animation",
           "animated",
-          "magical",
-          "playful"
+          "duckling",
+          "bedroom"
         ],
         "zh": [
           "水獭",
@@ -2251,15 +2308,15 @@
           "动画",
           "亲吻",
           "风格海盗",
+          "蓝围巾小",
           "沙发上",
           "小水獭",
-          "花园",
           "三维卡通",
           "皮克斯",
           "动画角色",
           "幼龙"
         ],
-        "corpusDocs": 29,
+        "corpusDocs": 34,
         "manualAdded": 4
       },
       "gates": [],
@@ -2275,8 +2332,16 @@
       "stacks": [
         "character-reference-lock"
       ],
-      "corpusCount": 29,
+      "corpusCount": 34,
       "examples": [
+        {
+          "slug": "seedance-made-with-seedance-2-5-73b10f69e32a",
+          "title": "幼儿开门学字母与单词",
+          "creator": "@Zarnab_with_Ai",
+          "sourceUrl": "https://x.com/Zarnab_with_Ai/status/2104764823091490851",
+          "heat": 98,
+          "stability": 0
+        },
         {
           "slug": "seedance-made-with-seedance-2-5-27ee46690725",
           "title": "沙发上嬉闹亲吻的兔子情侣",
@@ -2300,14 +2365,6 @@
           "sourceUrl": "https://x.com/Caden_Flux/status/2091396961329131999",
           "heat": 82,
           "stability": 83
-        },
-        {
-          "slug": "seedance-made-with-seedance-2-5-71bc731fe900",
-          "title": "沙发上相拥亲吻的萌兔",
-          "creator": "@Zarnab_with_Ai",
-          "sourceUrl": "https://x.com/Zarnab_with_Ai/status/2098728793703899603",
-          "heat": 79,
-          "stability": 0
         }
       ]
     },
@@ -2337,22 +2394,27 @@
         "en": [
           "warrior",
           "battle",
-          "dragon",
           "giant",
-          "woman",
+          "dragon",
+          "white",
           "red",
           "fortress",
-          "fantasy"
+          "fantasy",
+          "epic",
+          "kaiju",
+          "monster",
+          "spectacle",
+          "scifi"
         ],
         "zh": [
           "战士",
           "风暴",
+          "巨兽",
           "少女",
           "之战",
           "威尼斯",
+          "冰封",
           "穿越",
-          "摧毁",
-          "废墟",
           "奇幻",
           "科幻",
           "巨龙",
@@ -2361,15 +2423,21 @@
           "变身",
           "世界观"
         ],
-        "corpusDocs": 29,
-        "manualAdded": 7
+        "corpusDocs": 32,
+        "manualAdded": 12
       },
-      "gates": [
+      "gates": [],
+      "softGates": [
         "refImage"
       ],
-      "softGates": [],
       "dialect": [],
-      "gateDowngraded": [],
+      "gateDowngraded": [
+        {
+          "capability": "refImage",
+          "fromTag": "reference-lock",
+          "because": "tag \"reference-lock\" 无该模板必须使用此能力的审阅依据"
+        }
+      ],
       "hardLimits": {
         "minDuration": null,
         "needsVertical": null
@@ -2377,7 +2445,7 @@
       "stacks": [
         "character-reference-lock"
       ],
-      "corpusCount": 29,
+      "corpusCount": 32,
       "examples": [
         {
           "slug": "seedance-watch-venice-become-a-sphere-a2018a3e4d6b",
@@ -2538,7 +2606,13 @@
           "mission",
           "station",
           "female",
-          "office"
+          "office",
+          "HUD",
+          "game",
+          "livestream",
+          "HUD",
+          "streamer",
+          "overlay"
         ],
         "zh": [
           "车站",
@@ -2552,11 +2626,10 @@
           "游戏录屏",
           "游戏实录",
           "直播叠层",
-          "HUD",
           "任务界面"
         ],
         "corpusDocs": 15,
-        "manualAdded": 5
+        "manualAdded": 10
       },
       "gates": [],
       "softGates": [
@@ -2568,7 +2641,7 @@
         {
           "capability": "refImage",
           "fromTag": "reference-lock",
-          "because": "tag \"reference-lock\" 标为硬门禁，但模板正文无该能力的文字依据"
+          "because": "tag \"reference-lock\" 无该模板必须使用此能力的审阅依据"
         }
       ],
       "hardLimits": {
@@ -2638,17 +2711,28 @@
         "commercial"
       ],
       "signals": {
-        "en": [],
+        "en": [
+          "korean",
+          "ASMR",
+          "food",
+          "cooking",
+          "eating",
+          "broth",
+          "chef",
+          "dinner",
+          "crispy",
+          "juicy",
+          "ASMR"
+        ],
         "zh": [
           "美食",
           "吃播",
           "烹饪",
-          "ASMR",
           "拉丝",
           "爆汁"
         ],
-        "corpusDocs": 6,
-        "manualAdded": 6
+        "corpusDocs": 7,
+        "manualAdded": 15
       },
       "gates": [],
       "softGates": [],
@@ -2661,7 +2745,7 @@
       "stacks": [
         "timeline-shot-script"
       ],
-      "corpusCount": 6,
+      "corpusCount": 7,
       "examples": [
         {
           "slug": "seedance-create-a-30-second-fast-paced-cinematic-japanese-anime-cooking-video-showing-th-236ad940a8f1",

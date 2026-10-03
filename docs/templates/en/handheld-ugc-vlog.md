@@ -65,7 +65,7 @@ Buy believability with camera defects. Name a specific consumer camera era, list
 | 2 | Send it to any AI chat and get back a Seedance prompt written to this structure. |
 | 3 | Paste that prompt into Seedance (Dreamina / Jimeng) and generate. If the result is off, check the pitfalls first, then adjust and re-run. |
 
-## Cases in this category (112 filed, by heat)
+## Cases in this category (116 filed, by heat)
 
 | Preview | Case | Version | Heat |
 | --- | --- | --- | --- |
@@ -80,9 +80,9 @@ Buy believability with camera defects. Name a specific consumer camera era, list
 | <a href="https://goodcase.ai/cases/aiwithkhan-seedance-ai-9a5c5cbd518b"><img src="https://media.goodcase.ai/media/poster/aiwithkhan-seedance-ai-9a5c5cbd518b.jpg" width="160" alt="A Girl Cycling Through a Korean Alley in Summer"></a> | [A Girl Cycling Through a Korean Alley in Summer](https://goodcase.ai/cases/aiwithkhan-seedance-ai-9a5c5cbd518b) | 2.5 | 86 |
 | <a href="https://goodcase.ai/cases/youmind-travel-vlog-city-to-beach"><img src="https://media.goodcase.ai/media/poster/youmind-travel-vlog-city-to-beach.jpg" width="160" alt="Handheld Travel Vlog From Apartment to Beach"></a> | [Handheld Travel Vlog From Apartment to Beach](https://goodcase.ai/cases/youmind-travel-vlog-city-to-beach) | 2.5 | 86 |
 | <a href="https://goodcase.ai/cases/zarairahh-seedance-ai-3f362e9e352b"><img src="https://media.goodcase.ai/media/poster/zarairahh-seedance-ai-3f362e9e352b.jpg" width="160" alt="Seedance Sixty-Second Gym Day-in-the-Life Vlog"></a> | [Seedance Sixty-Second Gym Day-in-the-Life Vlog](https://goodcase.ai/cases/zarairahh-seedance-ai-3f362e9e352b) | 2.5 | 86 |
-| <a href="https://goodcase.ai/cases/seedance-pov-korean-couple-spends-a-lazy-summer-morning-wandering-their-neighborhood-0d246cd8363d"><img src="https://media.goodcase.ai/cases/c39ee14f9f1b.jpg" width="160" alt="POV: A Lazy Summer Morning With Him in Seoul"></a> | [POV: A Lazy Summer Morning With Him in Seoul](https://goodcase.ai/cases/seedance-pov-korean-couple-spends-a-lazy-summer-morning-wandering-their-neighborhood-0d246cd8363d) | 2.5 | 84 |
+| <a href="https://goodcase.ai/cases/seedance-why-did-i-think-this-workout-would-be-easier-dea31b0d7735"><img src="https://media.goodcase.ai/cases/1bc672678b32.jpg" width="160" alt="Pink-Haired Girl’s Nighttime Functional Workout Challenge"></a> | [Pink-Haired Girl’s Nighttime Functional Workout Challenge](https://goodcase.ai/cases/seedance-why-did-i-think-this-workout-would-be-easier-dea31b0d7735) | 2.5 | 85 |
 
-The other 100 are in the [full gallery](../../gallery.md) and on [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance).
+The other 104 are in the [full gallery](../../gallery.md) and on [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance).
 
 ---
 

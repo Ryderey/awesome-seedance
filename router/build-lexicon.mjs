@@ -109,9 +109,12 @@ for (const id of Object.keys(overrides)) {
 }
 for (const [id, extra] of Object.entries(overrides)) {
   const entry = lexicon[id];
-  const added = (extra || []).filter((w) => !entry.zh.includes(w));
-  entry.zh = [...entry.zh, ...added];
-  entry.manualAdded = added.length;
+  const languages = Array.isArray(extra) ? { zh: extra.filter(w => /[一-龥]/.test(w)), en: extra.filter(w => !/[一-龥]/.test(w)) } : extra;
+  entry.manualAdded = 0;
+  for (const lang of ["zh", "en"]) {
+    const added = (languages[lang] || []).filter(w => !entry[lang].includes(w));
+    entry[lang].push(...added); entry.manualAdded += added.length;
+  }
 }
 
 const stillEmpty = Object.entries(lexicon).filter(([, v]) => v.en.length === 0 && v.zh.length === 0);

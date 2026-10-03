@@ -66,13 +66,15 @@ The machine has to stay one machine while the camera does all the work. Lock the
 | 2 | Send it to any AI chat and get back a Seedance prompt written to this structure. |
 | 3 | Paste that prompt into Seedance (Dreamina / Jimeng) and generate. If the result is off, check the pitfalls first, then adjust and re-run. |
 
-## Cases in this category (11 filed, by heat)
+## Cases in this category (13 filed, by heat)
 
 | Preview | Case | Version | Heat |
 | --- | --- | --- | --- |
+| <a href="https://goodcase.ai/cases/seedance-cinematic-photorealistic-sci-fi-action-sequence-moody-desaturated-color-grade-edfd133b78ea"><img src="https://media.goodcase.ai/cases/1917351d85cd.jpg" width="160" alt="Futuristic Highway Chase with Motorcycles and Supercar"></a> | [Futuristic Highway Chase with Motorcycles and Supercar](https://goodcase.ai/cases/seedance-cinematic-photorealistic-sci-fi-action-sequence-moody-desaturated-color-grade-edfd133b78ea) | 2.5 | 92 |
 | <a href="https://goodcase.ai/cases/ruzainameer-seedance-ai-e6073ec318f1"><img src="https://media.goodcase.ai/media/poster/ruzainameer-seedance-ai-e6073ec318f1.jpg" width="160" alt="Seedance 2.5 Thirty-Second 1080p Hyperreal Fantasy Epic"></a> | [Seedance 2.5 Thirty-Second 1080p Hyperreal Fantasy Epic](https://goodcase.ai/cases/ruzainameer-seedance-ai-e6073ec318f1) | 2.5 | 82 |
 | <a href="https://goodcase.ai/cases/just-sharon7-seedance-ai-f5af358d1f88"><img src="https://media.goodcase.ai/cases/d2b34cc66de6.jpg" width="160" alt="Motorcycle Racing Through a Mountain Road"></a> | [Motorcycle Racing Through a Mountain Road](https://goodcase.ai/cases/just-sharon7-seedance-ai-f5af358d1f88) | 2.0 | 78 |
 | <a href="https://goodcase.ai/cases/zyrellix-seedance-ai-b7efa04a2c13"><img src="https://media.goodcase.ai/media/poster/zyrellix-seedance-ai-b7efa04a2c13.jpg" width="160" alt="Post-Apocalyptic Desert Buggy Air Battle"></a> | [Post-Apocalyptic Desert Buggy Air Battle](https://goodcase.ai/cases/zyrellix-seedance-ai-b7efa04a2c13) | 2.0 | 71 |
+| <a href="https://goodcase.ai/cases/seedance-cinematic-short-film-46-sec-16-9-photorealistic-hollywood-sci-fi-action-dys-dae506414152"><img src="https://media.goodcase.ai/cases/b48c78c785ba.jpg" width="160" alt="Woman Biker Escapes an Alien Warship on an Apocalyptic Highway"></a> | [Woman Biker Escapes an Alien Warship on an Apocalyptic Highway](https://goodcase.ai/cases/seedance-cinematic-short-film-46-sec-16-9-photorealistic-hollywood-sci-fi-action-dys-dae506414152) | 2.5 | 60 |
 | <a href="https://goodcase.ai/cases/seedance-a-high-octane-cinematic-action-sequence-on-an-urban-highway-in-tokyo-photoreali-e9963e75b76a"><img src="https://media.goodcase.ai/cases/17d1ccde38df.jpg" width="160" alt="Pink Jet Tractor Races Supercars on a Tokyo Expressway"></a> | [Pink Jet Tractor Races Supercars on a Tokyo Expressway](https://goodcase.ai/cases/seedance-a-high-octane-cinematic-action-sequence-on-an-urban-highway-in-tokyo-photoreali-e9963e75b76a) | 2.5 | 45 |
 | <a href="https://goodcase.ai/cases/missdelulu9-seedance-ai-02009f1f7daf"><img src="https://media.goodcase.ai/cases/4da7c433c3b6.jpg" width="160" alt="First-Person Midair Assembly of a Black Lamborghini"></a> | [First-Person Midair Assembly of a Black Lamborghini](https://goodcase.ai/cases/missdelulu9-seedance-ai-02009f1f7daf) | 2.5 | 42 |
 | <a href="https://goodcase.ai/cases/karakoram-motorcycle-commercial"><img src="https://media.goodcase.ai/cases/fe0b785db335.jpg" width="160" alt="Karakoram Motorcycle Commercial"></a> | [Karakoram Motorcycle Commercial](https://goodcase.ai/cases/karakoram-motorcycle-commercial) | 2.5 | 35 |
@@ -80,7 +82,8 @@ The machine has to stay one machine while the camera does all the work. Lock the
 | <a href="https://goodcase.ai/cases/aiwithaliya-seedance-ai-cf398f743859"><img src="https://media.goodcase.ai/media/poster/aiwithaliya-seedance-ai-cf398f743859.jpg" width="160" alt="Yellow Supercar Racing Through the Dubai Skyline"></a> | [Yellow Supercar Racing Through the Dubai Skyline](https://goodcase.ai/cases/aiwithaliya-seedance-ai-cf398f743859) | 2.0 | 28 |
 | <a href="https://goodcase.ai/cases/bamboo-toy-car-transformation-vlog"><img src="https://media.goodcase.ai/media/poster/bamboo-toy-car-transformation-vlog.jpg" width="160" alt="Bamboo Toy Car Transformation Vlog"></a> | [Bamboo Toy Car Transformation Vlog](https://goodcase.ai/cases/bamboo-toy-car-transformation-vlog) | 2.5 | 22 |
 | <a href="https://goodcase.ai/cases/johnagi168-seedance-ai-6289b5b000a0"><img src="https://media.goodcase.ai/cases/c9c3b92466ec.jpg" width="160" alt="Seedance 2.5 Douyin-Style Motorcycle Video with Stylish Transitions"></a> | [Seedance 2.5 Douyin-Style Motorcycle Video with Stylish Transitions](https://goodcase.ai/cases/johnagi168-seedance-ai-6289b5b000a0) | 2.5 | 18 |
-| <a href="https://goodcase.ai/cases/case-779580528a24"><img src="https://media.goodcase.ai/media/poster/case-779580528a24.jpg" width="160" alt="Nighttime Anime-Style Graffiti Tunnel Scene"></a> | [Nighttime Anime-Style Graffiti Tunnel Scene](https://goodcase.ai/cases/case-779580528a24) | 2.0 | 6 |
+
+The other 1 are in the [full gallery](../../gallery.md) and on [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance).
 
 ---
 

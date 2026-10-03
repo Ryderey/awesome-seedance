@@ -65,7 +65,7 @@
 | 2 | 发给任意 AI 对话，拿到一条按这个结构写好的 Seedance 提示语 |
 | 3 | 粘到 Seedance（即梦 / Dreamina）生成；效果不对先回头看常见坑，再改提示语重跑 |
 
-## 这一类的案例（已归类 112 条，按热度）
+## 这一类的案例（已归类 116 条，按热度）
 
 | 预览 | 案例 | 版本 | 热度 |
 | --- | --- | --- | --- |
@@ -80,9 +80,9 @@
 | <a href="https://goodcase.ai/cases/aiwithkhan-seedance-ai-9a5c5cbd518b"><img src="https://media.goodcase.ai/media/poster/aiwithkhan-seedance-ai-9a5c5cbd518b.jpg" width="160" alt="韩巷夏日骑行的女孩"></a> | [韩巷夏日骑行的女孩](https://goodcase.ai/cases/aiwithkhan-seedance-ai-9a5c5cbd518b) | 2.5 | 86 |
 | <a href="https://goodcase.ai/cases/youmind-travel-vlog-city-to-beach"><img src="https://media.goodcase.ai/media/poster/youmind-travel-vlog-city-to-beach.jpg" width="160" alt="手持感旅行 Vlog：从公寓到海滩"></a> | [手持感旅行 Vlog：从公寓到海滩](https://goodcase.ai/cases/youmind-travel-vlog-city-to-beach) | 2.5 | 86 |
 | <a href="https://goodcase.ai/cases/zarairahh-seedance-ai-3f362e9e352b"><img src="https://media.goodcase.ai/media/poster/zarairahh-seedance-ai-3f362e9e352b.jpg" width="160" alt="Seedance 六十秒健身日常 day-in-life vlog"></a> | [Seedance 六十秒健身日常 day-in-life vlog](https://goodcase.ai/cases/zarairahh-seedance-ai-3f362e9e352b) | 2.5 | 86 |
-| <a href="https://goodcase.ai/cases/seedance-pov-korean-couple-spends-a-lazy-summer-morning-wandering-their-neighborhood-0d246cd8363d"><img src="https://media.goodcase.ai/cases/c39ee14f9f1b.jpg" width="160" alt="韩国情侣的慵懒夏日街区漫步"></a> | [韩国情侣的慵懒夏日街区漫步](https://goodcase.ai/cases/seedance-pov-korean-couple-spends-a-lazy-summer-morning-wandering-their-neighborhood-0d246cd8363d) | 2.5 | 84 |
+| <a href="https://goodcase.ai/cases/seedance-why-did-i-think-this-workout-would-be-easier-dea31b0d7735"><img src="https://media.goodcase.ai/cases/1bc672678b32.jpg" width="160" alt="粉发女孩的夜间体能训练挑战"></a> | [粉发女孩的夜间体能训练挑战](https://goodcase.ai/cases/seedance-why-did-i-think-this-workout-would-be-easier-dea31b0d7735) | 2.5 | 85 |
 
-其余 100 条在[完整画廊](../../gallery.zh.md)和 [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance) 上。
+其余 104 条在[完整画廊](../../gallery.zh.md)和 [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance) 上。
 
 ---
 

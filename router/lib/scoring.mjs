@@ -71,9 +71,11 @@ function finalizeIndex(raw) {
 
 export function loadAdapter(name, index) {
   if (!name) return null;
-  const entry = (index.adapterFiles || []).find((a) => a.file === `adapters/${name}.json` || a.model === name || a.file.endsWith(`/${name}.json`));
-  if (!entry) throw new Error(`未知模型适配器 "${name}"`);
-  return JSON.parse(readFileSync(resolveData(entry.file.replace(/^adapters\//, "adapters/")), "utf8"));
+  if (typeof name !== "string") throw new Error("model 必须是模型名或 null");
+  const candidates = (index.adapterFiles || index.adapters || []).map(entry => ({ entry, adapter: JSON.parse(readFileSync(resolveData(entry.file), "utf8")) }));
+  const matches = candidates.filter(({ entry, adapter }) => [entry.file.split("/").pop().replace(/\.json$/, ""), adapter.model, adapter.id, ...(adapter.aliases || [])].some(alias => alias?.toLowerCase() === name.toLowerCase()));
+  if (matches.length !== 1) throw new Error(matches.length ? `模型别名冲突 "${name}"` : `未知模型适配器 "${name}"`);
+  return { ...matches[0].adapter, file: matches[0].entry.file };
 }
 
 // 泛词抑制：一个词铺在越多个模板的词表里，越不携带区分信息。

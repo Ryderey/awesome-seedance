@@ -1,0 +1,396 @@
+{
+  "date": "2026-10-03",
+  "datasetSha256": "fe43cfc71e2a2e9ed571573f45f52223574b36ea70b39ddea15fe3f1b7166c4c",
+  "oracleMode": "Shared production rankTemplates, profile facets plus original text, exact top 5; not a generalization ceiling",
+  "oracle": {
+    "macro": 0.9625220458553791,
+    "micro": 0.9685314685314685
+  },
+  "fixed": {
+    "retentionMacro": 0.5750200416867084,
+    "actualRetentionMacro": 0.5966249799583133,
+    "retentionMicro": 0.5664335664335665,
+    "top1Micro": 0.28321678321678323,
+    "avgSize": 6.276223776223776,
+    "avgEligible": 23.416083916083917,
+    "eligibleRatio": 0.8672623672623673,
+    "askedRate": 1,
+    "empty": 0,
+    "labels": 27,
+    "zeroSampleLabels": [],
+    "rows": 286,
+    "per": {
+      "timeline-shot-script": {
+        "hits": 3,
+        "actualHits": 3,
+        "n": 5
+      },
+      "character-reference-lock": {
+        "hits": 4,
+        "actualHits": 4,
+        "n": 5
+      },
+      "handheld-ugc-vlog": {
+        "hits": 9,
+        "actualHits": 9,
+        "n": 12
+      },
+      "pov-continuous-take": {
+        "hits": 11,
+        "actualHits": 11,
+        "n": 12
+      },
+      "ugc-creator-review": {
+        "hits": 8,
+        "actualHits": 8,
+        "n": 12
+      },
+      "product-commercial-shotlist": {
+        "hits": 9,
+        "actualHits": 9,
+        "n": 12
+      },
+      "dialogue-performance-beats": {
+        "hits": 4,
+        "actualHits": 4,
+        "n": 6
+      },
+      "cinematic-narrative-short": {
+        "hits": 8,
+        "actualHits": 10,
+        "n": 12
+      },
+      "anime-style-lock": {
+        "hits": 8,
+        "actualHits": 8,
+        "n": 12
+      },
+      "stop-motion-cadence": {
+        "hits": 9,
+        "actualHits": 9,
+        "n": 9
+      },
+      "process-transformation-montage": {
+        "hits": 2,
+        "actualHits": 2,
+        "n": 12
+      },
+      "combat-choreography": {
+        "hits": 6,
+        "actualHits": 7,
+        "n": 12
+      },
+      "music-beat-sync-mv": {
+        "hits": 7,
+        "actualHits": 7,
+        "n": 12
+      },
+      "time-freeze-rewind": {
+        "hits": 3,
+        "actualHits": 3,
+        "n": 7
+      },
+      "storyboard-grid-to-video": {
+        "hits": 4,
+        "actualHits": 4,
+        "n": 11
+      },
+      "retro-found-footage": {
+        "hits": 11,
+        "actualHits": 11,
+        "n": 12
+      },
+      "travel-city-walk": {
+        "hits": 4,
+        "actualHits": 4,
+        "n": 12
+      },
+      "pet-animal": {
+        "hits": 6,
+        "actualHits": 8,
+        "n": 12
+      },
+      "car-vehicle": {
+        "hits": 5,
+        "actualHits": 5,
+        "n": 10
+      },
+      "fashion-lookbook": {
+        "hits": 6,
+        "actualHits": 7,
+        "n": 12
+      },
+      "meme-comedy": {
+        "hits": 1,
+        "actualHits": 1,
+        "n": 12
+      },
+      "horror-suspense": {
+        "hits": 9,
+        "actualHits": 9,
+        "n": 12
+      },
+      "3d-cartoon": {
+        "hits": 12,
+        "actualHits": 12,
+        "n": 12
+      },
+      "epic-fantasy-scifi": {
+        "hits": 8,
+        "actualHits": 8,
+        "n": 12
+      },
+      "sports-extreme": {
+        "hits": 0,
+        "actualHits": 0,
+        "n": 11
+      },
+      "game-ui-livestream": {
+        "hits": 1,
+        "actualHits": 2,
+        "n": 12
+      },
+      "food-asmr": {
+        "hits": 4,
+        "actualHits": 4,
+        "n": 6
+      }
+    }
+  },
+  "users": {
+    "sufficientTop5Macro": 1,
+    "hardViolations": 0,
+    "unexpectedEmpty": 0,
+    "answeredQuestions": 0,
+    "afterAnswerRetention": 1,
+    "afterCount": 1,
+    "targetCoverage": {
+      "timeline-shot-script": {
+        "zh": 2,
+        "en": 2
+      },
+      "character-reference-lock": {
+        "zh": 2,
+        "en": 2
+      },
+      "handheld-ugc-vlog": {
+        "zh": 2,
+        "en": 2
+      },
+      "pov-continuous-take": {
+        "zh": 2,
+        "en": 2
+      },
+      "ugc-creator-review": {
+        "zh": 2,
+        "en": 2
+      },
+      "product-commercial-shotlist": {
+        "zh": 2,
+        "en": 2
+      },
+      "dialogue-performance-beats": {
+        "zh": 2,
+        "en": 2
+      },
+      "cinematic-narrative-short": {
+        "zh": 2,
+        "en": 2
+      },
+      "anime-style-lock": {
+        "zh": 1,
+        "en": 1
+      },
+      "stop-motion-cadence": {
+        "zh": 2,
+        "en": 2
+      },
+      "process-transformation-montage": {
+        "zh": 2,
+        "en": 2
+      },
+      "combat-choreography": {
+        "zh": 2,
+        "en": 2
+      },
+      "music-beat-sync-mv": {
+        "zh": 2,
+        "en": 2
+      },
+      "time-freeze-rewind": {
+        "zh": 2,
+        "en": 2
+      },
+      "storyboard-grid-to-video": {
+        "zh": 1,
+        "en": 2
+      },
+      "retro-found-footage": {
+        "zh": 2,
+        "en": 2
+      },
+      "travel-city-walk": {
+        "zh": 2,
+        "en": 2
+      },
+      "pet-animal": {
+        "zh": 2,
+        "en": 2
+      },
+      "car-vehicle": {
+        "zh": 2,
+        "en": 2
+      },
+      "fashion-lookbook": {
+        "zh": 2,
+        "en": 2
+      },
+      "meme-comedy": {
+        "zh": 2,
+        "en": 1
+      },
+      "horror-suspense": {
+        "zh": 2,
+        "en": 2
+      },
+      "3d-cartoon": {
+        "zh": 2,
+        "en": 2
+      },
+      "epic-fantasy-scifi": {
+        "zh": 2,
+        "en": 2
+      },
+      "sports-extreme": {
+        "zh": 2,
+        "en": 1
+      },
+      "game-ui-livestream": {
+        "zh": 2,
+        "en": 2
+      },
+      "food-asmr": {
+        "zh": 2,
+        "en": 2
+      }
+    },
+    "unreachableLanguages": [],
+    "failures": [],
+    "per": {
+      "timeline-shot-script": [
+        4,
+        4
+      ],
+      "character-reference-lock": [
+        3,
+        3
+      ],
+      "handheld-ugc-vlog": [
+        2,
+        2
+      ],
+      "pov-continuous-take": [
+        2,
+        2
+      ],
+      "ugc-creator-review": [
+        2,
+        2
+      ],
+      "product-commercial-shotlist": [
+        2,
+        2
+      ],
+      "dialogue-performance-beats": [
+        2,
+        2
+      ],
+      "cinematic-narrative-short": [
+        2,
+        2
+      ],
+      "anime-style-lock": [
+        2,
+        2
+      ],
+      "stop-motion-cadence": [
+        2,
+        2
+      ],
+      "process-transformation-montage": [
+        2,
+        2
+      ],
+      "combat-choreography": [
+        2,
+        2
+      ],
+      "music-beat-sync-mv": [
+        2,
+        2
+      ],
+      "time-freeze-rewind": [
+        2,
+        2
+      ],
+      "storyboard-grid-to-video": [
+        2,
+        2
+      ],
+      "retro-found-footage": [
+        2,
+        2
+      ],
+      "travel-city-walk": [
+        2,
+        2
+      ],
+      "pet-animal": [
+        2,
+        2
+      ],
+      "car-vehicle": [
+        2,
+        2
+      ],
+      "fashion-lookbook": [
+        2,
+        2
+      ],
+      "meme-comedy": [
+        2,
+        2
+      ],
+      "horror-suspense": [
+        2,
+        2
+      ],
+      "3d-cartoon": [
+        2,
+        2
+      ],
+      "epic-fantasy-scifi": [
+        2,
+        2
+      ],
+      "sports-extreme": [
+        2,
+        2
+      ],
+      "game-ui-livestream": [
+        2,
+        2
+      ],
+      "food-asmr": [
+        2,
+        2
+      ]
+    }
+  },
+  "changes": {
+    "subjectsWeight": "6 → 2 after conversational evaluation exposed subject preference dominating template purpose",
+    "softMismatchPenalty": "2 → 0.5 after soft narrative adaptation was consistently outranked",
+    "contentCap": 2,
+    "corpusEvidence": "Bilingual purpose vocabulary reviewed from template titles/useWhen/structure; user-cases are not read by build-lexicon"
+  }
+}

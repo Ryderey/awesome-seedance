@@ -66,7 +66,7 @@
 | 2 | 发给任意 AI 对话，拿到一条按这个结构写好的 Seedance 提示语 |
 | 3 | 粘到 Seedance（即梦 / Dreamina）生成；效果不对先回头看常见坑，再改提示语重跑 |
 
-## 这一类的案例（已归类 25 条，按热度）
+## 这一类的案例（已归类 29 条，按热度）
 
 | 预览 | 案例 | 版本 | 热度 |
 | --- | --- | --- | --- |
@@ -77,13 +77,13 @@
 | <a href="https://goodcase.ai/cases/modern-action-comedy-video-prompt"><img src="https://media.goodcase.ai/media/poster/modern-action-comedy-video-prompt.jpg" width="160" alt="Modern Action Comedy Video Prompt"></a> | [Modern Action Comedy Video Prompt](https://goodcase.ai/cases/modern-action-comedy-video-prompt) | 2.0 | 84 |
 | <a href="https://goodcase.ai/cases/case-142119be6421"><img src="https://media.goodcase.ai/media/poster/case-142119be6421.jpg" width="160" alt="超现实酒店泳池比例失调场景"></a> | [超现实酒店泳池比例失调场景](https://goodcase.ai/cases/case-142119be6421) | 2.0 | 83 |
 | <a href="https://goodcase.ai/cases/seedance-a-young-woman-wearing-a-cute-stylish-amusement-park-outfit-with-a-clearly-visi-6b964aaecca8"><img src="https://media.goodcase.ai/cases/e9b53af60cec.jpg" width="160" alt="米奇耳女孩智取土耳其冰淇淋"></a> | [米奇耳女孩智取土耳其冰淇淋](https://goodcase.ai/cases/seedance-a-young-woman-wearing-a-cute-stylish-amusement-park-outfit-with-a-clearly-visi-6b964aaecca8) | 2.5 | 75 |
+| <a href="https://goodcase.ai/cases/seedance-a-miniature-hand-drawn-2d-animated-girl-with-curly-black-hair-a-yellow-apron-e8eb28cbd332"><img src="https://media.goodcase.ai/cases/17a2133f0f57.jpg" width="160" alt="迷你厨师的煎饼大冒险"></a> | [迷你厨师的煎饼大冒险](https://goodcase.ai/cases/seedance-a-miniature-hand-drawn-2d-animated-girl-with-curly-black-hair-a-yellow-apron-e8eb28cbd332) | 2.5 | 74 |
+| <a href="https://goodcase.ai/cases/seedance-title-what-falls-from-the-plum-tree-d602a208ed88"><img src="https://media.goodcase.ai/cases/a5e94a86e7e4.jpg" width="160" alt="梅树下掉落的心上人"></a> | [梅树下掉落的心上人](https://goodcase.ai/cases/seedance-title-what-falls-from-the-plum-tree-d602a208ed88) | 2.5 | 73 |
 | <a href="https://goodcase.ai/cases/seedance-create-a-30-second-1080p-ultra-realistic-personal-home-video-of-a-young-korean-906969cda347"><img src="https://media.goodcase.ai/media/poster/seedance-create-a-30-second-1080p-ultra-realistic-personal-home-video-of-a-young-korean-906969cda347.jpg" width="160" alt="小公寓里的失控舞蹈练习"></a> | [小公寓里的失控舞蹈练习](https://goodcase.ai/cases/seedance-create-a-30-second-1080p-ultra-realistic-personal-home-video-of-a-young-korean-906969cda347) | 2.5 | 71 |
+| <a href="https://goodcase.ai/cases/seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d"><img src="https://media.goodcase.ai/cases/6906113b3cd0.jpg" width="160" alt="灰猫误触按钮引发厨房大乱"></a> | [灰猫误触按钮引发厨房大乱](https://goodcase.ai/cases/seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d) | 2.0 | 66 |
 | <a href="https://goodcase.ai/cases/oggii-0-seedance-ai-137e0e907dfd"><img src="https://media.goodcase.ai/cases/6c85b5596419.jpg" width="160" alt="纽约街头怪事连发的单镜头随拍"></a> | [纽约街头怪事连发的单镜头随拍](https://goodcase.ai/cases/oggii-0-seedance-ai-137e0e907dfd) | 2.5 | 63 |
-| <a href="https://goodcase.ai/cases/seharshinwari-seedance-ai-fef37a593d87"><img src="https://media.goodcase.ai/media/poster/seharshinwari-seedance-ai-fef37a593d87.jpg" width="160" alt="赖床少年穿错鞋的上学早晨"></a> | [赖床少年穿错鞋的上学早晨](https://goodcase.ai/cases/seharshinwari-seedance-ai-fef37a593d87) | 2.5 | 62 |
-| <a href="https://goodcase.ai/cases/seedance-this-looks-like-a-diet-plan-with-an-unexpected-ending-1f3e59cb4c4a"><img src="https://media.goodcase.ai/media/poster/seedance-this-looks-like-a-diet-plan-with-an-unexpected-ending-1f3e59cb4c4a.jpg" width="160" alt="末日爆炸前的餐厅狂吃"></a> | [末日爆炸前的餐厅狂吃](https://goodcase.ai/cases/seedance-this-looks-like-a-diet-plan-with-an-unexpected-ending-1f3e59cb4c4a) | 2.5 | 46 |
-| <a href="https://goodcase.ai/cases/seedance-a-cinematic-30-second-short-film-photorealistic-korean-riverside-picnic-aesth-3b0868a31904"><img src="https://media.goodcase.ai/cases/df690a476802.jpg" width="160" alt="江畔野餐偷吃炸鸡的虎帽猫"></a> | [江畔野餐偷吃炸鸡的虎帽猫](https://goodcase.ai/cases/seedance-a-cinematic-30-second-short-film-photorealistic-korean-riverside-picnic-aesth-3b0868a31904) | 2.5 | 45 |
 
-其余 13 条在[完整画廊](../../gallery.zh.md)和 [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance) 上。
+其余 17 条在[完整画廊](../../gallery.zh.md)和 [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance) 上。
 
 ---
 

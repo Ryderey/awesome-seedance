@@ -66,10 +66,11 @@
 | 2 | 发给任意 AI 对话，拿到一条按这个结构写好的 Seedance 提示语 |
 | 3 | 粘到 Seedance（即梦 / Dreamina）生成；效果不对先回头看常见坑，再改提示语重跑 |
 
-## 这一类的案例（已归类 29 条，按热度）
+## 这一类的案例（已归类 34 条，按热度）
 
 | 预览 | 案例 | 版本 | 热度 |
 | --- | --- | --- | --- |
+| <a href="https://goodcase.ai/cases/seedance-made-with-seedance-2-5-73b10f69e32a"><img src="https://media.goodcase.ai/cases/88ca30c0568f.jpg" width="160" alt="幼儿开门学字母与单词"></a> | [幼儿开门学字母与单词](https://goodcase.ai/cases/seedance-made-with-seedance-2-5-73b10f69e32a) | 2.5 | 98 |
 | <a href="https://goodcase.ai/cases/seedance-made-with-seedance-2-5-27ee46690725"><img src="https://media.goodcase.ai/cases/270ba8ecea3b.jpg" width="160" alt="沙发上嬉闹亲吻的兔子情侣"></a> | [沙发上嬉闹亲吻的兔子情侣](https://goodcase.ai/cases/seedance-made-with-seedance-2-5-27ee46690725) | 2.5 | 90 |
 | <a href="https://goodcase.ai/cases/ayzalnooor24521-seedance-ai-4a336f514777"><img src="https://media.goodcase.ai/media/poster/ayzalnooor24521-seedance-ai-4a336f514777.jpg" width="160" alt="Seedance 双角色 3D 卡通：小蝴蝶的十四秒"></a> | [Seedance 双角色 3D 卡通：小蝴蝶的十四秒](https://goodcase.ai/cases/ayzalnooor24521-seedance-ai-4a336f514777) | 2.0 | 86 |
 | <a href="https://goodcase.ai/cases/caden-flux-seedance-ai-473fedbbc75f"><img src="https://media.goodcase.ai/media/poster/caden-flux-seedance-ai-473fedbbc75f.jpg" width="160" alt="月光池塘里的迷你青蛙大厨"></a> | [月光池塘里的迷你青蛙大厨](https://goodcase.ai/cases/caden-flux-seedance-ai-473fedbbc75f) | 2.5 | 82 |
@@ -77,13 +78,12 @@
 | <a href="https://goodcase.ai/cases/seedance-made-with-seedance-2-5-4cfd04335a3a"><img src="https://media.goodcase.ai/cases/90afb6103701.jpg" width="160" alt="蓝天下俏皮眨眼的奶油小兔"></a> | [蓝天下俏皮眨眼的奶油小兔](https://goodcase.ai/cases/seedance-made-with-seedance-2-5-4cfd04335a3a) | 2.5 | 74 |
 | <a href="https://goodcase.ai/cases/seedance-created-a-30-second-cinematic-3d-animated-video-in-a-premium-fantasy-adventure-e7a3e6134c65"><img src="https://media.goodcase.ai/cases/5ad00890362b.jpg" width="160" alt="少女与白狼的魔境之旅"></a> | [少女与白狼的魔境之旅](https://goodcase.ai/cases/seedance-created-a-30-second-cinematic-3d-animated-video-in-a-premium-fantasy-adventure-e7a3e6134c65) | 2.0 | 69 |
 | <a href="https://goodcase.ai/cases/seedance-made-with-seedance-2-5-eec0708da6e5"><img src="https://media.goodcase.ai/cases/683212be0052.jpg" width="160" alt="害羞仓鼠捧玫瑰告白"></a> | [害羞仓鼠捧玫瑰告白](https://goodcase.ai/cases/seedance-made-with-seedance-2-5-eec0708da6e5) | 2.5 | 68 |
+| <a href="https://goodcase.ai/cases/seedance-made-with-seedance-2-5-77a6ca7d9f28"><img src="https://media.goodcase.ai/cases/b776aacc6c56.jpg" width="160" alt="萌娃与壁虎的客厅追逐战"></a> | [萌娃与壁虎的客厅追逐战](https://goodcase.ai/cases/seedance-made-with-seedance-2-5-77a6ca7d9f28) | 2.5 | 64 |
 | <a href="https://goodcase.ai/cases/im-shahid7-seedance-ai-b4d2ba40a750"><img src="https://media.goodcase.ai/cases/aa596f802fe1.jpg" width="160" alt="丈夫误把洗衣求助当浪漫邀约"></a> | [丈夫误把洗衣求助当浪漫邀约](https://goodcase.ai/cases/im-shahid7-seedance-ai-b4d2ba40a750) | 2.0 | 63 |
 | <a href="https://goodcase.ai/cases/seedance-made-with-seedance-2-5-810bf41bfd44"><img src="https://media.goodcase.ai/cases/275cccb1d045.jpg" width="160" alt="男孩与幼龙的热带奇遇"></a> | [男孩与幼龙的热带奇遇](https://goodcase.ai/cases/seedance-made-with-seedance-2-5-810bf41bfd44) | 2.5 | 59 |
-| <a href="https://goodcase.ai/cases/seedance-create-a-cute-polished-cinematic-3d-animated-video-exactly-15-seconds-long-u-690962672ddc"><img src="https://media.goodcase.ai/cases/b5dece5b616b.jpg" width="160" alt="红卷发高髻瞬间散开"></a> | [红卷发高髻瞬间散开](https://goodcase.ai/cases/seedance-create-a-cute-polished-cinematic-3d-animated-video-exactly-15-seconds-long-u-690962672ddc) | 2.0 | 56 |
-| <a href="https://goodcase.ai/cases/seedance-create-a-30-second-pixar-quality-3d-animated-asmr-comedy-short-aboard-a-warm-l-0338f10f2018"><img src="https://media.goodcase.ai/cases/3c22318ba9e0.jpg" width="160" alt="Pixar 风格海盗厨师 ASMR 喜剧短片：Seedance 2.5 逐秒分镜 Prompt"></a> | [Pixar 风格海盗厨师 ASMR 喜剧短片：Seedance 2.5 逐秒分镜 Prompt](https://goodcase.ai/cases/seedance-create-a-30-second-pixar-quality-3d-animated-asmr-comedy-short-aboard-a-warm-l-0338f10f2018) | 2.5 | 50 |
-| <a href="https://goodcase.ai/cases/seedance-made-with-seedance-2-5-d625f4097d92"><img src="https://media.goodcase.ai/cases/d0d6ec323037.jpg" width="160" alt="水獭伙伴的西瓜田夏日"></a> | [水獭伙伴的西瓜田夏日](https://goodcase.ai/cases/seedance-made-with-seedance-2-5-d625f4097d92) | 2.5 | 50 |
+| <a href="https://goodcase.ai/cases/seedance-made-with-seedance-2-5-9fb55ff34947"><img src="https://media.goodcase.ai/cases/f756f122401b.jpg" width="160" alt="金色窗前父女温暖相拥"></a> | [金色窗前父女温暖相拥](https://goodcase.ai/cases/seedance-made-with-seedance-2-5-9fb55ff34947) | 2.5 | 57 |
 
-其余 17 条在[完整画廊](../../gallery.zh.md)和 [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance) 上。
+其余 22 条在[完整画廊](../../gallery.zh.md)和 [goodcase.ai](https://goodcase.ai/cases?filter=video&q=seedance&utm_source=awesome-seedance) 上。
 
 ---
 

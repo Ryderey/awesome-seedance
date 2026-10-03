@@ -1,44 +1,486 @@
 {
-  "$comment": "每个模板的『拍法画像』。路由的区分轴是拍法而非内容——foundation 类在内容分类实验里只有 33% 准确率，因为『要不要用时间轴分镜』与『拍什么』无关。此表由 27 个模板的 tags 与 useWhen 人工对照得出，tags 原文见 data/routing-index.json。",
-
+  "$comment": "人工审阅 useWhen/structure 的拍法画像。hard 排除明确冲突，soft 只影响排序；metadata 字段仅供宿主说明。",
   "facets": {
-    "styleMode": { "values": ["live", "animated", "either"], "ask": "要实拍质感还是动画/风格化？" },
-    "shotPlan": { "values": ["single", "multi", "either"], "ask": "一镜到底，还是切成多个镜头？" },
-    "hasDialogue": { "values": [true, false, null], "ask": "片子里有人说话、需要对口型吗？" },
-    "hasReference": { "values": [true, false, null], "ask": "你会提供参考图（人物/产品/分镜图）吗？" },
-    "hasMusicSync": { "values": [true, false], "ask": "需要卡音乐节拍吗？" },
-    "textOnScreen": { "values": [true, false], "ask": "画面里要出现可读文字或字幕吗？" },
-    "durationSec": { "values": ["number|null"] },
-    "subject": { "values": ["person", "animal", "vehicle", "product", "place", "abstract", "any"], "ask": "主角是人、动物、载具、产品、地点，还是抽象概念？" }
+    "styleMode": {
+      "values": [
+        "live",
+        "animated",
+        null
+      ],
+      "ask": "要实拍质感还是动画/风格化？"
+    },
+    "shotPlan": {
+      "values": [
+        "single",
+        "multi",
+        null
+      ],
+      "ask": "一镜到底，还是切成多个镜头？"
+    },
+    "hasDialogue": {
+      "values": [
+        true,
+        false,
+        null
+      ],
+      "ask": "片子里需要有人声台词吗？（台词不自动要求口型同步）"
+    },
+    "hasReference": {
+      "values": [
+        true,
+        false,
+        null
+      ],
+      "ask": "你会提供参考图（人物/产品/分镜图）吗？"
+    },
+    "hasMusicSync": {
+      "values": [
+        true,
+        false
+      ],
+      "ask": "需要卡音乐节拍吗？"
+    },
+    "textOnScreen": {
+      "values": [
+        true,
+        false
+      ],
+      "ask": "画面里要出现可读文字或字幕吗？"
+    },
+    "durationSec": {
+      "values": [
+        "number|null"
+      ],
+      "ask": "成片总时长是多少秒？"
+    },
+    "subjects": {
+      "values": [
+        "person",
+        "animal",
+        "vehicle",
+        "product",
+        "place",
+        "abstract"
+      ],
+      "ask": "主角是人、动物、载具、产品、地点，还是抽象概念？"
+    }
   },
-
   "templates": {
-    "food-asmr": { "styleMode": "either", "shotPlan": "either", "subjects": ["product", "person"], "hard": [], "soft": [] },
-    "game-ui-livestream": { "styleMode": "either", "shotPlan": "either", "subjects": ["any"], "textOnScreen": true, "hard": [], "soft": ["textOnScreen"] },
-    "timeline-shot-script":           { "styleMode": "either", "shotPlan": "multi", "subjects": ["any"], "minDuration": 8, "hard": ["shotPlan"], "soft": ["minDuration"] },
-    "character-reference-lock":       { "styleMode": "either", "shotPlan": "multi", "subjects": ["person", "product", "any"], "needsReference": true, "hard": ["needsReference"], "soft": [] },
-    "handheld-ugc-vlog":              { "styleMode": "live", "shotPlan": "either", "subjects": ["person", "animal", "place"], "hard": ["styleMode"], "soft": [] },
-    "pov-continuous-take":            { "styleMode": "live", "shotPlan": "single", "subjects": ["person", "animal", "vehicle"], "hard": ["shotPlan"], "soft": ["styleMode"] },
-    "ugc-creator-review":             { "styleMode": "live", "shotPlan": "either", "subjects": ["product"], "dialogue": true, "hard": ["subject", "dialogue"], "soft": [] },
-    "product-commercial-shotlist":    { "styleMode": "either", "shotPlan": "multi", "subjects": ["product"], "textOnScreen": false, "hard": ["subject"], "soft": [] },
-    "dialogue-performance-beats":     { "styleMode": "either", "shotPlan": "multi", "subjects": ["person"], "dialogue": true, "hard": ["dialogue"], "soft": ["subject"] },
-    "cinematic-narrative-short":      { "styleMode": "either", "shotPlan": "multi", "subjects": ["person", "any"], "dialogue": true, "minDuration": 15, "hard": ["shotPlan"], "soft": ["dialogue", "minDuration"] },
-    "anime-style-lock":               { "styleMode": "animated", "shotPlan": "either", "subjects": ["person", "animal", "any"], "hard": ["styleMode"], "soft": [] },
-    "stop-motion-cadence":            { "styleMode": "animated", "shotPlan": "either", "subjects": ["product", "animal", "abstract"], "lockedCamera": true, "hard": ["styleMode"], "soft": [] },
-    "process-transformation-montage": { "styleMode": "either", "shotPlan": "multi", "subjects": ["abstract", "product"], "noDialogue": true, "hard": ["subject"], "soft": ["noDialogue"] },
-    "combat-choreography":            { "styleMode": "either", "shotPlan": "multi", "subjects": ["person", "animal"], "noDialogue": true, "hard": ["shotPlan"], "soft": [] },
-    "music-beat-sync-mv":             { "styleMode": "either", "shotPlan": "multi", "subjects": ["person"], "musicSync": true, "dialogue": false, "hard": ["musicSync"], "soft": [] },
-    "time-freeze-rewind":             { "styleMode": "either", "shotPlan": "multi", "subjects": ["person", "abstract"], "vfxGimmick": true, "hard": [], "soft": ["vfxGimmick", "shotPlan"] },
-    "storyboard-grid-to-video":       { "styleMode": "either", "shotPlan": "multi", "subjects": ["any"], "needsReference": true, "minDuration": 12, "hard": ["shotPlan", "needsReference"], "soft": ["minDuration"] },
-    "retro-found-footage":            { "styleMode": "live", "shotPlan": "either", "subjects": ["person", "place"], "hard": ["styleMode"], "soft": [] },
-    "travel-city-walk":               { "styleMode": "live", "shotPlan": "multi", "subjects": ["person", "place"], "dialogue": false, "minDuration": 15, "hard": ["subject"], "soft": ["styleMode", "dialogue"] },
-    "pet-animal":                     { "styleMode": "live", "shotPlan": "either", "subjects": ["animal"], "hard": ["subject"], "soft": ["styleMode"] },
-    "car-vehicle":                    { "styleMode": "either", "shotPlan": "multi", "subjects": ["vehicle"], "dialogue": false, "hard": ["subject"], "soft": [] },
-    "fashion-lookbook":               { "styleMode": "either", "shotPlan": "multi", "subjects": ["person", "product"], "dialogue": false, "hard": ["subject"], "soft": [] },
-    "meme-comedy":                    { "styleMode": "either", "shotPlan": "multi", "subjects": ["person", "animal"], "dialogue": true, "punchline": true, "hard": ["shotPlan"], "soft": ["punchline", "dialogue"] },
-    "horror-suspense":                { "styleMode": "either", "shotPlan": "multi", "subjects": ["person", "abstract"], "hard": ["shotPlan"], "soft": [] },
-    "3d-cartoon":                     { "styleMode": "animated", "shotPlan": "multi", "subjects": ["animal", "person", "abstract"], "hard": ["styleMode"], "soft": [] },
-    "epic-fantasy-scifi":             { "styleMode": "either", "shotPlan": "multi", "subjects": ["person", "abstract"], "vfxGimmick": true, "minDuration": 15, "hard": ["shotPlan"], "soft": ["minDuration"] },
-    "sports-extreme":                 { "styleMode": "either", "shotPlan": "either", "subjects": ["person"], "noDialogue": true, "hard": ["subject"], "soft": ["styleMode"] }
-  }
+    "food-asmr": {
+      "styleMode": "either",
+      "shotPlan": "multi",
+      "subjects": [
+        "product",
+        "person"
+      ],
+      "hard": [],
+      "soft": [
+        "subjects",
+        "shotPlan"
+      ]
+    },
+    "game-ui-livestream": {
+      "styleMode": "either",
+      "shotPlan": "either",
+      "subjects": [
+        "any"
+      ],
+      "textOnScreen": true,
+      "hard": [],
+      "soft": [
+        "textOnScreen"
+      ]
+    },
+    "timeline-shot-script": {
+      "styleMode": "either",
+      "shotPlan": "multi",
+      "subjects": [
+        "any"
+      ],
+      "minDuration": 8,
+      "hard": [
+        "shotPlan"
+      ],
+      "soft": [
+        "minDuration"
+      ]
+    },
+    "character-reference-lock": {
+      "styleMode": "either",
+      "shotPlan": "either",
+      "subjects": [
+        "any"
+      ],
+      "needsReference": true,
+      "hard": [
+        "needsReference"
+      ],
+      "soft": []
+    },
+    "handheld-ugc-vlog": {
+      "styleMode": "live",
+      "shotPlan": "either",
+      "subjects": [
+        "person",
+        "animal",
+        "place"
+      ],
+      "hard": [
+        "styleMode"
+      ],
+      "soft": [
+        "subjects"
+      ]
+    },
+    "pov-continuous-take": {
+      "styleMode": "live",
+      "shotPlan": "single",
+      "subjects": [
+        "person",
+        "animal",
+        "vehicle"
+      ],
+      "hard": [
+        "shotPlan"
+      ],
+      "soft": [
+        "styleMode",
+        "subjects"
+      ]
+    },
+    "ugc-creator-review": {
+      "styleMode": "live",
+      "shotPlan": "either",
+      "subjects": [
+        "product"
+      ],
+      "dialogue": true,
+      "hard": [
+        "subjects",
+        "dialogue"
+      ],
+      "soft": [
+        "styleMode"
+      ]
+    },
+    "product-commercial-shotlist": {
+      "styleMode": "either",
+      "shotPlan": "multi",
+      "subjects": [
+        "product"
+      ],
+      "textOnScreen": true,
+      "hard": [
+        "subjects"
+      ],
+      "soft": [
+        "shotPlan",
+        "textOnScreen"
+      ]
+    },
+    "dialogue-performance-beats": {
+      "styleMode": "either",
+      "shotPlan": "multi",
+      "subjects": [
+        "person"
+      ],
+      "dialogue": true,
+      "hard": [
+        "dialogue"
+      ],
+      "soft": [
+        "subjects",
+        "shotPlan"
+      ]
+    },
+    "cinematic-narrative-short": {
+      "styleMode": "either",
+      "shotPlan": "multi",
+      "subjects": [
+        "person",
+        "animal",
+        "abstract"
+      ],
+      "dialogue": true,
+      "minDuration": 15,
+      "hard": [
+        "shotPlan"
+      ],
+      "soft": [
+        "dialogue",
+        "minDuration",
+        "subjects"
+      ]
+    },
+    "anime-style-lock": {
+      "styleMode": "animated",
+      "shotPlan": "either",
+      "subjects": [
+        "any"
+      ],
+      "hard": [
+        "styleMode"
+      ],
+      "soft": []
+    },
+    "stop-motion-cadence": {
+      "styleMode": "animated",
+      "shotPlan": "either",
+      "subjects": [
+        "product",
+        "animal",
+        "abstract"
+      ],
+      "hard": [
+        "styleMode"
+      ],
+      "soft": [
+        "subjects"
+      ],
+      "metadata": {
+        "lockedCamera": true
+      }
+    },
+    "process-transformation-montage": {
+      "styleMode": "either",
+      "shotPlan": "multi",
+      "subjects": [
+        "abstract",
+        "product"
+      ],
+      "noDialogue": true,
+      "hard": [
+        "subjects"
+      ],
+      "soft": [
+        "noDialogue",
+        "shotPlan"
+      ]
+    },
+    "combat-choreography": {
+      "styleMode": "either",
+      "shotPlan": "multi",
+      "subjects": [
+        "person",
+        "animal"
+      ],
+      "noDialogue": true,
+      "hard": [],
+      "soft": [
+        "subjects",
+        "noDialogue",
+        "shotPlan"
+      ]
+    },
+    "music-beat-sync-mv": {
+      "styleMode": "either",
+      "shotPlan": "multi",
+      "subjects": [
+        "person"
+      ],
+      "musicSync": true,
+      "dialogue": false,
+      "hard": [
+        "musicSync"
+      ],
+      "soft": [
+        "shotPlan",
+        "subjects"
+      ]
+    },
+    "time-freeze-rewind": {
+      "styleMode": "either",
+      "shotPlan": "multi",
+      "subjects": [
+        "person",
+        "abstract"
+      ],
+      "hard": [],
+      "soft": [
+        "shotPlan",
+        "subjects"
+      ],
+      "metadata": {
+        "vfxGimmick": true
+      }
+    },
+    "storyboard-grid-to-video": {
+      "styleMode": "either",
+      "shotPlan": "multi",
+      "subjects": [
+        "any"
+      ],
+      "needsReference": true,
+      "minDuration": 12,
+      "hard": [
+        "shotPlan",
+        "needsReference"
+      ],
+      "soft": [
+        "minDuration"
+      ]
+    },
+    "retro-found-footage": {
+      "styleMode": "live",
+      "shotPlan": "either",
+      "subjects": [
+        "person",
+        "place"
+      ],
+      "hard": [
+        "styleMode"
+      ],
+      "soft": [
+        "subjects"
+      ]
+    },
+    "travel-city-walk": {
+      "styleMode": "live",
+      "shotPlan": "multi",
+      "subjects": [
+        "person",
+        "place"
+      ],
+      "dialogue": false,
+      "minDuration": 15,
+      "hard": [
+        "subjects"
+      ],
+      "soft": [
+        "styleMode",
+        "shotPlan",
+        "minDuration"
+      ]
+    },
+    "pet-animal": {
+      "styleMode": "live",
+      "shotPlan": "single",
+      "subjects": [
+        "animal"
+      ],
+      "hard": [
+        "subjects"
+      ],
+      "soft": [
+        "styleMode",
+        "shotPlan"
+      ]
+    },
+    "car-vehicle": {
+      "styleMode": "either",
+      "shotPlan": "multi",
+      "subjects": [
+        "vehicle"
+      ],
+      "dialogue": false,
+      "hard": [
+        "subjects"
+      ],
+      "soft": [
+        "shotPlan"
+      ]
+    },
+    "fashion-lookbook": {
+      "styleMode": "either",
+      "shotPlan": "multi",
+      "subjects": [
+        "person",
+        "product"
+      ],
+      "dialogue": false,
+      "hard": [
+        "subjects"
+      ],
+      "soft": [
+        "shotPlan"
+      ]
+    },
+    "meme-comedy": {
+      "styleMode": "either",
+      "shotPlan": "multi",
+      "subjects": [
+        "person",
+        "animal"
+      ],
+      "dialogue": true,
+      "hard": [
+        "shotPlan"
+      ],
+      "soft": [
+        "dialogue",
+        "subjects"
+      ],
+      "metadata": {
+        "punchline": true
+      }
+    },
+    "horror-suspense": {
+      "styleMode": "either",
+      "shotPlan": "multi",
+      "subjects": [
+        "person",
+        "abstract"
+      ],
+      "hard": [
+        "shotPlan"
+      ],
+      "soft": [
+        "subjects"
+      ]
+    },
+    "3d-cartoon": {
+      "styleMode": "animated",
+      "shotPlan": "multi",
+      "subjects": [
+        "animal",
+        "person",
+        "abstract"
+      ],
+      "hard": [
+        "styleMode"
+      ],
+      "soft": [
+        "shotPlan",
+        "subjects"
+      ]
+    },
+    "epic-fantasy-scifi": {
+      "styleMode": "either",
+      "shotPlan": "multi",
+      "subjects": [
+        "person",
+        "abstract"
+      ],
+      "minDuration": 15,
+      "hard": [],
+      "soft": [
+        "minDuration",
+        "subjects",
+        "shotPlan"
+      ],
+      "metadata": {
+        "vfxGimmick": true
+      }
+    },
+    "sports-extreme": {
+      "styleMode": "either",
+      "shotPlan": "single",
+      "subjects": [
+        "person"
+      ],
+      "noDialogue": true,
+      "hard": [
+        "subjects"
+      ],
+      "soft": [
+        "noDialogue",
+        "shotPlan"
+      ]
+    }
+  },
+  "metadataFields": [
+    "lockedCamera",
+    "punchline",
+    "vfxGimmick"
+  ]
 }

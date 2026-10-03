@@ -3,25 +3,30 @@
 // 产物只依赖 node 与自身文件，拷到任何项目的 .agents/skills/ 下都能用。
 //
 // 关键设计：SKILL.md 只放"怎么问、怎么选、怎么报降级"和一张索引表；
-// 25 个模板正文各自一个文件，命中后才读那一个 —— 避免把 126KB 全量塞进上下文。
+// 模板正文各自一个文件，终选后才读主模板与明确选中的辅助模板。
 //
 // Run: node router/build-skill.mjs [输出目录]
-import { readFileSync, writeFileSync, mkdirSync, cpSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, cpSync, readdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { loadLibrary } from "../scripts/lib/library.mjs";
+import { fingerprint, filesIn, hash, validatePackage } from "./lib/build-data.mjs";
+import { validateProfiles } from "./route.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const OUT = path.resolve(process.argv[2] || path.join(ROOT, "..", "..", ".agents/skills/video-prompt-router"));
+if (!process.argv[2]) throw new Error("必须提供临时输出目录；安装使用 router/build.mjs --install");
+const OUT = path.resolve(process.argv[2]);
 
-const { library, taxonomy } = loadLibrary(ROOT);
+const { library } = loadLibrary(ROOT);
 const index = JSON.parse(readFileSync(path.join(ROOT, "data/routing-index.json"), "utf8"));
 const facets = JSON.parse(readFileSync(path.join(ROOT, "router/facet-profile.json"), "utf8"));
-const { cases } = JSON.parse(readFileSync(path.join(ROOT, "data/cases.json"), "utf8"));
-const casesBySlug = new Map(cases.map((c) => [c.slug, c]));
+const ids = library.templates.map(t => t.id).sort();
+validateProfiles(facets, ids);
+if (ids.join("|") !== Object.keys(index.templates).sort().join("|")) throw new Error("library/index ID 集不一致，拒绝写包");
+if (index.dataVersion !== fingerprint(ROOT)) throw new Error("索引输入指纹陈旧，请运行统一构建");
+if (existsSync(OUT) && readdirSync(OUT).length) throw new Error("输出目录必须为空；避免新旧托管文件混用");
 
-// 不做整目录删除：宿主（Qoder / Claude）会监视并锁住 skill 目录，rmdir 直接 EBUSY。
-// 就地覆盖即可；若上游改了模板 id，残留的旧文件需手工清理（本脚本会列出非本次生成的 .md）。
+// Only write a fresh staging directory; installation handles directory switching and rollback.
 mkdirSync(path.join(OUT, "references/templates"), { recursive: true });
 mkdirSync(path.join(OUT, "scripts/lib"), { recursive: true });
 
@@ -29,10 +34,10 @@ const bilingual = (v) => (typeof v === "string" ? v : [v?.en, v?.zh].filter(Bool
 const list = (v) => (Array.isArray(v) ? v : typeof v === "string" ? [v] : []);
 const langList = (v, lang) => list(typeof v === "object" && v !== null && !Array.isArray(v) ? v[lang] : v);
 
-// ---------- 25 个模板正文 ----------
+// ---------- 模板正文 ----------
 const catTitle = Object.fromEntries(library.categories.map((c) => [c.id, c.title?.zh || c.id]));
 for (const tp of library.templates) {
-  const meta = index.templates[tp.id] || {};
+  const meta = index.templates[tp.id];
   const ex = (meta.examples || []).map((e) => `- ${e.title} — ${e.creator} · 热度 ${e.heat} · [原帖](${e.sourceUrl})`).join("\n") || "- （本模板暂无可溯源案例）";
   const body = [
     `# ${tp.title.zh || tp.title.en}  (\`${tp.id}\`)`,
@@ -83,8 +88,7 @@ for (const tp of library.templates) {
 writeFileSync(path.join(OUT, "references/routing-index.json"), JSON.stringify(index, null, 2) + "\n", "utf8");
 writeFileSync(path.join(OUT, "references/facet-profile.json"), JSON.stringify(facets, null, 2) + "\n", "utf8");
 cpSync(path.join(ROOT, "adapters"), path.join(OUT, "references/adapters"), { recursive: true });
-cpSync(path.join(ROOT, "router/route.mjs"), path.join(OUT, "scripts/route.mjs"));
-cpSync(path.join(ROOT, "router/lib/scoring.mjs"), path.join(OUT, "scripts/lib/scoring.mjs"));
+for (const [from, to] of [["router/route.mjs", "scripts/route.mjs"], ["router/lib/scoring.mjs", "scripts/lib/scoring.mjs"]]) writeFileSync(path.join(OUT, to), readFileSync(path.join(ROOT, from), "utf8").replace(/\r\n/g, "\n"));
 // 不需要改写路径：scoring.mjs 的 resolveData 会同时探到仓库内的 data//router//adapters/
 // 和打包后的 references/。
 
@@ -103,37 +107,35 @@ writeFileSync(
   path.join(OUT, "SKILL.md"),
   `---
 name: video-prompt-router
-description: 视频提示词模板路由库。当用户要写、改、评审 AI 视频提示词，或描述一个想拍的片子（短片/广告/vlog/MV/分镜/产品视频/宠物视频等）并需要可直接使用的结构化提示词时使用。先从 25 个已验证模板中按"拍法"定位候选，再按目标模型能力套用降级规则。不限定单一模型，内置即梦/Seedance、可灵、Veo 三份能力适配器。
+description: 视频提示词生成、已有提示词诊断与参考素材工作流。按用户要求从 ${ids.length} 个模板形成候选，补问后重算并比较用途，再按目标模型版本与入口检查能力。
 ---
 
 # 视频提示词路由库
 
-25 个从已验证案例中提炼的视频提示词模板。**模板的区分轴是"拍法"，不是"拍什么"**——
-同一条猫的视频可以是实拍 vlog、可以是皮克斯动画、可以是一镜到底，三者用的是不同模板。
+${ids.length} 个案例提炼模板。拍法、主题和用途共同参与选择；案例数是支撑量，不是置信度。
 
-## 为什么必须先问
+## 选择原则
 
-实测：只靠用户第一句话做词面匹配，正确答案留在候选里的比例只有 53%；
-而拍法信息齐全时是 84%。差距全部来自"用户没说拍法"，不是算法不行。
-所以**不要硬猜**，按下面的流程把缺的信息问出来。
+只询问会改变候选或选择的信息。读取候选的 useWhen、正向证据、软偏好差异与待确认条件后终选；无正向证据的兼容集合需要补信息。
 
 ## 流程
 
-### 第 0 步：跑路由脚本
-
-\`\`\`bash
-node scripts/route.mjs "<用户原话>" [--model <jimeng-seedance|kling|veo>] [--top 5]
-\`\`\`
-
-输出含四块：\`facets\`（抽到的拍法）、\`shortlist\`（候选模板）、\`blockedExamples\`（被否决及理由）、\`questions\`（还该问什么）。
-
-### 第 1 步：判定模式
+### 第 0 步：判定模式
 
 | 模式 | 用户给的是 | 你要做的 |
 | --- | --- | --- |
 | **A 生成** | 一句想法 | 走第 2-4 步，产出完整提示词 |
-| **B 诊断** | 一段已有提示词 | 定位它属于哪个模板 → 逐块比对 \`结构\` 找缺失块 → 对照 \`常见坑\` 指出具体问题 → 给改写版，并说明每处改动对应哪条坑 |
-| **C 流水线** | 带参考图，或需要分镜图 | 先确认走 \`storyboard-grid-to-video\`：先出分镜格图，再把图作为参考输入 |
+| **B 诊断** | 一段已有提示词 | 同样补问、重算和终选，再比对结构缺口与冲突；将改写对应到原因 |
+| **C 素材** | 参考图或需要制作分镜图 | 先确定 referencePurpose：identity / product / first_frame / storyboard，并保留镜头计划 |
+
+### 第 1 步：跑路由脚本
+
+\`\`\`bash
+node scripts/route.mjs "<用户原话>" --json [--model <jimeng-seedance|kling|veo>]
+node scripts/route.mjs --request <完整请求.json> --json
+\`\`\`
+
+结构化请求包含 text、model、facets、referencePurpose。字段省略允许文本补充，显式 null 保持未知。仅把明确回答、实际附件与已声明假设写成事实。status 是路由状态，不代表已生成成品。dataVersion 用于识别包版本。
 
 ### 第 2 步：补齐拍法
 
@@ -141,20 +143,27 @@ node scripts/route.mjs "<用户原话>" [--model <jimeng-seedance|kling|veo>] [-
 
 ${questions}
 
-用户不回答或明确说"你决定"，就按候选第一名往下走，并在交付时**声明这是基于假设**。
+收到回答后，合并到完整请求的 facets，保留无关已知要求与用户更正，再用 --request 重跑路由。明确矛盾只澄清冲突项。
+用户明确说“你决定”时选择合理默认值并声明假设后重算。必要问题尚未回答时保持待答，等待超时不是同意。
+人物身份图只约束身份；产品图只约束外观；首帧图检查图生视频入口；分镜格图才按格转镜头。
+无图但需分镜时先输出图像阶段产物，图生成后再写入 hasReference=true；保留两阶段区别。
 
-### 第 3 步：读模板正文
+### 第 3 步：终选与读正文
 
-只读命中的那一个：\`references/templates/<id>.md\`。
-不要一次读多个，也不要读索引全量。
+比较最新 shortlist 的 useWhen、aligned/matched、hardChecks、softMismatches、pendingRequirements，选主模板，并解释主要备选未选的原因。
+读取主模板全文：\`references/templates/<id>.md\`。明确需要叠加时，再读取被选中的辅助模板全文，依据结构合并。
+no_match 时解释主要硬冲突与最小调整项；兼容集合没有证据时澄清。不要把稳定 ID 排序解释为推荐理由。
 
 ### 第 4 步：套模型能力
 
-若用户指定了目标模型，读 \`references/adapters/<model>.json\`：
+若用户指定了目标模型，按结果 adapter.file 读取 \`references/<adapter.file>\`：
 
 - 模板的**硬门禁**能力该模型为 \`false\` → 换候选里下一个能用的，并说明为什么换
-- 能力为 \`null\`（未核对）→ 明确告一句"该能力官方文档未确认，先按不支持处理"
-- 模板的**可降级**能力不满足 → 按适配器 \`degradations\` 改写对应块
+- 能力为 \`null\` → 明确“尚未核实”，核实具体版本与入口；lenient 候选仅为有条件草案
+- 模板的软能力不满足 → 按 degradations 的 blocks/action/notice 改写；无具体规则时保留待确认项
+- 先核对 adapter 的 entry 与 aliasNote；别名不能抹去 API 与宿主 UI 差异
+- 总长超过单次上限且允许剪辑时，确认所选结构可切分，再按 segments/maxSegmentSec 分段；连续单镜头或必须单次生成冲突时换方案
+- 后期字幕、配音等需要用户允许后期处理；生成前再核对所有明确禁止项
 
 **任何降级都必须在交付里写明"因目标模型 X，已把 Y 改为 Z"。不做静默降质。**
 
@@ -198,8 +207,8 @@ writeFileSync(
 
 本包已去除 goodcase.ai 跳转链接与 UTM 参数，保留 x.com 原帖出处与上述署名。
 
-生成时间：${new Date().toISOString().slice(0, 10)}
-生成命令：\`node router/build-skill.mjs\`
+输入版本：${index.dataVersion}
+构建命令：\`node router/build.mjs --write --out <临时包目录>\`
 `,
   "utf8"
 );
@@ -216,3 +225,6 @@ if (sizes.skill > 9000) console.error("WARN: SKILL.md 超过 9000 字符，索�
 const current = new Set(library.templates.map((t) => `${t.id}.md`));
 const stale = readdirSync(path.join(OUT, "references/templates")).filter((f) => f.endsWith(".md") && !current.has(f));
 if (stale.length) console.error(`WARN: 有 ${stale.length} 个陈旧模板文件需手工删除：${stale.join(", ")}`);
+const manifest = { schemaVersion: 1, name: "video-prompt-router", dataVersion: index.dataVersion, templateIds: ids, files: Object.fromEntries(filesIn(OUT).map(file => [file, hash(readFileSync(path.join(OUT, file)))])) };
+writeFileSync(path.join(OUT, "manifest.json"), JSON.stringify(manifest, null, 2) + "\n");
+validatePackage(OUT);

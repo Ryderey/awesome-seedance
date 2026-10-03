@@ -1,10 +1,43 @@
 # Case evidence · Cars and vehicles at speed
 
-11 verified cases are filed under this template in awesome-seedance; the 8 hottest are below, full prompts included. Pick one as the anchor before drafting.
+13 verified cases are filed under this template in awesome-seedance; the 8 hottest are below, full prompts included. Pick one as the anchor before drafting.
 
 Generated from `data/cases.json` + `data/case-taxonomy.json`. Do not hand-edit.
 
-## E1 · Seedance 2.5 Thirty-Second 1080p Hyperreal Fantasy Epic
+## E1 · Futuristic Highway Chase with Motorcycles and Supercar
+
+- Seedance 2.5 · creator: @itsSaira_1 · heat: 92
+- Evidence: [GoodCase](https://goodcase.ai/cases/seedance-cinematic-photorealistic-sci-fi-action-sequence-moody-desaturated-color-grade-edfd133b78ea) · [finished media](https://media.goodcase.ai/cases/750a092b1670.mp4) · [poster](https://media.goodcase.ai/cases/1917351d85cd.jpg) · [original source](https://x.com/itsSaira_1/status/2104064261005709551)
+- Summary: ⚡This machine wasn't built to race — it was built to hunt." Made with Seedance 2.5 on @supercool_hq Prompt: Cinematic photorealistic sci-fi action sequence, moo…
+
+```text
+Cinematic photorealistic sci-fi action sequence, moody desaturated color grade, dramatic lighting, hyper-detailed mechanical design, motion blur for speed, 4K film quality.
+
+Scene 1: Wide low-angle tracking shot of a futuristic armored rider in black tactical exosuit on a black-gold angular sci-fi motorcycle, speeding on empty highway, overcast sky.
+
+Scene 2: Close-up transformation shot — motorcycle's rear panels mechanically unfold like wings while riding at high speed, sparks of light on metal joints.
+
+Scene 3: Low-angle hero reveal shot of a sleek black Batmobile-style supercar with scissor/wing doors opening, front LED light strip glowing.
+
+Scene 4: Rear-tracking low-angle shot of two motorcycles riding side by side on the highway, wheels blurred with speed.
+
+Scene 5: Rear pursuit shot of the black supercar driving with glowing taillights, a motorcycle catching up close behind.
+
+Scene 6: Aerial drone top-down shot of a curving highway with the car and motorcycles racing, small flying drone visible above for scale.
+
+Scene 7: Close-up action shot of the car's front wheel with sparks flying off the road surface, high-speed drift feel.
+
+Scene 8: Interior POV shot from the car's dashboard, glowing speedometer, driving fast through a dark tunnel with lights streaking past.
+
+Scene 9: Tunnel chase shot — motorcycle and car entering/exiting a concrete tunnel, wet road reflections, cinematic light contrast.
+
+Negative prompt: blurry, low quality, distorted proportions, extra limbs, deformed hands, warped motorcycle frame, flickering lights, inconsistent lighting, cartoonish, low-res textures, watermark, text, logo, oversaturated colors, daytime bright sun (unless overcast), shaky unstable camera, jerky motion, unrealistic physics, plastic look, glitch artifacts.
+
+#Ai #AIart️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️ #VisualStorytelling #CinematicAI
+#GenerativeAI  #AICreator
+```
+
+## E2 · Seedance 2.5 Thirty-Second 1080p Hyperreal Fantasy Epic
 
 - Seedance 2.5 · creator: @RuzainaMeer · heat: 82 · stability: 76
 - Evidence: [GoodCase](https://goodcase.ai/cases/ruzainameer-seedance-ai-e6073ec318f1) · [finished media](https://media.goodcase.ai/media/video/ruzainameer-seedance-ai-e6073ec318f1.mp4) · [poster](https://media.goodcase.ai/media/poster/ruzainameer-seedance-ai-e6073ec318f1.jpg) · [original source](https://x.com/RuzainaMeer/status/2089595902818398461)
@@ -36,7 +69,7 @@ Camera: Cinematic tracking, low-angle hero shots, close-ups, dynamic aerial/dron
 Negative: No cartoon, anime, plastic CGI textures, rubbery movement, extra characters, duplicate woman, deformed hands, distorted face, floating motorcycle parts, random scene changes, text, subtitles, logos, or watermark.
 ```
 
-## E2 · Motorcycle Racing Through a Mountain Road
+## E3 · Motorcycle Racing Through a Mountain Road
 
 - Seedance 2.0 · creator: @Just_sharon7 · heat: 78
 - Evidence: [GoodCase](https://goodcase.ai/cases/just-sharon7-seedance-ai-f5af358d1f88) · [finished media](https://media.goodcase.ai/cases/e74284637136.mp4) · [poster](https://media.goodcase.ai/cases/d2b34cc66de6.jpg) · [original source](https://x.com/Just_sharon7/status/2091546827212636576)
@@ -101,7 +134,7 @@ Camera pulls higher still, showing the bike as a small red shape on the winding 
 [… truncated, full prompt on the goodcase.ai page]
 ```
 
-## E3 · Post-Apocalyptic Desert Buggy Air Battle
+## E4 · Post-Apocalyptic Desert Buggy Air Battle
 
 - Seedance 2.0 · creator: @Zyrellix · heat: 71 · stability: 81
 - Evidence: [GoodCase](https://goodcase.ai/cases/zyrellix-seedance-ai-b7efa04a2c13) · [finished media](https://media.goodcase.ai/media/video/zyrellix-seedance-ai-b7efa04a2c13.mp4) · [poster](https://media.goodcase.ai/media/poster/zyrellix-seedance-ai-b7efa04a2c13.jpg) · [original source](https://x.com/Zyrellix/status/2092438692820295703)
@@ -111,7 +144,41 @@ Camera pulls higher still, showing the bike as a small red shape on the winding 
 Cinematic 3D render, post-apocalyptic action sequence. A heavily modified dune buggy with flaming rocket boosters speeds along a metallic futuristic pipeline track through a desert canyon during golden hour. A leather-clad warrior swings a spiked flail attached to a heavy chain, smashing an enemy combat helicopter mid-air into fiery explosions. A gunner on the buggy fires a massive rotary flamethrower minigun, turning another enemy drone aircraft into a massive fireball. The buggy leaps off a ramp over huge fiery explosions and dynamic missile strikes, landing smoothly on the reflective glass pipeline track and racing toward a giant ruined cooling tower in the distant wasteland. Cinematic lighting, photorealistic physics, slow-motion action shots, sparks, dynamic camera pans, hyper-detailed textures, volumetric smoke, cinematic color grading, 8k resolution, photorealistic CGI action film style.
 ```
 
-## E4 · Pink Jet Tractor Races Supercars on a Tokyo Expressway
+## E5 · Woman Biker Escapes an Alien Warship on an Apocalyptic Highway
+
+- Seedance 2.5 · creator: @itsSaira_1 · heat: 60
+- Evidence: [GoodCase](https://goodcase.ai/cases/seedance-cinematic-short-film-46-sec-16-9-photorealistic-hollywood-sci-fi-action-dys-dae506414152) · [finished media](https://media.goodcase.ai/cases/d7ba735094ad.mp4) · [poster](https://media.goodcase.ai/cases/b48c78c785ba.jpg) · [original source](https://x.com/itsSaira_1/status/2104789066562547945)
+- Summary: ⚡The world is burning, the enemy is here, and she's ready for war. ⚔️ Made with Seedance 2.5 On @supercool_hq Prompt: CINEMATIC SHORT FILM, 46 sec, 16:9, photor…
+
+```text
+CINEMATIC SHORT FILM, 46 sec, 16:9, photorealistic Hollywood sci-fi action, dystopian highway apocalypse. Cold steel-grey sky, burning orange explosions, volumetric god rays, anamorphic lens, film grain. HERO: muscular woman, curly dark hair, olive tank top, black jeans and boots, fierce expression. BIKE: matte-black futuristic armored motorcycle, twin fat front wheels, white glowing headlights, mounted cannon.
+
+1 (0-2s): Low-angle front tracking, hero races toward camera on a wrecked highway, burning car and black smoke behind.
+2 (2-4s): Side-front tracking, bike leans through a curve under an overpass, headlights flaring.
+3 (5-6s): Extreme close-up of the bike's armored cannon and engine, her hand on the handlebar, motion blur.
+4 (7-9s): Tight close-up of her face low over the bike, intense eyes, wind-blown curls, shallow depth of field.
+5 (10-11s): Wide low-angle, giant black alien warship over the highway fires an orange beam, ground explosion.
+6 (12-14s): Huge fireball erupts, hero's tiny silhouette speeds away, yellow car blurs past.
+7 (15-16s): Side close-up, hero crouched on the bike, engulfed in orange fire and smoke.
+8 (17-18s): Ground-level shot of rusted abandoned cars, open doors, a boot flies through the frame.
+9 (19-21s): Blonde woman in black leather jacket aims a heavy sci-fi rifle at camera, burning wreckage behind.
+10 (22-23s): Frontal tracking, hero bursts out from under a dark overpass, smoke columns behind.
+11 (24-26s): Driver POV down the highway, collapsed overpass and debris ahead, lone black car in the lane.
+12 (27-28s): Wide side shot, bike launches off a broken concrete slab, front wheel high.
+13 (29-33s): Slow-motion low-angle, hero and bike airborne against dramatic clouds and god rays, red taillight glowing.
+14 (34-36s): Close-up, rear wheel hits a broken slab and explodes in a fireball, sparks and debris, slow motion.
+15 (37-38s): Wide ground-level, debris-covered highway, overturned burning car, tiny hero falling through the sky.
+16 (39-42s): Hero lands and skids into a low crouch, one knee and hand down, fire behind her.
+17 (43-46s): Medium close-up, she rises, fierce eyes, wall of orange fire exploding behind her, freeze on hero pose.
+
+MOTION: fast tracking, whip pans, slow-motion airborne beat, handheld shake on explosions, realistic physics, consistent character and bike design.
+
+NEGATIVE PROMPT: cartoon, anime, CGI look, plastic skin, deformed face, bad hands, extra limbs, extra wheels, changing bike design, inconsistent character, blurry, low resolution, flicker, morphing, warped anatomy, text, subtitles, watermark, logo, oversaturated, duplicate characters, unnatural motion
+
+#AIVideo #AIArt #AIFilm #CinematicAI #SciFi #ActionScene #Midjourney #GenerativeAI
+```
+
+## E6 · Pink Jet Tractor Races Supercars on a Tokyo Expressway
 
 - Seedance 2.5 · creator: @laviniavelle · heat: 45
 - Evidence: [GoodCase](https://goodcase.ai/cases/seedance-a-high-octane-cinematic-action-sequence-on-an-urban-highway-in-tokyo-photoreali-e9963e75b76a) · [finished media](https://media.goodcase.ai/cases/83c13fe0b2e2.mp4) · [poster](https://media.goodcase.ai/cases/17d1ccde38df.jpg) · [original source](https://x.com/laviniavelle/status/2100806296949903511)
@@ -122,7 +189,7 @@ A high octane cinematic action sequence on an urban highway in Tokyo photorealis
 #Flovaai #Flovaccp @Flovaai_Japan
 ```
 
-## E5 · First-Person Midair Assembly of a Black Lamborghini
+## E7 · First-Person Midair Assembly of a Black Lamborghini
 
 - Seedance 2.5 · creator: @MissDelulu9 · heat: 42
 - Evidence: [GoodCase](https://goodcase.ai/cases/missdelulu9-seedance-ai-02009f1f7daf) · [finished media](https://media.goodcase.ai/cases/bc11a3b576b6.mp4) · [poster](https://media.goodcase.ai/cases/4da7c433c3b6.jpg) · [original source](https://x.com/MissDelulu9/status/2091423578197737772)
@@ -161,7 +228,7 @@ The Aventador launches violently forward directly toward the POV camera. The rea
 [… truncated, full prompt on the goodcase.ai page]
 ```
 
-## E6 · Karakoram Motorcycle Commercial
+## E8 · Karakoram Motorcycle Commercial
 
 - Seedance 2.5 · creator: @AI_with_Antonio · heat: 35 · stability: 87
 - Evidence: [GoodCase](https://goodcase.ai/cases/karakoram-motorcycle-commercial) · [finished media](https://media.goodcase.ai/cases/f702b148dbed.mp4) · [poster](https://media.goodcase.ai/cases/fe0b785db335.jpg) · [original source](https://x.com/AI_with_Antonio/status/2088599346908365227)
@@ -169,46 +236,4 @@ The Aventador launches violently forward directly toward the POV camera. The rea
 
 ```text
 Create a 10-second photorealistic cinematic motorcycle commercial featuring a young 24-year-old male rider with an athletic, muscular physique, riding a Suzuki GS150SE along the Karakoram Highway in northern Pakistan at approximately 100+ km/h. The rider looks confident and energetic, wearing a premium black riding jacket with the sleeves fitted around his muscular arms, dark riding pants, gloves, riding boots, and a full-face helmet. Keep his appearance, clothing, helmet, and body proportions identical throughout the entire clip. The Suzuki GS150SE should remain accurately proportioned and visually consistent, with realistic suspension movement, wheel rotation, chain movement, engine vibration, brake components, exhaust, mirrors, and authentic motorcycle details. The highway winds dramatically through enormous snow-covered Karakoram mountains, with towering icy peaks visible in the distance. Cold mountain atmosphere, patches of snow beside the road, crisp blue sky, thin clouds, distant glaciers, and realistic high-altitude lighting. Cinematic Direction: Begin with a low front three-quarter tracking shot of the GS150SE approaching at speed. Transition into a side tracking shot showing the rider enjoying the mountain scenery while maintaining control of the motorcycle. Briefly show a helmet-level POV looking down the sweeping Karakoram Highway toward massive snow-covered peaks. Use realistic aerodynamic effects: subtle airflow flowing around the rider and motorcycle, jacket fabric reacting naturally to wind, slight suspension compression over road imperfections, realistic tire contact, and controlled motion blur. Finish with a dramatic rear three-quarter tracking shot as the motorcycle disappears along the winding highway, surrounded by enormous icy mountains. Visual style: photorealistic, premium motorcycle commercial, cinematic 4K, natural mountain lighting, realistic physics, detailed motorcycle textures, dynamic tracking camera, shallow depth of field where appropriate, subtle lens flare, realistic motion blur, immersive scale, epic Himalayan/Karakoram atmosphere. Important: No distorted motorcycle parts, no extra limbs or fingers, no changing rider appearance, no duplicated motorcycle components, no unrealistic wheel geometry, no floating motorcycle, no excessive CGI effects, and no text overlays unless specifically requested. Overall feeling: freedom, adventure, power, solitude, mountain exploration, and the thrill of riding through the Karakoram.
-```
-
-## E7 · Silver-Haired Rider's Neon Highway Escape
-
-- Seedance 2.0 · creator: @Zyrellix · heat: 30 · stability: 87
-- Evidence: [GoodCase](https://goodcase.ai/cases/zyrellix-seedance-ai-e2b9d262ff6b) · [finished media](https://media.goodcase.ai/media/video/zyrellix-seedance-ai-e2b9d262ff6b.mp4) · [poster](https://media.goodcase.ai/media/poster/zyrellix-seedance-ai-e2b9d262ff6b.jpg) · [original source](https://x.com/Zyrellix/status/2093340253755232681)
-- Summary: Speed, neon and chaos collide A futuristic rider takes on a massive zombie horde in a high octane cinematic chase. Made
-
-```text
-High-octane 3D animated cinematic action scene. A young female protagonist with short silver-white hair and aviator goggles on her forehead, wearing a sleek black leather suit with glowing blue neon accents and a long dark coat flowing behind her. She rides a high-speed futuristic sci-fi motorcycle featuring glowing magenta-pink neon wheels and cyan chassis accents. She speeds down a wet, overcast highway littered with abandoned cars, pursued by a massive horde of aggressive zombies. Dynamic camera angles capture her drifting around corners emitting bright sparks, shooting a handgun at leaping zombies with slow-motion bullet-time effects, and performing a massive mid-air stunt jump over the crowd. Moody cinematic lighting, dark color grading with vibrant pink and cyan neon contrast, overcast daylight, photorealistic textures, action movie aesthetic, 8k resolution, hyper-detailed.
-```
-
-## E8 · Yellow Supercar Racing Through the Dubai Skyline
-
-- Seedance 2.0 · creator: @AIwithAliya · heat: 28
-- Evidence: [GoodCase](https://goodcase.ai/cases/aiwithaliya-seedance-ai-cf398f743859) · [finished media](https://media.goodcase.ai/media/video/aiwithaliya-seedance-ai-cf398f743859.mp4) · [poster](https://media.goodcase.ai/media/poster/aiwithaliya-seedance-ai-cf398f743859.jpg) · [original source](https://x.com/AIwithAliya/status/2093022598187954484)
-- Summary: What a ride! Made by using GPT Image 2 + Seedance 2.0 on @FishCreativeHQ Prompt reference_handling: "Image generation st
-
-```text
-What a ride! 
-
-Made by using GPT Image 2 + Seedance 2.0 on @FishCreativeHQ  
-
-Prompt
-
-reference_handling: "Image generation strictly for driver facial and wardrobe styling reference only — calm, composed features silver wristwatch on left wrist Image strictly for sports car styling and cabin reference only — low, wide Italian wedge-shaped body + bright yellow paint + strongly geometric body lines + hexagonal front intake + Y-shaped LED headlights + gloss black multi-spoke wheels + black leather cabin with orange stitching + left-hand-drive cabin (driver seat on left) + across this sequence the driver-side window (left side of car) is rolled down only for the cockpit reveal shot, all other windows remain as-is throughout. Image strictly for spire architectural geometry, Dubai downtown skyline, and warm hazy midday atmosphere reference only — tapered glass-and-steel spire that widens progressively toward the base + dense glass high-rise skyline below + wide multi-lane boulevard. Do not reproduce any specific camera angle, composition, or caption elements from the reference images"
-
-style: "REAL AERIAL + AUTOMOTIVE CINEMATOGRAPHY PLATE — not CGI rendering, not game-engine rendering, not an animated/illustrated look."
-
-visual_feel: "Strong overhead midday light + warm hazy atmosphere softening the horizon. Color strictly natural and true-to-life — not oversaturated, not faded, not washed out. Continuous soft haze and atmospheric layering from spire tip down to street level. Every camera move, whether aerial or ground-tracking, strictly gimbal-level smooth — absolutely no handheld feel, no shake, no roll or tilt, even during the FPV-paced dive segment or the accelerating side-pass segments. 16:9 frame + no stylized film-grain treatment, aiming for genuine cinematography texture across every shot"
-
-duration: "30 seconds (8-shot sequence)"
-
-aspect_ratio: "16:9"
-
-character_modeling:
-
-driver_suited_woman: base: " appearance and wardrobe strictly per Image generation reference. Present in the car throughout the sequence, but the face is strictly clearly visible only during the 0:20–0:21 cockpit reveal shot — in every other shot the face is strictly not shown or not resolvable, whether by camera position, angle, or framing" wardrobe: silver wristwatch on left wrist . complete, with no wrinkling, misalignment, or missing pieces throughout" presence: "In shots where the driver is not the subject (0:01–0:19, 0:22–0:30), the driver strictly remains seated in the left-side driving position, present but strictly not resolved facially due to camera side, distance, or angle. During the 0:20–0:21 cockpit reveal shot only, the face and posture are strictly fully clear — visibility achieved via a right-side cockpit camera position looking across the cabin, with natural light and open sightline entering through the already-lowered driver-side window (left side of car) forming an angled depth-of-view channel — strictly NOT via looking directly through a window immediately adjacent to the camera"
-
-sports_car_yellow: identity: "Low, wide Italian wedge-shaped supercar + bright yellow paint + strongly geometric body + hexagonal front intake + Y-shaped LED headlights + gloss black multi-spoke wheels + black leather cabin with orange stitching + left-hand-drive cabin, driver seat on left — appearance strictly per image2 reference. Strictly only this one car appears across all 8 shots + doors strictly closed throughout + strictly only the driver-side window (left sid
-
-[… truncated, full prompt on the goodcase.ai page]
 ```

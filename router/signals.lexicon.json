@@ -15,7 +15,7 @@
         "秒级",
         "时长"
       ],
-      "corpusDocs": 5,
+      "corpusDocs": 6,
       "manualAdded": 5
     },
     "character-reference-lock": {
@@ -41,17 +41,17 @@
         "korean",
         "summer",
         "morning",
-        "woman",
         "day",
         "girl",
         "short",
-        "village"
+        "village",
+        "old"
       ],
       "zh": [
         "韩国",
         "女孩",
-        "韩国女",
         "夏日",
+        "韩国女",
         "清晨",
         "韩国女孩",
         "健身",
@@ -60,7 +60,7 @@
         "出门前准备",
         "私人感"
       ],
-      "corpusDocs": 112,
+      "corpusDocs": 116,
       "manualAdded": 3
     },
     "pov-continuous-take": {
@@ -153,36 +153,46 @@
         "口型",
         "争吵"
       ],
-      "corpusDocs": 8,
+      "corpusDocs": 9,
       "manualAdded": 4
     },
     "cinematic-narrative-short": {
       "en": [
-        "woman",
         "korean",
         "girl",
         "school",
         "thirty",
         "city",
         "cinematic",
-        "romance"
+        "romance",
+        "escape",
+        "narrative",
+        "trailer",
+        "three acts",
+        "story",
+        "emotional"
       ],
       "zh": [
-        "少女",
         "雨夜",
+        "少女",
         "电影",
         "校园",
         "女孩",
+        "女子",
         "十秒",
         "夜咖啡馆",
-        "雨夜咖啡",
         "预告片",
         "迷你剧",
         "剧情",
-        "爱情"
+        "爱情",
+        "故事",
+        "叙事",
+        "感人",
+        "告别",
+        "重逢"
       ],
-      "corpusDocs": 47,
-      "manualAdded": 4
+      "corpusDocs": 51,
+      "manualAdded": 14
     },
     "anime-style-lock": {
       "en": [
@@ -260,32 +270,35 @@
     },
     "combat-choreography": {
       "en": [
-        "action",
         "battles",
+        "action",
+        "fight",
         "girl",
         "haired",
-        "fight",
+        "subway",
         "night",
-        "rooftop",
-        "warrior"
+        "showdown",
+        "combat",
+        "martial arts",
+        "sword",
+        "choreography"
       ],
       "zh": [
-        "少女",
         "激战",
+        "少女",
         "动作",
+        "地铁站",
         "超能",
+        "格斗",
+        "决战",
         "觉醒",
-        "能力",
-        "近身格斗",
-        "超能力",
         "武术",
         "剑戟",
-        "格斗",
         "招式",
         "打戏"
       ],
-      "corpusDocs": 51,
-      "manualAdded": 5
+      "corpusDocs": 57,
+      "manualAdded": 8
     },
     "music-beat-sync-mv": {
       "en": [
@@ -294,23 +307,24 @@
         "dance",
         "music",
         "stage",
+        "cinematic",
         "beat",
         "girl",
-        "idol"
+        "MV"
       ],
       "zh": [
         "霓虹",
+        "舞台",
         "音乐",
         "音乐视频",
+        "女歌手",
         "分镜",
-        "舞台",
         "卡点",
-        "MV",
         "翻跳",
         "副歌",
         "舞蹈"
       ],
-      "corpusDocs": 16,
+      "corpusDocs": 17,
       "manualAdded": 5
     },
     "time-freeze-rewind": {
@@ -351,14 +365,16 @@
     },
     "retro-found-footage": {
       "en": [
-        "summer",
         "seoul",
-        "day",
-        "evening",
+        "summer",
         "walk",
+        "day",
+        "old",
+        "evening",
         "korean",
-        "home",
-        "old"
+        "early",
+        "MiniDV",
+        "VHS"
       ],
       "zh": [
         "首尔",
@@ -366,45 +382,43 @@
         "夏日",
         "首尔夏夜",
         "韩国",
-        "周日",
-        "首尔夏日",
         "漫步",
+        "情侣",
+        "午后",
         "家庭录像",
         "录像带",
-        "MiniDV",
-        "VHS",
         "伪纪录片"
       ],
-      "corpusDocs": 29,
+      "corpusDocs": 36,
       "manualAdded": 5
     },
     "travel-city-walk": {
       "en": [
-        "woman",
         "young",
         "mountain",
-        "travel",
-        "mountains",
         "journey",
         "village",
-        "autumn"
+        "korean",
+        "travel",
+        "rainy",
+        "snowy"
       ],
       "zh": [
-        "漫游",
-        "旅行",
-        "女子",
         "少女",
-        "年轻女子",
-        "旅行日",
+        "漫游",
+        "之旅",
+        "年轻女",
         "村庄",
-        "登机",
+        "韩国",
+        "旅行",
+        "女孩",
         "旅拍",
         "城市漫游",
         "目的地",
         "徒步",
         "露营"
       ],
-      "corpusDocs": 21,
+      "corpusDocs": 25,
       "manualAdded": 5
     },
     "pet-animal": {
@@ -433,10 +447,16 @@
     "car-vehicle": {
       "en": [
         "motorcycle",
+        "highway",
+        "apocalyptic",
+        "supercar",
         "racing"
       ],
       "zh": [
         "公路",
+        "超跑",
+        "机车",
+        "末日",
         "汽车",
         "摩托",
         "赛车",
@@ -445,7 +465,7 @@
         "追逐",
         "特技"
       ],
-      "corpusDocs": 11,
+      "corpusDocs": 13,
       "manualAdded": 7
     },
     "fashion-lookbook": {
@@ -455,47 +475,48 @@
         "synchronized",
         "outfit",
         "streets",
+        "beauty",
         "golden",
-        "countryside",
-        "cinematic"
+        "red",
+        "lookbook"
       ],
       "zh": [
         "时尚",
+        "街头",
         "女孩",
         "同步",
         "大片",
         "换装",
-        "街头",
         "金色",
-        "袋时尚大",
+        "少女",
         "穿搭",
         "街拍",
         "写真",
-        "人像",
-        "lookbook"
+        "人像"
       ],
-      "corpusDocs": 30,
+      "corpusDocs": 34,
       "manualAdded": 5
     },
     "meme-comedy": {
       "en": [
         "street",
         "chase",
+        "adventure",
+        "chaotic",
+        "kitchen",
         "morning",
         "subway",
-        "thirty",
-        "woman",
-        "plan"
+        "thirty"
       ],
       "zh": [
         "街头",
-        "浴袍奶奶",
-        "嘲笑",
-        "地铁",
-        "女孩",
-        "十秒",
-        "逃亡",
         "引发",
+        "浴袍奶奶",
+        "迷你厨",
+        "嘲笑",
+        "大乱",
+        "地铁",
+        "巨型",
         "玩梗",
         "整蛊",
         "反转",
@@ -503,7 +524,7 @@
         "沙雕",
         "复仇"
       ],
-      "corpusDocs": 25,
+      "corpusDocs": 29,
       "manualAdded": 6
     },
     "horror-suspense": {
@@ -515,7 +536,11 @@
         "night",
         "infection",
         "japanese",
-        "attack"
+        "attack",
+        "horror",
+        "suspense",
+        "possessed",
+        "possession"
       ],
       "zh": [
         "感染",
@@ -533,7 +558,7 @@
         "驱邪"
       ],
       "corpusDocs": 23,
-      "manualAdded": 5
+      "manualAdded": 9
     },
     "3d-cartoon": {
       "en": [
@@ -543,8 +568,8 @@
         "otter",
         "animation",
         "animated",
-        "magical",
-        "playful"
+        "duckling",
+        "bedroom"
       ],
       "zh": [
         "水獭",
@@ -552,37 +577,42 @@
         "动画",
         "亲吻",
         "风格海盗",
+        "蓝围巾小",
         "沙发上",
         "小水獭",
-        "花园",
         "三维卡通",
         "皮克斯",
         "动画角色",
         "幼龙"
       ],
-      "corpusDocs": 29,
+      "corpusDocs": 34,
       "manualAdded": 4
     },
     "epic-fantasy-scifi": {
       "en": [
         "warrior",
         "battle",
-        "dragon",
         "giant",
-        "woman",
+        "dragon",
+        "white",
         "red",
         "fortress",
-        "fantasy"
+        "fantasy",
+        "epic",
+        "kaiju",
+        "monster",
+        "spectacle",
+        "scifi"
       ],
       "zh": [
         "战士",
         "风暴",
+        "巨兽",
         "少女",
         "之战",
         "威尼斯",
+        "冰封",
         "穿越",
-        "摧毁",
-        "废墟",
         "奇幻",
         "科幻",
         "巨龙",
@@ -591,8 +621,8 @@
         "变身",
         "世界观"
       ],
-      "corpusDocs": 29,
-      "manualAdded": 7
+      "corpusDocs": 32,
+      "manualAdded": 12
     },
     "sports-extreme": {
       "en": [
@@ -624,7 +654,13 @@
         "mission",
         "station",
         "female",
-        "office"
+        "office",
+        "HUD",
+        "game",
+        "livestream",
+        "HUD",
+        "streamer",
+        "overlay"
       ],
       "zh": [
         "车站",
@@ -638,24 +674,34 @@
         "游戏录屏",
         "游戏实录",
         "直播叠层",
-        "HUD",
         "任务界面"
       ],
       "corpusDocs": 15,
-      "manualAdded": 5
+      "manualAdded": 10
     },
     "food-asmr": {
-      "en": [],
+      "en": [
+        "korean",
+        "ASMR",
+        "food",
+        "cooking",
+        "eating",
+        "broth",
+        "chef",
+        "dinner",
+        "crispy",
+        "juicy",
+        "ASMR"
+      ],
       "zh": [
         "美食",
         "吃播",
         "烹饪",
-        "ASMR",
         "拉丝",
         "爆汁"
       ],
-      "corpusDocs": 6,
-      "manualAdded": 6
+      "corpusDocs": 7,
+      "manualAdded": 15
     }
   }
 }

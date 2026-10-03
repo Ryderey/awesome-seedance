@@ -11,7 +11,9 @@
     "check:links": "node scripts/check-links.mjs",
     "taxonomy:todo": "node scripts/taxonomy-todo.mjs",
     "validate:submissions": "node scripts/validate-submissions.mjs",
-    "refresh:site": "node scripts/fetch-site-stats.mjs && node scripts/fetch-retest-posters.mjs"
+    "refresh:site": "node scripts/fetch-site-stats.mjs && node scripts/fetch-retest-posters.mjs",
+    "router:check": "node router/build.mjs --check",
+    "router:build": "node router/build.mjs --write --out .tmp/router-package"
   },
   "license": "MIT",
   "repository": {

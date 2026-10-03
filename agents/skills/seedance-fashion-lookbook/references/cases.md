@@ -1,6 +1,6 @@
 # Case evidence · Fashion lookbook and portrait film
 
-30 verified cases are filed under this template in awesome-seedance; the 8 hottest are below, full prompts included. Pick one as the anchor before drafting.
+34 verified cases are filed under this template in awesome-seedance; the 8 hottest are below, full prompts included. Pick one as the anchor before drafting.
 
 Generated from `data/cases.json` + `data/case-taxonomy.json`. Do not hand-edit.
 
@@ -62,7 +62,29 @@ camera movement, real people in background every scene, hyper-realistic photogra
 AVOID: cartoon, CGI, plastic skin, robotic movement, stiff poses, blurry face, overexposed, watermark, text overlay, logo, AI generated look, jerky motion, empty streets, studio background, fake crowd, extra fingers, deformed
 ```
 
-## E3 · Model and Fashion Items in Synchronized 360° Rotation
+## E3 · Monday Morning’s Upside-Down Water Ritual
+
+- Seedance 2.5 · creator: @Just_sharon7 · heat: 89
+- Evidence: [GoodCase](https://goodcase.ai/cases/seedance-this-is-how-it-feels-like-to-wake-up-on-monday-to-go-to-work-b0d56af4f909) · [finished media](https://media.goodcase.ai/cases/71885692ca73.mp4) · [poster](https://media.goodcase.ai/cases/d86c8eb13364.jpg) · [original source](https://x.com/Just_sharon7/status/2104544058471502330)
+- Summary: This is how it feels like to wake up on Monday to go to work. Seedance 2.5 on @FishCreativeHQ Prompt A cinematic indoor performance-art / fashion editorial vide…
+
+```text
+This is how it feels like to wake up on Monday to go to work.
+
+Seedance 2.5 on @FishCreativeHQ 
+
+Prompt
+
+A cinematic indoor performance-art / fashion editorial video, shot in a single continuous take inside a slightly worn historic room with cracked plaster walls, dark wood floors, a vintage wooden bed with rumpled beige linens, beige curtains over a tall window, and a soft abstract pink painting on the wall.
+
+A large custom-built pale mint-green wooden seesaw / dunk-lever structure (thick beams, metal bolts, industrial-craft aesthetic) spans the room. On the high end, a woman hangs completely upside-down, knees hooked over the beam, wearing a short beige-and-black horizontal-striped dress. She clutches a dripping beige robe or cloth against her body. Long dark curly hair hangs toward a matching mint-green metal barrel filled with water.
+
+An off-camera operator slowly pumps the opposite end of the lever, tilting the beam so her head and hair repeatedly dunk into the water then lift out, water streaming from her hair and the cloth. Her expression shifts between wide-eyed surprise, a slight smile, and composure as she looks toward camera. Water ripples and drips throughout.
+
+Natural window light, muted filmic color palette, shallow depth of field, slight handheld camera movement that stays locked on the woman and the barrel. Slow, rhythmic, slightly surreal and elegant rather than slapstick. No text, no logos.
+```
+
+## E4 · Model and Fashion Items in Synchronized 360° Rotation
 
 - Seedance 2.5 · creator: @AI__TSUBAKI · heat: 82
 - Evidence: [GoodCase](https://goodcase.ai/cases/seedance-a-clean-premium-4-second-fashion-lookbook-animation-starting-from-the-first-fr-a7de463708af) · [finished media](https://media.goodcase.ai/cases/0d093f32d701.mp4) · [poster](https://media.goodcase.ai/cases/04e386463d97.jpg) · [original source](https://x.com/AI__TSUBAKI/status/2102459655700287648)
@@ -78,7 +100,7 @@ At the same time, every product cutout inside the item panel rotates in place on
 The panel, divider lines, captions, crown icons and wordmark stay perfectly fixed; only the model moves and the products rotate. Camera locked off, no zoom, no pan. Soft studio lighting with realistic shadows under the model and the products. Smooth, natural motion, clean commercial fashion-ad aesthetic, ultra-sharp details, luxury catalog presentation.
 ```
 
-## E4 · Red Dress Transformation on the Streets of Paris
+## E5 · Red Dress Transformation on the Streets of Paris
 
 - Seedance 2.0 · creator: @ayzalnooor24521 · heat: 82
 - Evidence: [GoodCase](https://goodcase.ai/cases/seedance-created-a-cinematic-fashion-transformation-video-featuring-a-beautiful-young-wo-c7588dbea707) · [finished media](https://media.goodcase.ai/cases/bbba04e9636b.mp4) · [poster](https://media.goodcase.ai/cases/6fd799c4ee96.jpg) · [original source](https://x.com/ayzalnooor24521/status/2100456445900710158)
@@ -88,7 +110,7 @@ The panel, divider lines, captions, crown icons and wordmark stay perfectly fixe
 Created a cinematic fashion transformation video featuring a beautiful young woman walking through elegant Parisian streets. She begins in a clean white summer dress, walking naturally along a stylish city sidewalk surrounded by classic architecture, cafés, shops, and pedestrians. The camera smoothly follows her with realistic cinematic movement and shallow depth of field. As she passes a storefront, glowing red light trails swirl around her body, creating a magical fashion-transition effect. Her outfit transforms seamlessly from white into a sophisticated red sleeveless dress. Continue with dynamic street-level shots as she confidently walks through a busy Paris intersection. Finish with a beautiful close-up of her in the red dress, gently holding and eating an ice cream while looking naturally toward the camera. Photorealistic details, elegant fashion-film aesthetic, natural daylight, smooth transitions, realistic skin texture, cinematic lens, subtle background motion, premium commercial look.
 ```
 
-## E5 · Golden Hour Mountain Fashion Film, Low Angle
+## E6 · Golden Hour Mountain Fashion Film, Low Angle
 
 - Seedance 2.5 · creator: @noorlewisx · heat: 81
 - Evidence: [GoodCase](https://goodcase.ai/cases/seedance-cinematic-fashion-film-still-low-angle-shot-of-a-beautiful-young-woman-with-wa-fac7693b54a0) · [finished media](https://media.goodcase.ai/cases/ed05261f6296.mp4) · [poster](https://media.goodcase.ai/cases/9084b0f25038.jpg) · [original source](https://x.com/noorlewisx/status/2096826123330138410)
@@ -98,7 +120,7 @@ Created a cinematic fashion transformation video featuring a beautiful young wom
 Cinematic fashion film still, low-angle shot of a beautiful young woman with wavy dirty-blonde hair and brown eyes walking toward camera on a sunlit snowy alpine mountain slope at golden hour. She wears an oversized cream faux-fur coat over a white ribbed crop top and matching white shorts, white fuzzy ski boots and white gloves. She carries a pair of sleek white skis with black bindings slung over one shoulder. Sparkling crystalline snow in extreme foreground with shallow depth of field and bokeh, snow-capped peaks and clear blue-to-dusk sky in background, dramatic rim lighting, high-fashion editorial photography, 35mm film grain, ultra-realistic, photorealistic, 8k
 ```
 
-## E6 · Pink Handbag Fashion Editorial on Tokyo Streets
+## E7 · Pink Handbag Fashion Editorial on Tokyo Streets
 
 - Seedance 2.0 · creator: @AIwithNatalia · heat: 79
 - Evidence: [GoodCase](https://goodcase.ai/cases/aiwithnatalia-seedance-ai-12c56e79550f) · [finished media](https://media.goodcase.ai/media/video/aiwithnatalia-seedance-ai-12c56e79550f.mp4) · [poster](https://media.goodcase.ai/media/poster/aiwithnatalia-seedance-ai-12c56e79550f.jpg) · [original source](https://x.com/AIwithNatalia/status/2094277759547875413)
@@ -188,7 +210,7 @@ The city is your runway.
 Visual direction: glossy luxury lighting, deep contrast, realistic Tokyo atmosphere, premium fashion photography, fisheye low-angle perspective, dynamic handheld camera, cinematic lens flares, subtle film grain, Vogue editorial aesthetic, sophisticated typography, no cheesy commercial look.
 ```
 
-## E7 · Alexa Walks Through Five Fashion Worlds
+## E8 · Alexa Walks Through Five Fashion Worlds
 
 - Seedance 2.0 · creator: @MonetizationDon · heat: 79
 - Evidence: [GoodCase](https://goodcase.ai/cases/seedance-create-a-30-second-ultra-photorealistic-cinematic-fashion-film-featuring-alexa-6ffd42d43119) · [finished media](https://media.goodcase.ai/cases/d0b02a37b52a.mp4) · [poster](https://media.goodcase.ai/cases/fc58dd11e312.jpg) · [original source](https://x.com/MonetizationDon/status/2099864906392559847)
@@ -295,14 +317,4 @@ Typography:
 "ALEXA
 
 [… truncated, full prompt on the goodcase.ai page]
-```
-
-## E8 · Synchronized Rotation of Model and Outfit Items
-
-- Seedance 2.5 · creator: @AIwithkhan · heat: 79
-- Evidence: [GoodCase](https://goodcase.ai/cases/seedance-create-a-clean-premium-8-second-fashion-infographic-animation-based-on-the-out-e90669bb477e) · [finished media](https://media.goodcase.ai/cases/20a7e5c36c11.mp4) · [poster](https://media.goodcase.ai/cases/725dd3117245.jpg) · [original source](https://x.com/AIwithkhan/status/2101148067458347258)
-- Summary: Korean outfit style board Using GPT Image 2 and Seedance 2.5 Prompt : Create a clean, premium 8-second fashion infographic animation based on the outfit-board l…
-
-```text
-Create a clean, premium 8-second fashion infographic animation based on the outfit-board layout. The entire composition remains visible on a white minimalist background.The female model on the right begins a smooth 360° rotation on her vertical axis, like a fashion showcase turntable. Her movement is elegant and continuous, maintaining natural posture and realistic cloth physics. Hair, skirt straps, and accessories react subtly to motion. At the exact same time, every item displayed inside the numbered boxes rotates synchronously:Necklace rotates slowly in 3D, revealing chain depth and pendant details. Hair bow spins gracefully around its center.Handhel d gaming console rotates on its vertical axis like a product commercial.Cargo mini skirt rotates 360° to showcase front, side, and back views.Platform boots rotate together like luxury product display renders. Black off-shoulder top rotates smoothly to reveal full garment shape.All items complete their rotations in perfect sync with the model's rotation speed. The boxes, numbers, typography, and layout remain fixed in position while only the products rotate inside their frames. Camera remains mostly static with a subtle cinematic push-in. Soft studio lighting, realistic shadows, clean commercial fashion-ad aesthetic, ultra-sharp details, premium motion graphics, smooth easing, luxury catalog presentation, 4K, 60fps.
 ```

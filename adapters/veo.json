@@ -1,45 +1,142 @@
 {
-  "model": "Veo",
-  "displayName": { "en": "Veo", "zh": "Veo" },
-  "aliases": ["veo", "veo3", "veo 3", "flow"],
-
+  "model": "Veo 3.1 (Gemini API preview)",
+  "displayName": {
+    "zh": "Veo 3.1 (Gemini API preview)",
+    "en": "Veo 3.1 (Gemini API preview)"
+  },
+  "aliases": [
+    "veo",
+    "veo3",
+    "veo 3",
+    "flow",
+    "veo-3.1-generate-preview"
+  ],
   "capabilities": {
     "lipSync": null,
-    "audioDriven": null,
-    "refImage": null,
+    "audioDriven": false,
+    "refImage": true,
     "refVideo": null,
     "typography": null,
     "physicsCoherence": null,
-    "firstLastFrame": null,
+    "firstLastFrame": true,
     "newerTierFeatures": null
   },
-
   "limits": {
-    "maxDuration": null,
-    "aspectRatios": []
+    "maxDuration": 8,
+    "durations": [
+      4,
+      6,
+      8
+    ],
+    "referenceDuration": 8,
+    "aspectRatios": [
+      "16:9",
+      "9:16"
+    ],
+    "note": "参考图与高分辨率模式需要 8 秒。video 参数用于延长已有 Veo 视频，未视为任意参考视频能力。"
   },
-
   "syntax": {
     "negativePrompt": null,
     "timestamp": null,
     "cameraMove": null
   },
-
-  "degradations": [],
-
-  "verifiedAt": null,
-  "verifiedFrom": [],
-  "verificationNote": "P0 阶段全部为 null：未核对，不代表不支持。填任何布尔前必须先补 verifiedFrom 的官方文档链接。Veo 各版本能力差异大且接口随宿主平台（Gemini API / Flow）不同，核对时要写清版本与调用入口，否则能力位没有可比性。",
-
+  "degradations": [
+    {
+      "capability": "typography",
+      "trigger": "unsupported_or_unverified",
+      "blocks": [
+        "文字与 slogan",
+        "字幕排版",
+        "屏幕叠层"
+      ],
+      "action": "保留文字诉求与出现时间，生成干净底片；在后期按位置和时段叠加文字。",
+      "notice": "文字改为后期叠加，需用户允许后期处理。"
+    },
+    {
+      "capability": "physicsCoherence",
+      "trigger": "unsupported_or_unverified",
+      "blocks": [
+        "动作闭环",
+        "连招链",
+        "物理奇观"
+      ],
+      "action": "减少单段动作数量；逐段写清接触点、起始和结束状态，并安排单独验证。",
+      "notice": "物理连贯性尚未核实；简化动作并需逐段检查，无法保证一次通过。"
+    },
+    {
+      "capability": "lipSync",
+      "trigger": "unsupported_or_unverified",
+      "blocks": [
+        "台词",
+        "口型要求"
+      ],
+      "action": "保留台词与表演节拍，提出后期配音/口型流程；用户要求原生严格同步时先核实或换已验证入口。",
+      "notice": "口型同步尚未核实；后期方案需用户同意，台词核心诉求保留。"
+    },
+    {
+      "capability": "newerTierFeatures",
+      "trigger": "unsupported_or_unverified",
+      "blocks": [
+        "模型专属语法"
+      ],
+      "action": "读取目标 API 的资产字段与说明，将源模型 token 改为目标入口实际支持的资产绑定；入口未知时只交付模型无关草案。",
+      "notice": "源模板的 Seedance 版本语法不能直接保证在目标模型执行。"
+    },
+    {
+      "capability": "refImage",
+      "trigger": "unsupported_or_unverified",
+      "blocks": [
+        "可选身份参考"
+      ],
+      "action": "可选参考块改为文字外观约束；用户明确提供参考素材时保留硬输入检查，不能丢弃图片绕过门禁。",
+      "notice": "仅可选参考块能改为文字约束；实际参考图仍需支持图片的入口。"
+    }
+  ],
+  "verifiedAt": "2026-10-03",
+  "verifiedFrom": [
+    "https://ai.google.dev/gemini-api/docs/veo?hl=en"
+  ],
+  "verificationNote": "仅核实所列版本与入口；原生音频不等于上传音轨或严格口型同步，未确认项保持 null。",
   "toVerify": [
-    "model 精确版本号与调用入口（API 还是宿主产品）",
-    "lipSync / audioDriven：音频生成与口型对齐是原生能力还是需外部驱动",
-    "refImage：图像提示 / 参考图能力（决定 reference-lock 一族是否可用）",
-    "refVideo：视频参考能力",
-    "typography：画面内文字渲染",
-    "firstLastFrame：首尾帧控制",
-    "limits.maxDuration：单次时长上限（Veo 历史上单次时长偏短，很可能触发 timeline 一族的重排降级）",
-    "syntax.negativePrompt：是否存在独立负向字段——若无，negative-prompt 方言块需整段改写为正向约束",
-    "syntax.cameraMove：是否接受预设运镜词"
-  ]
+    "lipSync 与外部音轨入口",
+    "任意 refVideo：不将延长或运动控制自动等同参考视频",
+    "typography/physicsCoherence",
+    "目标入口负向语法和专属 token"
+  ],
+  "id": "veo-3.1-generate-preview",
+  "entry": "Gemini API models.generateVideos / veo-3.1-generate-preview",
+  "verifications": [
+    {
+      "capability": "audioDriven",
+      "value": false,
+      "sourceType": "official",
+      "url": "https://ai.google.dev/gemini-api/docs/veo?hl=en",
+      "verifiedAt": "2026-10-03",
+      "scope": "Gemini API models.generateVideos / veo-3.1-generate-preview",
+      "evidence": "该入口列出的输入不含上传音频；原生生成音频不等于接受参考音轨。"
+    },
+    {
+      "capability": "refImage",
+      "value": true,
+      "sourceType": "official",
+      "url": "https://ai.google.dev/gemini-api/docs/veo?hl=en",
+      "verifiedAt": "2026-10-03",
+      "scope": "Gemini API models.generateVideos / veo-3.1-generate-preview",
+      "evidence": "该版本官方文档的图像/首尾帧输入。"
+    },
+    {
+      "capability": "firstLastFrame",
+      "value": true,
+      "sourceType": "official",
+      "url": "https://ai.google.dev/gemini-api/docs/veo?hl=en",
+      "verifiedAt": "2026-10-03",
+      "scope": "Gemini API models.generateVideos / veo-3.1-generate-preview",
+      "evidence": "该版本官方文档的图像/首尾帧输入。"
+    }
+  ],
+  "limitVerification": {
+    "url": "https://ai.google.dev/gemini-api/docs/veo?hl=en",
+    "verifiedAt": "2026-10-03",
+    "scope": "Gemini API models.generateVideos / veo-3.1-generate-preview"
+  }
 }
