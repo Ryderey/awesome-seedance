@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 生成 data/routing-index.json：25 个模板的路由元数据。
+// 生成 data/routing-index.json：27 个模板的路由元数据。
 // 只读上游 data/，不修改任何上游文件；本产物可随语料增长重跑。
 // Run: node router/build-index.mjs
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
@@ -10,7 +10,7 @@ import { loadLibrary, buildTemplateIndex } from "../scripts/lib/library.mjs";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const readJson = (rel) => JSON.parse(readFileSync(path.join(ROOT, rel), "utf8"));
 
-const EXPECTED_TEMPLATES = 25;
+const EXPECTED_TEMPLATES = 27;
 const EXPECTED_CATEGORIES = 6;
 const FORBIDDEN_ADAPTER_KEYS = ["example", "examples", "prompt", "prompts", "style", "styles", "keywords"];
 const CAP_DOMAIN = [true, false, null];

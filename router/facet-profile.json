@@ -1,5 +1,5 @@
 {
-  "$comment": "每个模板的『拍法画像』。路由的区分轴是拍法而非内容——foundation 类在内容分类实验里只有 33% 准确率，因为『要不要用时间轴分镜』与『拍什么』无关。此表由 25 个模板的 tags 与 useWhen 人工对照得出，tags 原文见 data/routing-index.json。",
+  "$comment": "每个模板的『拍法画像』。路由的区分轴是拍法而非内容——foundation 类在内容分类实验里只有 33% 准确率，因为『要不要用时间轴分镜』与『拍什么』无关。此表由 27 个模板的 tags 与 useWhen 人工对照得出，tags 原文见 data/routing-index.json。",
 
   "facets": {
     "styleMode": { "values": ["live", "animated", "either"], "ask": "要实拍质感还是动画/风格化？" },
@@ -13,6 +13,8 @@
   },
 
   "templates": {
+    "food-asmr": { "styleMode": "either", "shotPlan": "either", "subjects": ["product", "person"], "hard": [], "soft": [] },
+    "game-ui-livestream": { "styleMode": "either", "shotPlan": "either", "subjects": ["any"], "textOnScreen": true, "hard": [], "soft": ["textOnScreen"] },
     "timeline-shot-script":           { "styleMode": "either", "shotPlan": "multi", "subjects": ["any"], "minDuration": 8, "hard": ["shotPlan"], "soft": ["minDuration"] },
     "character-reference-lock":       { "styleMode": "either", "shotPlan": "multi", "subjects": ["person", "product", "any"], "needsReference": true, "hard": ["needsReference"], "soft": [] },
     "handheld-ugc-vlog":              { "styleMode": "live", "shotPlan": "either", "subjects": ["person", "animal", "place"], "hard": ["styleMode"], "soft": [] },

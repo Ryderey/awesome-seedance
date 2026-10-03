@@ -20,8 +20,8 @@ const index = loadIndex();
 const capMap = read("router/capability-map.json");
 const golden = read("eval/golden-set.json");
 
-test("覆盖 25 个模板与 6 个分类", () => {
-  assert.equal(Object.keys(index.templates).length, 25);
+test("覆盖 27 个模板与 6 个分类", () => {
+  assert.equal(Object.keys(index.templates).length, 27);
   assert.equal(index.categories.length, 6);
 });
 
@@ -35,7 +35,7 @@ test("34 个 tag 全部登记且分类计数符合决策", () => {
   assert.equal(n("signal"), 26);
 });
 
-test("facet-profile 覆盖全部 25 个模板", () => {
+test("facet-profile 覆盖全部 27 个模板", () => {
   const ids = Object.keys(FACETS.templates);
   assert.deepEqual(ids.slice().sort(), Object.keys(index.templates).sort());
   for (const [id, p] of Object.entries(FACETS.templates)) {
@@ -122,8 +122,8 @@ test("oracle 上界：facet-profile 的区分力未退化", () => {
   assert.ok(o.macro >= 0.75, `oracle top-5 保留率跌到 ${(o.macro * 100).toFixed(1)}%，facet-profile 可能被改坏（基线 84%）`);
 });
 
-test("golden set：25 标签、每标签至少 4 条、指标口径为 macro", () => {
-  assert.equal(Object.keys(golden.perLabel).length, 25);
+test("golden set：27 标签、每标签至少 4 条、指标口径为 macro", () => {
+  assert.equal(Object.keys(golden.perLabel).length, 27);
   for (const [id, n] of Object.entries(golden.perLabel)) assert.ok(n >= 4, `${id} 只有 ${n} 条`);
   assert.match(golden.metricSpec.primary, /macro|保留/);
 });

@@ -166,7 +166,7 @@
           "秒级",
           "时长"
         ],
-        "corpusDocs": 4,
+        "corpusDocs": 5,
         "manualAdded": 5
       },
       "gates": [],
@@ -180,22 +180,30 @@
         "needsVertical": null
       },
       "stacks": [],
-      "corpusCount": 4,
+      "corpusCount": 5,
       "examples": [
         {
           "slug": "boa-hancock-water-obstacle-race-prompt",
           "title": "Boa Hancock Water Obstacle Race Prompt",
           "creator": "@Chengzilhy",
           "sourceUrl": "https://x.com/Chengzilhy/status/2087458506123465088",
-          "heat": 88,
+          "heat": 89,
           "stability": 66
+        },
+        {
+          "slug": "seedance-35-shot-30-second-cinematic-noir-rooftop-heist-9e1bb095d4c4",
+          "title": "霓虹夜幕下的屋顶金库劫案",
+          "creator": "@doctorwasif",
+          "sourceUrl": "https://x.com/doctorwasif/status/2100181300049232193",
+          "heat": 71,
+          "stability": 0
         },
         {
           "slug": "seedance-2-5-3f70c2f28d22",
           "title": "Seedance 2.5 生成暴雨港口灾难电影序列",
           "creator": "@Noor_ul_ain43",
           "sourceUrl": "https://x.com/Noor_ul_ain43/status/2087774014957850843",
-          "heat": 34,
+          "heat": 29,
           "stability": 79
         },
         {
@@ -203,16 +211,8 @@
           "title": "Seedance 2.5 真实骑行 Vlog:运动相机+前摄+跟拍混剪 30 秒",
           "creator": "@johnAGI168",
           "sourceUrl": "https://x.com/johnAGI168/status/2086014766846275817",
-          "heat": 32,
+          "heat": 26,
           "stability": 74
-        },
-        {
-          "slug": "seedance-2-5-f3651857750b",
-          "title": "Seedance 2.5 生成马尔代夫骑行纪录片长镜头",
-          "creator": "@techhalla",
-          "sourceUrl": "https://x.com/techhalla/status/2088099038839316601",
-          "heat": 31,
-          "stability": 80
         }
       ]
     },
@@ -275,7 +275,7 @@
           "title": "Seedance 2.5 多参考图锁定人物形象短片",
           "creator": "@ElsaSofia__AI",
           "sourceUrl": "https://x.com/ElsaSofia__AI/status/2089306746804375878",
-          "heat": 68,
+          "heat": 67,
           "stability": 0
         },
         {
@@ -283,7 +283,7 @@
           "title": "Seedance 2.5 男友视角手机实拍感情侣短片",
           "creator": "@liyue_ai",
           "sourceUrl": "https://x.com/liyue_ai/status/2088956829590266002",
-          "heat": 39,
+          "heat": 33,
           "stability": 0
         },
         {
@@ -291,7 +291,7 @@
           "title": "Seedance 2.5 蜘蛛反英雄游戏角色选择UI动画",
           "creator": "@pratishhhhh",
           "sourceUrl": "https://x.com/pratishhhhh/status/2085679073632882880",
-          "heat": 12,
+          "heat": 9,
           "stability": 0
         },
         {
@@ -299,7 +299,7 @@
           "title": "高质量动漫泳装视频",
           "creator": "@haruuraeadss",
           "sourceUrl": "https://x.com/haruuraeadss/status/2080867332889399547",
-          "heat": 7,
+          "heat": 6,
           "stability": 0
         }
       ]
@@ -333,24 +333,24 @@
           "morning",
           "woman",
           "day",
+          "girl",
           "short",
-          "japanese",
-          "girl"
+          "village"
         ],
         "zh": [
           "韩国",
-          "夏日",
           "女孩",
           "韩国女",
-          "健身",
+          "夏日",
           "清晨",
-          "日常",
           "韩国女孩",
+          "健身",
+          "日常",
           "随手拍",
           "出门前准备",
           "私人感"
         ],
-        "corpusDocs": 92,
+        "corpusDocs": 112,
         "manualAdded": 3
       },
       "gates": [],
@@ -362,7 +362,7 @@
         "needsVertical": null
       },
       "stacks": [],
-      "corpusCount": 92,
+      "corpusCount": 112,
       "examples": [
         {
           "slug": "seedance-25-minidv-coffee-asmr-vlog",
@@ -373,11 +373,19 @@
           "stability": 77
         },
         {
+          "slug": "seedance-create-a-30-second-ultra-photorealistic-live-action-university-vlog-of-a-europe-b1345e10d888",
+          "title": "雨天清晨赶往大学的咖啡日常",
+          "creator": "@nawalsehar",
+          "sourceUrl": "https://x.com/nawalsehar/status/2103337966416621703",
+          "heat": 99,
+          "stability": 0
+        },
+        {
           "slug": "mightyking-seedance-ai-7bbc1d4f9ad9",
           "title": "Seedance 原生 UGC 竖屏手机跟拍短片",
           "creator": "@mightyking",
           "sourceUrl": "https://x.com/mightyking/status/2089299068514148655",
-          "heat": 94,
+          "heat": 95,
           "stability": 71
         },
         {
@@ -387,14 +395,6 @@
           "sourceUrl": "https://x.com/RishuaVR/status/2089204108175741157",
           "heat": 94,
           "stability": 78
-        },
-        {
-          "slug": "smartphone-beach-day-memories",
-          "title": "智能手机拍摄的海滩一日游回忆",
-          "creator": "@Goodmanprotocol",
-          "sourceUrl": "https://x.com/Goodmanprotocol/status/2079189509586260101",
-          "heat": 93,
-          "stability": 0
         }
       ]
     },
@@ -422,6 +422,7 @@
       ],
       "signals": {
         "en": [
+          "cinematic",
           "magic",
           "train",
           "over",
@@ -440,7 +441,7 @@
           "无人机",
           "厨师视角"
         ],
-        "corpusDocs": 11,
+        "corpusDocs": 12,
         "manualAdded": 5
       },
       "gates": [],
@@ -452,14 +453,14 @@
         "needsVertical": null
       },
       "stacks": [],
-      "corpusCount": 11,
+      "corpusCount": 12,
       "examples": [
         {
           "slug": "seedance-2-5-gopro-94a73eef1dbf",
           "title": "Seedance 2.5 生成 GoPro 钓鱼到烤鱼全流程",
           "creator": "@abxxai",
           "sourceUrl": "https://x.com/abxxai/status/2087189194720657649",
-          "heat": 83,
+          "heat": 82,
           "stability": 79
         },
         {
@@ -475,16 +476,16 @@
           "title": "First-Person POV Dragon Rider Cinematic",
           "creator": "@frametheory058",
           "sourceUrl": "https://x.com/frametheory058/status/2087007818721423855",
-          "heat": 74,
+          "heat": 73,
           "stability": 77
         },
         {
-          "slug": "oggii-0-seedance-ai-a473e1b2b456",
-          "title": "穿越历史的磁悬浮列车",
-          "creator": "@oggii_0",
-          "sourceUrl": "https://x.com/oggii_0/status/2092938748073849067",
-          "heat": 68,
-          "stability": 55
+          "slug": "seedance-a-dark-figure-leaps-from-a-skyscraper-ledge-and-free-falls-through-a-neon-drenc-39d445cbaaf7",
+          "title": "霓虹赛博都市高空坠落",
+          "creator": "@itsshara_ai",
+          "sourceUrl": "https://x.com/itsshara_ai/status/2100435410338144486",
+          "heat": 71,
+          "stability": 0
         }
       ]
     },
@@ -523,13 +524,14 @@
           "广告",
           "高端",
           "耳机",
+          "咖啡",
           "口播",
           "测评",
           "带货",
           "开箱",
           "种草"
         ],
-        "corpusDocs": 11,
+        "corpusDocs": 12,
         "manualAdded": 5
       },
       "gates": [],
@@ -551,14 +553,14 @@
       "stacks": [
         "character-reference-lock"
       ],
-      "corpusCount": 11,
+      "corpusCount": 12,
       "examples": [
         {
           "slug": "sophiaparkerr-seedance-ai-51ad3cc85989",
           "title": "Seedance 网红风十五秒生活方式短片",
           "creator": "@sophiaparkerr_",
           "sourceUrl": "https://x.com/sophiaparkerr_/status/2088966649659764899",
-          "heat": 72,
+          "heat": 71,
           "stability": 77
         },
         {
@@ -566,7 +568,7 @@
           "title": "带有动画效果的 UGC 肉类广告",
           "creator": "@RuzainaMeer",
           "sourceUrl": "https://x.com/RuzainaMeer/status/2079141591449739775",
-          "heat": 60,
+          "heat": 58,
           "stability": 80
         },
         {
@@ -574,15 +576,15 @@
           "title": "Seedance 参考图角色的墨镜耳机 UGC 短片",
           "creator": "@AIwithkhan",
           "sourceUrl": "https://x.com/AIwithkhan/status/2089686478100341051",
-          "heat": 55,
+          "heat": 50,
           "stability": 0
         },
         {
-          "slug": "seedance-create-a-30-second-1080p-ultra-realistic-ugc-video-of-a-young-korean-woman-in-48f0e863374c",
-          "title": "韩国女孩的周一晨间相机分享",
-          "creator": "@AIwithkhan",
-          "sourceUrl": "https://x.com/AIwithkhan/status/2096930655615758734",
-          "heat": 48,
+          "slug": "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+          "title": "粉色唇蜜开箱试色与咖啡桌展示",
+          "creator": "@Aiwithmaha",
+          "sourceUrl": "https://x.com/Aiwithmaha/status/2102952087823044888",
+          "heat": 46,
           "stability": 0
         }
       ]
@@ -612,28 +614,28 @@
       "signals": {
         "en": [
           "commercial",
-          "high",
           "luxury",
-          "end",
+          "high",
           "skincare",
-          "product",
-          "lifestyle",
-          "lipstick"
+          "end",
+          "cinematic",
+          "perfume",
+          "product"
         ],
         "zh": [
           "广告",
           "商业",
           "商业广告",
           "护肤",
+          "奢华",
+          "香水",
           "广告视频",
           "护肤广告",
-          "生活方式",
-          "写实风格",
           "广告片",
           "品牌",
           "投放"
         ],
-        "corpusDocs": 27,
+        "corpusDocs": 31,
         "manualAdded": 3
       },
       "gates": [],
@@ -647,7 +649,7 @@
         "needsVertical": null
       },
       "stacks": [],
-      "corpusCount": 27,
+      "corpusCount": 31,
       "examples": [
         {
           "slug": "juliaevee-seedance-ai-ae713e2e2dbc",
@@ -662,7 +664,7 @@
           "title": "Classic Mustang Golden Hour Drive",
           "creator": "@Just_sharon7",
           "sourceUrl": "https://x.com/Just_sharon7/status/2085277106960007654",
-          "heat": 80,
+          "heat": 79,
           "stability": 81
         },
         {
@@ -674,12 +676,12 @@
           "stability": 80
         },
         {
-          "slug": "case-e53b614b0f42",
-          "title": "阿马尔菲海岸奢华珠宝广告",
-          "creator": "@Just_sharon7",
-          "sourceUrl": "https://x.com/Just_sharon7/status/2080973878705434901",
+          "slug": "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d",
+          "title": "创意总监极速完成耐克跑鞋广告",
+          "creator": "@SyntheSarah",
+          "sourceUrl": "https://x.com/SyntheSarah/status/2096099021152498159",
           "heat": 78,
-          "stability": 83
+          "stability": 0
         }
       ]
     },
@@ -753,7 +755,7 @@
           "title": "《惊喜探访》浪漫短片",
           "creator": "@Caden_Flux",
           "sourceUrl": "https://x.com/Caden_Flux/status/2079874069869289682",
-          "heat": 70,
+          "heat": 69,
           "stability": 70
         },
         {
@@ -761,7 +763,7 @@
           "title": "富有情感的日语对话动画",
           "creator": "@sakisuta_",
           "sourceUrl": "https://x.com/sakisuta_/status/2088559545174175836",
-          "heat": 67,
+          "heat": 66,
           "stability": 71
         },
         {
@@ -769,7 +771,7 @@
           "title": "Seedance 电影级分手表演提示词",
           "creator": "@liyue_ai",
           "sourceUrl": "https://x.com/liyue_ai/status/2090378405288300626",
-          "heat": 30,
+          "heat": 24,
           "stability": 0
         }
       ]
@@ -798,30 +800,30 @@
       ],
       "signals": {
         "en": [
-          "korean",
-          "romance",
-          "through",
-          "thirty",
           "woman",
+          "korean",
+          "girl",
+          "school",
+          "thirty",
           "city",
-          "infected",
-          "banana"
+          "cinematic",
+          "romance"
         ],
         "zh": [
+          "少女",
           "雨夜",
+          "电影",
           "校园",
+          "女孩",
+          "十秒",
           "夜咖啡馆",
           "雨夜咖啡",
-          "电影感",
-          "背叛",
-          "韩国",
-          "机器",
           "预告片",
           "迷你剧",
           "剧情",
           "爱情"
         ],
-        "corpusDocs": 30,
+        "corpusDocs": 47,
         "manualAdded": 4
       },
       "gates": [],
@@ -835,14 +837,14 @@
       "stacks": [
         "character-reference-lock"
       ],
-      "corpusCount": 30,
+      "corpusCount": 47,
       "examples": [
         {
           "slug": "seedance-create-a-30-second-1080p-ultra-realistic-emotional-live-action-scene-about-a-y-8c4cbeb0026b",
           "title": "雨夜咖啡馆撞见恋人背叛",
           "creator": "@AIwithSynthia",
           "sourceUrl": "https://x.com/AIwithSynthia/status/2096439253970395531",
-          "heat": 94,
+          "heat": 95,
           "stability": 0
         },
         {
@@ -862,12 +864,12 @@
           "stability": 74
         },
         {
-          "slug": "caden-flux-seedance-ai-8ffb5f062951",
-          "title": "Nano Banana + Seedance 2.5 六十秒高中初恋微电影",
-          "creator": "@Caden_Flux",
-          "sourceUrl": "https://x.com/Caden_Flux/status/2089154775829074074",
-          "heat": 85,
-          "stability": 75
+          "slug": "seedance-walked-past-him-like-the-backflip-was-the-easy-part-of-lunch-b79fce6dfd39",
+          "title": "粉发女生食堂后空翻稳接餐盘",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2100836177821483349",
+          "heat": 87,
+          "stability": 0
         }
       ]
     },
@@ -899,10 +901,10 @@
           "animation",
           "cooking",
           "ghibli",
+          "cinematic",
           "animated",
           "japanese",
-          "forest",
-          "dimensional"
+          "forest"
         ],
         "zh": [
           "动画",
@@ -910,15 +912,15 @@
           "吉卜力",
           "烹饪",
           "吉卜力风",
+          "电影",
           "森林",
-          "卜力风格",
-          "风格森林",
+          "少女",
           "赛璐珞",
           "日漫",
           "番剧",
           "手绘"
         ],
-        "corpusDocs": 25,
+        "corpusDocs": 27,
         "manualAdded": 4
       },
       "gates": [],
@@ -934,7 +936,7 @@
       "stacks": [
         "character-reference-lock"
       ],
-      "corpusCount": 25,
+      "corpusCount": 27,
       "examples": [
         {
           "slug": "2d-38a41133eab1",
@@ -961,12 +963,12 @@
           "stability": 85
         },
         {
-          "slug": "aiwithlariab-seedance-ai-801301860e89",
-          "title": "Seedance 吉卜力风治愈料理动画",
-          "creator": "@AiwithLariab",
-          "sourceUrl": "https://x.com/AiwithLariab/status/2088848553863233935",
-          "heat": 71,
-          "stability": 88
+          "slug": "seedance-created-a-dramatic-top-down-shot-of-a-pink-haired-anime-style-girl-falling-thro-b2957665e618",
+          "title": "粉发少女坠落后金瞳觉醒",
+          "creator": "@Aiwithmaha",
+          "sourceUrl": "https://x.com/Aiwithmaha/status/2102572922674225517",
+          "heat": 72,
+          "stability": 0
         }
       ]
     },
@@ -997,7 +999,8 @@
         "en": [
           "motion",
           "stop",
-          "animation"
+          "animation",
+          "miniature"
         ],
         "zh": [
           "动画",
@@ -1008,7 +1011,7 @@
           "拼贴",
           "步进"
         ],
-        "corpusDocs": 9,
+        "corpusDocs": 10,
         "manualAdded": 3
       },
       "gates": [],
@@ -1022,14 +1025,14 @@
         "needsVertical": null
       },
       "stacks": [],
-      "corpusCount": 9,
+      "corpusCount": 10,
       "examples": [
         {
           "slug": "erling-haaland-525acabe78da",
           "title": "Erling Haaland 黏土动画园艺",
           "creator": "@noorwithwifi",
           "sourceUrl": "https://x.com/noorwithwifi/status/2079818537137475762",
-          "heat": 87,
+          "heat": 86,
           "stability": 83
         },
         {
@@ -1041,19 +1044,19 @@
           "stability": 0
         },
         {
+          "slug": "seedance-using-the-reference-image-as-the-exact-final-frame-create-a-10-second-stop-mot-eb31041e1c1d",
+          "title": "微型工人编织红绳“Smiling”",
+          "creator": "@AIwithkhan",
+          "sourceUrl": "https://x.com/AIwithkhan/status/2100069812152197146",
+          "heat": 66,
+          "stability": 0
+        },
+        {
           "slug": "mayaaicreator-seedance-ai-99e38c199ba8",
           "title": "黏土定格迷你能多益咖啡馆",
           "creator": "@MayaAiCreator",
           "sourceUrl": "https://x.com/MayaAiCreator/status/2091397686104588650",
-          "heat": 30,
-          "stability": 0
-        },
-        {
-          "slug": "case-69e5879cc5a7",
-          "title": "定格动画：狼群袭击序列",
-          "creator": "@eyishazyer",
-          "sourceUrl": "https://x.com/eyishazyer/status/2078437832604123625",
-          "heat": 20,
+          "heat": 24,
           "stability": 0
         }
       ]
@@ -1092,6 +1095,7 @@
           "salon"
         ],
         "zh": [
+          "延时",
           "延时摄影",
           "复古",
           "烤肉",
@@ -1103,7 +1107,7 @@
           "前后对比",
           "制作过程"
         ],
-        "corpusDocs": 16,
+        "corpusDocs": 19,
         "manualAdded": 5
       },
       "gates": [],
@@ -1117,14 +1121,22 @@
         "needsVertical": null
       },
       "stacks": [],
-      "corpusCount": 16,
+      "corpusCount": 19,
       "examples": [
         {
           "slug": "yesandyou-seedance-ai-2a9dc20c947d",
           "title": "泥土中诞生的罐中小鸟",
           "creator": "@Yesandyou_",
           "sourceUrl": "https://x.com/Yesandyou_/status/2090075447195480403",
-          "heat": 87,
+          "heat": 88,
+          "stability": 0
+        },
+        {
+          "slug": "yesandyou-seedance-ai-d92a0a788b85",
+          "title": "Seedance 2.5 超写实微距延时：种子发芽十秒",
+          "creator": "@Yesandyou_",
+          "sourceUrl": "https://x.com/Yesandyou_/status/2088998841395921185",
+          "heat": 88,
           "stability": 0
         },
         {
@@ -1132,7 +1144,7 @@
           "title": "Bladesmith Competition Reality TV Video",
           "creator": "@techhalla",
           "sourceUrl": "https://x.com/techhalla/status/2084112771533189499",
-          "heat": 81,
+          "heat": 80,
           "stability": 74
         },
         {
@@ -1140,16 +1152,8 @@
           "title": "霓虹复古沙龙的彩虹染发蜕变",
           "creator": "@AIwithJessica",
           "sourceUrl": "https://x.com/AIwithJessica/status/2093127123687108856",
-          "heat": 76,
+          "heat": 75,
           "stability": 68
-        },
-        {
-          "slug": "lianaalane-seedance-ai-c3e78794ed16",
-          "title": "空气炸锅同烹薯条与脆皮鸡腿",
-          "creator": "@Lianaalane",
-          "sourceUrl": "https://x.com/Lianaalane/status/2091392675912221176",
-          "heat": 71,
-          "stability": 0
         }
       ]
     },
@@ -1178,13 +1182,13 @@
       "signals": {
         "en": [
           "action",
-          "girl",
           "battles",
+          "girl",
           "haired",
+          "fight",
           "night",
-          "warrior",
-          "combat",
-          "fight"
+          "rooftop",
+          "warrior"
         ],
         "zh": [
           "少女",
@@ -1193,15 +1197,15 @@
           "超能",
           "觉醒",
           "能力",
+          "近身格斗",
           "超能力",
-          "发少女",
           "武术",
           "剑戟",
           "格斗",
           "招式",
           "打戏"
         ],
-        "corpusDocs": 40,
+        "corpusDocs": 51,
         "manualAdded": 5
       },
       "gates": [],
@@ -1217,15 +1221,31 @@
       "stacks": [
         "timeline-shot-script"
       ],
-      "corpusCount": 40,
+      "corpusCount": 51,
       "examples": [
         {
           "slug": "aiwithelisia-seedance-ai-b204cdfb3dac",
           "title": "金发少女在高中走廊释放超能力",
           "creator": "@AiwithElisia",
           "sourceUrl": "https://x.com/AiwithElisia/status/2092119695201837059",
-          "heat": 93,
+          "heat": 94,
           "stability": 82
+        },
+        {
+          "slug": "seedance-cinematic-dark-fantasy-wuxia-action-scene-low-angle-dynamic-tracking-shot-756b1234acd9",
+          "title": "黑衣剑客烈焰横扫暗影兽群",
+          "creator": "@itsSaira_1",
+          "sourceUrl": "https://x.com/itsSaira_1/status/2099006619988459985",
+          "heat": 91,
+          "stability": 0
+        },
+        {
+          "slug": "seedance-pace-extremely-fast-continuous-combat-zero-pauses-zero-idle-moments-action-f9513a8db08a",
+          "title": "丛林神庙水御伏击战",
+          "creator": "@itxsarmadd",
+          "sourceUrl": "https://x.com/itxsarmadd/status/2103694941260222603",
+          "heat": 86,
+          "stability": 0
         },
         {
           "slug": "doctorwasif-seedance-ai-8a78efcb37f9",
@@ -1234,22 +1254,6 @@
           "sourceUrl": "https://x.com/doctorwasif/status/2091388398153994395",
           "heat": 82,
           "stability": 80
-        },
-        {
-          "slug": "just-sharon7-seedance-ai-8085c03efbb0",
-          "title": "Seedance 2.5 同人对打：Sharon 大战 Sharon",
-          "creator": "@Just_sharon7",
-          "sourceUrl": "https://x.com/Just_sharon7/status/2088878042034868640",
-          "heat": 81,
-          "stability": 0
-        },
-        {
-          "slug": "yourplugai-seedance-ai-17a1f9de8843",
-          "title": "雪中神社的浪人与纸鹤决斗",
-          "creator": "@yourPlugAI",
-          "sourceUrl": "https://x.com/yourPlugAI/status/2092269036167934445",
-          "heat": 77,
-          "stability": 82
         }
       ]
     },
@@ -1284,18 +1288,23 @@
           "dance",
           "music",
           "stage",
-          "girl"
+          "beat",
+          "girl",
+          "idol"
         ],
         "zh": [
+          "霓虹",
+          "音乐",
           "音乐视频",
           "分镜",
+          "舞台",
           "卡点",
           "MV",
           "翻跳",
           "副歌",
           "舞蹈"
         ],
-        "corpusDocs": 12,
+        "corpusDocs": 16,
         "manualAdded": 5
       },
       "gates": [
@@ -1313,14 +1322,14 @@
         "needsVertical": null
       },
       "stacks": [],
-      "corpusCount": 12,
+      "corpusCount": 16,
       "examples": [
         {
           "slug": "seedance-25-kpop-mv-dual-idol",
           "title": "双人 K-pop MV 逐镜分镜",
           "creator": "@Just_sharon7",
           "sourceUrl": "https://x.com/Just_sharon7/status/2083422886686031982",
-          "heat": 98,
+          "heat": 99,
           "stability": 74
         },
         {
@@ -1328,7 +1337,7 @@
           "title": "单人 K-POP MV · Y2K 糖果世界逐秒分镜",
           "creator": "@aiwarts",
           "sourceUrl": "https://x.com/aiwarts/status/2085736621685764503",
-          "heat": 85,
+          "heat": 84,
           "stability": 48
         },
         {
@@ -1336,7 +1345,7 @@
           "title": "Cyberpunk Holographic Dance Performance",
           "creator": "@Aqsahere_",
           "sourceUrl": "https://x.com/Aqsahere_/status/2087386090315616601",
-          "heat": 84,
+          "heat": 83,
           "stability": 80
         },
         {
@@ -1344,7 +1353,7 @@
           "title": "Vibrant K-pop Stage Performance",
           "creator": "@Just_sharon7",
           "sourceUrl": "https://x.com/Just_sharon7/status/2087744765341159503",
-          "heat": 82,
+          "heat": 81,
           "stability": 89
         }
       ]
@@ -1374,19 +1383,21 @@
       "signals": {
         "en": [
           "time",
-          "freeze",
           "frozen",
+          "freeze",
+          "crowd",
           "diner"
         ],
         "zh": [
           "倒放",
           "冻结",
+          "人群",
           "时间",
           "时间冻结",
           "暂停",
           "奇观"
         ],
-        "corpusDocs": 5,
+        "corpusDocs": 7,
         "manualAdded": 3
       },
       "gates": [],
@@ -1403,7 +1414,7 @@
       "stacks": [
         "timeline-shot-script"
       ],
-      "corpusCount": 5,
+      "corpusCount": 7,
       "examples": [
         {
           "slug": "seedance-25-diner-frozen-time-rewind",
@@ -1414,11 +1425,19 @@
           "stability": 64
         },
         {
+          "slug": "seedance-create-an-ultra-realistic-cinematic-fashion-music-video-using-the-uploaded-refe-60dc2791a093",
+          "title": "人群同时转身凝视黑衣女子",
+          "creator": "@AIwithSynthia",
+          "sourceUrl": "https://x.com/AIwithSynthia/status/2100067816162636164",
+          "heat": 91,
+          "stability": 0
+        },
+        {
           "slug": "youmind-rollercoaster-wig-time-freeze",
           "title": "过山车假发闹剧：冻结与倒放的第二次演练",
           "creator": "@techhalla",
           "sourceUrl": "https://x.com/techhalla/status/2083585132917579834",
-          "heat": 84,
+          "heat": 83,
           "stability": 74
         },
         {
@@ -1426,15 +1445,7 @@
           "title": "90s Diner Time Freeze Effect",
           "creator": "@techhalla",
           "sourceUrl": "https://x.com/techhalla/status/2085200942060691807",
-          "heat": 63,
-          "stability": 0
-        },
-        {
-          "slug": "avelyrahnai-seedance-ai-a392e2711b0d",
-          "title": "纽约街头咖啡跌落慢镜头",
-          "creator": "@AvelyrahnAI",
-          "sourceUrl": "https://x.com/AvelyrahnAI/status/2094420859960045616",
-          "heat": 49,
+          "heat": 61,
           "stability": 0
         }
       ]
@@ -1474,7 +1485,7 @@
           "分镜图",
           "镜头顺序"
         ],
-        "corpusDocs": 9,
+        "corpusDocs": 11,
         "manualAdded": 5
       },
       "gates": [
@@ -1491,14 +1502,14 @@
         "character-reference-lock",
         "timeline-shot-script"
       ],
-      "corpusCount": 9,
+      "corpusCount": 11,
       "examples": [
         {
           "slug": "real-case-06-aimikoda",
           "title": "梅林元素功夫表演",
           "creator": "@aimikoda",
           "sourceUrl": "https://x.com/aimikoda/status/2054460932068200517",
-          "heat": 89,
+          "heat": 88,
           "stability": 86
         },
         {
@@ -1522,7 +1533,7 @@
           "title": "Apartment Arrival Storyboard Animation",
           "creator": "@Just_sharon7",
           "sourceUrl": "https://x.com/Just_sharon7/status/2083912532692001128",
-          "heat": 67,
+          "heat": 66,
           "stability": 0
         }
       ]
@@ -1552,30 +1563,30 @@
       "signals": {
         "en": [
           "summer",
-          "walk",
-          "evening",
-          "through",
-          "korean",
-          "early",
           "seoul",
-          "home"
+          "day",
+          "evening",
+          "walk",
+          "korean",
+          "home",
+          "old"
         ],
         "zh": [
           "首尔",
           "首尔夏",
-          "首尔夏夜",
           "夏日",
+          "首尔夏夜",
           "韩国",
-          "街头",
+          "周日",
+          "首尔夏日",
           "漫步",
-          "情侣",
           "家庭录像",
           "录像带",
           "MiniDV",
           "VHS",
           "伪纪录片"
         ],
-        "corpusDocs": 17,
+        "corpusDocs": 29,
         "manualAdded": 5
       },
       "gates": [],
@@ -1589,7 +1600,7 @@
       "stacks": [
         "timeline-shot-script"
       ],
-      "corpusCount": 17,
+      "corpusCount": 29,
       "examples": [
         {
           "slug": "seedance-prompt-create-a-30-second-1080p-ultra-realistic-personal-home-video-showing-a-f4036ce777fe",
@@ -1608,19 +1619,19 @@
           "stability": 76
         },
         {
-          "slug": "seedance-use-the-uploaded-reference-image-as-the-exact-character-reference-214303ebc4cf",
-          "title": "韩系情侣的街头约会日记",
-          "creator": "@AIwithkhan",
-          "sourceUrl": "https://x.com/AIwithkhan/status/2094997895187673489",
-          "heat": 92,
+          "slug": "seedance-subject-preserve-exact-identity-face-skin-tone-body-proportions-hair-298f82f12f00",
+          "title": "庭院吊床与清洗摩托的午后",
+          "creator": "@doctorwasif",
+          "sourceUrl": "https://x.com/doctorwasif/status/2099836703729172540",
+          "heat": 96,
           "stability": 0
         },
         {
-          "slug": "seedance-it-s-the-little-moments-that-make-ai-feel-this-real-57c748edf467",
-          "title": "首尔夏夜的树叶小插曲",
-          "creator": "@SimplyAnnisa",
-          "sourceUrl": "https://x.com/SimplyAnnisa/status/2096931238460178592",
-          "heat": 86,
+          "slug": "seedance-create-a-30-second-ultra-realistic-personal-home-video-of-a-young-korean-woman-b2425539d28a",
+          "title": "首尔老街买面包与棉花糖的一天",
+          "creator": "@AIwithkhan",
+          "sourceUrl": "https://x.com/AIwithkhan/status/2104057858765791389",
+          "heat": 95,
           "stability": 0
         }
       ]
@@ -1652,24 +1663,28 @@
           "woman",
           "young",
           "mountain",
+          "travel",
+          "mountains",
           "journey",
-          "japan",
-          "rainy",
-          "tour"
+          "village",
+          "autumn"
         ],
         "zh": [
-          "少女",
           "漫游",
-          "日本",
-          "夏日",
-          "之旅",
+          "旅行",
+          "女子",
+          "少女",
+          "年轻女子",
+          "旅行日",
+          "村庄",
+          "登机",
           "旅拍",
           "城市漫游",
           "目的地",
           "徒步",
           "露营"
         ],
-        "corpusDocs": 12,
+        "corpusDocs": 21,
         "manualAdded": 5
       },
       "gates": [
@@ -1686,7 +1701,7 @@
         "timeline-shot-script",
         "character-reference-lock"
       ],
-      "corpusCount": 12,
+      "corpusCount": 21,
       "examples": [
         {
           "slug": "seedance-a-cinematic-30-second-tropical-travel-vlog-montage-featuring-a-beautiful-20-yea-6af38a792806",
@@ -1697,28 +1712,28 @@
           "stability": 0
         },
         {
-          "slug": "noorlewisx-seedance-ai-3a8b37309451",
-          "title": "地中海山景别墅内外巡游",
-          "creator": "@noorlewisx",
-          "sourceUrl": "https://x.com/noorlewisx/status/2092109145055150431",
-          "heat": 75,
-          "stability": 86
+          "slug": "seedance-that-s-me-all-the-time-at-home-lazy-ass-214920102dc4",
+          "title": "粉发女孩的慵懒游乐场漫游",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2100983315381829840",
+          "heat": 82,
+          "stability": 0
         },
         {
-          "slug": "noorlewisx-seedance-ai-f8e8235cd94a",
-          "title": "东京夜空直升机之旅",
-          "creator": "@noorlewisx",
-          "sourceUrl": "https://x.com/noorlewisx/status/2093567063357088065",
-          "heat": 72,
-          "stability": 86
+          "slug": "seedance-a-20-year-old-east-asian-woman-spends-an-autumn-day-moving-through-a-big-city-b085b8a1bb11",
+          "title": "她的秋日都市漫游",
+          "creator": "@Chaemate_",
+          "sourceUrl": "https://x.com/Chaemate_/status/2100103235566797039",
+          "heat": 79,
+          "stability": 0
         },
         {
-          "slug": "nawalsehar-seedance-ai-97aa872cb79d",
-          "title": "Seedance 2.5 山林徒步电影感跟拍短片",
-          "creator": "@nawalsehar",
-          "sourceUrl": "https://x.com/nawalsehar/status/2089219802598658291",
-          "heat": 70,
-          "stability": 84
+          "slug": "seedance-create-a-photorealistic-30-second-personal-travel-vlog-featuring-the-exact-same-d5ee016defda",
+          "title": "京都秋日慢游旅行日志",
+          "creator": "@Chaemate_",
+          "sourceUrl": "https://x.com/Chaemate_/status/2099439262106083704",
+          "heat": 79,
+          "stability": 0
         }
       ]
     },
@@ -1764,7 +1779,7 @@
           "萌宠",
           "抢镜"
         ],
-        "corpusDocs": 13,
+        "corpusDocs": 15,
         "manualAdded": 6
       },
       "gates": [],
@@ -1776,14 +1791,14 @@
         "needsVertical": null
       },
       "stacks": [],
-      "corpusCount": 13,
+      "corpusCount": 15,
       "examples": [
         {
           "slug": "mrdasonx-seedance-ai-ccaa50150259",
           "title": "狐狸在森林溪流边自拍漫游",
           "creator": "@MrDasOnX",
           "sourceUrl": "https://x.com/MrDasOnX/status/2089969922617266257",
-          "heat": 92,
+          "heat": 93,
           "stability": 75
         },
         {
@@ -1799,7 +1814,7 @@
           "title": "Cats Chasing via Red Mini Motorcycle",
           "creator": "@Just_sharon7",
           "sourceUrl": "https://x.com/Just_sharon7/status/2084901309988425731",
-          "heat": 83,
+          "heat": 82,
           "stability": 89
         },
         {
@@ -1807,7 +1822,7 @@
           "title": "Underwater Animal Orchestra",
           "creator": "@thisismariaa25",
           "sourceUrl": "https://x.com/thisismariaa25/status/2087112692809060493",
-          "heat": 79,
+          "heat": 78,
           "stability": 80
         }
       ]
@@ -1837,7 +1852,6 @@
       "signals": {
         "en": [
           "motorcycle",
-          "through",
           "racing"
         ],
         "zh": [
@@ -1850,7 +1864,7 @@
           "追逐",
           "特技"
         ],
-        "corpusDocs": 10,
+        "corpusDocs": 11,
         "manualAdded": 7
       },
       "gates": [],
@@ -1866,7 +1880,7 @@
         "needsVertical": null
       },
       "stacks": [],
-      "corpusCount": 10,
+      "corpusCount": 11,
       "examples": [
         {
           "slug": "ruzainameer-seedance-ai-e6073ec318f1",
@@ -1889,15 +1903,15 @@
           "title": "末日沙漠战车空中激战",
           "creator": "@Zyrellix",
           "sourceUrl": "https://x.com/Zyrellix/status/2092438692820295703",
-          "heat": 72,
+          "heat": 71,
           "stability": 81
         },
         {
-          "slug": "missdelulu9-seedance-ai-02009f1f7daf",
-          "title": "第一视角凌空组装黑色兰博基尼",
-          "creator": "@MissDelulu9",
-          "sourceUrl": "https://x.com/MissDelulu9/status/2091423578197737772",
-          "heat": 49,
+          "slug": "seedance-a-high-octane-cinematic-action-sequence-on-an-urban-highway-in-tokyo-photoreali-e9963e75b76a",
+          "title": "东京高速粉色喷气拖拉机狂飙",
+          "creator": "@laviniavelle",
+          "sourceUrl": "https://x.com/laviniavelle/status/2100806296949903511",
+          "heat": 45,
           "stability": 0
         }
       ]
@@ -1926,22 +1940,30 @@
       "signals": {
         "en": [
           "fashion",
-          "girl"
+          "girl",
+          "synchronized",
+          "outfit",
+          "streets",
+          "golden",
+          "countryside",
+          "cinematic"
         ],
         "zh": [
+          "时尚",
           "女孩",
-          "电影感",
-          "发女孩",
+          "同步",
           "大片",
           "换装",
-          "时尚",
+          "街头",
+          "金色",
+          "袋时尚大",
           "穿搭",
           "街拍",
           "写真",
           "人像",
           "lookbook"
         ],
-        "corpusDocs": 13,
+        "corpusDocs": 30,
         "manualAdded": 5
       },
       "gates": [],
@@ -1955,8 +1977,16 @@
       "stacks": [
         "character-reference-lock"
       ],
-      "corpusCount": 13,
+      "corpusCount": 30,
       "examples": [
+        {
+          "slug": "seedance-i-came-like-a-storm-d30f955b4248",
+          "title": "黑衣女子静立于同步人群中央",
+          "creator": "@AIwithkhan",
+          "sourceUrl": "https://x.com/AIwithkhan/status/2099707375943066094",
+          "heat": 98,
+          "stability": 0
+        },
         {
           "slug": "youmind-paris-fashion-campaign-streetwear",
           "title": "电影感巴黎时尚广告大片：五镜头街拍",
@@ -1966,28 +1996,20 @@
           "stability": 82
         },
         {
-          "slug": "seedance-cinematic-fashion-film-still-low-angle-shot-of-a-beautiful-young-woman-with-wa-fac7693b54a0",
-          "title": "金色雪山上的白衣滑雪女郎",
-          "creator": "@noorlewisx",
-          "sourceUrl": "https://x.com/noorlewisx/status/2096826123330138410",
-          "heat": 81,
+          "slug": "seedance-a-clean-premium-4-second-fashion-lookbook-animation-starting-from-the-first-fr-a7de463708af",
+          "title": "模特与单品同步360度旋转",
+          "creator": "@AI__TSUBAKI",
+          "sourceUrl": "https://x.com/AI__TSUBAKI/status/2102459655700287648",
+          "heat": 82,
           "stability": 0
         },
         {
-          "slug": "aiwithnatalia-seedance-ai-12c56e79550f",
-          "title": "东京街头粉色手袋时尚大片",
-          "creator": "@AIwithNatalia",
-          "sourceUrl": "https://x.com/AIwithNatalia/status/2094277759547875413",
-          "heat": 79,
+          "slug": "seedance-created-a-cinematic-fashion-transformation-video-featuring-a-beautiful-young-wo-c7588dbea707",
+          "title": "巴黎街头红裙幻变",
+          "creator": "@ayzalnooor24521",
+          "sourceUrl": "https://x.com/ayzalnooor24521/status/2100456445900710158",
+          "heat": 82,
           "stability": 0
-        },
-        {
-          "slug": "noorlewisx-seedance-ai-4b6f8c8c977a",
-          "title": "Seedance 细条纹西装的职场女性气场短片",
-          "creator": "@noorlewisx",
-          "sourceUrl": "https://x.com/noorlewisx/status/2089217062040453196",
-          "heat": 76,
-          "stability": 86
         }
       ]
     },
@@ -2016,19 +2038,22 @@
       "signals": {
         "en": [
           "street",
-          "morning",
-          "thirty",
           "chase",
+          "morning",
+          "subway",
+          "thirty",
           "woman",
           "plan"
         ],
         "zh": [
           "街头",
           "浴袍奶奶",
+          "嘲笑",
+          "地铁",
           "女孩",
           "十秒",
           "逃亡",
-          "早晨",
+          "引发",
           "玩梗",
           "整蛊",
           "反转",
@@ -2036,7 +2061,7 @@
           "沙雕",
           "复仇"
         ],
-        "corpusDocs": 22,
+        "corpusDocs": 25,
         "manualAdded": 6
       },
       "gates": [],
@@ -2050,7 +2075,7 @@
       "stacks": [
         "timeline-shot-script"
       ],
-      "corpusCount": 22,
+      "corpusCount": 25,
       "examples": [
         {
           "slug": "seedance-create-a-30-second-1080p-ultra-realistic-korean-subway-action-comedy-scene-usi-93b40e9db5b1",
@@ -2069,20 +2094,20 @@
           "stability": 0
         },
         {
+          "slug": "seedance-create-a-30-second-1080p-ultra-realistic-korean-subway-action-comedy-scene-usi-7d2531af4b66",
+          "title": "地铁关门嘲笑引发的爆笑反击",
+          "creator": "@AIwithSynthia",
+          "sourceUrl": "https://x.com/AIwithSynthia/status/2098988104418050349",
+          "heat": 88,
+          "stability": 0
+        },
+        {
           "slug": "just-sharon7-seedance-ai-20d2026d6f58",
           "title": "母亲抢走男孩的可丽饼座位",
           "creator": "@Just_sharon7",
           "sourceUrl": "https://x.com/Just_sharon7/status/2091529113425297759",
-          "heat": 85,
+          "heat": 86,
           "stability": 0
-        },
-        {
-          "slug": "case-142119be6421",
-          "title": "超现实酒店泳池比例失调场景",
-          "creator": "@YourAlphaMom",
-          "sourceUrl": "https://x.com/YourAlphaMom/status/2088749172543410403",
-          "heat": 84,
-          "stability": 83
         }
       ]
     },
@@ -2110,28 +2135,32 @@
       ],
       "signals": {
         "en": [
-          "train",
           "outbreak",
+          "infected",
           "zombie",
-          "horror",
-          "korean"
+          "train",
+          "night",
+          "infection",
+          "japanese",
+          "attack"
         ],
         "zh": [
-          "列车",
-          "爆发",
           "感染",
+          "列车",
+          "感染者",
+          "爆发",
+          "丧尸",
+          "突袭",
           "感染爆发",
-          "车感染爆",
           "列车感染",
           "恐怖",
-          "丧尸",
           "悬疑",
           "惊悚",
           "附身",
           "驱邪"
         ],
-        "corpusDocs": 11,
-        "manualAdded": 4
+        "corpusDocs": 23,
+        "manualAdded": 5
       },
       "gates": [
         "refImage"
@@ -2147,39 +2176,39 @@
         "timeline-shot-script",
         "character-reference-lock"
       ],
-      "corpusCount": 11,
+      "corpusCount": 23,
       "examples": [
         {
-          "slug": "seedance-shot-1-0-0-1-2s-image-1-face-and-outfit-matching-reference-lying-in-b6d9ef0e370e",
-          "title": "夜行卧铺列车感染爆发",
-          "creator": "@doctorwasif",
-          "sourceUrl": "https://x.com/doctorwasif/status/2095373753983369666",
-          "heat": 83,
+          "slug": "seedance-cinematic-sci-fi-horror-action-short-film-set-in-a-research-laboratory-opens-w-9661cd7bd95d",
+          "title": "实验室寄生体感染突袭",
+          "creator": "@auqibhabib",
+          "sourceUrl": "https://x.com/auqibhabib/status/2099725768310009982",
+          "heat": 96,
           "stability": 0
         },
         {
-          "slug": "case-3b1796c66ab4",
-          "title": "丧尸列车爆发",
-          "creator": "@doctorwasif",
-          "sourceUrl": "https://x.com/doctorwasif/status/2094285140247896553",
-          "heat": 76,
-          "stability": 64
+          "slug": "seedance-create-a-photorealistic-live-action-horror-short-film-set-inside-a-busy-modern-52b17b0d18ff",
+          "title": "商场丧尸爆发中的保安与幸存者",
+          "creator": "@auqibhabib",
+          "sourceUrl": "https://x.com/auqibhabib/status/2104107269206237325",
+          "heat": 95,
+          "stability": 0
         },
         {
-          "slug": "case-b529ffbdfd9a",
-          "title": "末日韩式天台恐怖片",
-          "creator": "@doctorwasif",
-          "sourceUrl": "https://x.com/doctorwasif/status/2090305873373810874",
-          "heat": 75,
-          "stability": 76
+          "slug": "seedance-cinematic-horror-action-short-film-set-aboard-a-japanese-highway-bus-during-the-5bc85c0e13d8",
+          "title": "日本公路巴士感染者突袭",
+          "creator": "@auqibhabib",
+          "sourceUrl": "https://x.com/auqibhabib/status/2102265619416768799",
+          "heat": 93,
+          "stability": 0
         },
         {
-          "slug": "doctorwasif-seedance-ai-117496b404a6",
-          "title": "列车车厢丧尸感染爆发",
-          "creator": "@doctorwasif",
-          "sourceUrl": "https://x.com/doctorwasif/status/2093550743945105687",
-          "heat": 70,
-          "stability": 68
+          "slug": "seedance-create-a-short-ultra-realistic-japanese-high-school-horror-action-sequence-fea-5cf4a965e81a",
+          "title": "日本教室里的丧尸突袭",
+          "creator": "@AIwithkhan",
+          "sourceUrl": "https://x.com/AIwithkhan/status/2100575957451153626",
+          "heat": 84,
+          "stability": 0
         }
       ]
     },
@@ -2208,26 +2237,29 @@
       "signals": {
         "en": [
           "baby",
+          "blue",
           "adventure",
+          "otter",
           "animation",
           "animated",
-          "otter",
-          "short",
-          "blue",
-          "tiny"
+          "magical",
+          "playful"
         ],
         "zh": [
-          "动画",
           "水獭",
+          "宝宝",
+          "动画",
+          "亲吻",
+          "风格海盗",
+          "沙发上",
           "小水獭",
-          "巨人",
-          "黏土",
+          "花园",
           "三维卡通",
           "皮克斯",
           "动画角色",
           "幼龙"
         ],
-        "corpusDocs": 15,
+        "corpusDocs": 29,
         "manualAdded": 4
       },
       "gates": [],
@@ -2243,8 +2275,16 @@
       "stacks": [
         "character-reference-lock"
       ],
-      "corpusCount": 15,
+      "corpusCount": 29,
       "examples": [
+        {
+          "slug": "seedance-made-with-seedance-2-5-27ee46690725",
+          "title": "沙发上嬉闹亲吻的兔子情侣",
+          "creator": "@Zarnab_with_Ai",
+          "sourceUrl": "https://x.com/Zarnab_with_Ai/status/2099683790717325390",
+          "heat": 90,
+          "stability": 0
+        },
         {
           "slug": "ayzalnooor24521-seedance-ai-4a336f514777",
           "title": "Seedance 双角色 3D 卡通：小蝴蝶的十四秒",
@@ -2268,14 +2308,6 @@
           "sourceUrl": "https://x.com/Zarnab_with_Ai/status/2098728793703899603",
           "heat": 79,
           "stability": 0
-        },
-        {
-          "slug": "im-shahid7-seedance-ai-b4d2ba40a750",
-          "title": "丈夫误把洗衣求助当浪漫邀约",
-          "creator": "@im_shahid7",
-          "sourceUrl": "https://x.com/im_shahid7/status/2091754978348339299",
-          "heat": 64,
-          "stability": 84
         }
       ]
     },
@@ -2305,29 +2337,32 @@
         "en": [
           "warrior",
           "battle",
-          "giant",
           "dragon",
+          "giant",
+          "woman",
           "red",
           "fortress",
-          "fantasy",
-          "clouds"
+          "fantasy"
         ],
         "zh": [
-          "风暴",
-          "女武",
-          "奇幻",
-          "骑士",
-          "史诗",
           "战士",
+          "风暴",
+          "少女",
           "之战",
+          "威尼斯",
+          "穿越",
+          "摧毁",
+          "废墟",
+          "奇幻",
           "科幻",
           "巨龙",
           "怪兽",
+          "史诗",
           "变身",
           "世界观"
         ],
-        "corpusDocs": 21,
-        "manualAdded": 5
+        "corpusDocs": 29,
+        "manualAdded": 7
       },
       "gates": [
         "refImage"
@@ -2342,8 +2377,24 @@
       "stacks": [
         "character-reference-lock"
       ],
-      "corpusCount": 21,
+      "corpusCount": 29,
       "examples": [
+        {
+          "slug": "seedance-watch-venice-become-a-sphere-a2018a3e4d6b",
+          "title": "折叠成球的威尼斯送信之旅",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2100541954685895043",
+          "heat": 91,
+          "stability": 0
+        },
+        {
+          "slug": "seedance-cinematic-photorealistic-scene-inside-an-indoor-swimming-pool-206ad2eea8f1",
+          "title": "紫发少女跃过泳池巨浪",
+          "creator": "@Zoyavelle",
+          "sourceUrl": "https://x.com/Zoyavelle/status/2100089287345951159",
+          "heat": 88,
+          "stability": 0
+        },
         {
           "slug": "seedance-create-a-30-second-ultra-cinematic-supernatural-fantasy-sequence-photorealisti-6d87ff7834d3",
           "title": "废墟卧室中的白发女子与巨型黑猫",
@@ -2357,24 +2408,8 @@
           "title": "女武士与白龙击碎熔岩天体",
           "creator": "@Zyrellix",
           "sourceUrl": "https://x.com/Zyrellix/status/2092121112746287527",
-          "heat": 84,
+          "heat": 85,
           "stability": 81
-        },
-        {
-          "slug": "weeleey6-seedance-ai-b03a5481e168",
-          "title": "GPT Image 2 + Seedance 深海惊魂战机飞行员短片",
-          "creator": "@Weeleey6",
-          "sourceUrl": "https://x.com/Weeleey6/status/2089244905960821226",
-          "heat": 83,
-          "stability": 84
-        },
-        {
-          "slug": "zyrellix-seedance-ai-987c5819beca",
-          "title": "末日龙背跃斩巨甲战士",
-          "creator": "@Zyrellix",
-          "sourceUrl": "https://x.com/Zyrellix/status/2092828997662978051",
-          "heat": 79,
-          "stability": 80
         }
       ]
     },
@@ -2407,6 +2442,7 @@
           "water"
         ],
         "zh": [
+          "自行车",
           "单板",
           "女子",
           "球场",
@@ -2417,7 +2453,7 @@
           "篮球",
           "极限运动"
         ],
-        "corpusDocs": 10,
+        "corpusDocs": 11,
         "manualAdded": 5
       },
       "gates": [],
@@ -2435,7 +2471,7 @@
       "stacks": [
         "timeline-shot-script"
       ],
-      "corpusCount": 10,
+      "corpusCount": 11,
       "examples": [
         {
           "slug": "seedance-269d1fc95820",
@@ -2454,20 +2490,210 @@
           "stability": 79
         },
         {
+          "slug": "seedance-create-a-15-second-photorealistic-cinematic-animated-urban-adventure-sequence-f-92f2a4a51ac5",
+          "title": "自行车快递员穿梭都市",
+          "creator": "@Elvorya",
+          "sourceUrl": "https://x.com/Elvorya/status/2102622012351131832",
+          "heat": 67,
+          "stability": 0
+        },
+        {
           "slug": "nawalsehar-seedance-ai-9cff7acb6229",
           "title": "女子车手险胜山地自行车决赛",
           "creator": "@nawalsehar",
           "sourceUrl": "https://x.com/nawalsehar/status/2094294374381441152",
-          "heat": 65,
+          "heat": 63,
           "stability": 76
+        }
+      ]
+    },
+    "game-ui-livestream": {
+      "id": "game-ui-livestream",
+      "category": "narrative",
+      "title": {
+        "en": "Gameplay capture with HUD and stream overlay",
+        "zh": "游戏实机录屏与直播叠层",
+        "ja": "HUD付きゲーム実況キャプチャ"
+      },
+      "description": {
+        "en": "The screen itself is the shot: a fake gameplay capture, livestream or desktop recording. It holds up when the overlay layer is pinned to fixed positions and its numbers and banners change in step with the action.",
+        "zh": "屏幕本身就是画面，假装是一段游戏实机、直播或桌面录屏。成立的关键是叠层钉死在固定位置，上面的数字和横幅跟着剧情一格一格变。"
+      },
+      "useWhen": {
+        "en": "GTA-style mission clips, streamer facecam plus game footage, and interactive desktop or UI recordings where the HUD has to read as a real interface.",
+        "zh": "GTA 风格的任务片段、主播小窗加游戏画面、互动桌面或界面录屏这类片子，HUD 要看起来像真的界面。"
+      },
+      "tags": [
+        "timeline",
+        "one-take",
+        "typography",
+        "reference-lock"
+      ],
+      "signals": {
+        "en": [
+          "chase",
+          "japanese",
+          "beneath",
+          "escapes",
+          "mission",
+          "station",
+          "female",
+          "office"
+        ],
+        "zh": [
+          "车站",
+          "女主",
+          "潜行",
+          "任务",
+          "日本",
+          "逃亡",
+          "险家",
+          "遗迹",
+          "游戏录屏",
+          "游戏实录",
+          "直播叠层",
+          "HUD",
+          "任务界面"
+        ],
+        "corpusDocs": 15,
+        "manualAdded": 5
+      },
+      "gates": [],
+      "softGates": [
+        "refImage",
+        "typography"
+      ],
+      "dialect": [],
+      "gateDowngraded": [
+        {
+          "capability": "refImage",
+          "fromTag": "reference-lock",
+          "because": "tag \"reference-lock\" 标为硬门禁，但模板正文无该能力的文字依据"
+        }
+      ],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "timeline-shot-script",
+        "character-reference-lock"
+      ],
+      "corpusCount": 15,
+      "examples": [
+        {
+          "slug": "seedance-2-5-ai-cabf3749d5b6",
+          "title": "Seedance 2.5 超真实 AI 动态桌面壁纸：换装互动女主一镜到底",
+          "creator": "木马人",
+          "sourceUrl": "https://x.com/cnyzgkc/status/2099029556434985065",
+          "heat": 94,
+          "stability": 0
         },
         {
-          "slug": "nawalsehar-seedance-ai-e50de3d2896e",
-          "title": "Seedance 单板滑雪地形公园流畅滑行短片",
-          "creator": "@nawalsehar",
-          "sourceUrl": "https://x.com/nawalsehar/status/2088854230626865490",
-          "heat": 63,
-          "stability": 73
+          "slug": "seedance-leaving-work-at-five-shouldn-t-require-stealth-mode-but-her-boss-made-it-a-mis-8495c8c9337e",
+          "title": "五点下班的办公室潜行",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2099440985872933199",
+          "heat": 91,
+          "stability": 0
+        },
+        {
+          "slug": "seedance-gta-6-simulation-414a3b385a58",
+          "title": "霓虹海岸城市枪战追车直播",
+          "creator": "@QAiStudio",
+          "sourceUrl": "https://x.com/QAiStudio/status/2099363620325048805",
+          "heat": 85,
+          "stability": 0
+        },
+        {
+          "slug": "seedance-mission-the-great-diamond-escape-39fea191a6da",
+          "title": "女高中生盗取钻石项链逃上列车",
+          "creator": "@saniaspeaks_",
+          "sourceUrl": "https://x.com/saniaspeaks_/status/2099700182388801793",
+          "heat": 83,
+          "stability": 0
+        }
+      ]
+    },
+    "food-asmr": {
+      "id": "food-asmr",
+      "category": "commercial",
+      "title": {
+        "en": "Food close-ups and eating ASMR",
+        "zh": "美食特写与吃播 ASMR",
+        "ja": "料理クローズアップと咀嚼ASMR"
+      },
+      "description": {
+        "en": "Cooking close-ups, mukbang and eating vlogs. They work when every beat shows one visible change in the food and one matching sound, and the dish stays the same dish from first frame to last.",
+        "zh": "烹饪特写、吃播和吃东西的 vlog。成立靠的是每一拍都让食物发生一个看得见的变化，再配上对应的一个声音，而且这道菜从头到尾都是同一道菜。"
+      },
+      "useWhen": {
+        "en": "Step-by-step cooking clips, glossy food ads with juice and steam, and handheld eating vlogs or spicy challenges where a person reacts to the food.",
+        "zh": "一步一步的做菜短片、拉丝爆汁冒热气的美食广告，还有手持吃播、辣味挑战这种人对着食物出反应的片子。"
+      },
+      "tags": [
+        "timeline",
+        "material",
+        "vlog",
+        "commercial"
+      ],
+      "signals": {
+        "en": [],
+        "zh": [
+          "美食",
+          "吃播",
+          "烹饪",
+          "ASMR",
+          "拉丝",
+          "爆汁"
+        ],
+        "corpusDocs": 6,
+        "manualAdded": 6
+      },
+      "gates": [],
+      "softGates": [],
+      "dialect": [],
+      "gateDowngraded": [],
+      "hardLimits": {
+        "minDuration": null,
+        "needsVertical": null
+      },
+      "stacks": [
+        "timeline-shot-script"
+      ],
+      "corpusCount": 6,
+      "examples": [
+        {
+          "slug": "seedance-create-a-30-second-fast-paced-cinematic-japanese-anime-cooking-video-showing-th-236ad940a8f1",
+          "title": "夏日厨房里的日式猪排盖饭",
+          "creator": "@Goodmanprotocol",
+          "sourceUrl": "https://x.com/Goodmanprotocol/status/2098845134326808734",
+          "heat": 98,
+          "stability": 0
+        },
+        {
+          "slug": "just-sharon7-seedance-ai-0a85559bbf5e",
+          "title": "酒店房间深夜关东煮试吃",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2089919950161113353",
+          "heat": 85,
+          "stability": 74
+        },
+        {
+          "slug": "just-sharon7-seedance-ai-5f2b0c838698",
+          "title": "GPT Image 2 + Seedance 看饿人的吃播短片",
+          "creator": "@Just_sharon7",
+          "sourceUrl": "https://x.com/Just_sharon7/status/2089737554061148465",
+          "heat": 70,
+          "stability": 0
+        },
+        {
+          "slug": "seedance-when-the-chef-turns-dinner-into-a-whole-performance-3e51a9b0793e",
+          "title": "烈焰翻锅的餐厅主厨",
+          "creator": "@AynahhX",
+          "sourceUrl": "https://x.com/AynahhX/status/2102946546035945875",
+          "heat": 62,
+          "stability": 0
         }
       ]
     }

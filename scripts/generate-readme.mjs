@@ -296,9 +296,9 @@ const COPY = {
     title: `# Awesome Seedance ${AWESOME_BADGE}`,
     heroAlt: "Awesome Seedance：検証済み Seedance プロンプト、クロスモデル再テスト、テンプレート、Agent Skill",
     tagline: (s) =>
-      `**検証済み Seedance 2.5 / 2.0 プロンプトライブラリ。** ${s.cases} ケースをすべて元投稿と照合、${s.retestRuns} 回のクロスモデル再テスト、${s.templates} 個の再利用可能テンプレート、${s.skills} 個のインストール可能な AI 動画 Skill${
-        s.siteTotalCases ? `。母体は goodcase.ai の動画・画像・UI・コピーにまたがる ${s.siteTotalCases} 件の検証済み AI ケース` : ""
-      }。毎日同期し、新しいケースが毎日追加されます。`,
+      `**検証済み Seedance 2.5 / 2.0 プロンプトライブラリ。** ${s.cases} ケースをすべて元投稿と照合、${s.retestRuns} 回のクロスモデル再テスト、${s.templates} 個の再利用可能テンプレート、${s.skills} 個のインストール可能な AI 動画 Skill。${
+        s.siteTotalCases ? `ケースライブラリの母体は goodcase.ai の動画・画像・UI・コピーにまたがる ${s.siteTotalCases} 件の検証済み AI ケースです。` : ""
+      }ケースデータは毎日同期し、新しいケースが追加されます。`,
     backlink:
       "プロンプト全文付きの検証済み AI ケースをもっと見る → [GoodCase.ai](https://goodcase.ai/cases?filter=video&utm_source=awesome-seedance)",
     contentsHeading: "## 目次",

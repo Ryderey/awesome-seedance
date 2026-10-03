@@ -1,5 +1,5 @@
 {
-  "$comment": "Skills shown in the README grid. Titles, descriptions, install lines and coverCase are hand-written here. `variants` and `cover` on entries with a `siteSlug` are refreshed from goodcase.ai by `node scripts/fetch-site-stats.mjs`; everything else is left alone. Entries with a `templateId` are this repo's standalone Skills: scripts/generate-standalone-skills.mjs writes agents/skills/<id>/ from that template and the cases filed under it (`triggers` become extra Chinese trigger words in the SKILL.md description). Covers are 2×2 collages of the hottest posters: `coverCases` (explicit slugs) > the template behind `templateId` / `coverTemplateId` > the whole library. `coverTemplateId` only borrows a template's hottest case as the cover (for site Skills that mirror a template here); it does not make the entry a standalone Skill. coverCase is a case slug from data/cases.json whose poster is used as the tile image (takes priority over cover).",
+  "$comment": "Skills shown in the README grid. Titles, descriptions, install lines and coverCase are hand-written here. `variants` and `cover` on entries with a `siteSlug` are refreshed from goodcase.ai by `node scripts/fetch-site-stats.mjs`; everything else is left alone. Entries with a `templateId` are this repo's standalone Skills: scripts/generate-standalone-skills.mjs writes agents/skills/<id>/ from that template and the cases filed under it (`triggers` become extra Chinese trigger words in the SKILL.md description). Hand-maintained Skills such as `seedance-production-workflow` live under agents/skills/<id>/ with a hand-written SKILL.md and no `references/cases.md`; scripts/generate-standalone-skills.mjs never prunes a directory whose id is still listed here and refuses to overwrite a hand-written SKILL.md, so register them here and in .claude-plugin/marketplace.json by hand, and give them `coverCases` or `coverTemplateId` if their tile should not fall back to the whole library's hottest cases. Covers are 2×2 collages of the hottest posters: `coverCases` (explicit slugs) > the template behind `templateId` / `coverTemplateId` > the whole library. `coverTemplateId` only borrows a template's hottest case as the cover (for site Skills that mirror a template here); it does not make the entry a standalone Skill. coverCase is a case slug from data/cases.json whose poster is used as the tile image (takes priority over cover).",
   "moreUrl": "https://goodcase.ai/skills?category=video",
   "skills": [
     {
@@ -16,6 +16,23 @@
       },
       "install": "npx seedance-prompt-library install",
       "url": "https://github.com/LearnPrompt/awesome-seedance/tree/main/agents/skills/seedance-prompt-library",
+      "variants": []
+    },
+    {
+      "id": "seedance-production-workflow",
+      "coverTemplateId": "storyboard-grid-to-video",
+      "title": {
+        "en": "Seedance Production Workflow",
+        "zh": "Seedance 视频制作工作流",
+        "ja": "Seedance 映像制作ワークフロー"
+      },
+      "description": {
+        "en": "Plan reference assets and shots, check the handoff, then review and repair the generated video with a timestamped QA record.",
+        "zh": "规划参考素材与分镜，检查生成交接，再按时间点验收和修复实际成片。",
+        "ja": "参照素材とショットを計画し、生成への引き渡しを確認してから、タイムスタンプ付きの記録で完成映像を検証・修正します。"
+      },
+      "install": "npx skills add LearnPrompt/awesome-seedance --skill seedance-production-workflow",
+      "url": "https://github.com/LearnPrompt/awesome-seedance/tree/main/agents/skills/seedance-production-workflow",
       "variants": []
     },
     {
@@ -271,6 +288,53 @@
       "variants": []
     },
     {
+      "id": "seedance-game-ui-livestream",
+      "templateId": "game-ui-livestream",
+      "triggers": [
+        "游戏录屏",
+        "实机",
+        "直播",
+        "HUD",
+        "UI 动效"
+      ],
+      "title": {
+        "en": "Gameplay capture with HUD and stream overlay",
+        "zh": "游戏实机录屏与直播叠层",
+        "ja": "HUD付きゲーム実況キャプチャ"
+      },
+      "description": {
+        "en": "The screen itself is the shot: a fake gameplay capture, livestream or desktop recording. It holds up when the overlay layer is pinned to fixed positions and its numbers and banners change in step with the action.",
+        "zh": "屏幕本身就是画面，假装是一段游戏实机、直播或桌面录屏。成立的关键是叠层钉死在固定位置，上面的数字和横幅跟着剧情一格一格变。",
+        "ja": "ゲーム画面の HUD、配信ウィンドウ、弾幕を固定位置に釘付けし、各シーンでは HUD の数値とバナーだけを更新する。実写ではなく録画であることを明記。"
+      },
+      "install": "npx skills add LearnPrompt/awesome-seedance --skill seedance-game-ui-livestream",
+      "url": "https://github.com/LearnPrompt/awesome-seedance/tree/main/agents/skills/seedance-game-ui-livestream",
+      "variants": []
+    },
+    {
+      "id": "seedance-food-asmr",
+      "templateId": "food-asmr",
+      "triggers": [
+        "美食",
+        "吃播",
+        "ASMR",
+        "烹饪"
+      ],
+      "title": {
+        "en": "Food close-ups and eating ASMR",
+        "zh": "美食特写与吃播 ASMR",
+        "ja": "料理クローズアップと咀嚼ASMR"
+      },
+      "description": {
+        "en": "Cooking close-ups, mukbang and eating vlogs. They work when every beat shows one visible change in the food and one matching sound, and the dish stays the same dish from first frame to last.",
+        "zh": "烹饪特写、吃播和吃东西的 vlog。成立靠的是每一拍都让食物发生一个看得见的变化，再配上对应的一个声音，而且这道菜从头到尾都是同一道菜。",
+        "ja": "料理をタイムコード付きの短いステップに切り、各ステップで目に見える食材の変化を一つ書く。音は動作の順に並べ、食べる動きは吹く・噛む・噛みしめるに分ける。"
+      },
+      "install": "npx skills add LearnPrompt/awesome-seedance --skill seedance-food-asmr",
+      "url": "https://github.com/LearnPrompt/awesome-seedance/tree/main/agents/skills/seedance-food-asmr",
+      "variants": []
+    },
+    {
       "id": "goodcase",
       "title": {
         "en": "GoodCase Case Search",
@@ -409,16 +473,12 @@
       "url": "https://goodcase.ai/skills/animation-style-consistency",
       "variants": [
         {
-          "creator": "Just_sharon7",
-          "url": "https://goodcase.ai/skills/animation-style-consistency-by-1wr1qau"
-        },
-        {
           "creator": "noorwithwifi",
           "url": "https://goodcase.ai/skills/animation-style-consistency-by-1diwzmp"
         }
       ],
       "cover": {
-        "src": "https://media.goodcase.ai/cases/c0434c7779ba.jpg"
+        "src": "https://media.goodcase.ai/cases/71a61fb2ecf4.jpg"
       },
       "coverCase": "case-a9ab0266f96a",
       "coverTemplateId": "anime-style-lock"
@@ -445,7 +505,7 @@
         }
       ],
       "cover": {
-        "src": "https://media.goodcase.ai/cases/8cd8f1126ba3.jpg"
+        "src": "https://media.goodcase.ai/cases/6304957c914f.jpg"
       },
       "coverCase": "just-sharon7-seedance-ai-8085c03efbb0",
       "coverTemplateId": "combat-choreography"
@@ -467,7 +527,7 @@
       "url": "https://goodcase.ai/skills/process-transformation-story",
       "variants": [],
       "cover": {
-        "src": "https://media.goodcase.ai/cases/4a16c60a0b25.jpg"
+        "src": "https://media.goodcase.ai/cases/2c89162a3d05.jpg"
       },
       "coverCase": "case-429309e40d97",
       "coverTemplateId": "process-transformation-montage"
@@ -666,7 +726,7 @@
       "url": "https://goodcase.ai/skills/vehicles-at-speed",
       "variants": [],
       "cover": {
-        "src": "https://media.goodcase.ai/cases/80df57bc40f6.jpg"
+        "src": "https://media.goodcase.ai/cases/d3f9b6377ec3.jpg"
       }
     },
     {
@@ -718,7 +778,7 @@
         }
       ],
       "cover": {
-        "src": "https://media.goodcase.ai/media/poster/seedance-shot-1-0-0-1-2s-image-1-face-and-outfit-matching-reference-lying-in-b6d9ef0e370e.jpg"
+        "src": "https://media.goodcase.ai/cases/5929c428cd08.jpg"
       }
     },
     {

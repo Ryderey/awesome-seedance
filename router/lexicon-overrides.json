@@ -2,6 +2,8 @@
   "$comment": "手工补充的触发词，与 build-lexicon.mjs 的语料抽取结果合并。用于补语料过薄的模板（案例标题里没出现过的说法，TF-IDF 抽不出来）。词源：各模板自己的 title.zh 与 useWhen.zh 原文，见 DESIGN-video-prompt-router.md 附录 A。追加而非替换，语料增长后重跑不会丢这里的词。",
 
   "templates": {
+    "food-asmr": ["美食", "吃播", "烹饪", "ASMR", "拉丝", "爆汁"],
+    "game-ui-livestream": ["游戏录屏", "游戏实录", "直播叠层", "HUD", "任务界面"],
     "timeline-shot-script": ["时间轴", "分镜脚本", "逐秒", "秒级", "时长"],
     "character-reference-lock": ["参考图", "身份锁定", "同一张脸", "跨镜头", "一致性", "定妆", "换装"],
     "handheld-ugc-vlog": ["随手拍", "日常", "出门前准备", "私人感"],
