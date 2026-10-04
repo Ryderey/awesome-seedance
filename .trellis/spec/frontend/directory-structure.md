@@ -10,6 +10,6 @@
 - desktop/preload.cjs: sandbox-compatible isolated bridge. Never expose raw ipcRenderer.
 - desktop/ui/: plain HTML/CSS/JavaScript; no Node access.
 - desktop/*.test.mjs, benchmark.mjs, ui-smoke.mjs: tests and measurements.
-- desktop/package.mjs: checked staging paths and portable Windows build.
+- desktop/package.mjs: checked staging paths and portable Windows build in dist/desktop; staging is .tmp/desktop-stage and is removed on successful packaging.
 
-Do not duplicate template merging/taxonomy logic or mutate data exports from UI. .tmp contains generated packages, test settings and screenshots and remains ignored.
+Do not duplicate template merging/taxonomy logic or mutate data exports from UI. dist/desktop contains final desktop packages and remains ignored. .tmp contains staging, download caches, other generated test packages, test settings and screenshots and remains ignored; final desktop output must survive clearing disposable .tmp files.

@@ -8,7 +8,7 @@
 
 <!-- @@@auto:current-status -->
 - **Active File**: `journal-1.md`
-- **Total Sessions**: 4
+- **Total Sessions**: 5
 - **Last Active**: 2026-10-04
 <!-- @@@/auto:current-status -->
 
@@ -19,7 +19,7 @@
 <!-- @@@auto:active-documents -->
 | File | Lines | Status |
 |------|-------|--------|
-| `journal-1.md` | ~146 | Active |
+| `journal-1.md` | ~179 | Active |
 <!-- @@@/auto:active-documents -->
 
 ---
@@ -29,6 +29,7 @@
 <!-- @@@auto:session-history -->
 | # | Date | Title | Commits | Branch |
 |---|------|-------|---------|--------|
+| 5 | 2026-10-04 | Move desktop release output and clean temporary files | - | `master` |
 | 4 | 2026-10-04 | Release v1.0.1 and rename branch to master | `04671ad` | `master` |
 | 3 | 2026-10-04 | Two-round intent clarification and grounded fallback | - | `feat/video-prompt-router` |
 | 2 | 2026-10-04 | Fix local category navigation triggering Agent | - | `feat/video-prompt-router` |

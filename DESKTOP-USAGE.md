@@ -23,6 +23,8 @@ Key 使用操作系统加密保存；系统加密不可用时仅在本次会话�
 
 ## 验证与打包
 
+打包前先关闭正在运行的便携版程序；构建会重新生成 `dist/desktop` 下的应用目录。
+
 ```powershell
 npm run desktop:test
 npm run desktop:benchmark
@@ -30,4 +32,8 @@ npm run desktop:smoke
 npm run desktop:package
 ```
 
-打包产生 `.tmp/desktop-dist/Video Prompt Library-win32-x64/VideoPromptLibrary.exe`。复制整个目录后运行，无需 Node.js。首次安装 Electron 必须下载对应运行时；打包使用安装缓存，不附带开发配置或 API Key。SDK 测试使用本地模拟服务，真实厂商连接请在应用内验证。
+正式输出为 `dist/desktop/Video Prompt Library-win32-x64/VideoPromptLibrary.exe`。复制完整的 `Video Prompt Library-win32-x64` 目录后运行，无需 Node.js；不能只复制 exe 文件。`dist/` 已加入 Git 忽略，不附带开发配置或 API Key。
+
+构建中间文件使用 `.tmp/desktop-stage`，打包成功后自动删除；失败时保留以便排查。`.tmp/npm-cache` 与 `.tmp/electron-cache` 是依赖和运行时缓存，可保留以支持离线构建；其他测试设置、日志、截图和旧包属于临时产物。首次安装 Electron 必须下载对应运行时，后续打包优先使用缓存。
+
+SDK 测试使用本地模拟服务，真实厂商连接请在应用内验证。

@@ -144,3 +144,36 @@ User authorized release commit/push/tag; application version 1.0.1 and local/Git
 ### Next Steps
 
 - Push master and annotated v1.0.1 with gh credentials; real-provider semantic quality evaluation remains pending.
+
+
+## Session 5: Move desktop release output and clean temporary files
+<!-- trellis-session: v=2 fp=9bcd6406cc3514e2 -->
+
+**Date**: 2026-10-04
+**Task**: Move desktop release output and clean temporary files
+**Branch**: `master`
+
+### Summary
+
+Final app moved to dist/desktop; staging and disposable test/build residue cleaned.
+
+### Main Changes
+
+- Guard output/staging paths, remove staging after success, ignore dist, update usage and conventions.
+
+### Git Commits
+
+(No commits - planning session)
+
+### Testing
+
+- [OK] Independent scoped review and syntax/diff pass; ASAR11 and production metadata match; packaged integration60808 exited normally.
+- [OK] Removed92 disposable .tmp entries; only npm-cache/electron-cache retained and final application remains.
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- Latest packaging layout changes are local; real-provider semantic quality evaluation remains pending.

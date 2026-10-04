@@ -2,7 +2,7 @@
 
 Actual gates: node desktop/check.mjs; npm run desktop:test; npm run desktop:benchmark; npm run desktop:smoke. No TypeScript/linter gate is fabricated for this plain JavaScript repository. Tests use real catalog data and actual SDK requests to a local HTTP fixture. Separately report any real-provider testing; mock success does not verify a user's provider or semantic ranking quality.
 
-Packaging: npm run desktop:package stages only application files, data, shared loaders, production dependencies and license. Cleanup targets must resolve inside this workspace's .tmp. Launch packaged executable from a directory outside the checkout to catch missing relative imports/data. Never include userData, API keys, .git or Trellis workspace. No CI is added.
+Packaging: npm run desktop:package stages only application files, data, shared loaders, production dependencies and license. Final desktop builds belong in ignored dist/desktop; staging uses .tmp/desktop-stage and is removed after successful packaging. Each cleanup target must resolve inside its explicitly selected workspace base (.tmp for staging, dist for output). User-requested temporary cleanup may remove disposable .tmp test profiles/logs/screenshots/scripts/old builds after verification; preserve npm-cache/electron-cache for offline builds. Launch packaged executable from a directory outside the checkout to catch missing relative imports/data. Never include userData, API keys, .git or Trellis workspace. No CI is added.
 
 Electron main must not await whenReady at ESM top level: use a callback so Playwright's readiness loader can complete. ui-smoke waits for the queued dialog close event before asserting video src cleanup.
 

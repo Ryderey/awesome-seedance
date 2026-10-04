@@ -82,3 +82,15 @@ Trellis 保持 in_progress，等待该项验收；未提交、推送、归档或
 用户授权提交、推送及 v1.0.1 标签，并将 feat/video-prompt-router 改名为 master。应用与 lockfile 版本同步为 1.0.1，三语 README 及源文档的分支说明/克隆命令同步 master；路由重新生成与全套检查通过。此次发布不合并 main，不移动 v1.0.0。尚未执行的真实供应商质量评测/验收继续保留，不因发布归档未完成任务。
 
 最终 1.0.1 便携版：进程 7092 仓库外集成通过并正常退出，11 个关键 ASAR 文件与源码/数据一致，打包 package.json 为 1.0.1。远端分支已通过 gh API 改名为 master，默认分支同步；发布提交/标签推送单独记录。
+
+## 2026-10-04 正式输出目录及临时文件清理
+
+用户要求调整目录并清理临时文件。正式输出改为 dist/desktop/Video Prompt Library-win32-x64/VideoPromptLibrary.exe；dist/ 加入 Git 忽略。构建中间目录仍为 .tmp/desktop-stage，成功后自动删除，失败保留排查；对应 .tmp/dist 基目录的严格子路径检查在每次递归删除前执行。DESKTOP-USAGE.md 和目录/质量规范同步，独立审查见 package-layout-review.md。应用版本、行为及已发布标签未变。
+
+- 新路径重新打包成功；staging 已删除，正式应用及目录存在、被 Git 忽略。
+- 11 个关键 ASAR 源文件/数据逐字一致；生产 package metadata 的 name/version/main/type/dependencies 与源码一致，版本 1.0.1，无用户设置或开发元数据。最初把整个 package.json 当作逐字相同的验证假设失败：打包工具会处理开发依赖等字段；更正为关键生产字段核对后通过，不据此声称 12 个文件逐字一致。
+- 仓库外完整本地 HTTP fixture / Electron 集成通过，进程 60808 正常退出，渲染器 sandbox 启用；不读取真实凭据或调用真实模型。
+- syntax / diff-check 通过。应用代码没有改变，92 项应用回归没有重复运行；此前通过结果与本次打包验证分别记录。
+- 确认 .tmp 及每一删除目标的绝对路径、普通目录属性及新应用存在后，移除 92 个顶层一次性文件/目录（旧包、测试 userData、日志、截图、诊断/上传等一次性脚本和载荷）。.tmp 现在仅有 electron-cache / npm-cache，供离线构建复用；dist/desktop 应用未受清理影响。
+
+本次目录调整完成后，用户另行授权提交并推送到 master；v1.0.1 不移动。整体真实供应商质量评测仍待完成，任务保持 in_progress。

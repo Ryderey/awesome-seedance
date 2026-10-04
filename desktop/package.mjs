@@ -7,11 +7,14 @@ import { packager } from '@electron/packager';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const stage = path.join(root, '.tmp/desktop-stage');
-const out = path.join(root, '.tmp/desktop-dist');
-for (const target of [stage, out]) {
-  if (!target.startsWith(`${path.join(root, '.tmp')}${path.sep}`)) throw new Error('Unsafe package path');
+const out = path.join(root, 'dist/desktop');
+async function removeWithin(target, base) {
+  const relative = path.relative(path.resolve(base), path.resolve(target));
+  if (!relative || relative === '..' || relative.startsWith(`..${path.sep}`) || path.isAbsolute(relative)) throw new Error('Unsafe package path');
   await rm(target, { recursive: true, force: true });
 }
+await removeWithin(stage, path.join(root, '.tmp'));
+await removeWithin(out, path.join(root, 'dist'));
 await mkdir(stage, { recursive: true });
 for (const entry of ['data', 'scripts/lib', 'LICENSE', 'package.json', 'package-lock.json']) await cp(path.join(root, entry), path.join(stage, entry), { recursive: true });
 await mkdir(path.join(stage, 'desktop/ui'), { recursive: true });
@@ -31,4 +34,5 @@ async function findZip(dir) {
 }
 const electronZipDir = await findZip(path.join(root, '.tmp/electron-cache'));
 const paths = await packager({ dir: stage, out, name: 'Video Prompt Library', platform: 'win32', arch: 'x64', electronVersion, electronZipDir, overwrite: true, prune: false, asar: true, executableName: 'VideoPromptLibrary' });
+await removeWithin(stage, path.join(root, '.tmp'));
 console.log(paths.join('\n'));
