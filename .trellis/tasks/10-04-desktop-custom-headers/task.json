@@ -15,7 +15,7 @@
   "branch": "master",
   "base_branch": "master",
   "worktree_path": null,
-  "commit": null,
+  "commit": "04671adc295901907221f0e00c1efee029501fd0",
   "pr_url": null,
   "subtasks": [],
   "children": [],
@@ -32,6 +32,6 @@
     "desktop/agent.test.mjs",
     "desktop/integration-smoke.mjs"
   ],
-  "notes": "Implementation and automated verification complete. Portable outside-checkout integration passed. Pending user live-provider acceptance and commit; no push or tag change. User authorized release commit/push and v1.0.1 tag, and renamed this branch to master. Existing external acceptance remains pending.",
+  "notes": "Implementation and automated verification complete. Portable outside-checkout integration passed. Pending user live-provider acceptance and commit; no push or tag change. User authorized release commit/push and v1.0.1 tag, and renamed this branch to master. Existing external acceptance remains pending. Release implementation committed as 04671adc295901907221f0e00c1efee029501fd0. v1.0.1 native portable7092 and packaged version check passed; provider acceptance stays open.",
   "meta": {}
 }

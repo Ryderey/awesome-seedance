@@ -109,3 +109,38 @@ Completed approved missing-intent clarification feature with two rounds and expl
 ### Next Steps
 
 - Real-provider repeated semantic quality evaluation and overall task commit/archive remain pending; no provider calls for this feature.
+
+
+## Session 4: Release v1.0.1 and rename branch to master
+<!-- trellis-session: v=2 fp=dc904e50d72ca4fb -->
+
+**Date**: 2026-10-04
+**Task**: Release v1.0.1 and rename branch to master
+**Branch**: `master`
+
+### Summary
+
+User authorized release commit/push/tag; application version 1.0.1 and local/GitHub branch renamed to master.
+
+### Main Changes
+
+- Released grounded semantic search, custom headers, output/thinking controls, local category navigation and bounded clarification.
+- Updated three-language source/generated READMEs and task branch metadata; remote rename performed through gh API.
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `04671ad` | feat(desktop): release v1.0.1 with grounded search and intent clarification |
+
+### Testing
+
+- [OK] Existing independent 92/92 tests; version 1.0.1 ASAR11 match; portable7092 outside-checkout integration passed with normal exit; router build/check and upstream checks passed.
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- Push master and annotated v1.0.1 with gh credentials; real-provider semantic quality evaluation remains pending.
