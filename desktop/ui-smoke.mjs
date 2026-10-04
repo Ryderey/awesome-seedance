@@ -35,6 +35,17 @@ try {
 
   await page.locator('.case-card').first().click();
   await page.waitForSelector('.prompt-text');
+  async function assertSingleDetailScroll() {
+    const scroll = await page.evaluate(() => ({
+      background: getComputedStyle(document.documentElement).overflowY,
+      nested: [...document.querySelectorAll('#detail-dialog .prompt-text')].some(element => ['auto', 'scroll'].includes(getComputedStyle(element).overflowY)),
+      panel: getComputedStyle(document.getElementById('detail-dialog')).overflowY,
+    }));
+    assert.equal(scroll.background, 'hidden', 'Modal must hide the background scrollbar');
+    assert.equal(scroll.nested, false, 'Full prompts must use the detail panel scroll');
+    assert.equal(scroll.panel, 'auto');
+  }
+  await assertSingleDetailScroll();
   const prompt = await page.locator('.prompt-text').textContent();
   assert.ok(prompt.length > 30);
   await page.locator('.detail-actions .primary').click();
@@ -48,6 +59,7 @@ try {
   await page.keyboard.press('Escape');
   assert.equal(await page.locator('#detail-dialog').evaluate(element => element.open), false);
   await page.waitForFunction(() => [...document.querySelectorAll('video')].every(element => element.paused && !element.getAttribute('src')));
+  assert.notEqual(await page.evaluate(() => getComputedStyle(document.documentElement).overflowY), 'hidden');
 
   await page.click('#settings-open');
   await page.waitForSelector('#settings-dialog[open]');
@@ -68,6 +80,23 @@ try {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: path.join(root, '.tmp/desktop-qa.png') });
+  await page.fill('#query', '第一人称一镜到底');
+  await page.click('#search-button');
+  await page.waitForSelector('#retry:not([hidden])');
+  const template = page.locator('.template-card').filter({ has: page.getByRole('heading', { name: '第一人称一镜到底', exact: true }) });
+  await template.scrollIntoViewIfNeeded();
+  const backgroundPosition = await page.evaluate(() => window.scrollY);
+  await template.click();
+  await page.waitForSelector('#detail-content .prompt-text');
+  await assertSingleDetailScroll();
+  await page.locator('#detail-dialog').evaluate(element => { element.scrollTop = 180; });
+  await page.screenshot({ path: path.join(root, '.tmp/desktop-detail-qa.png') });
+  await page.setViewportSize({ width: 900, height: 750 });
+  await assertSingleDetailScroll();
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.keyboard.press('Escape');
+  await page.waitForFunction(() => !document.getElementById('detail-dialog').open);
+  assert.equal(await page.evaluate(() => window.scrollY), backgroundPosition);
   assert.deepEqual(errors, []);
   console.log('Electron UI smoke passed: full library, pagination, preliminary fallback, stale events, exact copy, failed video, settings, Escape, keyboard and 900px layout.');
 } finally {

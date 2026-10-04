@@ -1,0 +1,3 @@
+{"file": ".trellis/spec/frontend/quality-guidelines.md", "reason": "Full desktop validation gates"}
+{"file": ".trellis/tasks/10-04-desktop-semantic-search/research/catalog-semantics.md", "reason": "False positives and evidence constraints"}
+{"file": ".trellis/spec/frontend/semantic-search.md", "reason": "Cross-layer semantic invariants"}

@@ -5,7 +5,7 @@
 
 Turn a Chinese or English video request into a shortlist of prompt templates with explicit evidence and constraints. The router checks duration, shot structure, reference material, dialogue and music requirements. When information is missing, it asks up to three questions that change the shortlist. A host agent then selects a template and writes the prompt.
 
-This repository extends [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance). The `feat/video-prompt-router` branch is maintained independently and will not merge into `main`. The added router CI workflow has been removed; validation, builds and installation run locally. Builds use a local data snapshot, do not fetch remote data, and make no daily-sync promise.
+This repository extends [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance). The `master` branch is maintained independently and will not merge into `main`. The added router CI workflow has been removed; validation, builds and installation run locally. Builds use a local data snapshot, do not fetch remote data, and make no daily-sync promise.
 
 The snapshot contains **{{templates}} templates and {{cases}} source cases**: {{filed}} assigned, {{skipped}} deliberately skipped, and {{todo}} awaiting classification. The router selects templates and exposes constraints. Writing a final prompt requires a host agent; generating video requires a separate platform call.
 
@@ -24,7 +24,7 @@ npm run desktop:start
 The locally validated environment is Node.js 22 and Python 3.10. Routing needs only Node.js; the full build check also needs Python. No npm dependencies or model API keys are required.
 
 ```bash
-git clone --branch feat/video-prompt-router --single-branch https://github.com/Ryderey/awesome-seedance.git
+git clone --branch master --single-branch https://github.com/Ryderey/awesome-seedance.git
 cd awesome-seedance
 node router/route.mjs "15-second multi-shot food ASMR, cooking with melting cheese and steam, no dialogue" --json
 ```

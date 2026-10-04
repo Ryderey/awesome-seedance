@@ -1,7 +1,7 @@
 {
   "name": "awesome-seedance",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Curated, human-verified Seedance 2.5 / 2.0 prompt library with an installable Agent Skill.",
   "type": "module",
   "scripts": {
@@ -15,7 +15,10 @@
     "router:check": "node router/build.mjs --check",
     "router:build": "node router/build.mjs --write --out .tmp/router-package",
     "desktop:start": "electron .",
-    "desktop:test": "node --test desktop/catalog.test.mjs desktop/agent.test.mjs desktop/settings.test.mjs",
+    "desktop:test": "node --test desktop/catalog.test.mjs desktop/agent.test.mjs desktop/settings.test.mjs desktop/semantic-search.test.mjs desktop/evaluate-agent.test.mjs",
+    "desktop:semantics:build": "node scripts/build-search-semantics.mjs",
+    "desktop:semantics:check": "node scripts/validate-search-semantics.mjs",
+    "desktop:evaluate": "node desktop/evaluate-agent.mjs",
     "desktop:benchmark": "node desktop/benchmark.mjs",
     "desktop:smoke": "node desktop/ui-smoke.mjs",
     "desktop:package": "node desktop/package.mjs",

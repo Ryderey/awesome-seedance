@@ -5,7 +5,7 @@
 
 把中文或英文的视频需求，转换成有依据的提示词模板候选。路由器根据时长、镜头结构、参考素材、对白、音乐等拍法条件筛选模板；信息不足时提出最多三个会影响候选的问题，再由宿主 Agent 阅读模板并生成提示词。
 
-这个仓库基于 [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance) 扩展。当前 `feat/video-prompt-router` 分支独立维护，不合并到 `main`。新增的路由 CI 工作流已删除，验证、构建和安装在本地执行。本分支使用本地数据快照，构建不拉取远端，也不承诺每天同步。
+这个仓库基于 [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance) 扩展。当前 `master` 分支独立维护，不合并到 `main`。新增的路由 CI 工作流已删除，验证、构建和安装在本地执行。本分支使用本地数据快照，构建不拉取远端，也不承诺每天同步。
 
 当前包含 **27 个模板、670 条来源案例**；664 条已有模板归属，6 条明确跳过，归类待办 0 条。该工具负责选择模板和暴露约束；生成最终提示词需要宿主 Agent，生成视频需要另行调用目标平台。
 
@@ -24,7 +24,7 @@ npm run desktop:start
 本地验证环境为 Node.js 22 和 Python 3.10。路由 CLI 只需要 Node.js；完整构建检查还需要 Python，无须安装 npm 依赖或配置模型 API 密钥。
 
 ```bash
-git clone --branch feat/video-prompt-router --single-branch https://github.com/Ryderey/awesome-seedance.git
+git clone --branch master --single-branch https://github.com/Ryderey/awesome-seedance.git
 cd awesome-seedance
 node router/route.mjs "15 秒多镜头美食 ASMR，做菜拉丝冒热气，无对白" --json
 ```

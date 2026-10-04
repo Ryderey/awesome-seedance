@@ -43,3 +43,69 @@ Delivered the first desktop library, accepted by the user on 2026-10-04. Archive
 ### Next Steps
 
 - Independent Bootstrap Guidelines task and user-installed Trellis scaffolding remain local and were not archived or bundled.
+
+
+## Session 2: Fix local category navigation triggering Agent
+<!-- trellis-session: v=2 fp=e6c8b771894c15c6 -->
+
+**Date**: 2026-10-04
+**Task**: Fix local category navigation triggering Agent
+**Branch**: `feat/video-prompt-router`
+
+### Summary
+
+Sidebar categories now browse local taxonomy only and cancel stale search.
+
+### Main Changes
+
+- Filter cached overview by category/template membership; synchronous navigation and latest-view guards.
+
+### Git Commits
+
+(No commits - planning session)
+
+### Testing
+
+- [OK] 74 tests, syntax/diff, native smoke45136, dev integration50328 and portable51900 passed; ASAR11 source match.
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- Existing semantic-search live-provider quality evaluation and final task close remain pending.
+
+
+## Session 3: Two-round intent clarification and grounded fallback
+<!-- trellis-session: v=2 fp=28e94d62f1695053 -->
+
+**Date**: 2026-10-04
+**Task**: Two-round intent clarification and grounded fallback
+**Branch**: `feat/video-prompt-router`
+
+### Summary
+
+Completed approved missing-intent clarification feature with two rounds and explicit broad references.
+
+### Main Changes
+
+- Ordered question/answer history, IPC validation, waiting without requests, duplicate answer guards, skip/retry/reset behavior.
+- Ground broad primary conditions and purpose; preserve explicit product answers and reject advertisement leakage into documentary/vlog/story.
+- Evaluation separates completed matches and waiting clarifications; Trellis contracts and verification updated.
+
+### Git Commits
+
+(No commits - planning session)
+
+### Testing
+
+- [OK] 92/92 desktop tests independently passed; syntax/diff, benchmark, native UI18072, final development46160 and portable35652 passed; ASAR11 source/data matches.
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- Real-provider repeated semantic quality evaluation and overall task commit/archive remain pending; no provider calls for this feature.

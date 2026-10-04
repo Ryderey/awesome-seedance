@@ -5,7 +5,7 @@
 
 中国語または英語の動画リクエストから、根拠と制約を持つプロンプトテンプレートの候補を選びます。尺、ショット構成、参照素材、セリフ、音楽などの撮り方を判定し、情報が足りない場合は候補に影響する質問を最大三つ返します。ホストの Agent がテンプレートを最終選択し、プロンプトを作成します。日本語の入力解析は検証対象に含まれていません。
 
-本リポジトリは [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance) を拡張したものです。`feat/video-prompt-router` ブランチを独立して保守し、`main` にはマージしません。追加したルーター用 CI は削除済みで、検証・ビルド・インストールはローカルで行います。ビルドはローカルのデータを使用し、リモートを取得せず、毎日の同期も約束しません。
+本リポジトリは [LearnPrompt/awesome-seedance](https://github.com/LearnPrompt/awesome-seedance) を拡張したものです。`master` ブランチを独立して保守し、`main` にはマージしません。追加したルーター用 CI は削除済みで、検証・ビルド・インストールはローカルで行います。ビルドはローカルのデータを使用し、リモートを取得せず、毎日の同期も約束しません。
 
 現在のスナップショットは **27 テンプレート、670 件の出典付き事例**を含みます。664 件は分類済み、6 件は理由を付けて除外し、分類待ちは 0 件です。最終プロンプトの作成にはホスト Agent、動画生成には別途プラットフォームの呼び出しが必要です。
 
@@ -24,7 +24,7 @@ npm run desktop:start
 ローカル検証環境は Node.js 22 と Python 3.10 です。ルーティングには Node.js、完全なビルド検証には Python も必要です。npm の依存パッケージやモデル API キーは不要です。
 
 ```bash
-git clone --branch feat/video-prompt-router --single-branch https://github.com/Ryderey/awesome-seedance.git
+git clone --branch master --single-branch https://github.com/Ryderey/awesome-seedance.git
 cd awesome-seedance
 node router/route.mjs "15-second multi-shot food ASMR, cooking with melting cheese and steam, no dialogue" --json
 ```

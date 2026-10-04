@@ -1,0 +1,1642 @@
+{
+  "version": 1,
+  "reviewMethod": "Independently chosen source-reviewed expected IDs/tier and hard negatives; expected lists are a reviewed subset, not all-library recall ground truth.",
+  "queries": [
+    {
+      "id": "sports-drink-cn",
+      "query": "我想拍一个运动饮料广告",
+      "plan": {
+        "summary": "我想拍一个运动饮料广告",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": "beverage.sports_drink",
+            "terms": [
+              "运动饮料",
+              "sports drink"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [
+          {
+            "concept": "beverage",
+            "terms": [
+              "饮料",
+              "beverage"
+            ],
+            "scope": "related_product"
+          }
+        ],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "mountain-dew-spark-b16d4e23caef",
+          "tier": "related_product"
+        },
+        {
+          "id": "ugc-80d503f66caa",
+          "tier": "related_product"
+        },
+        {
+          "id": "crimson-cola-99e9ec88e937",
+          "tier": "related_product"
+        },
+        {
+          "id": "case-887d0484c2ce",
+          "tier": "related_product"
+        },
+        {
+          "id": "ugc-34764467dea1",
+          "tier": "related_product"
+        },
+        {
+          "id": "seedance-2-0-181cb461432f",
+          "tier": "related_product"
+        }
+      ],
+      "forbidden": [
+        "seedance-2-5-f3651857750b",
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "avelyrahnai-seedance-ai-a392e2711b0d",
+        "chillaikalan-seedance-ai-c67e26cea7cb",
+        "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+        "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d",
+        "lianaalane-seedance-ai-c2d4ba0c6fa2",
+        "zarairahh-seedance-ai-f89372941867",
+        "seedance-she-thought-it-was-going-to-be-a-peaceful-rainy-day-selfie-f0bf765977dd",
+        "seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d",
+        "seedance-created-a-video-in-soft-anime-style-of-a-fluffy-white-cat-with-big-sparkling-te-5d65967aaf57",
+        "case-6152b0808b14"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "sports-drink-en",
+      "query": "Sports drink product advertisement",
+      "plan": {
+        "summary": "Sports drink product advertisement",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": "beverage.sports_drink",
+            "terms": [
+              "sports drink",
+              "运动饮料"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [
+          {
+            "concept": "beverage",
+            "terms": [
+              "饮料",
+              "beverage"
+            ],
+            "scope": "related_product"
+          }
+        ],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "mountain-dew-spark-b16d4e23caef",
+          "tier": "related_product"
+        },
+        {
+          "id": "ugc-80d503f66caa",
+          "tier": "related_product"
+        },
+        {
+          "id": "crimson-cola-99e9ec88e937",
+          "tier": "related_product"
+        },
+        {
+          "id": "case-887d0484c2ce",
+          "tier": "related_product"
+        },
+        {
+          "id": "ugc-34764467dea1",
+          "tier": "related_product"
+        },
+        {
+          "id": "seedance-2-0-181cb461432f",
+          "tier": "related_product"
+        }
+      ],
+      "forbidden": [
+        "seedance-2-5-f3651857750b",
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "avelyrahnai-seedance-ai-a392e2711b0d",
+        "chillaikalan-seedance-ai-c67e26cea7cb",
+        "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+        "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d",
+        "lianaalane-seedance-ai-c2d4ba0c6fa2",
+        "zarairahh-seedance-ai-f89372941867",
+        "seedance-she-thought-it-was-going-to-be-a-peaceful-rainy-day-selfie-f0bf765977dd",
+        "seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d",
+        "seedance-created-a-video-in-soft-anime-style-of-a-fluffy-white-cat-with-big-sparkling-te-5d65967aaf57",
+        "case-6152b0808b14"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "electrolyte-drink",
+      "query": "电解质饮料产品广告",
+      "plan": {
+        "summary": "电解质饮料产品广告",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": "beverage.sports_drink",
+            "terms": [
+              "电解质饮料",
+              "electrolyte drink"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [
+          {
+            "concept": "beverage",
+            "terms": [
+              "饮料",
+              "beverage"
+            ],
+            "scope": "related_product"
+          }
+        ],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "mountain-dew-spark-b16d4e23caef",
+          "tier": "related_product"
+        },
+        {
+          "id": "ugc-80d503f66caa",
+          "tier": "related_product"
+        },
+        {
+          "id": "crimson-cola-99e9ec88e937",
+          "tier": "related_product"
+        },
+        {
+          "id": "case-887d0484c2ce",
+          "tier": "related_product"
+        },
+        {
+          "id": "ugc-34764467dea1",
+          "tier": "related_product"
+        },
+        {
+          "id": "seedance-2-0-181cb461432f",
+          "tier": "related_product"
+        }
+      ],
+      "forbidden": [
+        "seedance-2-5-f3651857750b",
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "avelyrahnai-seedance-ai-a392e2711b0d",
+        "chillaikalan-seedance-ai-c67e26cea7cb",
+        "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+        "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d",
+        "lianaalane-seedance-ai-c2d4ba0c6fa2",
+        "zarairahh-seedance-ai-f89372941867",
+        "seedance-she-thought-it-was-going-to-be-a-peaceful-rainy-day-selfie-f0bf765977dd",
+        "seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d",
+        "seedance-created-a-video-in-soft-anime-style-of-a-fluffy-white-cat-with-big-sparkling-te-5d65967aaf57",
+        "case-6152b0808b14"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "beverage-ad",
+      "query": "饮料广告",
+      "plan": {
+        "summary": "饮料广告",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": "beverage",
+            "terms": [
+              "饮料",
+              "beverage"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "mountain-dew-spark-b16d4e23caef",
+          "tier": "topic"
+        },
+        {
+          "id": "ugc-80d503f66caa",
+          "tier": "topic"
+        },
+        {
+          "id": "crimson-cola-99e9ec88e937",
+          "tier": "topic"
+        },
+        {
+          "id": "case-887d0484c2ce",
+          "tier": "topic"
+        },
+        {
+          "id": "ugc-34764467dea1",
+          "tier": "topic"
+        },
+        {
+          "id": "seedance-2-0-181cb461432f",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "seedance-2-5-f3651857750b",
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "avelyrahnai-seedance-ai-a392e2711b0d",
+        "chillaikalan-seedance-ai-c67e26cea7cb",
+        "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+        "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d",
+        "lianaalane-seedance-ai-c2d4ba0c6fa2",
+        "zarairahh-seedance-ai-f89372941867",
+        "seedance-she-thought-it-was-going-to-be-a-peaceful-rainy-day-selfie-f0bf765977dd",
+        "seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d",
+        "seedance-created-a-video-in-soft-anime-style-of-a-fluffy-white-cat-with-big-sparkling-te-5d65967aaf57",
+        "case-6152b0808b14"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "cola-ad",
+      "query": "可乐汽水产品广告",
+      "plan": {
+        "summary": "可乐汽水产品广告",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": "beverage.soda",
+            "terms": [
+              "汽水",
+              "cola"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "crimson-cola-99e9ec88e937",
+          "tier": "topic"
+        },
+        {
+          "id": "case-887d0484c2ce",
+          "tier": "topic"
+        },
+        {
+          "id": "seedance-2-0-181cb461432f",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "seedance-2-5-f3651857750b",
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "avelyrahnai-seedance-ai-a392e2711b0d",
+        "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+        "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "fruit-drink",
+      "query": "果饮商业广告",
+      "plan": {
+        "summary": "果饮商业广告",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": "beverage.fruit_drink",
+            "terms": [
+              "果饮",
+              "fruit drink"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "ugc-80d503f66caa",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "seedance-2-5-f3651857750b",
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "avelyrahnai-seedance-ai-a392e2711b0d",
+        "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "tropical-drink",
+      "query": "热带饮品商业广告",
+      "plan": {
+        "summary": "热带饮品商业广告",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": "beverage",
+            "terms": [
+              "饮品",
+              "beverage"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [
+          {
+            "concept": null,
+            "terms": [
+              "热带",
+              "tropical"
+            ],
+            "role": "primary"
+          }
+        ],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "ugc-34764467dea1",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "seedance-2-5-f3651857750b",
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "avelyrahnai-seedance-ai-a392e2711b0d",
+        "chillaikalan-seedance-ai-c67e26cea7cb",
+        "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+        "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d",
+        "lianaalane-seedance-ai-c2d4ba0c6fa2",
+        "zarairahh-seedance-ai-f89372941867",
+        "seedance-she-thought-it-was-going-to-be-a-peaceful-rainy-day-selfie-f0bf765977dd",
+        "seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d",
+        "seedance-created-a-video-in-soft-anime-style-of-a-fluffy-white-cat-with-big-sparkling-te-5d65967aaf57",
+        "case-6152b0808b14"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "footwear-ad",
+      "query": "运动鞋产品广告",
+      "plan": {
+        "summary": "运动鞋产品广告",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": "footwear",
+            "terms": [
+              "运动鞋",
+              "sneaker"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "seedance-2-5-f3651857750b",
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "nike-footwear",
+      "query": "耐克跑鞋广告",
+      "plan": {
+        "summary": "耐克跑鞋广告",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": "footwear",
+            "terms": [
+              "跑鞋",
+              "footwear"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [
+          "Nike"
+        ],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "seedance-2-5-f3651857750b",
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "lip-gloss",
+      "query": "唇蜜开箱产品展示",
+      "plan": {
+        "summary": "唇蜜开箱产品展示",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": "cosmetics",
+            "terms": [
+              "唇蜜",
+              "lip gloss"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "avelyrahnai-seedance-ai-a392e2711b0d",
+        "seedance-2-5-f3651857750b",
+        "johnagi168-seedance-ai-556a7495c74b",
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "cosmetics-ad",
+      "query": "美妆产品广告",
+      "plan": {
+        "summary": "美妆产品广告",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": "cosmetics",
+            "terms": [
+              "美妆",
+              "beauty product"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "avelyrahnai-seedance-ai-a392e2711b0d",
+        "seedance-2-5-f3651857750b",
+        "johnagi168-seedance-ai-556a7495c74b",
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "coffee-not-prop",
+      "query": "咖啡品牌广告",
+      "plan": {
+        "summary": "咖啡品牌广告",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": "beverage.coffee",
+            "terms": [
+              "咖啡",
+              "coffee"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [],
+      "forbidden": [
+        "avelyrahnai-seedance-ai-a392e2711b0d",
+        "chillaikalan-seedance-ai-c67e26cea7cb",
+        "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+        "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d",
+        "lianaalane-seedance-ai-c2d4ba0c6fa2",
+        "seedance-2-5-f3651857750b"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "cycling-documentary",
+      "query": "骑行纪录片长镜头",
+      "plan": {
+        "summary": "骑行纪录片长镜头",
+        "goal": "documentary",
+        "primaryKeywords": [
+          {
+            "concept": "cycling",
+            "terms": [
+              "骑行",
+              "cycling"
+            ],
+            "role": "primary"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [
+          "长镜头"
+        ],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "seedance-2-5-f3651857750b",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "maldives-cycling",
+      "query": "马尔代夫骑行跟拍",
+      "plan": {
+        "summary": "马尔代夫骑行跟拍",
+        "goal": "reference",
+        "primaryKeywords": [
+          {
+            "concept": "cycling",
+            "terms": [
+              "骑行",
+              "cycling"
+            ],
+            "role": "primary"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [
+          "马尔代夫"
+        ],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "seedance-2-5-f3651857750b",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "cycling-vlog",
+      "query": "真实骑行 vlog",
+      "plan": {
+        "summary": "真实骑行 vlog",
+        "goal": "vlog",
+        "primaryKeywords": [
+          {
+            "concept": "cycling",
+            "terms": [
+              "骑行",
+              "cycling"
+            ],
+            "role": "primary"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "seedance-2-5-vlog-30-3b85f315bb08",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "cycling-tracking",
+      "query": "骑行跟拍参考",
+      "plan": {
+        "summary": "骑行跟拍参考",
+        "goal": "reference",
+        "primaryKeywords": [
+          {
+            "concept": "cycling",
+            "terms": [
+              "骑行",
+              "cycling"
+            ],
+            "role": "primary"
+          },
+          {
+            "concept": "tracking",
+            "terms": [
+              "跟拍",
+              "tracking"
+            ],
+            "role": "primary"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "seedance-2-5-f3651857750b",
+          "tier": "topic"
+        },
+        {
+          "id": "seedance-2-5-vlog-30-3b85f315bb08",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "han-river-cycling",
+      "query": "汉江骑行手持录像",
+      "plan": {
+        "summary": "汉江骑行手持录像",
+        "goal": "reference",
+        "primaryKeywords": [
+          {
+            "concept": "cycling",
+            "terms": [
+              "骑行",
+              "cycling"
+            ],
+            "role": "primary"
+          },
+          {
+            "concept": "handheld",
+            "terms": [
+              "手持",
+              "handheld"
+            ],
+            "role": "primary"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [
+          "汉江"
+        ],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "2000-minidv-5cceb6310905",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "fitness-vlog",
+      "query": "健身 vlog",
+      "plan": {
+        "summary": "健身 vlog",
+        "goal": "vlog",
+        "primaryKeywords": [
+          {
+            "concept": "fitness",
+            "terms": [
+              "健身",
+              "fitness"
+            ],
+            "role": "primary"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "johnagi168-seedance-ai-556a7495c74b",
+          "tier": "topic"
+        },
+        {
+          "id": "90-vhs-vlog-ae90c46cb606",
+          "tier": "topic"
+        },
+        {
+          "id": "16mm-vlog-c8cfec0d8310",
+          "tier": "topic"
+        },
+        {
+          "id": "seedance-dv-16mm-tape-camcorder-handheld-feel-dbd56441c7b6",
+          "tier": "topic"
+        },
+        {
+          "id": "zarairahh-seedance-ai-3f362e9e352b",
+          "tier": "topic"
+        },
+        {
+          "id": "zarairahh-seedance-ai-b7601661378a",
+          "tier": "topic"
+        },
+        {
+          "id": "kingofdairyque-seedance-ai-d37a2e5fa395",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "retro-fitness-vlog",
+      "query": "复古 VHS 健身 vlog",
+      "plan": {
+        "summary": "复古 VHS 健身 vlog",
+        "goal": "vlog",
+        "primaryKeywords": [
+          {
+            "concept": "fitness",
+            "terms": [
+              "健身",
+              "fitness"
+            ],
+            "role": "primary"
+          },
+          {
+            "concept": "retro",
+            "terms": [
+              "复古",
+              "VHS"
+            ],
+            "role": "primary"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "90-vhs-vlog-ae90c46cb606",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "fitness-tracking",
+      "query": "健身跟拍镜头参考",
+      "plan": {
+        "summary": "健身跟拍镜头参考",
+        "goal": "reference",
+        "primaryKeywords": [
+          {
+            "concept": "fitness",
+            "terms": [
+              "健身",
+              "fitness"
+            ],
+            "role": "primary"
+          },
+          {
+            "concept": "tracking",
+            "terms": [
+              "跟拍",
+              "tracking"
+            ],
+            "role": "primary"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "johnagi168-seedance-ai-556a7495c74b",
+          "tier": "topic"
+        },
+        {
+          "id": "case-3bdeb046587d",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "locker-room",
+      "query": "健身房更衣室训练前准备",
+      "plan": {
+        "summary": "健身房更衣室训练前准备",
+        "goal": "reference",
+        "primaryKeywords": [
+          {
+            "concept": "fitness",
+            "terms": [
+              "健身",
+              "gym"
+            ],
+            "role": "primary"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [
+          "更衣室"
+        ],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "qaistudio-seedance-ai-72dab559610b",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "cat-vlog",
+      "query": "猫咪 vlog",
+      "plan": {
+        "summary": "猫咪 vlog",
+        "goal": "vlog",
+        "primaryKeywords": [
+          {
+            "concept": "cat",
+            "terms": [
+              "猫咪",
+              "cat"
+            ],
+            "role": "primary"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "zarairahh-seedance-ai-f89372941867",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "aimikoda-seedance-ai-3e98e88a068f",
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "cat-animation",
+      "query": "猫咪动画短片",
+      "plan": {
+        "summary": "猫咪动画短片",
+        "goal": "story",
+        "primaryKeywords": [
+          {
+            "concept": "cat",
+            "terms": [
+              "猫咪",
+              "cat"
+            ],
+            "role": "primary"
+          },
+          {
+            "concept": "anime",
+            "terms": [
+              "动画",
+              "anime"
+            ],
+            "role": "primary"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d",
+          "tier": "topic"
+        },
+        {
+          "id": "seedance-created-a-video-in-soft-anime-style-of-a-fluffy-white-cat-with-big-sparkling-te-5d65967aaf57",
+          "tier": "topic"
+        },
+        {
+          "id": "case-6152b0808b14",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "aimikoda-seedance-ai-3e98e88a068f",
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "rainy-kitten",
+      "query": "小猫雨天自拍",
+      "plan": {
+        "summary": "小猫雨天自拍",
+        "goal": "reference",
+        "primaryKeywords": [
+          {
+            "concept": "cat",
+            "terms": [
+              "小猫",
+              "kitten"
+            ],
+            "role": "primary"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [
+          "雨天"
+        ],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "seedance-she-thought-it-was-going-to-be-a-peaceful-rainy-day-selfie-f0bf765977dd",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "aimikoda-seedance-ai-3e98e88a068f",
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "clay-cat",
+      "query": "黏土猫咪动画",
+      "plan": {
+        "summary": "黏土猫咪动画",
+        "goal": "story",
+        "primaryKeywords": [
+          {
+            "concept": "cat",
+            "terms": [
+              "猫咪",
+              "cat"
+            ],
+            "role": "primary"
+          },
+          {
+            "concept": "anime",
+            "terms": [
+              "动画",
+              "animation"
+            ],
+            "role": "primary"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [
+          "黏土"
+        ],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "case-6152b0808b14",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "aimikoda-seedance-ai-3e98e88a068f",
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "pet-dog-not-robot",
+      "query": "真实宠物狗 vlog",
+      "plan": {
+        "summary": "真实宠物狗 vlog",
+        "goal": "vlog",
+        "primaryKeywords": [
+          {
+            "concept": "dog",
+            "terms": [
+              "宠物狗",
+              "dog"
+            ],
+            "role": "primary"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [],
+      "forbidden": [
+        "aimikoda-seedance-ai-3e98e88a068f",
+        "zarairahh-seedance-ai-f89372941867",
+        "seedance-she-thought-it-was-going-to-be-a-peaceful-rainy-day-selfie-f0bf765977dd",
+        "seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d",
+        "seedance-created-a-video-in-soft-anime-style-of-a-fluffy-white-cat-with-big-sparkling-te-5d65967aaf57",
+        "case-6152b0808b14",
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "exclude-exercise",
+      "query": "饮料广告，不要骑行和健身内容",
+      "plan": {
+        "summary": "饮料广告，不要骑行和健身内容",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": "beverage",
+            "terms": [
+              "饮料",
+              "beverage"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [
+          {
+            "concept": "cycling",
+            "terms": [
+              "骑行",
+              "cycling"
+            ],
+            "role": "primary"
+          },
+          {
+            "concept": "fitness",
+            "terms": [
+              "健身",
+              "fitness"
+            ],
+            "role": "primary"
+          }
+        ],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "mountain-dew-spark-b16d4e23caef",
+          "tier": "topic"
+        },
+        {
+          "id": "ugc-80d503f66caa",
+          "tier": "topic"
+        },
+        {
+          "id": "crimson-cola-99e9ec88e937",
+          "tier": "topic"
+        },
+        {
+          "id": "case-887d0484c2ce",
+          "tier": "topic"
+        },
+        {
+          "id": "ugc-34764467dea1",
+          "tier": "topic"
+        },
+        {
+          "id": "seedance-2-0-181cb461432f",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "seedance-2-5-f3651857750b",
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "lianaalane-seedance-ai-c2d4ba0c6fa2"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "explicit-technique",
+      "query": "运动饮料广告，拓展跟拍拍法参考",
+      "plan": {
+        "summary": "运动饮料广告，拓展跟拍拍法参考",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": "beverage.sports_drink",
+            "terms": [
+              "运动饮料",
+              "sports drink"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [
+          {
+            "concept": "beverage",
+            "terms": [
+              "饮料",
+              "beverage"
+            ],
+            "scope": "related_product"
+          }
+        ],
+        "optionalKeywords": [
+          {
+            "concept": "tracking",
+            "terms": [
+              "跟拍",
+              "tracking"
+            ],
+            "role": "primary"
+          }
+        ],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": true,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "seedance-2-5-f3651857750b",
+          "tier": "technique"
+        },
+        {
+          "id": "johnagi168-seedance-ai-556a7495c74b",
+          "tier": "technique"
+        },
+        {
+          "id": "mountain-dew-spark-b16d4e23caef",
+          "tier": "related_product"
+        },
+        {
+          "id": "ugc-80d503f66caa",
+          "tier": "related_product"
+        },
+        {
+          "id": "crimson-cola-99e9ec88e937",
+          "tier": "related_product"
+        },
+        {
+          "id": "case-887d0484c2ce",
+          "tier": "related_product"
+        },
+        {
+          "id": "ugc-34764467dea1",
+          "tier": "related_product"
+        },
+        {
+          "id": "seedance-2-0-181cb461432f",
+          "tier": "related_product"
+        }
+      ],
+      "forbidden": [
+        "seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d",
+        "seedance-created-a-video-in-soft-anime-style-of-a-fluffy-white-cat-with-big-sparkling-te-5d65967aaf57",
+        "case-6152b0808b14",
+        "aimikoda-seedance-ai-3e98e88a068f"
+      ],
+      "allowTechniqueOnly": true
+    },
+    {
+      "id": "unknown-product",
+      "query": "超导水晶饮料产品广告",
+      "plan": {
+        "summary": "超导水晶饮料产品广告",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": null,
+            "terms": [
+              "超导水晶饮料"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [],
+      "forbidden": [
+        "seedance-2-5-f3651857750b",
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "avelyrahnai-seedance-ai-a392e2711b0d",
+        "chillaikalan-seedance-ai-c67e26cea7cb",
+        "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+        "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d",
+        "lianaalane-seedance-ai-c2d4ba0c6fa2",
+        "zarairahh-seedance-ai-f89372941867",
+        "seedance-she-thought-it-was-going-to-be-a-peaceful-rainy-day-selfie-f0bf765977dd",
+        "seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d",
+        "seedance-created-a-video-in-soft-anime-style-of-a-fluffy-white-cat-with-big-sparkling-te-5d65967aaf57",
+        "case-6152b0808b14",
+        "mountain-dew-spark-b16d4e23caef",
+        "ugc-80d503f66caa",
+        "crimson-cola-99e9ec88e937",
+        "case-887d0484c2ce",
+        "ugc-34764467dea1",
+        "seedance-2-0-181cb461432f"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "unproven-constraints",
+      "query": "运动饮料广告，必须没有字幕和对白",
+      "plan": {
+        "summary": "运动饮料广告，必须没有字幕和对白",
+        "goal": "product_ad",
+        "primaryKeywords": [
+          {
+            "concept": "beverage.sports_drink",
+            "terms": [
+              "运动饮料",
+              "sports drink"
+            ],
+            "role": "primary_product"
+          }
+        ],
+        "relatedKeywords": [
+          {
+            "concept": "beverage",
+            "terms": [
+              "饮料",
+              "beverage"
+            ],
+            "scope": "related_product"
+          }
+        ],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [
+          "无字幕",
+          "无对白"
+        ],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "mountain-dew-spark-b16d4e23caef",
+          "tier": "related_product"
+        },
+        {
+          "id": "ugc-80d503f66caa",
+          "tier": "related_product"
+        },
+        {
+          "id": "crimson-cola-99e9ec88e937",
+          "tier": "related_product"
+        },
+        {
+          "id": "case-887d0484c2ce",
+          "tier": "related_product"
+        },
+        {
+          "id": "ugc-34764467dea1",
+          "tier": "related_product"
+        },
+        {
+          "id": "seedance-2-0-181cb461432f",
+          "tier": "related_product"
+        }
+      ],
+      "forbidden": [
+        "seedance-2-5-f3651857750b",
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "avelyrahnai-seedance-ai-a392e2711b0d",
+        "chillaikalan-seedance-ai-c67e26cea7cb",
+        "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+        "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d",
+        "lianaalane-seedance-ai-c2d4ba0c6fa2",
+        "zarairahh-seedance-ai-f89372941867",
+        "seedance-she-thought-it-was-going-to-be-a-peaceful-rainy-day-selfie-f0bf765977dd",
+        "seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d",
+        "seedance-created-a-video-in-soft-anime-style-of-a-fluffy-white-cat-with-big-sparkling-te-5d65967aaf57",
+        "case-6152b0808b14"
+      ],
+      "allowTechniqueOnly": false
+    },
+    {
+      "id": "generic-product-ad",
+      "query": "通用产品广告案例",
+      "plan": {
+        "summary": "通用产品广告案例",
+        "goal": "product_ad",
+        "primaryKeywords": [],
+        "relatedKeywords": [],
+        "optionalKeywords": [],
+        "excludeKeywords": [],
+        "required": [],
+        "allowTechniqueOnly": false,
+        "question": null
+      },
+      "expected": [
+        {
+          "id": "mountain-dew-spark-b16d4e23caef",
+          "tier": "topic"
+        },
+        {
+          "id": "ugc-80d503f66caa",
+          "tier": "topic"
+        },
+        {
+          "id": "crimson-cola-99e9ec88e937",
+          "tier": "topic"
+        },
+        {
+          "id": "case-887d0484c2ce",
+          "tier": "topic"
+        },
+        {
+          "id": "ugc-34764467dea1",
+          "tier": "topic"
+        },
+        {
+          "id": "seedance-2-0-181cb461432f",
+          "tier": "topic"
+        },
+        {
+          "id": "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d",
+          "tier": "topic"
+        },
+        {
+          "id": "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+          "tier": "topic"
+        }
+      ],
+      "forbidden": [
+        "seedance-2-5-f3651857750b",
+        "johnagi168-seedance-ai-556a7495c74b",
+        "90-vhs-vlog-ae90c46cb606",
+        "avelyrahnai-seedance-ai-a392e2711b0d",
+        "chillaikalan-seedance-ai-c67e26cea7cb",
+        "lianaalane-seedance-ai-c2d4ba0c6fa2",
+        "zarairahh-seedance-ai-f89372941867",
+        "seedance-she-thought-it-was-going-to-be-a-peaceful-rainy-day-selfie-f0bf765977dd",
+        "seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d",
+        "seedance-created-a-video-in-soft-anime-style-of-a-fluffy-white-cat-with-big-sparkling-te-5d65967aaf57",
+        "case-6152b0808b14"
+      ],
+      "allowTechniqueOnly": false
+    }
+  ]
+}

@@ -1,0 +1,2316 @@
+{
+  "schemaVersion": 1,
+  "annotationVersion": 1,
+  "reviewMethod": "Offline source review of titles and quoted original prompts; not provider classification or user acceptance.",
+  "templates": {
+    "3d-cartoon": {
+      "kind": "template",
+      "id": "3d-cartoon",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "0c88e0815fe82b19708a7e147b2c67d87ed8fd64b3bf43fdb25221ab5b8038d7",
+      "reviewStatus": "reviewed",
+      "contentType": "story",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "anime"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "story",
+          "field": "title.zh",
+          "quote": "3D 卡通角色短片"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "anime",
+          "field": "useWhen.zh",
+          "quote": "皮克斯味的动画短片，主角是个可爱角色：动物厨师、幼龙、黏土质感但运动平滑的小家伙。"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "anime-style-lock": {
+      "kind": "template",
+      "id": "anime-style-lock",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "ce50ab5ad16cea8582b7927d68833f1ec1a6ffb6ec407a821af08cb5836487cb",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "anime"
+      ],
+      "evidence": [
+        {
+          "axis": "capabilities",
+          "concept": "anime",
+          "field": "title.zh",
+          "quote": "动漫与风格化画风固定"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "car-vehicle": {
+      "kind": "template",
+      "id": "car-vehicle",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "4d4c0cdd504f7ade4d5817d4f142487b2f4c1ab2f388ad69f36a328ced4c9049",
+      "reviewStatus": "reviewed",
+      "contentType": "product_ad",
+      "subjects": [
+        {
+          "concept": "vehicle",
+          "role": "primary_product"
+        }
+      ],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "timeline_script"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "useWhen.zh",
+          "quote": "摩托和汽车广告、山路疾驰、追逐与特技段落，还有车辆变形类的片子。"
+        },
+        {
+          "axis": "subjects",
+          "concept": "vehicle",
+          "role": "primary_product",
+          "field": "title.zh",
+          "quote": "汽车与载具速度片"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "timeline_script",
+          "field": "description.zh",
+          "quote": "机器从头到尾得是同一台机器，出力的是镜头。先把车按部件锁住，再用编号分镜表把时长排满，每一秒换一个机位。"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "character-reference-lock": {
+      "kind": "template",
+      "id": "character-reference-lock",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "40317a432678f2d319a4cfebbb7ca2a3b7999b1c4048764bb878e059d4ab3cab",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "reference_lock"
+      ],
+      "evidence": [
+        {
+          "axis": "capabilities",
+          "concept": "reference_lock",
+          "field": "title.zh",
+          "quote": "参考图身份锁定"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "cinematic-narrative-short": {
+      "kind": "template",
+      "id": "cinematic-narrative-short",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "b746ffe37220e95de0a3d53fb7ccad7ae4fbc8dd06053c200fe9370dd1c29982",
+      "reviewStatus": "reviewed",
+      "contentType": "story",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "timeline_script"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "story",
+          "field": "title.zh",
+          "quote": "电影级叙事短片"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "timeline_script",
+          "field": "tags",
+          "quote": "narrative\nmulti-act\nshot-list\ncharacter-consistency"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "combat-choreography": {
+      "kind": "template",
+      "id": "combat-choreography",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "b1ad962a9ba270d6460026c7dd788f2c2abc804bca452f639b3eaca5ebca8c0f",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "combat"
+      ],
+      "scenes": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "axis": "activities",
+          "concept": "combat",
+          "field": "title.zh",
+          "quote": "打斗编排"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "dialogue-performance-beats": {
+      "kind": "template",
+      "id": "dialogue-performance-beats",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "f5654192ec57268c9f0efabb0954b6fe9c6a95c7b502c231ba1e298e92251f86",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [],
+      "evidence": [],
+      "reviewMethod": "source_review"
+    },
+    "epic-fantasy-scifi": {
+      "kind": "template",
+      "id": "epic-fantasy-scifi",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "14710870e84dbef4b25acd61ceef92c23451276fce2bc56742e9d73f69aa2d00",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "combat"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "timeline_script"
+      ],
+      "evidence": [
+        {
+          "axis": "activities",
+          "concept": "combat",
+          "field": "useWhen.zh",
+          "quote": "怪兽攻城、巨龙对战、变身序列、世界观展示，任何有效载荷是一个大片级物理奇观的片子。"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "timeline_script",
+          "field": "description.zh",
+          "quote": "怪兽、巨龙、世界观展示。每个实体单独给一个定义块，镜头按时间码切开，尺度感靠参照物和低机位换，靠 massive 这种词换不来。"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "fashion-lookbook": {
+      "kind": "template",
+      "id": "fashion-lookbook",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "11d093928a034e80e24052c6f4d4f854f4f4e3a786e2a8deba2ab96c93211ba6",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [
+        {
+          "concept": "person",
+          "role": "primary"
+        }
+      ],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "reference_lock"
+      ],
+      "evidence": [
+        {
+          "axis": "subjects",
+          "concept": "person",
+          "role": "primary",
+          "field": "title.zh",
+          "quote": "时尚 lookbook 与人像写真片"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "reference_lock",
+          "field": "description.zh",
+          "quote": "一个人、一身造型、几个地点。一段从头写到脚的外观锁撑起整条片子，每个场景只给一个地点、一个动作、一种光。"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "food-asmr": {
+      "kind": "template",
+      "id": "food-asmr",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "be71a5e233b2d64c98fa3cfc4e8da7e028c8b7bf8eaeb48601c9a9e2d31d9cb9",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [
+        {
+          "concept": "food",
+          "role": "primary"
+        }
+      ],
+      "productCategory": null,
+      "activities": [
+        "cooking"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "macro"
+      ],
+      "evidence": [
+        {
+          "axis": "subjects",
+          "concept": "food",
+          "role": "primary",
+          "field": "title.zh",
+          "quote": "美食特写与吃播 ASMR"
+        },
+        {
+          "axis": "activities",
+          "concept": "cooking",
+          "field": "description.zh",
+          "quote": "烹饪特写、吃播和吃东西的 vlog。成立靠的是每一拍都让食物发生一个看得见的变化，再配上对应的一个声音，而且这道菜从头到尾都是同一道菜。"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "macro",
+          "field": "title.zh",
+          "quote": "美食特写与吃播 ASMR"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "game-ui-livestream": {
+      "kind": "template",
+      "id": "game-ui-livestream",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "3d3866dcc3b9c3ab1004422b4a57579422b50ac717e4d13e46f219f5b1a3e4f1",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "timeline_script",
+        "reference_lock"
+      ],
+      "evidence": [
+        {
+          "axis": "capabilities",
+          "concept": "timeline_script",
+          "field": "tags",
+          "quote": "timeline\none-take\ntypography\nreference-lock"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "reference_lock",
+          "field": "tags",
+          "quote": "timeline\none-take\ntypography\nreference-lock"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "handheld-ugc-vlog": {
+      "kind": "template",
+      "id": "handheld-ugc-vlog",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "9d119d4f4bb9995bfee19f8a23de706bb5afd207b18aae7e67938862bbaa4f70",
+      "reviewStatus": "reviewed",
+      "contentType": "vlog",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "fitness",
+        "travel",
+        "cooking"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "handheld"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title.zh",
+          "quote": "手持 UGC vlog"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "title.zh",
+          "quote": "手持 UGC vlog"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "useWhen.zh",
+          "quote": "要私人感的素材：日常、旅拍、健身、做饭、出门前准备。目标是像真有人拍的，而不是像很贵的时候用这套。"
+        },
+        {
+          "axis": "activities",
+          "concept": "travel",
+          "field": "useWhen.zh",
+          "quote": "要私人感的素材：日常、旅拍、健身、做饭、出门前准备。目标是像真有人拍的，而不是像很贵的时候用这套。"
+        },
+        {
+          "axis": "activities",
+          "concept": "cooking",
+          "field": "useWhen.zh",
+          "quote": "要私人感的素材：日常、旅拍、健身、做饭、出门前准备。目标是像真有人拍的，而不是像很贵的时候用这套。"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "horror-suspense": {
+      "kind": "template",
+      "id": "horror-suspense",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "e7aaec2d42a970ac8c9718f69c61fa7c2a4e23cadd73340f421d044f961fbbad",
+      "reviewStatus": "reviewed",
+      "contentType": "story",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "horror",
+        "timeline_script"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "story",
+          "field": "title.zh",
+          "quote": "恐怖悬疑短片"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "horror",
+          "field": "title.zh",
+          "quote": "恐怖悬疑短片"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "timeline_script",
+          "field": "description.zh",
+          "quote": "每一镜都带自己的时间码，身上只发生一个看得见的变化。吓人的地方在于这些变化一环扣一环：一个眼神、浮起的血管、一口咬下去、下一个人。结尾把门关上，事情不了结。"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "meme-comedy": {
+      "kind": "template",
+      "id": "meme-comedy",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "81b66869e5191fbc37baca56cf3ce201a133d517259694076bcb88ac0ab67761",
+      "reviewStatus": "reviewed",
+      "contentType": "story",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "timeline_script"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "story",
+          "field": "description.zh",
+          "quote": "所有节拍都为一个笑点服务的短剧。笑点得落在一个看得见的东西上，荒诞设定要配一本正经的相机和物理才立得住。"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "timeline_script",
+          "field": "tags",
+          "quote": "timeline\nnarrative\nmulti-act\ndialogue"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "music-beat-sync-mv": {
+      "kind": "template",
+      "id": "music-beat-sync-mv",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "3e0cfae2963ac78a23907bb7a3c54f222f71f06138a38b6f86532ad1e0dd13b0",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "dance",
+        "fitness"
+      ],
+      "scenes": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "axis": "activities",
+          "concept": "dance",
+          "field": "useWhen.zh",
+          "quote": "K-pop MV、翻跳、卡点健身剪辑、俱乐部演出片段。带音频锚点的写法只在 Seedance 2.5 上用，它接受音轨作为输入模态。"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "useWhen.zh",
+          "quote": "K-pop MV、翻跳、卡点健身剪辑、俱乐部演出片段。带音频锚点的写法只在 Seedance 2.5 上用，它接受音轨作为输入模态。"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "pet-animal": {
+      "kind": "template",
+      "id": "pet-animal",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "eaeded9fe87e9c30159607ed35a45a220b63a4c6ae8db6adf916a1a0ac29d636",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [
+        {
+          "concept": "cat",
+          "role": "primary"
+        },
+        {
+          "concept": "dog",
+          "role": "primary"
+        }
+      ],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "handheld"
+      ],
+      "evidence": [
+        {
+          "axis": "subjects",
+          "concept": "cat",
+          "role": "primary",
+          "field": "useWhen.zh",
+          "quote": "猫狗或野生动物抢镜的自拍、vlog 片段，以及靠一个真实动物行为撑起来的写实喜剧。"
+        },
+        {
+          "axis": "subjects",
+          "concept": "dog",
+          "role": "primary",
+          "field": "useWhen.zh",
+          "quote": "猫狗或野生动物抢镜的自拍、vlog 片段，以及靠一个真实动物行为撑起来的写实喜剧。"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "description.zh",
+          "quote": "动物是真正的主角，镜头就交给一台手机。数量锁死成一只，动物只做动物做的事，包袱留给它一步步逼近镜头。"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "pov-continuous-take": {
+      "kind": "template",
+      "id": "pov-continuous-take",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "f571af9ced9fa76ee3c0c5c8fd2a77a9a24bb9a20cbbfaea0aeebe7ebd95cb54",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "cooking"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "continuous_take",
+        "handheld"
+      ],
+      "evidence": [
+        {
+          "axis": "capabilities",
+          "concept": "continuous_take",
+          "field": "title.zh",
+          "quote": "第一人称一镜到底"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "tags",
+          "quote": "pov\none-take\nhandheld\ncamera-imperfection"
+        },
+        {
+          "axis": "activities",
+          "concept": "cooking",
+          "field": "useWhen.zh",
+          "quote": "要观众就是操作者的沉浸素材：破门突入、极限运动、厨师视角做饭、无人机飞行。207 条里 32 条属于这类。"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "process-transformation-montage": {
+      "kind": "template",
+      "id": "process-transformation-montage",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "de52de8cf23ee5253d18fa38e9878cbcadd9be5f81f450acae430301d4ecf807",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "cooking"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "transition"
+      ],
+      "evidence": [
+        {
+          "axis": "activities",
+          "concept": "cooking",
+          "field": "description.zh",
+          "quote": "烹饪步骤、改造延时、蓝图变房子、微缩城市组装。这类的手艺在于先声明什么不许变，再把变化按空间顺序排开。"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "transition",
+          "field": "description.zh",
+          "quote": "烹饪步骤、改造延时、蓝图变房子、微缩城市组装。这类的手艺在于先声明什么不许变，再把变化按空间顺序排开。"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "product-commercial-shotlist": {
+      "kind": "template",
+      "id": "product-commercial-shotlist",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "ed811c5bcce8cb23d42fcb55e7c4494baa1255cf96c52e115edf730b007ea723",
+      "reviewStatus": "reviewed",
+      "contentType": "product_ad",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "product_hero",
+        "timeline_script"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "title.zh",
+          "quote": "电影级产品广告分镜"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "description.zh",
+          "quote": "8 到 20 秒的精修广告：开头写死广告美学，中间是编号或计时的分镜拆解，结尾一个英雄镜头，最后甩一段关键词。"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "timeline_script",
+          "field": "title.zh",
+          "quote": "电影级产品广告分镜"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "retro-found-footage": {
+      "kind": "template",
+      "id": "retro-found-footage",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "9e0cbdcbfa6f472338401bec441ae1d44223d6959f8dd0225bf4204c7dc9f186",
+      "reviewStatus": "reviewed",
+      "contentType": "vlog",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "retro",
+        "handheld"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "useWhen.zh",
+          "quote": "家庭录像、旅拍日志、MiniDV 情侣片、街区漫步，任何想看起来像多年前用家用机器拍下来的生活片段。"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "retro",
+          "field": "description.zh",
+          "quote": "年代感靠机器缺陷和一件生活小事撑起来。把 DV 的对焦拉风箱、曝光跳动、手抖写成明确清单，剧情放小，整条就像一盘真的旧带子。"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "tags",
+          "quote": "camera-imperfection\nhandheld\nugc\ntimeline"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "sports-extreme": {
+      "kind": "template",
+      "id": "sports-extreme",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "cf769f21330b6024b3e43223a6a4d9194c41df5e1d419808141b3cb90215c611",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "cycling"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "continuous_take"
+      ],
+      "evidence": [
+        {
+          "axis": "activities",
+          "concept": "cycling",
+          "field": "useWhen.zh",
+          "quote": "单板滑雪、山地骑行、跑酷、街头篮球、水上闯关，以及手机实拍风格的特技片段，身体必须服从重力和接触。"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "continuous_take",
+          "field": "tags",
+          "quote": "physics\ntimeline\none-take\nnegative-prompt"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "stop-motion-cadence": {
+      "kind": "template",
+      "id": "stop-motion-cadence",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "eda7bf946e818bd305d9f5ed6691d1c7c7919c31ab67e63e4f4cc9b904f2d168",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "stop_motion"
+      ],
+      "evidence": [
+        {
+          "axis": "capabilities",
+          "concept": "stop_motion",
+          "field": "title.zh",
+          "quote": "定格动画与步进节奏"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "storyboard-grid-to-video": {
+      "kind": "template",
+      "id": "storyboard-grid-to-video",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "e2ec4897722dacfcac09b53b45055be74b875886ee69f349cd638e016cd01f51",
+      "reviewStatus": "reviewed",
+      "contentType": "product_ad",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "timeline_script",
+        "reference_lock"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "useWhen.zh",
+          "quote": "想在出片之前先看见并改定镜头顺序的多镜头片子：制作流程、动作预览、产品广告、一天生活的串场蒙太奇。"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "timeline_script",
+          "field": "title.zh",
+          "quote": "分镜网格转视频"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "reference_lock",
+          "field": "description.zh",
+          "quote": "分两步走：先用图像模型出一张带编号格子的单页分镜图，再把这张图当参考喂给 Seedance。顺序、构图和时长由分镜图定死，视频提示语只负责把格子连起来。"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "time-freeze-rewind": {
+      "kind": "template",
+      "id": "time-freeze-rewind",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "7b5f90c305d8c30230acdb221766465d77d612e6a74a1aa07ffbb5b809f3d0ed",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "timeline_script"
+      ],
+      "evidence": [
+        {
+          "axis": "capabilities",
+          "concept": "timeline_script",
+          "field": "tags",
+          "quote": "vfx\nphysics\ntimeline\nseedance-2-5"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "timeline-shot-script": {
+      "kind": "template",
+      "id": "timeline-shot-script",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "69e53ce21e3531938d137ed269be833a616cda785a42a193f6ec48dbca187f0a",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "timeline_script"
+      ],
+      "evidence": [
+        {
+          "axis": "capabilities",
+          "concept": "timeline_script",
+          "field": "title.zh",
+          "quote": "逐秒时间轴分镜脚本"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "travel-city-walk": {
+      "kind": "template",
+      "id": "travel-city-walk",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "f3cc0e0c8eefd4300c9997f3bad5145eb1efda230cb37b4dc18997887f1f0324",
+      "reviewStatus": "reviewed",
+      "contentType": "vlog",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "travel"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "timeline_script"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "useWhen.zh",
+          "quote": "目的地日记、城市漫游、徒步、露营、出发启程这类片子：一个旅行者要在六到八个地点里保持是同一个人。"
+        },
+        {
+          "axis": "activities",
+          "concept": "travel",
+          "field": "title.zh",
+          "quote": "电影感旅行漫游"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "timeline_script",
+          "field": "description.zh",
+          "quote": "一个人按场次走过一个地方，每场有自己的时间码、自己的地点和一句短台词。质感靠胶片颗粒和黄金时刻的光撑起来，手机瑕疵那套在这里用不上。"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "ugc-creator-review": {
+      "kind": "template",
+      "id": "ugc-creator-review",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "d7b3b832b4c7e7ef820c73ea29fe5627a23c4b124d11e963b33dc7d8a104c296",
+      "reviewStatus": "reviewed",
+      "contentType": "ugc_review",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "product_hero",
+        "reference_lock"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "ugc_review",
+          "field": "title.zh",
+          "quote": "UGC 口播测评带货"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "useWhen.zh",
+          "quote": "带货型产品视频、开箱和创作者测评：产品要在被拿起、旋转、佩戴的过程中始终认得出来。"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "reference_lock",
+          "field": "description.zh",
+          "quote": "创作者对着镜头开箱、上手、种草。要两把独立的锁——一把锁人，一把锁产品——台词焊进动作里。"
+        }
+      ],
+      "reviewMethod": "source_review"
+    }
+  },
+  "cases": {
+    "16mm-vlog-c8cfec0d8310": {
+      "kind": "case",
+      "id": "16mm-vlog-c8cfec0d8310",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "9e26ef59fce57bf410ad7f292b4fefa4e5921600bbb1cb5ce0fba5c692d6b67e",
+      "reviewStatus": "reviewed",
+      "contentType": "vlog",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "fitness"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "handheld"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "复古 16mm 健身有氧 Vlog"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "复古 16mm 健身有氧 Vlog"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "DV 16mm handheld tape camcorder"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "2000-minidv-5cceb6310905": {
+      "kind": "case",
+      "id": "2000-minidv-5cceb6310905",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "828bd1fe631631f8dd11fea976981c32684e039d686d0e17ccf586f129697342",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "cycling"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "handheld"
+      ],
+      "evidence": [
+        {
+          "axis": "activities",
+          "concept": "cycling",
+          "field": "title",
+          "quote": "2000 年代 MiniDV 汉江骑行"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "Heavy handheld shake"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "90-vhs-vlog-ae90c46cb606": {
+      "kind": "case",
+      "id": "90-vhs-vlog-ae90c46cb606",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "905378a19bd7700d1cbef2dc9db62e4e8ae3593228445559fbdf961f0a66b82d",
+      "reviewStatus": "reviewed",
+      "contentType": "vlog",
+      "subjects": [
+        {
+          "concept": "person",
+          "role": "primary"
+        },
+        {
+          "concept": "beverage",
+          "role": "background"
+        }
+      ],
+      "productCategory": null,
+      "activities": [
+        "fitness"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "handheld",
+        "retro"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "90 年代复古 VHS 健身 Vlog"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "90 年代复古 VHS 健身 Vlog"
+        },
+        {
+          "axis": "subjects",
+          "concept": "person",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "一位 20多岁的亚洲女性"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage",
+          "role": "background",
+          "field": "promptFull",
+          "quote": "她拿起水瓶喝水，深深吸一口气。"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "她偶尔手持拍摄"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "retro",
+          "field": "promptFull",
+          "quote": "DV / VHS / 旧 DVD 质感"
+        },
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "promptFull",
+          "quote": "不是广告，不是电影，不是高质感大片"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "aimikoda-seedance-ai-3e98e88a068f": {
+      "kind": "case",
+      "id": "aimikoda-seedance-ai-3e98e88a068f",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "64b4cef2955806d84d5948d5a15dada7307c9b242243b7b64af8e7ed9a4c56b9",
+      "reviewStatus": "reviewed",
+      "contentType": "story",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "reference_lock"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "story",
+          "field": "promptFull",
+          "quote": "A tender cinematic short follows a Robot and Robot Dog"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "reference_lock",
+          "field": "promptFull",
+          "quote": "defines the complete referenced appearances and proportions of Robot and Robot Dog"
+        }
+      ],
+      "reviewMethod": "source_review",
+      "reviewNote": "Mechanical robot dog is not confirmed as an ordinary pet-dog subject."
+    },
+    "aiwithkhan-seedance-ai-9a5c5cbd518b": {
+      "kind": "case",
+      "id": "aiwithkhan-seedance-ai-9a5c5cbd518b",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "4c93a3a4f87325193607e8f2a2b32fea5d8081e94ee760a792c6b12c3b414ac3",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [
+        {
+          "concept": "beverage",
+          "role": "background"
+        }
+      ],
+      "productCategory": null,
+      "activities": [
+        "cycling"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "handheld"
+      ],
+      "evidence": [
+        {
+          "axis": "activities",
+          "concept": "cycling",
+          "field": "title",
+          "quote": "韩巷夏日骑行的女孩"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "Strong handheld shake"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage",
+          "role": "background",
+          "field": "promptFull",
+          "quote": "She steals a sip from her friend's iced drink, laughs and continues cycling."
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "avelyrahnai-seedance-ai-a392e2711b0d": {
+      "kind": "case",
+      "id": "avelyrahnai-seedance-ai-a392e2711b0d",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "3857030259cddf0386461217a208d8b8d42a61de3b60bc9ac0add02d4f6c477e",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [
+        {
+          "concept": "person",
+          "role": "primary"
+        },
+        {
+          "concept": "beverage.coffee",
+          "role": "background"
+        }
+      ],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "macro"
+      ],
+      "evidence": [
+        {
+          "axis": "subjects",
+          "concept": "person",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "A stylish young woman walking confidently down a busy New York city sidewalk"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage.coffee",
+          "role": "background",
+          "field": "promptFull",
+          "quote": "holding an iced coffee and a cafe menu"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "macro",
+          "field": "promptFull",
+          "quote": "a macro close-up of the branded coffee cup"
+        }
+      ],
+      "reviewMethod": "source_review",
+      "reviewNote": "Commercial cinematic style does not explicitly establish a product-ad purpose; remain unknown."
+    },
+    "case-3bdeb046587d": {
+      "kind": "case",
+      "id": "case-3bdeb046587d",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "66b8477c825491554430db2a17c28042ff2d32d21d1711eb73baf605f030a9b3",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "fitness"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "tracking"
+      ],
+      "evidence": [
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "电影感晨间健身日常"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "tracking",
+          "field": "promptFull",
+          "quote": "Cinematic tracking shots"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "case-6152b0808b14": {
+      "kind": "case",
+      "id": "case-6152b0808b14",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "86e69066b45c062c4ce108f220be08b3657b8097d9153bd34ede7ad2c17995ee",
+      "reviewStatus": "reviewed",
+      "contentType": "story",
+      "subjects": [
+        {
+          "concept": "cat",
+          "role": "primary"
+        }
+      ],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "anime"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "story",
+          "field": "title",
+          "quote": "黏土动画猫咪世界大变身"
+        },
+        {
+          "axis": "subjects",
+          "concept": "cat",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "a playful black-and-white cat transforming a grayscale world"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "anime",
+          "field": "promptFull",
+          "quote": "claymation-style animation"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "case-887d0484c2ce": {
+      "kind": "case",
+      "id": "case-887d0484c2ce",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "0d1f2b82bdca676c6e559b027940164a4427b5c16efb53141a110a84fc4add03",
+      "reviewStatus": "reviewed",
+      "contentType": "product_ad",
+      "subjects": [
+        {
+          "concept": "beverage.soda",
+          "role": "primary_product"
+        }
+      ],
+      "productCategory": "beverage.soda",
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "product_hero"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "title",
+          "quote": "可口可乐时尚转场广告"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage.soda",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "主角@图片1手持无标识可乐瓶（深棕色汽水+红色瓶标）"
+        },
+        {
+          "axis": "productCategory",
+          "concept": "beverage.soda",
+          "field": "promptFull",
+          "quote": "主角@图片1手持无标识可乐瓶（深棕色汽水+红色瓶标）"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "中央一瓶无标识可乐瓶特写（深棕汽水、红瓶标、白色\"COLA\"字样）"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "chillaikalan-seedance-ai-c67e26cea7cb": {
+      "kind": "case",
+      "id": "chillaikalan-seedance-ai-c67e26cea7cb",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "9a4e44c6e0c2dc6f4affc2dc7e87aa92e178dab2aaa8c1381950dbd89989624e",
+      "reviewStatus": "reviewed",
+      "contentType": "vlog",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "travel"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "handheld"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "promptFull",
+          "quote": "Create a 30-second ultra-photorealistic travel vlog"
+        },
+        {
+          "axis": "activities",
+          "concept": "travel",
+          "field": "promptFull",
+          "quote": "Travel Vlog Prompt"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "high-quality handheld vlog camera"
+        }
+      ],
+      "reviewMethod": "source_review",
+      "reviewNote": "Travel diary and coffee setting do not establish coffee as an advertising product."
+    },
+    "crimson-cola-99e9ec88e937": {
+      "kind": "case",
+      "id": "crimson-cola-99e9ec88e937",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "67e46248eb342c01ab8b0f3196b6b4ff2beb5360b37ee537a7224e9198821e53",
+      "reviewStatus": "reviewed",
+      "contentType": "product_ad",
+      "subjects": [
+        {
+          "concept": "beverage.soda",
+          "role": "primary_product"
+        }
+      ],
+      "productCategory": "beverage.soda",
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "product_hero"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "title",
+          "quote": "复古汽水广告 Crimson Cola"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage.soda",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "A premium 15-second cinematic 8K commercial for a retro soda brand."
+        },
+        {
+          "axis": "productCategory",
+          "concept": "beverage.soda",
+          "field": "promptFull",
+          "quote": "A premium 15-second cinematic 8K commercial for a retro soda brand."
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "ending on a hero shot of the bottle"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "johnagi168-seedance-ai-556a7495c74b": {
+      "kind": "case",
+      "id": "johnagi168-seedance-ai-556a7495c74b",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "7ebc45d5442b11dcd55ec30af0e5cc96ef443fea55992bb9ac00d12d60b08b41",
+      "reviewStatus": "reviewed",
+      "contentType": "vlog",
+      "subjects": [
+        {
+          "concept": "person",
+          "role": "primary"
+        }
+      ],
+      "productCategory": null,
+      "activities": [
+        "fitness"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "tracking"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "Seedance 2.5 健身女孩训练 vlog 短片"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "Seedance 2.5 健身女孩训练 vlog 短片"
+        },
+        {
+          "axis": "subjects",
+          "concept": "person",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "【角色】单女主@图片1"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "tracking",
+          "field": "promptFull",
+          "quote": "镜头贴近履带低角度跟拍（Low-angle Tracking）"
+        }
+      ],
+      "reviewMethod": "source_review",
+      "reviewNote": "运动广告质感 is visual style, not evidence of beverage product or advertising purpose."
+    },
+    "kingofdairyque-seedance-ai-d37a2e5fa395": {
+      "kind": "case",
+      "id": "kingofdairyque-seedance-ai-d37a2e5fa395",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "22837e9694d52d12be5b4a15d9027229cbfb4e2a55e847f9aaabd08f0958fe70",
+      "reviewStatus": "reviewed",
+      "contentType": "vlog",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "fitness"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "handheld"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "屋顶训练室女子晚间健身"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "屋顶训练室女子晚间健身"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "30-second photorealistic handheld fitness vlog"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "lianaalane-seedance-ai-c2d4ba0c6fa2": {
+      "kind": "case",
+      "id": "lianaalane-seedance-ai-c2d4ba0c6fa2",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "6dbaca7969f2150b1df8779c679d1af5e468e119c6f1bc558fc55a29bf1c4667",
+      "reviewStatus": "reviewed",
+      "contentType": "product_ad",
+      "subjects": [
+        {
+          "concept": "person",
+          "role": "primary"
+        },
+        {
+          "concept": "beverage",
+          "role": "background"
+        }
+      ],
+      "productCategory": null,
+      "activities": [
+        "fitness"
+      ],
+      "scenes": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "清晨女子健身房力量训练"
+        },
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "promptFull",
+          "quote": "morning gym advertisement"
+        },
+        {
+          "axis": "subjects",
+          "concept": "person",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "featuring the same adult woman throughout"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage",
+          "role": "background",
+          "field": "promptFull",
+          "quote": "then drinks water and looks confidently into the mirror"
+        }
+      ],
+      "reviewMethod": "source_review",
+      "reviewNote": "Advertisement promotes a gym, not a beverage product; no primary_product label."
+    },
+    "mountain-dew-spark-b16d4e23caef": {
+      "kind": "case",
+      "id": "mountain-dew-spark-b16d4e23caef",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "3eb5a38b0f9233f54a9182a9d86c83874bbb2277542f0555490c8526855cb4d0",
+      "reviewStatus": "reviewed",
+      "contentType": "product_ad",
+      "subjects": [
+        {
+          "concept": "beverage",
+          "role": "primary_product"
+        }
+      ],
+      "productCategory": "beverage",
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "product_hero"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "title",
+          "quote": "Mountain Dew Spark 涂鸦广告"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "holding a chilled Mountain Dew Spark can"
+        },
+        {
+          "axis": "productCategory",
+          "concept": "beverage",
+          "field": "promptFull",
+          "quote": "holding a chilled Mountain Dew Spark can"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "Transition into a premium macro product close-up"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "qaistudio-seedance-ai-72dab559610b": {
+      "kind": "case",
+      "id": "qaistudio-seedance-ai-72dab559610b",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "349f8722f851dbe4430d59e31b8201bbe043c2f62f15c9a6c393091506334047",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "fitness"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "timeline_script"
+      ],
+      "evidence": [
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "健身房更衣室训练前准备"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "timeline_script",
+          "field": "promptFull",
+          "quote": "Timeline:"
+        }
+      ],
+      "reviewMethod": "source_review",
+      "reviewNote": "Locker-room preparation; product and content purpose are unknown."
+    },
+    "seedance-2-0-181cb461432f": {
+      "kind": "case",
+      "id": "seedance-2-0-181cb461432f",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "0cb631f929027baaa8cab287575066c224f73a3e3d1bdd6d3e5aaf8b4170d5a3",
+      "reviewStatus": "reviewed",
+      "contentType": "product_ad",
+      "subjects": [
+        {
+          "concept": "beverage.soda",
+          "role": "primary_product"
+        }
+      ],
+      "productCategory": "beverage.soda",
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "product_hero"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "title",
+          "quote": "Seedance 2.0 可乐商业广告视频"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage.soda",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "holds a transparent plastic cola bottle filled with deep-brown carbonated liquid, red label, red cap."
+        },
+        {
+          "axis": "productCategory",
+          "concept": "beverage.soda",
+          "field": "promptFull",
+          "quote": "holds a transparent plastic cola bottle filled with deep-brown carbonated liquid, red label, red cap."
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "Cut to product close-up: cola bottle front view"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "seedance-2-5-f3651857750b": {
+      "kind": "case",
+      "id": "seedance-2-5-f3651857750b",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "9e464729a19ad1377dd40d8aba10980a78e1cf3a351129e60a8d05d5ec5ccace",
+      "reviewStatus": "reviewed",
+      "contentType": "documentary",
+      "subjects": [
+        {
+          "concept": "person",
+          "role": "primary"
+        },
+        {
+          "concept": "beverage",
+          "role": "background"
+        }
+      ],
+      "productCategory": null,
+      "activities": [
+        "cycling"
+      ],
+      "scenes": [
+        "resort"
+      ],
+      "capabilities": [
+        "tracking",
+        "continuous_take"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "documentary",
+          "field": "title",
+          "quote": "Seedance 2.5 生成马尔代夫骑行纪录片长镜头"
+        },
+        {
+          "axis": "activities",
+          "concept": "cycling",
+          "field": "title",
+          "quote": "Seedance 2.5 生成马尔代夫骑行纪录片长镜头"
+        },
+        {
+          "axis": "subjects",
+          "concept": "person",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "shot locked on a beautiful young woman"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage",
+          "role": "background",
+          "field": "promptFull",
+          "quote": "A staff member in white uniform waves as he passes with a tray of drinks."
+        },
+        {
+          "axis": "capabilities",
+          "concept": "tracking",
+          "field": "promptFull",
+          "quote": "handheld tracking shot"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "continuous_take",
+          "field": "promptFull",
+          "quote": "coherent continuous motion"
+        },
+        {
+          "axis": "scenes",
+          "concept": "resort",
+          "field": "promptFull",
+          "quote": "Maldives luxury island resort"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "seedance-2-5-vlog-30-3b85f315bb08": {
+      "kind": "case",
+      "id": "seedance-2-5-vlog-30-3b85f315bb08",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "45e11642835f1b33c7a6308aca0df77a42ee9b61ab3581a2b6facfb52e3865dc",
+      "reviewStatus": "reviewed",
+      "contentType": "vlog",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "cycling"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "tracking"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "Seedance 2.5 真实骑行 Vlog:运动相机+前摄+跟拍混剪 30 秒"
+        },
+        {
+          "axis": "activities",
+          "concept": "cycling",
+          "field": "title",
+          "quote": "Seedance 2.5 真实骑行 Vlog:运动相机+前摄+跟拍混剪 30 秒"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "tracking",
+          "field": "promptFull",
+          "quote": "跟拍混剪"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d": {
+      "kind": "case",
+      "id": "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "c37ec7d918fad3931e105fc6f8afe498653c1fbf2a00d783047e22e7869dbf99",
+      "reviewStatus": "reviewed",
+      "contentType": "product_ad",
+      "subjects": [
+        {
+          "concept": "footwear",
+          "role": "primary_product"
+        },
+        {
+          "concept": "beverage.coffee",
+          "role": "background"
+        }
+      ],
+      "productCategory": "footwear",
+      "activities": [
+        "running"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "product_hero"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "title",
+          "quote": "创意总监极速完成耐克跑鞋广告"
+        },
+        {
+          "axis": "activities",
+          "concept": "running",
+          "field": "promptFull",
+          "quote": "A powerful athlete wearing the same Nike Air Max runs through multiple cinematic environments"
+        },
+        {
+          "axis": "subjects",
+          "concept": "footwear",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "Show extreme close-ups of the sneakers, realistic Air Max cushioning compression"
+        },
+        {
+          "axis": "productCategory",
+          "concept": "footwear",
+          "field": "promptFull",
+          "quote": "commercial for Nike Air Max"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "Show extreme close-ups of the sneakers"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage.coffee",
+          "role": "background",
+          "field": "promptFull",
+          "quote": "She relaxes with coffee."
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630": {
+      "kind": "case",
+      "id": "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "0d410b50122cbf94250d267d9bc2ddf98dd1b458118670cf47538ded9ffd5b78",
+      "reviewStatus": "reviewed",
+      "contentType": "product_ad",
+      "subjects": [
+        {
+          "concept": "cosmetics",
+          "role": "primary_product"
+        },
+        {
+          "concept": "beverage.coffee",
+          "role": "background"
+        }
+      ],
+      "productCategory": "cosmetics",
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "product_hero"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "promptFull",
+          "quote": "Create a realistic 10-second vertical beauty product video"
+        },
+        {
+          "axis": "subjects",
+          "concept": "cosmetics",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "hands opening a small elegant cardboard package containing a premium pink lip gloss"
+        },
+        {
+          "axis": "productCategory",
+          "concept": "cosmetics",
+          "field": "promptFull",
+          "quote": "premium pink lip gloss"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage.coffee",
+          "role": "background",
+          "field": "promptFull",
+          "quote": "beside two cups of latte with artistic foam"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "Finish with the lip gloss standing beautifully on a wooden café table"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d": {
+      "kind": "case",
+      "id": "seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "9582b22e2838d74447e3542fb22dc9b3878f38046511b1a1e920bb8febb51a02",
+      "reviewStatus": "reviewed",
+      "contentType": "story",
+      "subjects": [
+        {
+          "concept": "cat",
+          "role": "primary"
+        }
+      ],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "anime"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "story",
+          "field": "title",
+          "quote": "灰猫误触按钮引发厨房大乱"
+        },
+        {
+          "axis": "subjects",
+          "concept": "cat",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "a cute fluffy gray cat in a warm, cozy home kitchen"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "anime",
+          "field": "promptFull",
+          "quote": "cinematic cartoon-style kitchen story"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "seedance-created-a-video-in-soft-anime-style-of-a-fluffy-white-cat-with-big-sparkling-te-5d65967aaf57": {
+      "kind": "case",
+      "id": "seedance-created-a-video-in-soft-anime-style-of-a-fluffy-white-cat-with-big-sparkling-te-5d65967aaf57",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "c43434a2370ad661a56fe40f939a32104df1fb512c1076212d73e4b46b9a0738",
+      "reviewStatus": "reviewed",
+      "contentType": "story",
+      "subjects": [
+        {
+          "concept": "cat",
+          "role": "primary"
+        }
+      ],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "anime"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "story",
+          "field": "title",
+          "quote": "白猫与青年在晨光公寓相拥"
+        },
+        {
+          "axis": "subjects",
+          "concept": "cat",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "a fluffy white cat with big sparkling teal eyes"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "anime",
+          "field": "promptFull",
+          "quote": "soft anime style"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "seedance-dv-16mm-tape-camcorder-handheld-feel-dbd56441c7b6": {
+      "kind": "case",
+      "id": "seedance-dv-16mm-tape-camcorder-handheld-feel-dbd56441c7b6",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "a47b6e9149e8768186440d6d6838f30bc8afab9b2a244a530c3af01dcdc4f84c",
+      "reviewStatus": "reviewed",
+      "contentType": "vlog",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "fitness"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "handheld"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "偶像腿日训练后的踉跄健身日记"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "偶像腿日训练后的踉跄健身日记"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "DV 16mm tape camcorder handheld feel."
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "seedance-she-thought-it-was-going-to-be-a-peaceful-rainy-day-selfie-f0bf765977dd": {
+      "kind": "case",
+      "id": "seedance-she-thought-it-was-going-to-be-a-peaceful-rainy-day-selfie-f0bf765977dd",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "570886a5a4b6d0e4061cf410a8af10a7c059279d51ee2788249b9c38c9a04f85",
+      "reviewStatus": "reviewed",
+      "contentType": "unknown",
+      "subjects": [
+        {
+          "concept": "cat",
+          "role": "primary"
+        }
+      ],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "handheld"
+      ],
+      "evidence": [
+        {
+          "axis": "subjects",
+          "concept": "cat",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "Exactly ONE small tabby kitten."
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "handheld front-camera selfie"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "ugc-34764467dea1": {
+      "kind": "case",
+      "id": "ugc-34764467dea1",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "1fc689eba42b35c0676aea8e68e539f38c8b469741247e4177c1a737b6a99476",
+      "reviewStatus": "reviewed",
+      "contentType": "product_ad",
+      "subjects": [
+        {
+          "concept": "beverage",
+          "role": "primary_product"
+        }
+      ],
+      "productCategory": "beverage",
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "product_hero"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "title",
+          "quote": "高端热带饮品 UGC 广告"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "holding an ice-cold tropical sparkling drink beside her face"
+        },
+        {
+          "axis": "productCategory",
+          "concept": "beverage",
+          "field": "promptFull",
+          "quote": "holding an ice-cold tropical sparkling drink beside her face"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "The product becomes the focus as the chilled can floats among splashing water"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "ugc-80d503f66caa": {
+      "kind": "case",
+      "id": "ugc-80d503f66caa",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "f58b36bfec77729871a84c7c2899e8fe8ff4337e1b4c1a305b78430c16063957",
+      "reviewStatus": "reviewed",
+      "contentType": "product_ad",
+      "subjects": [
+        {
+          "concept": "beverage.fruit_drink",
+          "role": "primary_product"
+        }
+      ],
+      "productCategory": "beverage.fruit_drink",
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "product_hero"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "title",
+          "quote": "高端饮料 UGC 商业广告"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage.fruit_drink",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "holding an ice-cold sparkling fruit drink beside her face"
+        },
+        {
+          "axis": "productCategory",
+          "concept": "beverage.fruit_drink",
+          "field": "promptFull",
+          "quote": "holding an ice-cold sparkling fruit drink beside her face"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "The product becomes the focus with premium rotating hero shots"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "zarairahh-seedance-ai-3f362e9e352b": {
+      "kind": "case",
+      "id": "zarairahh-seedance-ai-3f362e9e352b",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "a1c7a6f584a6c9a1b8cced4f98614dad6730f0102dd3746ef06cf1760d134da3",
+      "reviewStatus": "reviewed",
+      "contentType": "vlog",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "fitness"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "handheld"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "Seedance 六十秒健身日常 day-in-life vlog"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "Seedance 六十秒健身日常 day-in-life vlog"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "One continuous handheld front-facing smartphone selfie vlog perspective."
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "zarairahh-seedance-ai-b7601661378a": {
+      "kind": "case",
+      "id": "zarairahh-seedance-ai-b7601661378a",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "390c1536b90813d97926fec5f30292a931500c717958ed5fe7050ace90a10c2f",
+      "reviewStatus": "reviewed",
+      "contentType": "vlog",
+      "subjects": [],
+      "productCategory": null,
+      "activities": [
+        "fitness"
+      ],
+      "scenes": [],
+      "capabilities": [
+        "handheld"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "Seedance 三十秒健身房日常 vlog"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "Seedance 三十秒健身房日常 vlog"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "One continuous handheld front-facing smartphone selfie vlog"
+        }
+      ],
+      "reviewMethod": "source_review"
+    },
+    "zarairahh-seedance-ai-f89372941867": {
+      "kind": "case",
+      "id": "zarairahh-seedance-ai-f89372941867",
+      "schemaVersion": 1,
+      "annotationVersion": 1,
+      "sourceHash": "4ab605d4baf8916dd14c3b7189f060b9c7b1c9227365dca5d5094c847a2a1bf8",
+      "reviewStatus": "reviewed",
+      "contentType": "vlog",
+      "subjects": [
+        {
+          "concept": "cat",
+          "role": "primary"
+        }
+      ],
+      "productCategory": null,
+      "activities": [],
+      "scenes": [],
+      "capabilities": [
+        "handheld"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "猫咪自拍记录温馨的一天"
+        },
+        {
+          "axis": "subjects",
+          "concept": "cat",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "Create a 60-second realistic day-in-the-life cat vlog"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "Natural handheld shake"
+        }
+      ],
+      "reviewMethod": "source_review"
+    }
+  }
+}

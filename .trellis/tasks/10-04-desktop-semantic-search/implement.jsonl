@@ -1,0 +1,4 @@
+{"file": ".trellis/spec/frontend/index.md", "reason": "Desktop package contracts"}
+{"file": ".trellis/spec/frontend/type-safety.md", "reason": "Validated SDK and IPC contracts"}
+{"file": ".trellis/tasks/10-04-desktop-semantic-search/research/catalog-semantics.md", "reason": "Grounded case research"}
+{"file": ".trellis/spec/frontend/semantic-search.md", "reason": "Grounded search plans, versioning and result tiers"}

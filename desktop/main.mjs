@@ -3,7 +3,7 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { loadCatalog } from './catalog.mjs';
 import { createSettings } from './settings.mjs';
-import { matchCatalog, testConnection } from './agent.mjs';
+import { matchCatalog, testConnection, validateClarificationHistory } from './agent.mjs';
 
 app.setName('Video Prompt Library');
 if (process.env.DESKTOP_USER_DATA) app.setPath('userData', path.resolve(process.env.DESKTOP_USER_DATA));
@@ -66,7 +66,9 @@ handle('cancelSearch', input => {
 });
 handle('refresh', async () => { active?.controller.abort(); active = null; catalog = await loadCatalog(root); return catalog.overview(); });
 handle('search', async input => {
-  if (!input || typeof input.query !== 'string' || !input.query.trim() || input.query.length > 1000 || typeof input.requestId !== 'string' || !/^[a-zA-Z0-9_-]{1,100}$/.test(input.requestId) || (input.answer !== undefined && (typeof input.answer !== 'string' || input.answer.length > 1000))) throw new Error('搜索输入无效');
+  if (!input || typeof input.query !== 'string' || !input.query.trim() || input.query.length > 1000 || typeof input.requestId !== 'string' || !/^[a-zA-Z0-9_-]{1,100}$/.test(input.requestId) || (input.answer !== undefined && (typeof input.answer !== 'string' || input.answer.length > 1000)) || (input.allowTechniqueOnly !== undefined && typeof input.allowTechniqueOnly !== 'boolean')) throw new Error('搜索输入无效');
+  const clarificationHistory = validateClarificationHistory(input.clarificationHistory);
+  if (input.skipQuestion !== undefined && typeof input.skipQuestion !== 'boolean') throw new Error('搜索输入无效');
   active?.controller.abort();
   const current = { requestId: input.requestId, controller: new AbortController() };
   active = current;
@@ -75,9 +77,9 @@ handle('search', async input => {
   try {
     const config = settings.credentials();
     if (!config.apiKey || !config.model) throw new Error('请在模型设置中配置模型与 API Key；当前结果尚未经 Agent 判断。');
-    const matched = await matchCatalog({ query: input.query, catalog, settings: config, signal: current.controller.signal, answer: input.answer, skipQuestion: input.skipQuestion === true, onProgress: progress => emit({ ...progress, requestId: current.requestId }) });
+    const matched = await matchCatalog({ query: input.query, catalog, settings: config, signal: current.controller.signal, answer: input.answer, clarificationHistory, skipQuestion: input.skipQuestion === true, allowTechniqueOnly: input.allowTechniqueOnly === true, onProgress: progress => emit({ ...progress, requestId: current.requestId }) });
     if (current.controller.signal.aborted) return { requestId: current.requestId, stage: 'cancelled' };
-    return emit({ ...matched, requestId: current.requestId });
+    return emit({ ...matched, localResults: results, requestId: current.requestId });
   } catch (error) {
     if (current.controller.signal.aborted) return { requestId: current.requestId, stage: 'cancelled' };
     return emit({ requestId: current.requestId, stage: 'error', results, message: error.message });

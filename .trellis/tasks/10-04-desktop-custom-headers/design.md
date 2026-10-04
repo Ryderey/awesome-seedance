@@ -1,0 +1,11 @@
+# Design
+
+Smallest gap: settings currently have no headers and SDK clients cannot satisfy provider-specific header requirements. Keep the current SDK, storage and preload architecture.
+
+Shared browser-safe desktop/headers.mjs exports validateHeaders(rows), returning {rows, errors, message}, where errors is one string per input row (empty means valid), rows is the normalized config, and message is only for array-wide errors. Rows: {name, value, valueType: 'fixed'|'session', enabled, remember}. New rows default enabled true, remember false, fixed value ''. Maximum 20 rows. Enabled names must be HTTP token strings <=128 chars; enabled fixed values must be nonblank printable ASCII <=8192 chars. Session value is ignored/normalized empty. Enabled duplicate names are invalid case-insensitively. Disabled drafts do not block content validation but must still have bounded strings and known field types. Protect Authorization, Proxy-Authorization, Host, Content-Length, Content-Type and hop-by-hop transport headers; API Key remains the auth control. Do not echo values in validation errors.
+
+settings.mjs validates before mutation, stores only remember rows, clones public projections, creates a runtime UUID once per settings object, and resolves enabled rows into requestHeaders in credentials(). Public settings expose rows for editing, never apiKey or the generated session ID. Old settings load with []. Save failure leaves file and in-memory settings unchanged. All public/disk fields are projected; requestHeaders/session ID must not leak to disk.
+
+agent.mjs passes credentials().requestHeaders as SDK defaultHeaders; connection and search share the client factory. main.mjs rejects saves through the same settings validator. Renderer imports shared validation (module script), builds rows with textContent, per-row aria-describedby errors, and disables save/test while invalid. Basic inputs remain present. No raw secrets in logs/errors. New shared module must be explicitly included by package.mjs.
+
+Ownership: implement worker handles shared validator, settings, SDK client and their Node tests. Parent handles settings UI, packaging registration, native integration tests and specs. Preserve all prior uncommitted prompt/scroll/search result changes. No dependency additions.

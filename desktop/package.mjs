@@ -15,7 +15,7 @@ for (const target of [stage, out]) {
 await mkdir(stage, { recursive: true });
 for (const entry of ['data', 'scripts/lib', 'LICENSE', 'package.json', 'package-lock.json']) await cp(path.join(root, entry), path.join(stage, entry), { recursive: true });
 await mkdir(path.join(stage, 'desktop/ui'), { recursive: true });
-for (const entry of ['main.mjs', 'preload.cjs', 'catalog.mjs', 'agent.mjs', 'settings.mjs', 'ui/index.html', 'ui/app.js', 'ui/styles.css']) await cp(path.join(root, 'desktop', entry), path.join(stage, 'desktop', entry));
+for (const entry of ['main.mjs', 'preload.cjs', 'catalog.mjs', 'agent.mjs', 'settings.mjs', 'headers.mjs', 'search-semantics.mjs', 'ui/index.html', 'ui/app.js', 'ui/styles.css']) await cp(path.join(root, 'desktop', entry), path.join(stage, 'desktop', entry));
 if (!process.env.npm_execpath) throw new Error('Run through npm run desktop:package');
 const localCache = path.join(root, '.tmp/npm-cache');
 const install = spawnSync(process.execPath, [process.env.npm_execpath, 'ci', '--omit=dev', '--ignore-scripts', '--offline', ...(existsSync(localCache) ? ['--cache', localCache] : [])], { cwd: stage, stdio: 'inherit' });

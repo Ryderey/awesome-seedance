@@ -1,0 +1,1027 @@
+{
+  "schemaVersion": 1,
+  "reviewMethod": "Offline manual source reading by implementer; no real-provider output and no automatic promotion.",
+  "reviews": [
+    {
+      "id": "16mm-vlog-c8cfec0d8310",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "vlog",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "复古 16mm 健身有氧 Vlog"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "复古 16mm 健身有氧 Vlog"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "DV 16mm handheld tape camcorder"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "2000-minidv-5cceb6310905",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "unknown",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "activities",
+          "concept": "cycling",
+          "field": "title",
+          "quote": "2000 年代 MiniDV 汉江骑行"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "Heavy handheld shake"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "90-vhs-vlog-ae90c46cb606",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "vlog",
+      "primaryProducts": [],
+      "backgroundProducts": [
+        "beverage"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "90 年代复古 VHS 健身 Vlog"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "90 年代复古 VHS 健身 Vlog"
+        },
+        {
+          "axis": "subjects",
+          "concept": "person",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "一位 20多岁的亚洲女性"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage",
+          "role": "background",
+          "field": "promptFull",
+          "quote": "她拿起水瓶喝水，深深吸一口气。"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "她偶尔手持拍摄"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "retro",
+          "field": "promptFull",
+          "quote": "DV / VHS / 旧 DVD 质感"
+        },
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "promptFull",
+          "quote": "不是广告，不是电影，不是高质感大片"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "aimikoda-seedance-ai-3e98e88a068f",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "story",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "story",
+          "field": "promptFull",
+          "quote": "A tender cinematic short follows a Robot and Robot Dog"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "reference_lock",
+          "field": "promptFull",
+          "quote": "defines the complete referenced appearances and proportions of Robot and Robot Dog"
+        }
+      ],
+      "notes": "Mechanical robot dog is not confirmed as an ordinary pet-dog subject."
+    },
+    {
+      "id": "aiwithkhan-seedance-ai-9a5c5cbd518b",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "unknown",
+      "primaryProducts": [],
+      "backgroundProducts": [
+        "beverage"
+      ],
+      "evidence": [
+        {
+          "axis": "activities",
+          "concept": "cycling",
+          "field": "title",
+          "quote": "韩巷夏日骑行的女孩"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "Strong handheld shake"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage",
+          "role": "background",
+          "field": "promptFull",
+          "quote": "She steals a sip from her friend's iced drink, laughs and continues cycling."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "avelyrahnai-seedance-ai-a392e2711b0d",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "unknown",
+      "primaryProducts": [],
+      "backgroundProducts": [
+        "beverage.coffee"
+      ],
+      "evidence": [
+        {
+          "axis": "subjects",
+          "concept": "person",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "A stylish young woman walking confidently down a busy New York city sidewalk"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage.coffee",
+          "role": "background",
+          "field": "promptFull",
+          "quote": "holding an iced coffee and a cafe menu"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "macro",
+          "field": "promptFull",
+          "quote": "a macro close-up of the branded coffee cup"
+        }
+      ],
+      "notes": "Commercial cinematic style does not explicitly establish a product-ad purpose; remain unknown."
+    },
+    {
+      "id": "case-3bdeb046587d",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "unknown",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "电影感晨间健身日常"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "tracking",
+          "field": "promptFull",
+          "quote": "Cinematic tracking shots"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "case-6152b0808b14",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "story",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "story",
+          "field": "title",
+          "quote": "黏土动画猫咪世界大变身"
+        },
+        {
+          "axis": "subjects",
+          "concept": "cat",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "a playful black-and-white cat transforming a grayscale world"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "anime",
+          "field": "promptFull",
+          "quote": "claymation-style animation"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "case-887d0484c2ce",
+      "productAdEligible": true,
+      "sportsDrinkConfirmed": false,
+      "contentType": "product_ad",
+      "primaryProducts": [
+        "beverage.soda"
+      ],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "title",
+          "quote": "可口可乐时尚转场广告"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage.soda",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "主角@图片1手持无标识可乐瓶（深棕色汽水+红色瓶标）"
+        },
+        {
+          "axis": "productCategory",
+          "concept": "beverage.soda",
+          "field": "promptFull",
+          "quote": "主角@图片1手持无标识可乐瓶（深棕色汽水+红色瓶标）"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "中央一瓶无标识可乐瓶特写（深棕汽水、红瓶标、白色\"COLA\"字样）"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "chillaikalan-seedance-ai-c67e26cea7cb",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "vlog",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "promptFull",
+          "quote": "Create a 30-second ultra-photorealistic travel vlog"
+        },
+        {
+          "axis": "activities",
+          "concept": "travel",
+          "field": "promptFull",
+          "quote": "Travel Vlog Prompt"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "high-quality handheld vlog camera"
+        }
+      ],
+      "notes": "Travel diary and coffee setting do not establish coffee as an advertising product."
+    },
+    {
+      "id": "crimson-cola-99e9ec88e937",
+      "productAdEligible": true,
+      "sportsDrinkConfirmed": false,
+      "contentType": "product_ad",
+      "primaryProducts": [
+        "beverage.soda"
+      ],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "title",
+          "quote": "复古汽水广告 Crimson Cola"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage.soda",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "A premium 15-second cinematic 8K commercial for a retro soda brand."
+        },
+        {
+          "axis": "productCategory",
+          "concept": "beverage.soda",
+          "field": "promptFull",
+          "quote": "A premium 15-second cinematic 8K commercial for a retro soda brand."
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "ending on a hero shot of the bottle"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "johnagi168-seedance-ai-556a7495c74b",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "vlog",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "Seedance 2.5 健身女孩训练 vlog 短片"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "Seedance 2.5 健身女孩训练 vlog 短片"
+        },
+        {
+          "axis": "subjects",
+          "concept": "person",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "【角色】单女主@图片1"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "tracking",
+          "field": "promptFull",
+          "quote": "镜头贴近履带低角度跟拍（Low-angle Tracking）"
+        }
+      ],
+      "notes": "运动广告质感 is visual style, not evidence of beverage product or advertising purpose."
+    },
+    {
+      "id": "kingofdairyque-seedance-ai-d37a2e5fa395",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "vlog",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "屋顶训练室女子晚间健身"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "屋顶训练室女子晚间健身"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "30-second photorealistic handheld fitness vlog"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "lianaalane-seedance-ai-c2d4ba0c6fa2",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "product_ad",
+      "primaryProducts": [],
+      "backgroundProducts": [
+        "beverage"
+      ],
+      "evidence": [
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "清晨女子健身房力量训练"
+        },
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "promptFull",
+          "quote": "morning gym advertisement"
+        },
+        {
+          "axis": "subjects",
+          "concept": "person",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "featuring the same adult woman throughout"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage",
+          "role": "background",
+          "field": "promptFull",
+          "quote": "then drinks water and looks confidently into the mirror"
+        }
+      ],
+      "notes": "Advertisement promotes a gym, not a beverage product; no primary_product label."
+    },
+    {
+      "id": "mountain-dew-spark-b16d4e23caef",
+      "productAdEligible": true,
+      "sportsDrinkConfirmed": false,
+      "contentType": "product_ad",
+      "primaryProducts": [
+        "beverage"
+      ],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "title",
+          "quote": "Mountain Dew Spark 涂鸦广告"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "holding a chilled Mountain Dew Spark can"
+        },
+        {
+          "axis": "productCategory",
+          "concept": "beverage",
+          "field": "promptFull",
+          "quote": "holding a chilled Mountain Dew Spark can"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "Transition into a premium macro product close-up"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "qaistudio-seedance-ai-72dab559610b",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "unknown",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "健身房更衣室训练前准备"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "timeline_script",
+          "field": "promptFull",
+          "quote": "Timeline:"
+        }
+      ],
+      "notes": "Locker-room preparation; product and content purpose are unknown."
+    },
+    {
+      "id": "seedance-2-0-181cb461432f",
+      "productAdEligible": true,
+      "sportsDrinkConfirmed": false,
+      "contentType": "product_ad",
+      "primaryProducts": [
+        "beverage.soda"
+      ],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "title",
+          "quote": "Seedance 2.0 可乐商业广告视频"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage.soda",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "holds a transparent plastic cola bottle filled with deep-brown carbonated liquid, red label, red cap."
+        },
+        {
+          "axis": "productCategory",
+          "concept": "beverage.soda",
+          "field": "promptFull",
+          "quote": "holds a transparent plastic cola bottle filled with deep-brown carbonated liquid, red label, red cap."
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "Cut to product close-up: cola bottle front view"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "seedance-2-5-f3651857750b",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "documentary",
+      "primaryProducts": [],
+      "backgroundProducts": [
+        "beverage"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "documentary",
+          "field": "title",
+          "quote": "Seedance 2.5 生成马尔代夫骑行纪录片长镜头"
+        },
+        {
+          "axis": "activities",
+          "concept": "cycling",
+          "field": "title",
+          "quote": "Seedance 2.5 生成马尔代夫骑行纪录片长镜头"
+        },
+        {
+          "axis": "subjects",
+          "concept": "person",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "shot locked on a beautiful young woman"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage",
+          "role": "background",
+          "field": "promptFull",
+          "quote": "A staff member in white uniform waves as he passes with a tray of drinks."
+        },
+        {
+          "axis": "capabilities",
+          "concept": "tracking",
+          "field": "promptFull",
+          "quote": "handheld tracking shot"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "continuous_take",
+          "field": "promptFull",
+          "quote": "coherent continuous motion"
+        },
+        {
+          "axis": "scenes",
+          "concept": "resort",
+          "field": "promptFull",
+          "quote": "Maldives luxury island resort"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "seedance-2-5-vlog-30-3b85f315bb08",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "vlog",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "Seedance 2.5 真实骑行 Vlog:运动相机+前摄+跟拍混剪 30 秒"
+        },
+        {
+          "axis": "activities",
+          "concept": "cycling",
+          "field": "title",
+          "quote": "Seedance 2.5 真实骑行 Vlog:运动相机+前摄+跟拍混剪 30 秒"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "tracking",
+          "field": "promptFull",
+          "quote": "跟拍混剪"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "seedance-create-a-30-second-ultra-photorealistic-cinematic-commercial-for-nike-air-max-c205a472781d",
+      "productAdEligible": true,
+      "sportsDrinkConfirmed": false,
+      "contentType": "product_ad",
+      "primaryProducts": [
+        "footwear"
+      ],
+      "backgroundProducts": [
+        "beverage.coffee"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "title",
+          "quote": "创意总监极速完成耐克跑鞋广告"
+        },
+        {
+          "axis": "activities",
+          "concept": "running",
+          "field": "title",
+          "quote": "创意总监极速完成耐克跑鞋广告"
+        },
+        {
+          "axis": "subjects",
+          "concept": "footwear",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "Show extreme close-ups of the sneakers, realistic Air Max cushioning compression"
+        },
+        {
+          "axis": "productCategory",
+          "concept": "footwear",
+          "field": "promptFull",
+          "quote": "commercial for Nike Air Max"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "Show extreme close-ups of the sneakers"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage.coffee",
+          "role": "background",
+          "field": "promptFull",
+          "quote": "She relaxes with coffee."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "seedance-create-a-realistic-10-second-vertical-beauty-product-video-showing-hands-openin-1b5f6c15e630",
+      "productAdEligible": true,
+      "sportsDrinkConfirmed": false,
+      "contentType": "product_ad",
+      "primaryProducts": [
+        "cosmetics"
+      ],
+      "backgroundProducts": [
+        "beverage.coffee"
+      ],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "promptFull",
+          "quote": "Create a realistic 10-second vertical beauty product video"
+        },
+        {
+          "axis": "subjects",
+          "concept": "cosmetics",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "hands opening a small elegant cardboard package containing a premium pink lip gloss"
+        },
+        {
+          "axis": "productCategory",
+          "concept": "cosmetics",
+          "field": "promptFull",
+          "quote": "premium pink lip gloss"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage.coffee",
+          "role": "background",
+          "field": "promptFull",
+          "quote": "beside two cups of latte with artistic foam"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "Finish with the lip gloss standing beautifully on a wooden café table"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "seedance-created-a-video-a-cinematic-cartoon-style-kitchen-story-featuring-a-curly-red-a64a9ed0a27d",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "story",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "story",
+          "field": "title",
+          "quote": "灰猫误触按钮引发厨房大乱"
+        },
+        {
+          "axis": "subjects",
+          "concept": "cat",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "a cute fluffy gray cat in a warm, cozy home kitchen"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "anime",
+          "field": "promptFull",
+          "quote": "cinematic cartoon-style kitchen story"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "seedance-created-a-video-in-soft-anime-style-of-a-fluffy-white-cat-with-big-sparkling-te-5d65967aaf57",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "story",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "story",
+          "field": "title",
+          "quote": "白猫与青年在晨光公寓相拥"
+        },
+        {
+          "axis": "subjects",
+          "concept": "cat",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "a fluffy white cat with big sparkling teal eyes"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "anime",
+          "field": "promptFull",
+          "quote": "soft anime style"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "seedance-dv-16mm-tape-camcorder-handheld-feel-dbd56441c7b6",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "vlog",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "偶像腿日训练后的踉跄健身日记"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "偶像腿日训练后的踉跄健身日记"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "DV 16mm tape camcorder handheld feel."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "seedance-she-thought-it-was-going-to-be-a-peaceful-rainy-day-selfie-f0bf765977dd",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "unknown",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "subjects",
+          "concept": "cat",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "Exactly ONE small tabby kitten."
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "handheld front-camera selfie"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ugc-34764467dea1",
+      "productAdEligible": true,
+      "sportsDrinkConfirmed": false,
+      "contentType": "product_ad",
+      "primaryProducts": [
+        "beverage"
+      ],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "title",
+          "quote": "高端热带饮品 UGC 广告"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "holding an ice-cold tropical sparkling drink beside her face"
+        },
+        {
+          "axis": "productCategory",
+          "concept": "beverage",
+          "field": "promptFull",
+          "quote": "holding an ice-cold tropical sparkling drink beside her face"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "The product becomes the focus as the chilled can floats among splashing water"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "ugc-80d503f66caa",
+      "productAdEligible": true,
+      "sportsDrinkConfirmed": false,
+      "contentType": "product_ad",
+      "primaryProducts": [
+        "beverage.fruit_drink"
+      ],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "product_ad",
+          "field": "title",
+          "quote": "高端饮料 UGC 商业广告"
+        },
+        {
+          "axis": "subjects",
+          "concept": "beverage.fruit_drink",
+          "role": "primary_product",
+          "field": "promptFull",
+          "quote": "holding an ice-cold sparkling fruit drink beside her face"
+        },
+        {
+          "axis": "productCategory",
+          "concept": "beverage.fruit_drink",
+          "field": "promptFull",
+          "quote": "holding an ice-cold sparkling fruit drink beside her face"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "product_hero",
+          "field": "promptFull",
+          "quote": "The product becomes the focus with premium rotating hero shots"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "zarairahh-seedance-ai-3f362e9e352b",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "vlog",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "Seedance 六十秒健身日常 day-in-life vlog"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "Seedance 六十秒健身日常 day-in-life vlog"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "One continuous handheld front-facing smartphone selfie vlog perspective."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "zarairahh-seedance-ai-b7601661378a",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "vlog",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "Seedance 三十秒健身房日常 vlog"
+        },
+        {
+          "axis": "activities",
+          "concept": "fitness",
+          "field": "title",
+          "quote": "Seedance 三十秒健身房日常 vlog"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "One continuous handheld front-facing smartphone selfie vlog"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "zarairahh-seedance-ai-f89372941867",
+      "productAdEligible": false,
+      "sportsDrinkConfirmed": false,
+      "contentType": "vlog",
+      "primaryProducts": [],
+      "backgroundProducts": [],
+      "evidence": [
+        {
+          "axis": "contentType",
+          "concept": "vlog",
+          "field": "title",
+          "quote": "猫咪自拍记录温馨的一天"
+        },
+        {
+          "axis": "subjects",
+          "concept": "cat",
+          "role": "primary",
+          "field": "promptFull",
+          "quote": "Create a 60-second realistic day-in-the-life cat vlog"
+        },
+        {
+          "axis": "capabilities",
+          "concept": "handheld",
+          "field": "promptFull",
+          "quote": "Natural handheld shake"
+        }
+      ],
+      "notes": ""
+    }
+  ]
+}
